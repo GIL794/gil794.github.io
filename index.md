@@ -15,7 +15,7 @@ From basic dev needs to complex AI solutions, I decode emerging tech trends, sha
     <li>Practical tech insights that boost your career</li>
     <li>Innovation strategies for modern businesses</li>
     <li>Engineering leadership tips that actually work</li>
-    <li>Industry trends before they go mainstream</li>
+    <li>Tech tricks before they go mainstream</li>
 </ul>
 
 Ready to level up your tech game and accelerate your professional growth? Let's build the future together.
