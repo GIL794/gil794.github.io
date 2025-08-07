@@ -1,9 +1,9 @@
 ---
 layout: default
-title: About Me
+title: About
 ---
 
-# About Me
+# About
 
 With a passion for bridging the gap between technology and impactful business solutions, I’m an engineering professional turned innovation strategist, helping ambitious professionals and businesses navigate the intersection of **growth, innovation & legacy**. 
 
