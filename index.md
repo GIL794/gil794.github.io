@@ -1,5 +1,3 @@
-Here you can say lots of fun things about your site.
+Welcome to my Blog!
 
-Maybe say a some things about yourself.
-
-Or maybe what you plan to blog about.
+Here I will talk about all of my Dev, AI, Prompt Engineering, Data Admin, Digital Marketing, & much more experiences and things I had to come through in my 10+ years experience working online in 4 different countries and 2 different continents.
