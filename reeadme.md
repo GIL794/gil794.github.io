@@ -1,6 +1,10 @@
 Gabriele Iacopo Langellotto Dev Blog
 https://gil794.github.io
 
+
+## Do not change the name of this Readme, is spelled wrong so your blog always pull your index
+
+
 Once you fork this repo, rename it with your username and save. Wait for a couple of minutes and your blog is ready to go, with my content so maker sure to modify the following pages:
 - Index
 - Zabout 
