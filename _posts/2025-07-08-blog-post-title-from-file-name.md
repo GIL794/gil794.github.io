@@ -124,7 +124,7 @@ This is just the start! As you get comfortable, you might explore:
 *   **Custom Domains:** Connect your own domain name (e.g., `www.yourblog.com`) to your GitHub Pages site for a more professional look.
 *   **CSS Styling:** Learn basic CSS to customize colors, fonts, and layout.
 *   **GitHub Actions:** Automate parts of your blog, like deploying new posts.
-*   **Start With A Theme:** I find always helpful to start with something already initiated, is easier to roam around and understand what each thing does and where its house is. Check out this link: (https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html).
+*   **Start With A Theme:** I find always helpful to start with something already initiated, is easier to roam around and understand what each thing does and where its house is. Check out this link: https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html 
 
 ---
 
