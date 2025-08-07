@@ -1,7 +1,7 @@
 ---
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-08-07
-categories: [Blog, GitHub, Portfolio, Free Tools]
+categories: [Blog, Free Tools]
 tags: [SEO, Web Development, Personal Branding]
 ---
 
