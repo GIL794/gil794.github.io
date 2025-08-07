@@ -5,7 +5,7 @@ https://gil794.github.io
 ## Do not change the name of this Readme, is spelled wrong so your blog always pull your index
 
 
-Once you fork this repo, rename it with your username and save. Wait for a couple of minutes and your blog is ready to go, with my content so maker sure to modify the following pages:
+Once you fork this repo, rename it with your username and save. Wait for a couple of minutes and your blog is ready to go, with my content, so make sure to modify the following pages:
 - Index
 - Zabout 
 - Zacontact
@@ -13,6 +13,7 @@ Once you fork this repo, rename it with your username and save. Wait for a coupl
 
 These pages contain most of the basic information about you, make sure to modify according to your need and preferences.
 
+The name of the pages are on purpose to have the order as you see on your 'top menu'
 
 _posts folder has already a old post you can use as template for your future blog contents. 
 
