@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Blog Categories
+title: Blog 
 ---
 
 # Blog Posts
