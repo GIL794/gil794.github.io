@@ -13,8 +13,6 @@ Once you fork this repo, rename it with your username.github.io and save. Wait f
 
 These pages contain most of the basic information about you, make sure to modify according to your need and preferences.
 
-The name of the pages are on purpose to have the order as you see on your 'top menu'
-
 _posts folder has already a old post you can use as template for your future blog contents. 
 
 Layouts/categories has already 3 categories that, if you want to create more, you just need to copy the code, paste it in the new category and change the name accordingly.
