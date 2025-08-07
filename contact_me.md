@@ -3,7 +3,7 @@ layout: default
 title: Contact
 ---
 
-# Get In Touch
+# Get In Touch!
 
 I'm always open to discussing new projects, creative ideas, or opportunities to be part of something great.
 
