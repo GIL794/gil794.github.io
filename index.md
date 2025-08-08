@@ -7,7 +7,7 @@ title: Home
 
 ### Helping ambitious professionals and businesses navigate the intersection of technology, leadership, and growth.
 
-From basic dev needs to complex AI solutions, I decode emerging tech trends, share project management secrets, and reveal engineering solutions that drive real business impact.
+From basic dev needs to complex AI solutions, I decode emerging tech trends, share project management secrets, and reveal automation solutions that drive real business impact.
 
 ## What you'll find here:
 
