@@ -5,7 +5,7 @@ title: About
 
 # About
 
-With a passion for bridging the gap between technology and impactful business solutions, I’m an engineering professional turned innovation strategist, helping ambitious professionals and businesses navigate the intersection of **growth, innovation & legacy**. 
+With a passion for bridging the gap between technology and impactful business solutions, I’m a digital marketing professional turned automation innovation strategist, helping ambitious professionals and businesses navigate the intersection of **growth, innovation & legacy** to ensure long-lasting success. 
 
 My journey spans advanced automation systems, scientific & technological passion, and cross-functional project management, enabling organizations to transform ideas into tangible results.
 
