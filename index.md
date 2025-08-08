@@ -5,7 +5,7 @@ title: Home
 
 # Digital Marketing professional turned tech & automation innovation strategist.
 
-### Helping ambitious professionals and businesses navigate the intersection of technology, leadership, and growth.
+### Helping ambitious professionals and businesses navigate the intersection of growth, innovation & legacy.
 
 From basic dev needs to complex AI solutions, I decode emerging tech trends, share project management secrets, and reveal automation solutions that drive real business impact.
 
