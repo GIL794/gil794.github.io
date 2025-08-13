@@ -1,6 +1,9 @@
 ---
  layout: default
-
+ title: "always within here"
+ date: 2025-08-15
+ category: [defined here, separated by, each time you need to add, one]
+ tags: [this is the tags for your SEO]
 ---
 
 
