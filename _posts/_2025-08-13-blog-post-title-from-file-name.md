@@ -142,7 +142,7 @@ Search engines reward fresh, regularly updated sites. Every so often, update you
 
 ---
 
-## **It's not magic or luck—just a series of small, deliberate steps that make your blog visible to the world.**
+## It's not magic or luck—just a series of small, deliberate steps that make your blog visible to the world.
 
 ---
 
