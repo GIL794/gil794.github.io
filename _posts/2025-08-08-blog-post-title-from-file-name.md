@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "Email Chaos to Inbox Zero: How I Finally Tamed My Email Monster (And You Can Too!)"
 date: 2025-08-08
 categories: [Productivity, Free Tools]
