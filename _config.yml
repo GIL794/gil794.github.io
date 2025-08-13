@@ -20,6 +20,7 @@ linkedin_username: "Gabriele Iacopo Langellotto"
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
+repository: GIL794/gil794.github.io
 
 kramdown:
   syntax_highlighter_opts:
