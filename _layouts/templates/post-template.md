@@ -9,7 +9,7 @@
 
 
 ## Blog Post Title From First Header
-### this is the template for the title "2021-03-08-blog-post-title-from-file-name.md"
+### so you name it: "2025-08-08-blog-post-title-from-file-name.md" but the title it will get it above
 Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
 
 If the file does not start with a header, then the post title will be derived from the filename.
