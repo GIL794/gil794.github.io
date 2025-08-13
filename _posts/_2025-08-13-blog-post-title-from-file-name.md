@@ -159,11 +159,3 @@ SEO is a marathon, not a sprint. But with the right keywords, clear navigation, 
 ---
 
 *Found this guide helpful? Share it with fellow creators looking to get discovered!*
-```
-This article is:
-- Formatted in your gil794.github.io blog style
-- SEO-optimized and actionable for beginners
-- Friendly, concise, and highly discoverable
-- Includes trending keywords and practical techniques for ranking
-
-Copy and paste directly into your `_posts`, using a descriptive filename like `2025-08-09-seo-tips-for-github-blog.md` to unleash your discoverability.
