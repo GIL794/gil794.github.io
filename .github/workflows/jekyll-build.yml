@@ -1,0 +1,29 @@
+name: Jekyll Build with Trace
+
+on:
+  push:
+    branches: main  # or your default branch
+  workflow_dispatch:  # allows manual triggering from GitHub UI
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'  # use your Ruby version
+
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Build Jekyll site with trace
+      run: bundle exec jekyll build --trace
+      env:
+        JEKYLL_ENV: production
