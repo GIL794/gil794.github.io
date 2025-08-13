@@ -1,4 +1,5 @@
 ---
+layout: default
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-08-07
 categories: [Blog, Free Tools]
