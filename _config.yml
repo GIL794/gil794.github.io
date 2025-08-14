@@ -1,8 +1,9 @@
 title: "Sir. Gabriele I Langellotto"
 author: "Sir. G.I. Langellotto"
+url: "https://gil794.github.io"
+baseurl: ""
 description: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert 🚀 TRANSFORMING COMPLEX TECH CHALLENGES INTO BUSINESS WINS!"
 # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
-
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "gilangellotto@gmail.com"
@@ -15,13 +16,11 @@ linkedin_username: "Gabriele Iacopo Langellotto"
 #pinterest_username: username
 #youtube_username: username
 #googleplus_username: +username
-
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
 theme: "minima"
 repository: "GIL794/gil794.github.io"
-
 kramdown:
   syntax_highlighter_opts:
     disable: true
@@ -29,14 +28,6 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-sitemap
-
 titles_from_headings:
   strip_title: true
   collections: true
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      tags: Other
