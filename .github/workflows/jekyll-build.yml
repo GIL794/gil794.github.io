@@ -1,4 +1,4 @@
-name: Jekyll Build with Trace
+name: Jekyll Build with Trace 
 
 on:
   push:
