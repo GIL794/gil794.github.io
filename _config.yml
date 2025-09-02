@@ -1,0 +1,42 @@
+# Site settings
+title: "Sir. Gabriele I Langellotto"
+author: "Sir. G.I. Langellotto"
+email: "gilangellotto@gmail.com"
+description: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert 🚀 TRANSFORMING COMPLEX TECH CHALLENGES INTO BUSINESS WINS!"
+url: "https://gil794.github.io"
+baseurl: ""
+
+# Social media
+github_username: GIL794
+linkedin_username: gabriele-iacopo-langellotto-aa7095a9
+
+# Theme
+remote_theme: daviddarnes/alembic@main
+
+# Plugins
+plugins:
+  - jekyll-remote-theme
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Navigation
+navigation_header:
+  - title: Home
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: About
+    url: /about/
+  - title: Contact
+    url: /contact/
+
+# Pagination
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+# Collections
+collections:
+  posts:
+    output: true
+    permalink: /:year/:month/:day/:title/
