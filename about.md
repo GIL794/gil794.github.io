@@ -1,9 +1,11 @@
 ---
 layout: page
-title: About Gabriele Iacopo Langellotto
+title: About 
 feature_text: | ## Bridging Technology & Business Impact
 feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3"
 ---
+
+# Gabriele Iacopo Langellotto
 
 With a passion for bridging the gap between technology and impactful business solutions, I'm a **digital marketing professional turned automation innovation strategist**, helping ambitious professionals and businesses navigate the intersection of **growth, innovation & legacy**.
 
