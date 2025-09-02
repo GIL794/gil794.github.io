@@ -1,0 +1,75 @@
+---
+---
+
+@import "alembic";
+
+// Custom variables (place before @import)
+$brand-colour: #0366d6;
+$background-colour: #ffffff;
+$text-colour: #333333;
+
+// Custom styles for Development Seed look
+.feature {
+  background: linear-gradient(135deg, rgba(3, 102, 214, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+}
+
+// Full width hero sections
+.feature--large {
+  padding: 8rem 0;
+  
+  .feature__text {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+// Modern button styling
+.button {
+  border-radius: 6px;
+  padding: 12px 24px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Clean navigation
+.header {
+  border-bottom: 1px solid #e1e4e8;
+  
+  .nav {
+    a {
+      font-weight: 500;
+      color: #586069;
+      
+      &:hover {
+        color: #0366d6;
+      }
+    }
+  }
+}
+
+// Blog post styling
+.post-list {
+  .post-item {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e1e4e8;
+    
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}
+
+// Professional footer
+.footer {
+  background: #f6f8fa;
+  border-top: 1px solid #e1e4e8;
+  padding: 3rem 0;
+  margin-top: 4rem;
+}
