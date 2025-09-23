@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: home
 title: Blog
 permalink: /blog/
 ---
@@ -16,7 +16,7 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
       <div class="post-excerpt">
         {{ post.excerpt }}
       </div>
-      <a href="{{ post.url | relative_url }}" class="read-more">Read more &rarr;</a>
+      <a href="{{ post.url | relative_url }}" class="read-more">Read more →</a>
     </article>
   {% endfor %}
 </div>
@@ -25,13 +25,17 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
 {% if paginator.total_pages > 1 %}
 <div class="pagination">
   {% if paginator.previous_page %}
-    <a href="{{ paginator.previous_page_path | relative_url }}" class="previous">&larr; Newer posts</a>
+    {% if paginator.previous_page == 1 %}
+      <a class="previous" href="{{ '/blog/' | relative_url }}">← Newer posts</a>
+    {% else %}
+      <a class="previous" href="{{ '/blog/page' | append: paginator.previous_page | append: '/' | relative_url }}">← Newer posts</a>
+    {% endif %}
   {% endif %}
   
   <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
   
   {% if paginator.next_page %}
-    <a href="{{ paginator.next_page_path | relative_url }}" class="next">Older posts &rarr;</a>
+    <a class="next" href="{{ '/blog/page' | append: paginator.next_page | append: '/' | relative_url }}">Older posts →</a>
   {% endif %}
 </div>
 {% endif %}
