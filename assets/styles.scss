@@ -1,6 +1,5 @@
 ---
 ---
-
 @import "alembic";
 
 // Custom variables (place before @import)
@@ -37,11 +36,16 @@ $text-colour: #333333;
   }
 }
 
-// Clean navigation
+// Clean navigation with centering
 .header {
   border-bottom: 1px solid #e1e4e8;
   
-  .nav {
+  .nav, .nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
     a {
       font-weight: 500;
       color: #586069;
@@ -49,6 +53,34 @@ $text-colour: #333333;
       &:hover {
         color: #0366d6;
       }
+    }
+  }
+}
+
+// Alternative navigation centering for different theme structures
+.navigation, .site-nav, .main-nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  
+  ul, li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// Center navigation header specifically for Alembic theme
+.typeset {
+  .nav--main {
+    text-align: center;
+    justify-content: center;
+    
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
     }
   }
 }
