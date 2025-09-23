@@ -10,35 +10,93 @@ $text-colour: #333333;
 // Custom styles for Development Seed look
 .feature {
   background: linear-gradient(135deg, rgba(3, 102, 214, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
+  position: relative;
+  
+  // Semi-transparent black-to-transparent overlay for hero image
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.1) 50%, transparent 100%);
+    z-index: 1;
+  }
+  
+  // Ensure content appears above overlay
+  .feature__text {
+    position: relative;
+    z-index: 2;
+  }
 }
 
 // Full width hero sections
 .feature--large {
-  padding: 8rem 0;
+  padding: 10rem 0;
+  margin-bottom: 6rem;
   
   .feature__text {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
     text-align: center;
+    position: relative;
+    z-index: 2;
   }
+}
+
+// Enhanced section spacing
+section {
+  margin-bottom: 4rem;
+  padding: 2rem 0;
+}
+
+// Modern card layouts
+.card, .post-item, .service-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #e1e4e8;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Grid layout for cards
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
 }
 
 // Modern button styling
 .button {
-  border-radius: 6px;
-  padding: 12px 24px;
+  border-radius: 8px;
+  padding: 16px 32px;
   font-weight: 600;
-  transition: all 0.2s ease;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
   
   &:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
 }
 
 // Clean navigation with centering
 .header {
   border-bottom: 1px solid #e1e4e8;
+  padding: 1rem 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
   
   .nav, .nav ul {
     display: flex;
@@ -49,9 +107,14 @@ $text-colour: #333333;
     a {
       font-weight: 500;
       color: #586069;
+      padding: 0.5rem 1rem;
+      margin: 0 0.5rem;
+      transition: all 0.2s ease;
       
       &:hover {
         color: #0366d6;
+        background: rgba(3, 102, 214, 0.1);
+        border-radius: 6px;
       }
     }
   }
@@ -85,23 +148,82 @@ $text-colour: #333333;
   }
 }
 
+// Enhanced typography
+h1, h2, h3 {
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-top: 3rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-top: 2rem;
+}
+
 // Blog post styling
 .post-list {
   .post-item {
     margin-bottom: 3rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #e1e4e8;
+    padding: 2.5rem;
+    border-bottom: none;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
     
     &:last-child {
-      border-bottom: none;
+      margin-bottom: 0;
+    }
+    
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
     }
   }
 }
 
 // Professional footer
 .footer {
-  background: #f6f8fa;
+  background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
   border-top: 1px solid #e1e4e8;
-  padding: 3rem 0;
-  margin-top: 4rem;
+  padding: 4rem 0 2rem;
+  margin-top: 6rem;
+}
+
+// Responsive spacing
+@media (max-width: 768px) {
+  .feature--large {
+    padding: 6rem 0;
+  }
+  
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .card, .post-item, .service-card {
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
 }
