@@ -1,18 +1,26 @@
 ---
 layout: page
 title: home
-feature_text: |  ## Transform Complex Tech Challenges Into Business Wins
-  Helping ambitious professionals and businesses navigate the intersection of technology, leadership, and growth. 
+feature_text: |
+  # See your future better.
+  AI Solution Architect helping businesses transform complex technology challenges into strategic advantages through innovation, automation, and modern engineering leadership.
 feature_image: "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1600&q=80"
 excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Business Strategy Expert"
 ---
-# Digital Marketing Professional Turned Tech & Automation Innovation Strategist
-From basic dev needs to complex AI solutions, I decode emerging tech trends, share project management secrets, and reveal engineering solutions that drive real business impact.
-## What you'll find here:
-- **Practical tech insights** that boost your career
-- **Innovation strategies** for modern businesses  
-- **Engineering leadership tips** that actually work
-- **Industry trends** before they go mainstream
 
-Ready to level up your tech game and accelerate your professional growth? Let's build the future together.
-{% include button.html text="Read Latest Posts" link="/blog/" color="#0366d6" %}
+## What I Do
+
+### Cloud-First Automation
+**Streamline your operations with intelligent cloud solutions.** I help businesses modernize their infrastructure and automate processes for maximum efficiency and scalability.
+
+### AI for Business
+**Turn artificial intelligence into real competitive advantage.** From strategy to implementation, I guide organizations in leveraging AI to solve complex problems and drive growth.
+
+### Modern Tech Leadership
+**Build high-performing engineering teams that deliver results.** I share proven leadership strategies and management techniques that foster innovation and drive successful project outcomes.
+
+---
+
+Ready to transform your tech challenges into business wins? Let's build the future together.
+
+{% include button.html text="Get Started" link="/contact/" color="#0366d6" %}
