@@ -28,6 +28,12 @@ navigation_header:
     url: /blog/
   - title: About
     url: /about/
+  - title: Services
+    url: /services/
+  - title: Projects
+    url: /projects/
+  - title: Community
+    url: /community/
   - title: Contact
     url: /contact/
 
