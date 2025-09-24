@@ -7,6 +7,24 @@ $brand-colour: #0366d6;
 $background-colour: #ffffff;
 $text-colour: #333333;
 
+// Sticky navigation with drop shadow and smooth border
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  &.scrolled {
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
 // Custom styles for Development Seed look
 .feature {
   background: linear-gradient(135deg, rgba(3, 102, 214, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
@@ -34,196 +52,4 @@ $text-colour: #333333;
 // Full width hero sections
 .feature--large {
   padding: 10rem 0;
-  margin-bottom: 6rem;
-  
-  .feature__text {
-    max-width: 900px;
-    margin: 0 auto;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-  }
-}
-
-// Enhanced section spacing
-section {
-  margin-bottom: 4rem;
-  padding: 2rem 0;
-}
-
-// Modern card layouts
-.card, .post-item, .service-card {
-  background: #ffffff;
-  border-radius: 12px;
-  padding: 2.5rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease;
-  border: 1px solid #e1e4e8;
-  
-  &:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  }
-}
-
-// Grid layout for cards
-.cards-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin: 3rem 0;
-}
-
-// Modern button styling
-.button {
-  border-radius: 8px;
-  padding: 16px 32px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  text-decoration: none;
-  display: inline-block;
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  }
-}
-
-// Clean navigation with centering
-.header {
-  border-bottom: 1px solid #e1e4e8;
-  padding: 1rem 0;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  
-  .nav, .nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    
-    a {
-      font-weight: 500;
-      color: #586069;
-      padding: 0.5rem 1rem;
-      margin: 0 0.5rem;
-      transition: all 0.2s ease;
-      
-      &:hover {
-        color: #0366d6;
-        background: rgba(3, 102, 214, 0.1);
-        border-radius: 6px;
-      }
-    }
-  }
-}
-
-// Alternative navigation centering for different theme structures
-.navigation, .site-nav, .main-nav {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  
-  ul, li {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-// Center navigation header specifically for Alembic theme
-.typeset {
-  .nav--main {
-    text-align: center;
-    justify-content: center;
-    
-    ul {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-  }
-}
-
-// Enhanced typography
-h1, h2, h3 {
-  margin-bottom: 1.5rem;
-  line-height: 1.2;
-}
-
-h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-
-h2 {
-  font-size: 2.25rem;
-  font-weight: 600;
-  margin-top: 3rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-  font-weight: 600;
-  margin-top: 2rem;
-}
-
-// Blog post styling
-.post-list {
-  .post-item {
-    margin-bottom: 3rem;
-    padding: 2.5rem;
-    border-bottom: none;
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-    
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-    }
-  }
-}
-
-// Professional footer
-.footer {
-  background: linear-gradient(135deg, #f6f8fa 0%, #ffffff 100%);
-  border-top: 1px solid #e1e4e8;
-  padding: 4rem 0 2rem;
-  margin-top: 6rem;
-}
-
-// Responsive spacing
-@media (max-width: 768px) {
-  .feature--large {
-    padding: 6rem 0;
-  }
-  
-  .cards-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .card, .post-item, .service-card {
-    padding: 2rem;
-  }
-  
-  h1 {
-    font-size: 2.5rem;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  h3 {
-    font-size: 1.5rem;
-  }
 }
