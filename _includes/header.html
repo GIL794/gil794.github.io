@@ -1,0 +1,25 @@
+<header class="header">
+  <div class="container">
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
+    
+    {% if site.navigation_header %}
+    <nav class="nav nav--header">
+      <ul class="list list--nav" style="display: flex; flex-wrap: wrap; overflow-x: auto; margin: 0; padding: 0; list-style: none; gap: 1rem;">
+        {% for item in site.navigation_header %}
+          {% if item.url contains '://' %}
+            {% assign url = item.url %}
+          {% else %}
+            {% assign url = item.url | relative_url %}
+          {% endif %}
+          <li class="item item--nav{% if item.url == page.url %} item--current{% endif %}" style="white-space: nowrap;">
+            <a href="{{ url }}">{{ item.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    {% else %}
+      {% include nav-default.html %}
+    {% endif %}
+  </div>
+  {% include site-feature.html %}
+</header>
