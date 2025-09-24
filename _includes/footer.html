@@ -1,0 +1,85 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer__content">
+      <!-- Copyright and description -->
+      <div class="footer__section footer__section--main">
+        <h3 class="footer__title">{{ site.title | default: "Gabriele Iacopo Langellotto" }}</h3>
+        <p class="footer__description">{{ site.description | default: "Dev Blog - Building Better Digital Experiences" }}</p>
+        <p class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.title | default: "Gabriele Iacopo Langellotto" }}. All rights reserved.</p>
+      </div>
+      
+      <!-- Navigation Links -->
+      <div class="footer__section footer__section--links">
+        <h4 class="footer__heading">Quick Links</h4>
+        <ul class="footer__nav">
+          {% if site.navigation_footer %}
+            {% for item in site.navigation_footer %}
+              {% if item.url contains '://' %}
+                {% assign url = item.url %}
+              {% else %}
+                {% assign url = item.url | relative_url %}
+              {% endif %}
+              <li><a href="{{ url }}">{{ item.title }}</a></li>
+            {% endfor %}
+          {% else %}
+            <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+            <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
+            <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
+            <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
+          {% endif %}
+        </ul>
+      </div>
+      
+      <!-- Contact and Social -->
+      <div class="footer__section footer__section--contact">
+        <h4 class="footer__heading">Connect</h4>
+        <div class="footer__contact">
+          {% if site.email %}
+            <p><a href="mailto:{{ site.email }}" class="footer__email">{{ site.email }}</a></p>
+          {% endif %}
+          
+          {% if site.social_links or site.github_username or site.twitter_username or site.linkedin_username %}
+            <div class="footer__social">
+              {% if site.social_links %}
+                {% for link in site.social_links %}
+                  <a href="{{ link.url }}" class="footer__social-link" aria-label="{{ link.title }}">
+                    <span>{{ link.title }}</span>
+                  </a>
+                {% endfor %}
+              {% endif %}
+              
+              {% if site.github_username %}
+                <a href="https://github.com/{{ site.github_username }}" class="footer__social-link" aria-label="GitHub">
+                  <span>GitHub</span>
+                </a>
+              {% endif %}
+              
+              {% if site.twitter_username %}
+                <a href="https://twitter.com/{{ site.twitter_username }}" class="footer__social-link" aria-label="Twitter">
+                  <span>Twitter</span>
+                </a>
+              {% endif %}
+              
+              {% if site.linkedin_username %}
+                <a href="https://linkedin.com/in/{{ site.linkedin_username }}" class="footer__social-link" aria-label="LinkedIn">
+                  <span>LinkedIn</span>
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom bar -->
+    <div class="footer__bottom">
+      <p class="footer__attribution">
+        Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a> 
+        {% if site.remote_theme or site.theme %}
+          & <a href="https://github.com/daviddarnes/alembic" target="_blank" rel="noopener">Alembic</a>
+        {% endif %}
+      </p>
+    </div>
+  </div>
+</footer>
