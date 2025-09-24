@@ -1,25 +1,58 @@
 <header class="header">
   <div class="container">
-    {% if site.logo %}{% include site-logo.html %}{% endif %}
-    
-    {% if site.navigation_header %}
-    <nav class="nav nav--header">
-      <ul class="list list--nav" style="display: flex; flex-wrap: wrap; overflow-x: auto; margin: 0; padding: 0; list-style: none; gap: 1rem;">
-        {% for item in site.navigation_header %}
-          {% if item.url contains '://' %}
-            {% assign url = item.url %}
-          {% else %}
-            {% assign url = item.url | relative_url %}
-          {% endif %}
-          <li class="item item--nav{% if item.url == page.url %} item--current{% endif %}" style="white-space: nowrap;">
-            <a href="{{ url }}">{{ item.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </nav>
-    {% else %}
-      {% include nav-default.html %}
-    {% endif %}
+    <div class="header__content">
+      <!-- Site branding -->
+      <div class="header__brand">
+        {% if site.logo %}
+          <a href="{{ '/' | relative_url }}" class="header__logo">
+            {% include site-logo.html %}
+          </a>
+        {% endif %}
+        <a href="{{ '/' | relative_url }}" class="header__title">
+          {{ site.title | default: "Gabriele Iacopo Langellotto" }}
+        </a>
+      </div>
+      
+      <!-- Navigation -->
+      {% if site.navigation_header %}
+        <nav class="nav nav--header" aria-label="Main navigation">
+          <ul class="nav__list">
+            {% for item in site.navigation_header %}
+              {% if item.url contains '://' %}
+                {% assign url = item.url %}
+              {% else %}
+                {% assign url = item.url | relative_url %}
+              {% endif %}
+              <li class="nav__item{% if item.url == page.url %} nav__item--current{% endif %}">
+                <a href="{{ url }}" class="nav__link">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </nav>
+      {% else %}
+        <nav class="nav nav--header" aria-label="Main navigation">
+          <ul class="nav__list">
+            <li class="nav__item{% if page.url == '/about/' %} nav__item--current{% endif %}">
+              <a href="{{ '/about/' | relative_url }}" class="nav__link">About</a>
+            </li>
+            <li class="nav__item{% if page.url == '/blog/' %} nav__item--current{% endif %}">
+              <a href="{{ '/blog/' | relative_url }}" class="nav__link">Blog</a>
+            </li>
+            <li class="nav__item{% if page.url == '/projects/' %} nav__item--current{% endif %}">
+              <a href="{{ '/projects/' | relative_url }}" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item{% if page.url == '/services/' %} nav__item--current{% endif %}">
+              <a href="{{ '/services/' | relative_url }}" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item{% if page.url == '/contact/' %} nav__item--current{% endif %}">
+              <a href="{{ '/contact/' | relative_url }}" class="nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      {% endif %}
+    </div>
   </div>
+  
+  <!-- Feature section for hero/banner content -->
   {% include site-feature.html %}
 </header>
