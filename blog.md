@@ -19,13 +19,15 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
             </a>
           </h2>
           <p class="post-meta">
-            {{ post.date | date: "%B %d, %Y" }}
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%B %d, %Y" }}
+            </time>
           </p>
           <div class="post-excerpt">
-            {{ post.excerpt }}
+            {{ post.excerpt | strip_html | truncatewords: 25 }}
           </div>
           <a href="{{ post.url | relative_url }}" class="read-more-btn">
-            Read More
+            Read More →
           </a>
         </div>
       </article>
@@ -39,11 +41,11 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
   <nav class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <a href="{{ '/blog/' | relative_url }}" class="pagination-btn prev-btn">
+        <a class="pagination-btn prev-btn" href="{{ '/blog/' | relative_url }}">
           ← Newer Posts
         </a>
       {% else %}
-        <a href="{{ '/blog/page' | append: paginator.previous_page | relative_url }}" class="pagination-btn prev-btn">
+        <a class="pagination-btn prev-btn" href="{{ '/blog/page' | append: paginator.previous_page | relative_url }}">
           ← Newer Posts
         </a>
       {% endif %}
@@ -54,7 +56,7 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
     </span>
     
     {% if paginator.next_page %}
-      <a href="{{ '/blog/page' | append: paginator.next_page | relative_url }}" class="pagination-btn next-btn">
+      <a class="pagination-btn next-btn" href="{{ '/blog/page' | append: paginator.next_page | relative_url }}">
         Older Posts →
       </a>
     {% endif %}
