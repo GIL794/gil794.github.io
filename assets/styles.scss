@@ -1,7 +1,6 @@
 ---
 ---
 @import "alembic";
-
 // Custom variables (place before @import)
 $brand-colour: #0366d6;
 $background-colour: #ffffff;
@@ -22,6 +21,47 @@ $text-colour: #333333;
   &.scrolled {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+// Navigation menu styling
+.nav--main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  li {
+    display: flex;
+  }
+  
+  a {
+    &:hover {
+      color: #fd7e14 !important;
+    }
+    
+    &.active {
+      color: #fd7e14 !important;
+    }
+  }
+}
+
+// Ensure horizontal navigation at all viewport sizes
+@media (max-width: 768px) {
+  .nav--main {
+    ul {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 }
 
