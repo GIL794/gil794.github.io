@@ -1,0 +1,11 @@
+<!-- Site Logo Include -->
+{% if site.logo %}
+  {% if site.logo contains '://' %}
+    <img class="site-logo" src="{{ site.logo }}" alt="{{ site.title | default: 'Gabriele Iacopo Langellotto' }}" />
+  {% else %}
+    <img class="site-logo" src="{{ site.logo | relative_url }}" alt="{{ site.title | default: 'Gabriele Iacopo Langellotto' }}" />
+  {% endif %}
+{% else %}
+  <!-- Fallback text logo -->
+  <span class="site-logo-text">{{ site.title | default: "GL" | truncate: 2, "" }}</span>
+{% endif %}
