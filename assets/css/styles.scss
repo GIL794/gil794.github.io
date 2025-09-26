@@ -1,0 +1,11 @@
+---
+---
+
+// Jekyll CSS compilation entry point
+// This file creates the compiled CSS at /assets/css/styles.css
+// as referenced in the default layout
+
+// Import the main styles from the root assets directory
+@import "../styles";
+
+// Any additional CSS-specific overrides can go here if needed
