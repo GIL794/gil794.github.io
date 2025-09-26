@@ -1,4 +1,4 @@
-<header class="header">
+<header class="site-header">
   <div class="container">
     <div class="header__content">
       <!-- Site branding -->
@@ -13,39 +13,39 @@
         </a>
       </div>
       
-      <!-- Navigation - Horizontal only, no toggle -->
+      <!-- Navigation - Horizontal only, centered with nav--main class -->
       {% if site.navigation_header %}
-        <nav aria-label="Main navigation" class="nav nav--header">
-          <ul class="nav__list">
+        <nav aria-label="Main navigation" class="nav nav--main">
+          <ul>
             {% for item in site.navigation_header %}
               {% if item.url contains '://' %}
                 {% assign url = item.url %}
               {% else %}
                 {% assign url = item.url | relative_url %}
               {% endif %}
-              <li class="nav__item{% if item.url == page.url %} nav__item--current{% endif %}">
-                <a class="nav__link" href="{{ url }}">{{ item.title }}</a>
+              <li>
+                <a class="{% if item.url == page.url %}active{% endif %}" href="{{ url }}">{{ item.title }}</a>
               </li>
             {% endfor %}
           </ul>
         </nav>
       {% else %}
-        <nav aria-label="Main navigation" class="nav nav--header">
-          <ul class="nav__list">
-            <li class="nav__item{% if page.url == '/about/' %} nav__item--current{% endif %}">
-              <a class="nav__link" href="{{ '/about/' | relative_url }}">About</a>
+        <nav aria-label="Main navigation" class="nav nav--main">
+          <ul>
+            <li>
+              <a class="{% if page.url == '/about/' %}active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
             </li>
-            <li class="nav__item{% if page.url == '/blog/' %} nav__item--current{% endif %}">
-              <a class="nav__link" href="{{ '/blog/' | relative_url }}">Blog</a>
+            <li>
+              <a class="{% if page.url == '/blog/' %}active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
             </li>
-            <li class="nav__item{% if page.url == '/projects/' %} nav__item--current{% endif %}">
-              <a class="nav__link" href="{{ '/projects/' | relative_url }}">Projects</a>
+            <li>
+              <a class="{% if page.url == '/projects/' %}active{% endif %}" href="{{ '/projects/' | relative_url }}">Projects</a>
             </li>
-            <li class="nav__item{% if page.url == '/services/' %} nav__item--current{% endif %}">
-              <a class="nav__link" href="{{ '/services/' | relative_url }}">Services</a>
+            <li>
+              <a class="{% if page.url == '/services/' %}active{% endif %}" href="{{ '/services/' | relative_url }}">Services</a>
             </li>
-            <li class="nav__item{% if page.url == '/contact/' %} nav__item--current{% endif %}">
-              <a class="nav__link" href="{{ '/contact/' | relative_url }}">Contact</a>
+            <li>
+              <a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a>
             </li>
           </ul>
         </nav>
