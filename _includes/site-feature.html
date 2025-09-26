@@ -1,0 +1,37 @@
+<!-- Site Feature/Hero Section Include -->
+{% if page.featured_image or page.feature_image or site.featured_image %}
+  <section class="site-feature">
+    <div class="site-feature__image">
+      {% assign feature_img = page.featured_image | default: page.feature_image | default: site.featured_image %}
+      {% if feature_img contains '://' %}
+        <img src="{{ feature_img }}" alt="{{ page.title | default: site.title }}" class="site-feature__img" />
+      {% else %}
+        <img src="{{ feature_img | relative_url }}" alt="{{ page.title | default: site.title }}" class="site-feature__img" />
+      {% endif %}
+      
+      {% if page.feature_text or page.title %}
+        <div class="site-feature__overlay">
+          <div class="site-feature__content">
+            {% if page.feature_text %}
+              <div class="site-feature__text">{{ page.feature_text | markdownify }}</div>
+            {% elsif page.title and page.layout != 'post' %}
+              <h1 class="site-feature__title">{{ page.title }}</h1>
+              {% if page.subtitle %}
+                <p class="site-feature__subtitle">{{ page.subtitle }}</p>
+              {% endif %}
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </section>
+{% elsif page.feature_text %}
+  <!-- Text-only feature section -->
+  <section class="site-feature site-feature--text-only">
+    <div class="container">
+      <div class="site-feature__content">
+        <div class="site-feature__text">{{ page.feature_text | markdownify }}</div>
+      </div>
+    </div>
+  </section>
+{% endif %}
