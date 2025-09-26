@@ -26,40 +26,39 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
           <div class="post-excerpt">
             {{ post.excerpt | strip_html | truncatewords: 25 }}
           </div>
-          <a href="{{ post.url | relative_url }}" class="read-more-btn">
-            Read More →
-          </a>
+          <div class="post-actions">
+            <a href="{{ post.url | relative_url }}" class="read-more-btn">
+              Read More →
+            </a>
+          </div>
         </div>
       </article>
     {% endfor %}
   </div>
 </div>
 
-<!-- Pagination -->
 {% if paginator.total_pages > 1 %}
-<div class="pagination-wrapper">
   <nav class="pagination">
     {% if paginator.previous_page %}
       {% if paginator.previous_page == 1 %}
-        <a class="pagination-btn prev-btn" href="{{ '/blog/' | relative_url }}">
+        <a href="{{ '/blog/' | relative_url }}" class="pagination-btn prev-btn">
           ← Newer Posts
         </a>
       {% else %}
-        <a class="pagination-btn prev-btn" href="{{ '/blog/page' | append: paginator.previous_page | relative_url }}">
+        <a href="{{ '/blog/page' | append: paginator.previous_page | relative_url }}" class="pagination-btn prev-btn">
           ← Newer Posts
         </a>
       {% endif %}
     {% endif %}
-    
+
     <span class="pagination-info">
       Page {{ paginator.page }} of {{ paginator.total_pages }}
     </span>
-    
+
     {% if paginator.next_page %}
-      <a class="pagination-btn next-btn" href="{{ '/blog/page' | append: paginator.next_page | relative_url }}">
+      <a href="{{ '/blog/page' | append: paginator.next_page | relative_url }}" class="pagination-btn next-btn">
         Older Posts →
       </a>
     {% endif %}
   </nav>
-</div>
 {% endif %}
