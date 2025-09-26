@@ -5,7 +5,6 @@
 $brand-colour: #0366d6;
 $background-colour: #ffffff;
 $text-colour: #333333;
-
 // Sticky navigation with drop shadow and smooth border
 .site-header {
   position: sticky;
@@ -23,7 +22,6 @@ $text-colour: #333333;
     border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   }
 }
-
 // Navigation menu styling
 .nav--main {
   display: flex;
@@ -41,19 +39,39 @@ $text-colour: #333333;
   
   li {
     display: flex;
+    position: relative;
   }
   
   a {
+    position: relative;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    
     &:hover {
       color: #fd7e14 !important;
+      border-bottom-color: #fd7e14;
     }
     
     &.active {
       color: #fd7e14 !important;
+      border-bottom-color: #fd7e14;
+      font-weight: 600;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fd7e14;
+      }
     }
   }
 }
-
 // Ensure horizontal navigation at all viewport sizes
 @media (max-width: 768px) {
   .nav--main {
@@ -64,21 +82,18 @@ $text-colour: #333333;
     }
   }
 }
-
 // Blog card layout styles
 .blog-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
-
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   gap: 2rem;
   margin-top: 2rem;
 }
-
 .post-card {
   background: #ffffff;
   border-radius: 12px;
@@ -93,7 +108,6 @@ $text-colour: #333333;
     border-color: rgba(3, 102, 214, 0.1);
   }
 }
-
 .card-content {
   padding: 2rem;
   
@@ -148,14 +162,12 @@ $text-colour: #333333;
     }
   }
 }
-
 // Pagination styles
 .pagination-wrapper {
   max-width: 1200px;
   margin: 3rem auto 0;
   padding: 0 1rem;
 }
-
 .pagination {
   display: flex;
   justify-content: center;
@@ -164,7 +176,6 @@ $text-colour: #333333;
   padding: 2rem 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .pagination-btn {
   display: inline-flex;
   align-items: center;
@@ -185,13 +196,11 @@ $text-colour: #333333;
     box-shadow: 0 4px 12px rgba(3, 102, 214, 0.3);
   }
 }
-
 .pagination-info {
   color: #666666;
   font-weight: 500;
   padding: 0 1rem;
 }
-
 // Responsive adjustments
 @media (max-width: 768px) {
   .blog-container {
@@ -221,7 +230,6 @@ $text-colour: #333333;
     justify-content: center;
   }
 }
-
 // Custom styles for Development Seed look
 .feature {
   background: linear-gradient(135deg, rgba(3, 102, 214, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%);
@@ -245,7 +253,6 @@ $text-colour: #333333;
     z-index: 2;
   }
 }
-
 // Full width hero sections
 .feature--large {
   padding: 10rem 0;
