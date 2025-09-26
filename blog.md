@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: Blog
 permalink: /blog/
 ---
@@ -10,7 +10,7 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
 
 <div class="blog-container">
   <div class="blog-grid">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       <article class="post-card">
         <div class="card-content">
           <h2 class="post-title">
@@ -36,29 +36,3 @@ Welcome to my blog! Here you'll find insights on AI, technology, automation, and
     {% endfor %}
   </div>
 </div>
-
-{% if paginator.total_pages > 1 %}
-  <nav class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <a href="{{ '/blog/' | relative_url }}" class="pagination-btn prev-btn">
-          ← Newer Posts
-        </a>
-      {% else %}
-        <a href="{{ '/blog/page' | append: paginator.previous_page | relative_url }}" class="pagination-btn prev-btn">
-          ← Newer Posts
-        </a>
-      {% endif %}
-    {% endif %}
-
-    <span class="pagination-info">
-      Page {{ paginator.page }} of {{ paginator.total_pages }}
-    </span>
-
-    {% if paginator.next_page %}
-      <a href="{{ '/blog/page' | append: paginator.next_page | relative_url }}" class="pagination-btn next-btn">
-        Older Posts →
-      </a>
-    {% endif %}
-  </nav>
-{% endif %}
