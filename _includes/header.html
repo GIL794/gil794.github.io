@@ -13,7 +13,16 @@
         </a>
       </div>
       
-      <!-- Navigation - Horizontal only, centered with nav--main class -->
+      <!-- Mobile menu toggle -->
+      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+      
+      <!-- Navigation - Desktop and Mobile -->
       {% if site.navigation_header %}
         <nav aria-label="Main navigation" class="nav nav--main">
           <ul>
@@ -24,7 +33,7 @@
                 {% assign url = item.url | relative_url %}
               {% endif %}
               <li>
-                <a class="{% if item.url == page.url %}active{% endif %}" href="{{ url }}">{{ item.title }}</a>
+                <a class="{% if item.url == page.url or (item.url == '/' and page.url == '/index.html') %}active{% endif %}" href="{{ url }}">{{ item.title }}</a>
               </li>
             {% endfor %}
           </ul>
@@ -32,6 +41,9 @@
       {% else %}
         <nav aria-label="Main navigation" class="nav nav--main">
           <ul>
+            <li>
+              <a class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+            </li>
             <li>
               <a class="{% if page.url == '/about/' %}active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
             </li>
@@ -43,6 +55,9 @@
             </li>
             <li>
               <a class="{% if page.url == '/services/' %}active{% endif %}" href="{{ '/services/' | relative_url }}">Services</a>
+            </li>
+            <li>
+              <a class="{% if page.url == '/community/' %}active{% endif %}" href="{{ '/community/' | relative_url }}">Community</a>
             </li>
             <li>
               <a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a>
