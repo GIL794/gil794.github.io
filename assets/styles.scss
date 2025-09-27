@@ -1,9 +1,10 @@
 ---
 ---
 @import "alembic";
-// Custom variables (place before @import)
+
+// Custom variables
 $brand-colour: #0366d6;
-$accent-colour: #fd7e14;
+$accent-colour: #fd7e14; // Orange color
 $background-colour: #ffffff;
 $text-colour: #333333;
 
@@ -18,6 +19,7 @@ $text-colour: #333333;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
   
   &.scrolled {
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
@@ -25,7 +27,7 @@ $text-colour: #333333;
   }
 }
 
-// Header Content Layout
+// Header Content Layout - Flexbox with logo left, nav centered
 .site-header-content {
   display: flex;
   justify-content: space-between;
@@ -33,6 +35,8 @@ $text-colour: #333333;
   max-width: 1200px;
   margin: 0 auto;
   padding: 1rem 2rem;
+  width: 100%;
+  position: relative;
   
   @media (max-width: 768px) {
     padding: 0.75rem 1rem;
@@ -50,6 +54,7 @@ $text-colour: #333333;
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  flex-shrink: 0;
   
   svg {
     width: 2rem;
@@ -74,9 +79,18 @@ $text-colour: #333333;
 
 // Main Navigation (centered)
 .nav--main {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  @media (max-width: 768px) {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
   
   ul {
     display: flex;
@@ -90,6 +104,7 @@ $text-colour: #333333;
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
+      width: 100%;
     }
     
     @media (max-width: 480px) {
@@ -117,26 +132,26 @@ $text-colour: #333333;
       left: 0;
       width: 0;
       height: 2px;
-      background: $accent-colour;
+      background: $accent-colour; // Orange underline
       transition: width 0.3s ease;
     }
     
-    // Hover state
+    // Hover state - Orange
     &:hover {
-      color: $accent-colour;
+      color: $accent-colour; // Orange text on hover
       
       &::after {
         width: 100%;
       }
     }
     
-    // Active state with dot indicator
+    // Active state with orange dot indicator
     &.active {
-      color: $accent-colour;
+      color: $accent-colour; // Orange text when active
       
       &::before {
         content: '•';
-        color: $accent-colour;
+        color: $accent-colour; // Orange dot
         font-size: 1.2em;
         margin-right: 0.25rem;
       }
@@ -148,14 +163,11 @@ $text-colour: #333333;
   }
 }
 
-// Mobile responsive hamburger menu (if needed)
+// Mobile responsive adjustments
 @media (max-width: 768px) {
   .site-header-content {
     .nav--main {
-      width: 100%;
-      
       ul {
-        width: 100%;
         justify-content: space-around;
       }
     }
@@ -178,7 +190,7 @@ $text-colour: #333333;
         
         &:hover,
         &.active {
-          background-color: rgba($accent-colour, 0.1);
+          background-color: rgba($accent-colour, 0.1); // Light orange background
         }
       }
     }
