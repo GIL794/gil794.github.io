@@ -1,10 +1,20 @@
 <header class="site-header">
   <div class="container">
     <div class="header__content">
+      <!-- Logo with SVG initials 'GL' -->
+      <div class="header__logo">
+        <a href="{{ '/' | relative_url }}" class="logo-link">
+          <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+            <circle cx="20" cy="20" r="20" fill="#f97316"/>
+            <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">GL</text>
+          </svg>
+        </a>
+      </div>
+      
       <!-- Site branding -->
       <div class="header__brand">
         {% if site.logo %}
-          <a class="header__logo" href="{{ '/' | relative_url }}">
+          <a class="header__title" href="{{ '/' | relative_url }}">
             {% include site-logo.html %}
           </a>
         {% endif %}
@@ -33,41 +43,14 @@
                 {% assign url = item.url | relative_url %}
               {% endif %}
               <li>
-                <a class="{% if item.url == page.url or (item.url == '/' and page.url == '/index.html') %}active{% endif %}" href="{{ url }}">{{ item.title }}</a>
+                <a class="{% if item.url == page.url or (item.url == '/' and page.url == '/index.html') %}active{% endif %}" href="{{ url }}">
+                  {{ item.title }}
+                </a>
               </li>
             {% endfor %}
-          </ul>
-        </nav>
-      {% else %}
-        <nav aria-label="Main navigation" class="nav nav--main">
-          <ul>
-            <li>
-              <a class="{% if page.url == '/' or page.url == '/index.html' %}active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
-            </li>
-            <li>
-              <a class="{% if page.url == '/about/' %}active{% endif %}" href="{{ '/about/' | relative_url }}">About</a>
-            </li>
-            <li>
-              <a class="{% if page.url == '/blog/' %}active{% endif %}" href="{{ '/blog/' | relative_url }}">Blog</a>
-            </li>
-            <li>
-              <a class="{% if page.url == '/projects/' %}active{% endif %}" href="{{ '/projects/' | relative_url }}">Projects</a>
-            </li>
-            <li>
-              <a class="{% if page.url == '/services/' %}active{% endif %}" href="{{ '/services/' | relative_url }}">Services</a>
-            </li>
-            <li>
-              <a class="{% if page.url == '/community/' %}active{% endif %}" href="{{ '/community/' | relative_url }}">Community</a>
-            </li>
-            <li>
-              <a class="{% if page.url == '/contact/' %}active{% endif %}" href="{{ '/contact/' | relative_url }}">Contact</a>
-            </li>
           </ul>
         </nav>
       {% endif %}
     </div>
   </div>
-  
-  <!-- Feature section for hero/banner content -->
-  {% include site-feature.html %}
 </header>
