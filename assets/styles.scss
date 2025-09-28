@@ -1,164 +1,115 @@
 ---
----
-@import "alembic";
-
-// Custom variables
-$brand-colour: #0366d6;
-$accent-colour: #fd7e14; // Orange color
-$background-colour: #ffffff;
-$text-colour: #333333;
-
-// Production-Ready Sticky Header
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  
-  &.scrolled {
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.15);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
-  }
-}
-
-// Header Content Layout - Flexbox with logo left, nav centered
-.site-header-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+// Container for consistent page layout
+.container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1rem 2rem;
-  width: 100%;
-  position: relative;
+  padding: 0 2rem;
   
   @media (max-width: 768px) {
-    padding: 0.75rem 1rem;
-    flex-direction: column;
-    gap: 1rem;
+    padding: 0 1rem;
   }
 }
 
-// Logo Styling (left aligned)
-.site-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: $brand-colour;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  flex-shrink: 0;
-  
-  svg {
-    width: 2rem;
-    height: 2rem;
-    fill: $brand-colour;
-    transition: fill 0.3s ease;
-  }
-  
-  &:hover svg {
-    fill: $accent-colour;
-  }
+// Grid layout for cards
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
   
   @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+// Feature card component
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1f2937;
     font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    color: $accent-colour;
+  }
+}
+
+// Call-to-action button
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, $accent-colour, darken($accent-colour, 10%));
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba($accent-colour, 0.4);
+    text-decoration: none;
+    color: white;
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+  
+  &.secondary {
+    background: transparent;
+    border: 2px solid $accent-colour;
+    color: $accent-colour;
     
-    svg {
-      width: 1.5rem;
-      height: 1.5rem;
+    &:hover {
+      background: $accent-colour;
+      color: white;
     }
   }
 }
 
-// Main Navigation (centered)
-.nav--main {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+// Section spacing utilities
+.section {
+  padding: 4rem 0;
   
   @media (max-width: 768px) {
-    position: static;
-    transform: none;
-    width: 100%;
+    padding: 2rem 0;
   }
   
-  ul {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  &.hero {
+    padding: 6rem 0;
+    text-align: center;
     
     @media (max-width: 768px) {
-      gap: 1rem;
-      flex-wrap: wrap;
-      justify-content: center;
-      width: 100%;
-    }
-    
-    @media (max-width: 480px) {
-      gap: 0.75rem;
-      font-size: 0.9rem;
-    }
-  }
-  
-  a {
-    color: $text-colour;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 0.5rem 0;
-    position: relative;
-    transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    gap: 0.25rem;
-    
-    // Underline animation
-    &::after {
-      content: '';
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 0;
-      height: 2px;
-      background: $accent-colour; // Orange underline
-      transition: width 0.3s ease;
-    }
-    
-    // Hover state - Orange
-    &:hover {
-      color: $accent-colour; // Orange text on hover
-      
-      &::after {
-        width: 100%;
-      }
-    }
-    
-    // Active state with orange dot indicator
-    &.active {
-      color: $accent-colour; // Orange text when active
-      
-      &::before {
-        content: '•';
-        color: $accent-colour; // Orange dot
-        font-size: 1.2em;
-        margin-right: 0.25rem;
-      }
-      
-      &::after {
-        width: 100%;
-      }
+      padding: 3rem 0;
     }
   }
 }
@@ -173,7 +124,6 @@ $text-colour: #333333;
     }
   }
 }
-
 // Ultra-small screen adjustments
 @media (max-width: 480px) {
   .site-header-content {
@@ -196,12 +146,10 @@ $text-colour: #333333;
     }
   }
 }
-
 // Performance optimizations
 .site-header {
   will-change: box-shadow, border-color;
 }
-
 .nav--main a {
   will-change: color;
   
