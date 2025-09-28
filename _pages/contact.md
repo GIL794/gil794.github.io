@@ -8,297 +8,111 @@ feature_text: |
 feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3"
 ---
 
-<style>
-.contact-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
+<div class="container">
+  <div class="section hero">
+    <h1>Contact</h1>
+    <p class="lead">Whether you're looking to transform your business, explore innovative solutions, or simply connect with a fellow technology enthusiast, I'd love to hear from you.</p>
+  </div>
 
-.intro-section {
-  text-align: center;
-  margin-bottom: 3rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.intro-section p {
-  font-size: 1.1rem;
-  color: #7f8c8d;
-  line-height: 1.6;
-  margin-bottom: 2rem;
-}
-
-.contact-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-bottom: 3rem;
-}
-
-.card {
-  background: white;
-  border-radius: 12px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  border-left: 4px solid #e74c3c;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-}
-
-.card-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-.card h3 {
-  color: #2c3e50;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-}
-
-.card p {
-  color: #7f8c8d;
-  line-height: 1.6;
-  margin-bottom: 1.5rem;
-}
-
-.contact-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  background: #e74c3c;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-top: 1rem;
-}
-
-.contact-btn:hover {
-  background: #c0392b;
-  transform: translateY(-2px);
-  color: white;
-  text-decoration: none;
-}
-
-.services-section {
-  background: #f8f9fa;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  margin: 3rem 0;
-}
-
-.services-section h2 {
-  text-align: center;
-  color: #2c3e50;
-  margin-bottom: 2rem;
-  font-size: 2rem;
-}
-
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.service-item {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.service-item:hover {
-  transform: translateY(-3px);
-}
-
-.service-icon {
-  font-size: 1.8rem;
-  margin-right: 0.8rem;
-  vertical-align: middle;
-}
-
-.service-item h4 {
-  color: #2c3e50;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-.service-item p {
-  color: #7f8c8d;
-  font-size: 0.9rem;
-  margin: 0;
-  line-height: 1.4;
-}
-
-.cta-section {
-  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
-  color: white;
-  padding: 3rem 2rem;
-  border-radius: 12px;
-  text-align: center;
-  margin-top: 3rem;
-}
-
-.cta-section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-}
-
-.cta-section p {
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-  opacity: 0.9;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cta-btn {
-  display: inline-block;
-  padding: 15px 30px;
-  background: rgba(255, 255, 255, 0.9);
-  color: #e74c3c;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  margin: 0 10px 10px 0;
-}
-
-.cta-btn:hover {
-  background: white;
-  color: #c0392b;
-  transform: translateY(-2px);
-  text-decoration: none;
-}
-
-@media (max-width: 768px) {
-  .contact-container {
-    padding: 1rem 0.5rem;
-  }
-  
-  .contact-grid {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-  
-  .card {
-    padding: 1.5rem;
-  }
-  
-  .services-section {
-    padding: 2rem 1rem;
-  }
-  
-  .services-grid {
-    grid-template-columns: 1fr;
-  }
-  
-  .cta-section {
-    padding: 2rem 1rem;
-  }
-  
-  .cta-btn {
-    display: block;
-    margin: 10px auto;
-    text-align: center;
-    max-width: 250px;
-  }
-}
-</style>
-
-<div class="contact-container">
-  <section class="intro-section">
-    <p>
-      I'm always excited to connect with fellow innovators, entrepreneurs, and professionals who are passionate about leveraging technology to create meaningful impact. Whether you're looking to transform your business, explore new opportunities, or simply discuss the latest trends in automation and digital strategy, I'd love to hear from you.
-    </p>
-  </section>
-
-  <div class="contact-grid">
-    <div class="card">
-      <span class="card-icon">📬</span>
-      <h3>Email Me</h3>
-      <p>
-        Ready to discuss your next big project? Drop me a line and let's start the conversation. I typically respond within 24 hours.
-      </p>
-      <a class="contact-btn" href="mailto:gilangellotto@gmail.com">
-        Send Email
-      </a>
+  <div class="card-grid">
+    <div class="feature-card">
+      <h3>📧 Professional Inquiries</h3>
+      <p><strong>Business partnerships and project discussions</strong></p>
+      <p>Looking to discuss a potential project, explore partnership opportunities, or need expert guidance on your digital transformation journey? Let's schedule a conversation to explore how I can help you achieve your goals.</p>
+      
+      <h4>Perfect For:</h4>
+      <ul>
+        <li>Technology consulting projects</li>
+        <li>Digital transformation initiatives</li>
+        <li>Automation strategy development</li>
+        <li>Partnership opportunities</li>
+        <li>Speaking engagements</li>
+      </ul>
+      
+      <a href="mailto:contact@example.com" class="cta-btn">Send a Message</a>
     </div>
 
-    <div class="card">
-      <span class="card-icon">💼</span>
-      <h3>Connect on LinkedIn</h3>
-      <p>
-        Let's connect professionally and stay updated on each other's latest projects and insights. I regularly share thoughts on automation and digital transformation.
-      </p>
-      <a class="contact-btn" href="https://www.linkedin.com/in/gabriele-iacopo-langellotto-aa7095a9/" target="_blank">
-        Connect on LinkedIn
-      </a>
+    <div class="feature-card">
+      <h3>🌟 Collaboration & Community</h3>
+      <p><strong>Innovation through connection</strong></p>
+      <p>Interested in collaborating on open source projects, joining community initiatives, or contributing to thought leadership discussions? I'm always excited to connect with like-minded professionals who share a passion for technology and innovation.</p>
+      
+      <h4>Let's Explore:</h4>
+      <ul>
+        <li>Open source contributions</li>
+        <li>Research collaborations</li>
+        <li>Community projects</li>
+        <li>Knowledge sharing opportunities</li>
+        <li>Industry discussions</li>
+      </ul>
+      
+      <a href="/community/" class="cta-btn">Join the Community</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>📚 Learning & Mentorship</h3>
+      <p><strong>Growing together through shared knowledge</strong></p>
+      <p>Whether you're early in your career or looking to expand your expertise in automation and digital transformation, I'm passionate about helping others grow. Let's discuss mentoring opportunities or knowledge sharing sessions.</p>
+      
+      <h4>Available For:</h4>
+      <ul>
+        <li>Career guidance and mentorship</li>
+        <li>Technical skill development</li>
+        <li>Industry insights and trends</li>
+        <li>Best practices sharing</li>
+        <li>Professional development</li>
+      </ul>
+      
+      <a href="mailto:contact@example.com" class="cta-btn">Get in Touch</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>🚀 Quick Questions</h3>
+      <p><strong>Fast answers to immediate needs</strong></p>
+      <p>Have a quick question about technology trends, need a brief consultation, or want to explore how automation might benefit your organization? Don't hesitate to reach out for a quick conversation.</p>
+      
+      <h4>Great For:</h4>
+      <ul>
+        <li>Technology feasibility questions</li>
+        <li>Quick consultations</li>
+        <li>Industry trend discussions</li>
+        <li>Tool recommendations</li>
+        <li>Process optimization ideas</li>
+      </ul>
+      
+      <a href="mailto:contact@example.com" class="cta-btn">Ask Away</a>
     </div>
   </div>
 
-  <section class="services-section">
-    <h2>What I Can Help With</h2>
-    <div class="services-grid">
-      <div class="service-item">
-        <h4><span class="service-icon">🚀</span>Strategic Innovation</h4>
-        <p>Identifying and implementing emerging technologies that drive real business value</p>
+  <div class="section">
+    <h2>Response Expectations</h2>
+    <p>I value meaningful conversations and strive to provide thoughtful responses to every inquiry.</p>
+    
+    <div class="card-grid">
+      <div class="feature-card">
+        <h3>⏱️ Response Time</h3>
+        <p>I typically respond to messages within 24-48 hours during business days. Complex inquiries may require additional time for a thorough response.</p>
       </div>
-
-      <div class="service-item">
-        <h4><span class="service-icon">⚡</span>Automation Excellence</h4>
-        <p>Designing systems that amplify human capability rather than replace it</p>
+      
+      <div class="feature-card">
+        <h3>🎯 Best Contact Method</h3>
+        <p>For professional inquiries and detailed discussions, email works best. For community and collaboration topics, feel free to connect through social channels.</p>
       </div>
-
-      <div class="service-item">
-        <h4><span class="service-icon">🎯</span>Cross-Functional Leadership</h4>
-        <p>Building bridges between technical teams and business stakeholders</p>
-      </div>
-
-      <div class="service-item">
-        <h4><span class="service-icon">📈</span>Growth Strategy</h4>
-        <p>Developing scalable solutions that evolve with your business needs</p>
-      </div>
-
-      <div class="service-item">
-        <h4><span class="service-icon">💡</span>Knowledge Transfer</h4>
-        <p>Translating complex technical concepts into actionable business insights</p>
-      </div>
-
-      <div class="service-item">
-        <h4><span class="service-icon">🤝</span>Partnership Development</h4>
-        <p>Creating collaborative relationships that drive mutual success and innovation</p>
+      
+      <div class="feature-card">
+        <h3>🔍 What to Include</h3>
+        <p>Help me provide the most relevant response by including your project scope, timeline, and specific questions or challenges you're facing.</p>
       </div>
     </div>
-  </section>
+  </div>
 
-  <section class="cta-section">
-    <h2>Ready to Innovate Together?</h2>
-    <p>
-      Whether you're a startup looking to scale, an established business ready to embrace digital transformation, or a fellow professional interested in collaboration, I'm here to help turn your vision into reality.
-    </p>
-    <a class="cta-btn" href="mailto:gilangellotto@gmail.com">
-      Start the Conversation
-    </a>
-    <a class="cta-btn" href="/projects">
-      View My Work
-    </a>
-  </section>
-
-  <div style="text-align: center; margin-top: 2rem; color: #7f8c8d; font-size: 0.9rem;">
-    Let's create technology that truly matters — one breakthrough at a time.
+  <div class="section" style="text-align: center;">
+    <h2>Ready to Start the Conversation?</h2>
+    <p>No matter what brings you here, I'm excited to connect and explore how we can work together to achieve your goals.</p>
+    
+    <div style="margin-top: 2rem;">
+      <a href="mailto:contact@example.com" class="cta-btn">Send a Message</a>
+      <a href="/about/" class="cta-btn secondary" style="margin-left: 1rem;">Learn More About Me</a>
+    </div>
   </div>
 </div>
