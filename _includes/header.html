@@ -3,8 +3,8 @@
     <div class="header__content">
       <!-- Logo with SVG initials 'GL' -->
       <div class="header__logo">
-        <a href="{{ '/' | relative_url }}" class="logo-link">
-          <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" class="logo-svg">
+        <a class="logo-link" href="{{ '/' | relative_url }}">
+          <svg class="logo-svg" width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
             <circle cx="20" cy="20" r="20" fill="#f97316"/>
             <text x="20" y="26" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="16" font-weight="bold">GL</text>
           </svg>
@@ -23,18 +23,9 @@
         </a>
       </div>
       
-      <!-- Mobile menu toggle -->
-      <button class="mobile-menu-toggle" aria-label="Toggle mobile menu" aria-expanded="false">
-        <span class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </span>
-      </button>
-      
-      <!-- Navigation - Desktop and Mobile -->
+      <!-- Single Navigation Menu -->
       {% if site.navigation_header %}
-        <nav aria-label="Main navigation" class="nav nav--main">
+        <nav class="nav nav--main" aria-label="Main navigation">
           <ul>
             {% for item in site.navigation_header %}
               {% if item.url contains '://' %}
