@@ -4,148 +4,61 @@
       
       <!-- Main Footer Section -->
       <div class="footer__main">
-        <!-- Copyright and branding -->
+        <!-- Copyright and Branding -->
         <div class="footer__section footer__section--main">
           <h3 class="footer__title">{{ site.title | default: "Sir. Gabriele I Langellotto" }}</h3>
           <p class="footer__description">{{ site.description | default: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert" }}</p>
-          <p class="footer__tagline">🚀 TRANSFORMING COMPLEX TECH CHALLENGES INTO BUSINESS WINS!</p>
-        </div>
-        
-        <!-- Navigation Links -->
-        <div class="footer__section footer__section--links">
-          <h4 class="footer__heading">Quick Links</h4>
-          <ul class="footer__nav">
-            {% if site.navigation_footer %}
-              {% for item in site.navigation_footer %}
-                {% if item.url contains '://' %}
-                  {% assign url = item.url %}
-                {% else %}
-                  {% assign url = item.url | relative_url %}
-                {% endif %}
-                <li><a href="{{ url }}">{{ item.title }}</a></li>
-              {% endfor %}
-            {% else %}
-              <li><a href="{{ '/about/' | relative_url }}">About</a></li>
-              <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
-              <li><a href="{{ '/projects/' | relative_url }}">Projects</a></li>
-              <li><a href="{{ '/services/' | relative_url }}">Services</a></li>
-              <li><a href="{{ '/contact/' | relative_url }}">Contact</a></li>
-            {% endif %}
-          </ul>
+          <p class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} Sir. Gabriele I Langellotto. All rights reserved.</p>
         </div>
         
         <!-- Contact Information -->
         <div class="footer__section footer__section--contact">
           <h4 class="footer__heading">Get In Touch</h4>
           <div class="footer__contact">
-            <div class="footer__contact-item">
-              <span class="footer__contact-label">Email:</span><br/>
-              <a aria-label="Send email to gella94@gmail.com" 
-                 class="footer__email" 
-                 href="mailto:gella94@gmail.com">
-                gella94@gmail.com
-              </a>
-            </div>
+            <a href="mailto:gella94@gmail.com" class="footer__email" aria-label="Email gella94@gmail.com">
+              <span class="footer__icon">✉️</span>
+              gella94@gmail.com
+            </a>
           </div>
         </div>
         
+        <!-- Social Media & Support -->
+        <div class="footer__section footer__section--social">
+          <h4 class="footer__heading">Connect With Me</h4>
+          <div class="footer__social">
+            <a href="https://linkedin.com/in/gabriele-iacopo-langellotto" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+              <span class="footer__icon">💼</span>
+              LinkedIn
+            </a>
+            <a href="https://github.com/GIL794" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+              <span class="footer__icon">💻</span>
+              GitHub
+            </a>
+            <a href="https://www.buymeacoffee.com/gella94" class="footer__social-link" aria-label="Buy Me a Coffee" target="_blank" rel="noopener noreferrer">
+              <span class="footer__icon">☕</span>
+              Buy Me a Coffee
+            </a>
+          </div>
+        </div>
       </div>
       
-      <!-- Social Media & Support Section -->
-      <div class="footer__social-section">
-        <h4 class="footer__heading">Connect With Me</h4>
-        
-        <div class="footer__social">
-          <!-- LinkedIn -->
-          <a class="footer__social-link footer__social-link--linkedin" 
-             href="https://linkedin.com/in/gabriele-iacopo-langellotto" 
-             aria-label="Connect with me on LinkedIn" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            <span class="footer__social-icon">💼</span>
-            <span class="footer__social-text">LinkedIn</span>
-          </a>
-          
-          <!-- GitHub -->
-          <a class="footer__social-link footer__social-link--github" 
-             href="https://github.com/GIL794" 
-             aria-label="Visit my GitHub profile" 
-             target="_blank" 
-             rel="noopener noreferrer">
-            <span class="footer__social-icon">💻</span>
-            <span class="footer__social-text">GitHub</span>
-          </a>
+      <!-- Footer Bottom Bar -->
+      <div class="footer__bottom">
+        <div class="footer__links">
+          <a href="{{ '/about/' | relative_url }}" class="footer__link">About</a>
+          <a href="{{ '/blog/' | relative_url }}" class="footer__link">Blog</a>
+          <a href="{{ '/projects/' | relative_url }}" class="footer__link">Projects</a>
+          <a href="{{ '/contact/' | relative_url }}" class="footer__link">Contact</a>
         </div>
-        
-        <!-- Buy Me a Coffee Button -->
-        <div class="footer__support">
-          <a class="footer__coffee-btn" 
-             href="https://www.buymeacoffee.com/gella94" 
-             target="_blank" 
-             rel="noopener noreferrer" 
-             aria-label="Buy me a coffee">
-            <span class="footer__coffee-icon">☕</span>
-            <span class="footer__coffee-text">Buy Me a Coffee</span>
-          </a>
-        </div>
-        
-        <!-- Community Links -->
-        <div class="footer__community">
-          <h5 class="footer__subheading">Community</h5>
-          <div class="footer__community-links">
-            <a class="footer__community-link" 
-               href="https://dev.to" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               aria-label="Join the Dev.to community">
-              Dev Community
-            </a>
-            <a class="footer__community-link" 
-               href="https://stackoverflow.com" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               aria-label="Ask questions on Stack Overflow">
-              Stack Overflow
-            </a>
-            <a class="footer__community-link" 
-               href="https://hashnode.com" 
-               target="_blank" 
-               rel="noopener noreferrer" 
-               aria-label="Read articles on Hashnode">
-              Hashnode
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Footer Bottom Bar -->
-    <div class="footer__bottom">
-      <div class="footer__legal">
         <div class="footer__attribution">
-          <p>© {{ 'now' | date: "%Y" }} Sir. Gabriele I Langellotto. All rights reserved.</p>
-          <p>Built with <a href="https://jekyllrb.com/" rel="noopener noreferrer" target="_blank">Jekyll</a>
+          <p>Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a>
           {% if site.remote_theme or site.theme %}
-            & <a href="https://github.com/daviddarnes/alembic" rel="noopener noreferrer" target="_blank">Alembic</a>
+            & <a href="https://github.com/daviddarnes/alembic" target="_blank" rel="noopener noreferrer">Alembic</a>
           {% endif %}
           </p>
         </div>
-        <div class="footer__links">
-          <a class="footer__link" href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>
-          <a class="footer__link" href="{{ '/terms/' | relative_url }}">Terms of Service</a>
-          <a class="footer__link" href="{{ '/sitemap.xml' | relative_url }}">Sitemap</a>
-        </div>
       </div>
       
-      <!-- Back to top button -->
-      <div class="footer__scroll">
-        <button aria-label="Scroll to top" 
-                class="footer__scroll-btn" 
-                onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
-          <span class="footer__scroll-icon">↑</span>
-          <span class="footer__scroll-text">Back to Top</span>
-        </button>
-      </div>
     </div>
   </div>
 </footer>
