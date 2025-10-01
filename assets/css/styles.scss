@@ -1,5 +1,241 @@
 ---
 ---
+// ========== GLOBAL STYLES (from assets/styles.scss) ==========
+//
+
+// Container for consistent page layout
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}
+
+// Main content centering
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+// Center all main content sections
+.main,
+.content,
+article,
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+// Header content layout - horizontal flexbox
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  flex-direction: row; // Force horizontal layout
+  
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+  }
+}
+
+// Logo and branding
+.header__logo, .header__brand {
+  flex-shrink: 0;
+}
+
+// Navigation - Single horizontal menu only
+.nav--main {
+  // Prevent duplicate rendering
+  &:not(:first-of-type) {
+    display: none;
+  }
+  
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+    
+    // Force horizontal layout on all screen sizes
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+    @media (max-width: 768px) {
+      gap: 1rem;
+      justify-content: center;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    @media (max-width: 480px) {
+      gap: 0.5rem;
+      justify-content: space-around;
+    }
+  }
+  
+  li {
+    margin: 0;
+    padding: 0;
+    display: inline-block; // Force horizontal display
+  }
+  
+  a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #374151;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+    
+    &:hover,
+    &.active {
+      color: #f97316;
+      background-color: rgba(#f97316, 0.1);
+    }
+    
+    @media (max-width: 480px) {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+// Grid layout for cards
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+// Feature card component
+.feature-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: #1f2937;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 1rem;
+    color: #f97316;
+  }
+}
+
+// Call-to-action button
+.cta-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #f97316, #ea580c);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(#f97316, 0.4);
+    text-decoration: none;
+    color: white;
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+  
+  &.secondary {
+    background: transparent;
+    border: 2px solid #f97316;
+    color: #f97316;
+    
+    &:hover {
+      background: #f97316;
+      color: white;
+    }
+  }
+}
+
+// Section spacing utilities
+.section {
+  padding: 4rem 0;
+  
+  @media (max-width: 768px) {
+    padding: 2rem 0;
+  }
+  
+  &.hero {
+    padding: 6rem 0;
+    text-align: center;
+    
+    @media (max-width: 768px) {
+      padding: 3rem 0;
+    }
+  }
+}
+
+// Performance optimizations
+.site-header {
+  will-change: box-shadow, border-color;
+}
+
+.nav--main a {
+  will-change: color;
+  
+  &::after {
+    will-change: width;
+  }
+}
+
+
+---
+---
+// ========== BLOG-SPECIFIC STYLES ==========
+//
 
 // Blog-specific styles
 .blog-container {
