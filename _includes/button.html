@@ -1,4 +1,4 @@
-<!-- Button component with Liquid parameters -->
+<!-- Simple button component - no recursive includes -->
 <!-- Usage: {% include button.html text="Click Me" link="/page" color="primary" size="medium" %} -->
 
 {% assign btn_text = include.text | default: "Button" %}
@@ -6,6 +6,4 @@
 {% assign btn_color = include.color | default: "primary" %}
 {% assign btn_size = include.size | default: "medium" %}
 
-<a href="{{ btn_link }}" class="btn btn-{{ btn_color }} btn-{{ btn_size }}">
-  {{ btn_text }}
-</a>
+<a href="{{ btn_link }}" class="btn btn-{{ btn_color }} btn-{{ btn_size }}">{{ btn_text }}</a>
