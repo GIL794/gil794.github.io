@@ -1,4 +1,6 @@
 ---
+---
+
 // Container for consistent page layout
 .container {
   max-width: 1200px;
@@ -10,12 +12,35 @@
   }
 }
 
-// Header content layout
+// Main content centering
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+// Center all main content sections
+.main,
+.content,
+article,
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+// Header content layout - horizontal flexbox
 .header__content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
+  flex-direction: row; // Force horizontal layout
   
   @media (max-width: 768px) {
     flex-wrap: wrap;
@@ -27,8 +52,13 @@
   flex-shrink: 0;
 }
 
-// Navigation - Always horizontal
+// Navigation - Single horizontal menu only
 .nav--main {
+  // Prevent duplicate rendering
+  &:not(:first-of-type) {
+    display: none;
+  }
+  
   ul {
     display: flex;
     list-style: none;
@@ -57,6 +87,7 @@
   li {
     margin: 0;
     padding: 0;
+    display: inline-block; // Force horizontal display
   }
   
   a {
