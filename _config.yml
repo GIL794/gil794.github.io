@@ -1,5 +1,5 @@
 # Site settings
-title: "Gabriele I Langellotto"
+title: "Gabriele I. Langellotto"
 author: "Mr. G.I. Langellotto"
 email: "gilangellotto@gmail.com"
 description: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert 🚀 TRANSFORMING COMPLEX TECH CHALLENGES INTO BUSINESS WINS!"
@@ -9,7 +9,7 @@ baseurl: ""
 github_username: GIL794
 linkedin_username: gabriele-iacopo-langellotto-aa7095a9
 # Theme
-# remote_theme: daviddarnes/alembic@main
+remote_theme: daviddarnes/alembic@main
 # Plugins
 plugins:
   - jekyll-seo-tag 
