@@ -1,6 +1,6 @@
 # Site settings
-title: "Sir. Gabriele I Langellotto"
-author: "Sir. G.I. Langellotto"
+title: "Gabriele I Langellotto"
+author: "Mr. G.I. Langellotto"
 email: "gilangellotto@gmail.com"
 description: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert 🚀 TRANSFORMING COMPLEX TECH CHALLENGES INTO BUSINESS WINS!"
 url: "https://gil794.github.io"
@@ -28,21 +28,21 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 # Navigation
-# navigation_header:
-#  - title: Home 
- #   url: /
-  #- title: Blog
-   # url: /blog/
-  #- title: About
-   # url: /about/
-  #- title: Services
-  #  url: /services/
- # - title: Projects
-   # url: /projects/
-  #- title: Community
- #   url: /community/
- # - title: Contact
-#    url: /contact/
+ navigation_header:
+  - title: Home 
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: About
+    url: /about/
+  - title: Services
+    url: /services/
+  - title: Projects
+    url: /projects/
+  - title: Community
+    url: /community
+  - title: Contact
+     url: /contact/
 # Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
