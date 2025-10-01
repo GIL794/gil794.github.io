@@ -28,7 +28,7 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 # Navigation
- navigation_header:
+navigation_header:
   - title: Home 
     url: /
   - title: Blog
@@ -42,7 +42,7 @@ plugins:
   - title: Community
     url: /community
   - title: Contact
-     url: /contact/
+    url: /contact/
 # Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
