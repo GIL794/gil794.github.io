@@ -22,25 +22,24 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
       <p><strong>Streamline operations. Eliminate bottlenecks. Scale with confidence.</strong></p>
       <p>I architect cloud-native solutions that modernize your infrastructure and automate critical processes. From legacy system migrations to containerized microservices, I help organizations achieve maximum efficiency and bulletproof scalability that grows with your business.</p>
       
-    **Key Features:**
-    
-    - Cloud migration strategies
-    - Infrastructure as Code (IaC)
-    - CI/CD pipeline optimization
-    - Container orchestration
-    - Serverless architecture
+ **Key Features:**
+ - Cloud migration strategies
+ - Infrastructure as Code (IaC)
+ - CI/CD pipeline optimization
+ - Container orchestration
+ - Serverless architecture
       
-    <a class="cta-btn" href="/contact/">Start Your Migration</a>
-    </div>
+ <a class="cta-btn" href="/contact/">Start Your Migration</a>
+ </div>
 
-    <div class="feature-card">
-    **🤖 Intelligent Process Automation**
+<div class="feature-card">
+ **🤖 Intelligent Process Automation**
     
-    *Turn repetitive tasks into strategic advantages through smart automation.*
+   *Turn repetitive tasks into strategic advantages through smart automation.*
     
     I design and implement intelligent automation systems that free your team from routine work while ensuring accuracy and consistency. From RPA to AI-powered workflows, I create solutions that learn and adapt to your business needs.
       
-    **What You Get:**
+  **What You Get:**
     
     - Process analysis and optimization
     - Custom automation development
@@ -58,7 +57,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     
     I build comprehensive data platforms that collect, process, and analyze your business data in real-time. From ETL pipelines to predictive analytics, I help organizations make data-driven decisions with confidence.
       
-    **Solutions Include:**
+   **Solutions Include:**
     
     - Data pipeline development
     - Real-time analytics
@@ -76,7 +75,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     
     I partner with leadership teams to develop comprehensive digital transformation strategies that align technology initiatives with business objectives. From technology assessment to implementation planning, I guide organizations through successful digital evolution.
       
-    **Strategic Services:**
+   **Strategic Services:**
     
     - Technology assessment
     - Digital roadmap creation
