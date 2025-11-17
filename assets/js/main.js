@@ -275,13 +275,13 @@
 
     function updateHeader() {
       const scrollY = window.scrollY;
-      
+
       if (scrollY > 50) {
         header.classList.add('scrolled');
       } else {
         header.classList.remove('scrolled');
       }
-      
+
       lastScrollY = scrollY;
       ticking = false;
     }
@@ -303,7 +303,7 @@
         e.preventDefault();
         const targetId = this.getAttribute('href');
         const targetElement = document.querySelector(targetId);
-        
+
         if (targetElement) {
           targetElement.scrollIntoView({
             behavior: 'smooth',
@@ -317,7 +317,7 @@
   // Lazy loading for images
   function initLazyLoading() {
     const images = document.querySelectorAll('img[data-src]');
-    
+
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -335,7 +335,7 @@
   // Enhanced form handling with validation feedback
   function initFormEnhancements() {
     const forms = document.querySelectorAll('form');
-    
+
     forms.forEach(form => {
       // Add input animations
       form.querySelectorAll('input, textarea').forEach(input => {
@@ -358,8 +358,7 @@
           const originalText = button.textContent;
           button.dataset.originalText = originalText;
           button.textContent = 'Sending...';
-          button.style.background = 'linear-gradient(135deg, #10b981, #059669)';
-          
+
           // Re-enable after 3 seconds as fallback
           setTimeout(() => {
             button.disabled = false;
@@ -436,40 +435,19 @@
     // Core functionality
     initStickyHeader();
     initSmoothScroll();
-    initScrollProgress();
-    initBackToTop();
-    initScrollAnimations();
-    enhanceLinkEffects();
-    
+
     // Only initialize if IntersectionObserver is supported
     if ('IntersectionObserver' in window) {
       initLazyLoading();
     }
-    
-    // Optional: typing animation (can be disabled if too distracting)
-    // initTypingAnimation();
-    
-    // Optional: particle effect (can be disabled for better performance)
-    if (window.innerWidth > 768) { // Only on larger screens
-      initParticleEffect();
-    }
-    
+
     initFormEnhancements();
     initPrintStyles();
-    initColorPulse();
-    initEasterEgg();
-    
+
     // Add class to indicate JS is loaded
     document.documentElement.classList.add('js-loaded');
-    
-    // Add smooth page transitions
-    document.body.style.opacity = '0';
-    setTimeout(() => {
-      document.body.style.transition = 'opacity 0.5s ease';
-      document.body.style.opacity = '1';
-    }, 100);
-    
-    console.log('🚀 GIL794 site JavaScript loaded successfully with enhanced animations');
+
+    console.log('GIL794 site JavaScript loaded successfully');
   });
 
 })();

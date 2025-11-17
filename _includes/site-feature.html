@@ -8,7 +8,7 @@
       {% else %}
         <img src="{{ feature_img | relative_url }}" alt="{{ page.title | default: site.title }}" class="site-feature__img" />
       {% endif %}
-      
+
       {% if page.feature_text or page.title %}
         <div class="site-feature__overlay">
           <div class="site-feature__content">

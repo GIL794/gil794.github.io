@@ -1,16 +1,16 @@
 <footer class="footer">
   <div class="container">
     <div class="footer__content">
-      
+
       <!-- Main Footer Section -->
       <div class="footer__main">
         <!-- Copyright and Branding -->
         <div class="footer__section footer__section--main">
-          <h3 class="footer__title">{{ site.title | default: "Sir. Gabriele I Langellotto" }}</h3>
+          <h3 class="footer__title">{{ site.title | default: "Gabriele I. Langellotto" }}</h3>
           <p class="footer__description">{{ site.description | default: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert" }}</p>
-          <p class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} Sir. Gabriele I Langellotto. All rights reserved.</p>
+          <p class="footer__copyright">&copy; {{ 'now' | date: "%Y" }} {{ site.author | default: "Gabriele I. Langellotto" }}. All rights reserved.</p>
         </div>
-        
+
         <!-- Contact Information -->
         <div class="footer__section footer__section--contact">
           <h4 class="footer__heading">Get In Touch</h4>
@@ -21,16 +21,16 @@
             </a>
           </div>
         </div>
-        
+
         <!-- Social Media & Support -->
         <div class="footer__section footer__section--social">
           <h4 class="footer__heading">Connect With Me</h4>
           <div class="footer__social">
-            <a href="https://linkedin.com/in/gabriele-iacopo-langellotto" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+            <a href="https://linkedin.com/in/{{ site.linkedin_username | default: 'gabriele-iacopo-langellotto-aa7095a9' }}" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
               <span class="footer__icon">💼</span>
               LinkedIn
             </a>
-            <a href="https://github.com/GIL794" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/{{ site.github_username | default: 'GIL794' }}" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">
               <span class="footer__icon">💻</span>
               GitHub
             </a>
@@ -41,7 +41,7 @@
           </div>
         </div>
       </div>
-      
+
       <!-- Footer Bottom Bar -->
       <div class="footer__bottom">
         <div class="footer__links">
@@ -58,7 +58,7 @@
           </p>
         </div>
       </div>
-      
+
     </div>
   </div>
 </footer>

@@ -12,24 +12,23 @@ linkedin_username: gabriele-iacopo-langellotto-aa7095a9
 remote_theme: daviddarnes/alembic@main
 # Plugins
 plugins:
-  - jekyll-seo-tag 
-  - jekyll-paginate 
-  - jekyll-coffeescript 
-  - jekyll-commonmark-ghpages 
-  - jekyll-gist 
+  - jekyll-seo-tag
+  - jekyll-paginate
+  - jekyll-coffeescript
+  - jekyll-commonmark-ghpages
+  - jekyll-gist
   - jekyll-github-metadata
   - jekyll-relative-links
   - jekyll-optional-front-matter
-  - jekyll-readme-index 
-  - jekyll-default-layout 
+  - jekyll-readme-index
+  - jekyll-default-layout
   - jekyll-titles-from-heading
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
 # Navigation
 navigation_header:
-  - title: Home 
+  - title: Home
     url: /
   - title: Blog
     url: /blog/
@@ -40,7 +39,7 @@ navigation_header:
   - title: Projects
     url: /projects/
   - title: Community
-    url: /community
+    url: /community/
   - title: Contact
     url: /contact/
 # Pagination
