@@ -565,13 +565,14 @@ section {
 .footer {
   background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
   color: #f9fafb;
-  padding: 3rem 0 1rem;
-  margin-top: 4rem;
-  border-top: 3px solid var(--primary-color);
+  padding: 4rem 0 1.5rem;
+  margin-top: 5rem;
+  border-top: 4px solid var(--primary-color);
   position: relative;
   overflow: hidden;
+  box-shadow: 0 -5px 30px rgba(0, 0, 0, 0.15);
   
-  // Subtle animated background effect
+  // Subtle animated background effect with enhanced opacity
   &::before {
     content: '';
     position: absolute;
@@ -579,8 +580,8 @@ section {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.05), transparent);
-    animation: footerShimmer 8s ease-in-out infinite;
+    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.08), transparent);
+    animation: footerShimmer 10s ease-in-out infinite;
   }
   
   .footer__content {
@@ -593,16 +594,16 @@ section {
   .footer__main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2.5rem;
-    margin-bottom: 2.5rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid rgba(249, 115, 22, 0.2);
+    gap: 3rem;
+    margin-bottom: 3rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 2px solid rgba(249, 115, 22, 0.25);
     
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
-      gap: 2rem;
-      margin-bottom: 2rem;
-      padding-bottom: 1.5rem;
+      gap: 2.5rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 2rem;
     }
   }
   
@@ -620,14 +621,15 @@ section {
   // Footer title styling - improved visibility
   .footer__title {
     color: white;
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    font-size: 1.75rem;
     font-weight: 700;
     line-height: 1.3;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 20px rgba(249, 115, 22, 0.4);
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.4), 0 0 25px rgba(249, 115, 22, 0.5);
+    letter-spacing: 0.5px;
     
     @media (max-width: 768px) {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
   
@@ -650,24 +652,24 @@ section {
   // Footer section headings - improved visibility
   .footer__heading {
     color: white;
-    font-size: 1.15rem;
+    font-size: 1.25rem;
     font-weight: 700;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem;
     position: relative;
     display: inline-block;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    letter-spacing: 0.3px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.5px;
     
     &::after {
       content: '';
       position: absolute;
-      bottom: -6px;
+      bottom: -8px;
       left: 0;
-      width: 50px;
+      width: 60px;
       height: 3px;
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
       border-radius: 2px;
-      box-shadow: 0 2px 8px rgba(249, 115, 22, 0.5);
+      box-shadow: 0 2px 10px rgba(249, 115, 22, 0.6);
     }
   }
   
@@ -683,11 +685,13 @@ section {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
     transition: all var(--transition-normal);
     position: relative;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background: rgba(249, 115, 22, 0.05);
     
     &::before {
       content: '';
@@ -703,13 +707,15 @@ section {
     &:hover {
       color: var(--primary-color);
       transform: translateX(4px);
+      background: rgba(249, 115, 22, 0.1);
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
       
       &::before {
         width: 100%;
       }
       
       .footer__icon {
-        transform: scale(1.2) rotate(5deg);
+        transform: scale(1.3) rotate(5deg);
       }
     }
   }
@@ -726,12 +732,14 @@ section {
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
     transition: all var(--transition-normal);
     position: relative;
     font-weight: 500;
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    background: rgba(249, 115, 22, 0.05);
     
     &::before {
       content: '';
@@ -747,22 +755,25 @@ section {
     &:hover {
       color: var(--primary-color);
       transform: translateX(4px);
+      background: rgba(249, 115, 22, 0.1);
+      box-shadow: 0 4px 12px rgba(249, 115, 22, 0.2);
       
       &::before {
         width: 100%;
       }
       
       .footer__icon {
-        transform: scale(1.2) rotate(5deg);
+        transform: scale(1.3) rotate(5deg);
       }
     }
   }
   
   // Footer icons
   .footer__icon {
-    font-size: 1.2em;
+    font-size: 1.3em;
     transition: transform var(--transition-normal);
     display: inline-block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
   }
   
   // Footer bottom bar
@@ -771,14 +782,20 @@ section {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-top: 1.5rem;
+    gap: 2rem;
+    padding-top: 2rem;
+    background: rgba(0, 0, 0, 0.1);
+    margin: 0 -2rem;
+    padding: 2rem 2rem 0;
+    border-radius: 12px 12px 0 0;
     
     @media (max-width: 768px) {
       flex-direction: column;
       text-align: center;
-      gap: 1rem;
-      padding-top: 1rem;
+      gap: 1.5rem;
+      padding-top: 1.5rem;
+      margin: 0 -1rem;
+      padding: 1.5rem 1rem 0;
     }
   }
   
@@ -798,12 +815,13 @@ section {
   .footer__link {
     color: rgba(249, 249, 251, 0.95);
     text-decoration: none;
-    font-weight: 500;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 0.95rem;
     position: relative;
-    padding: 0.25rem 0;
+    padding: 0.5rem 1rem;
     transition: all var(--transition-normal);
     text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
     
     &::after {
       content: '';
@@ -819,9 +837,10 @@ section {
     
     &:hover {
       color: var(--primary-color);
+      background: rgba(249, 115, 22, 0.1);
       
       &::after {
-        width: 100%;
+        width: 80%;
       }
     }
   }
@@ -870,8 +889,11 @@ section {
   0% {
     left: -100%;
   }
-  50%, 100% {
-    left: 100%;
+  50% {
+    left: 50%;
+  }
+  100% {
+    left: 200%;
   }
 }
 
