@@ -9,9 +9,26 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
 ---
 
 <div class="container">
-  <div class="section hero">
+  <div class="section hero blog-hero">
     <h2>Latest Articles</h2>
-    <p class="lead">Deep dives into technology trends, practical guides, and strategic insights for modern businesses.</p>
+    <p class="lead">Deep dives into technology trends, practical guides, and strategic insights for modern businesses and developers.</p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">📚</span>
+        <span class="stat-number">{{ site.posts | size }}</span>
+        <span class="stat-label">Articles</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🏷️</span>
+        <span class="stat-number">{{ site.categories | size }}</span>
+        <span class="stat-label">Categories</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">💡</span>
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Insights</span>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -20,22 +37,44 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
     {% for post in site.posts %}
       <article class="post-card">
         <div class="card-content">
+          {% if post.categories.size > 0 %}
+            <div class="post-categories">
+              {% for category in post.categories limit:3 %}
+                <span class="category-badge">{{ category }}</span>
+              {% endfor %}
+            </div>
+          {% endif %}
+          
           <h2 class="post-title">
             <a href="{{ post.url | relative_url }}">
               {{ post.title }}
             </a>
           </h2>
-          <p class="post-meta">
-            <time datetime="{{ post.date | date_to_xmlschema }}">
-              {{ post.date | date: "%B %d, %Y" }}
-            </time>
-          </p>
-          <div class="post-excerpt">
-            {{ post.excerpt | strip_html | truncatewords: 25 }}
+          
+          <div class="post-meta-wrapper">
+            <p class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %d, %Y" }}
+              </time>
+            </p>
+            {% assign words = post.content | strip_html | number_of_words %}
+            {% assign reading_time = words | divided_by: 200 %}
+            {% if reading_time < 1 %}
+              {% assign reading_time = 1 %}
+            {% endif %}
+            <span class="reading-time">
+              <span class="reading-icon">📖</span>
+              {{ reading_time }} min read
+            </span>
           </div>
+          
+          <div class="post-excerpt">
+            {{ post.excerpt | strip_html | truncatewords: 30 }}
+          </div>
+          
           <div class="post-actions">
             <a href="{{ post.url | relative_url }}" class="read-more-btn">
-              Read More →
+              Read Full Article
             </a>
           </div>
         </div>
