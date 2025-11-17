@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "From Invisible to Discoverable: How to Make Your GitHub Blog Rank on Google with SEO"
 date: 2025-09-02
 categories: [SEO, Blogging, Free Tools]
@@ -44,7 +44,7 @@ Search engines love clarity. Instead of `post1.md`, name your file `2025-08-09-s
 
 ```
 ***
-layout: default
+layout: post
 title: "From Invisible to Discoverable: How to Make Your GitHub Blog Rank on Google with SEO"
 categories: [SEO, Blogging]
 tags: [github blog, seo, google ranking]

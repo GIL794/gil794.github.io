@@ -9,11 +9,28 @@ feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=
 ---
 
 <div class="container">
-  <div class="section hero">
-    <h1>Contact</h1>
+  <div class="section hero blog-hero">
+    <h2>Let's Connect</h2>
     <p class="lead">
       Whether you're looking to transform your business, explore innovative solutions, or simply connect with a fellow technology enthusiast, I'd love to hear from you.
     </p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">📧</span>
+        <span class="stat-number">24-48h</span>
+        <span class="stat-label">Response Time</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🤝</span>
+        <span class="stat-number">4</span>
+        <span class="stat-label">Contact Methods</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🌍</span>
+        <span class="stat-number">Global</span>
+        <span class="stat-label">Availability</span>
+      </div>
+    </div>
   </div>
 
   <div class="card-grid">

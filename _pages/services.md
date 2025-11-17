@@ -9,11 +9,28 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
 ---
 
 <div class="container">
-  <div class="section hero">
-    <h1>Services</h1>
+  <div class="section hero blog-hero">
+    <h2>Services</h2>
     <p class="lead">
       Transform your technology challenges into competitive advantages through expert solutions that drive real business results.
     </p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">☁️</span>
+        <span class="stat-number">4</span>
+        <span class="stat-label">Core Services</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">⚡</span>
+        <span class="stat-number">85%</span>
+        <span class="stat-label">Avg Efficiency Gain</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🎯</span>
+        <span class="stat-number">100%</span>
+        <span class="stat-label">Results Focused</span>
+      </div>
+    </div>
   </div>
 
   <div class="card-grid">

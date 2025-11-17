@@ -9,11 +9,28 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
 ---
 
 <div class="container">
-  <div class="section hero">
-    <h1>Projects</h1>
+  <div class="section hero blog-hero">
+    <h2>Featured Projects</h2>
     <p class="lead">
       Discover how I've helped organizations transform their technology landscape and achieve breakthrough results.
     </p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">🌐</span>
+        <span class="stat-number">10x</span>
+        <span class="stat-label">Faster Deployments</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">📊</span>
+        <span class="stat-number">1M+</span>
+        <span class="stat-label">Events/Hour</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">💰</span>
+        <span class="stat-number">$2M</span>
+        <span class="stat-label">Annual Savings</span>
+      </div>
+    </div>
   </div>
 
   <div class="card-grid">
