@@ -1,5 +1,5 @@
 ---
-layout: default 
+layout: default
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-08-07
 categories: [Blog, Free Tools]
@@ -11,7 +11,7 @@ tags: [SEO, Web Development, Personal Branding]
 
 Hey there, Gabriele here!
 
-I know the struggle... You want to showcase your work, share your insights, or just have a creative outlet, but starting a blog or portfolio feels like scaling Mount Everest without a rope. Especially when "free" options either come with hidden costs, ugly ads, or complex setups. 
+I know the struggle... You want to showcase your work, share your insights, or just have a creative outlet, but starting a blog or portfolio feels like scaling Mount Everest without a rope. Especially when "free" options either come with hidden costs, ugly ads, or complex setups.
 
 For ages, I wrestled with this, hearing similar frustrations from friends and colleagues: "How do I build a professional-looking online presence without breaking the bank or learning a new programming language?"
 

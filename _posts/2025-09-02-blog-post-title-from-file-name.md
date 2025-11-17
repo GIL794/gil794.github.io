@@ -32,7 +32,7 @@ The real culprits behind email overwhelm:
 
 **Notification Addiction:** Constant alerts fragment our focus and create artificial urgency
 **Subscription Creep:** We unknowingly accumulate dozens of promotional emails
-**Context Switching:** Jumping between email and actual work destroys productivity  
+**Context Switching:** Jumping between email and actual work destroys productivity
 **Response Pressure:** The expectation of immediate replies creates chronic stress
 
 Sound familiar? You're not broken—your system is.
@@ -55,12 +55,12 @@ This free tool scans your entire inbox and shows every subscription in one place
 
 Gmail includes free canned responses (called "Templates") that most people never use. These pre-written messages handle 80% of common email scenarios.
 
-**Setup:** Gmail Settings > Advanced > Templates > Enable  
+**Setup:** Gmail Settings > Advanced > Templates > Enable
 **Game-changer:** Create templates for common responses like meeting confirmations, project updates, or client check-ins.
 
 I created 12 templates that handle my most frequent email types. What used to take 5 minutes to write now takes 30 seconds to customize and send.
 
-### **3. Boomerang - The Inbox Pause Button** 
+### **3. Boomerang - The Inbox Pause Button**
 
 Boomerang's free plan includes their "Pause Inbox" feature—a literal pause button for incoming emails.
 
@@ -82,7 +82,7 @@ Gmail's free filtering system is incredibly powerful but underutilized. Filters 
 
 **My setup:**
 - **Client emails** → Auto-labeled and starred
-- **Project updates** → Separate folder, bypass inbox  
+- **Project updates** → Separate folder, bypass inbox
 - **Internal team messages** → Auto-categorized by department
 - **Receipts/confirmations** → Auto-archived after labeling
 
@@ -126,9 +126,9 @@ Using these tools, here's the exact system that took me from 847 unread messages
 
 After implementing this system:
 
-**Time savings:** 2+ hours daily back in my schedule  
-**Stress reduction:** No more email anxiety or missed messages  
-**Focus improvement:** Deep work blocks without email interruptions  
+**Time savings:** 2+ hours daily back in my schedule
+**Stress reduction:** No more email anxiety or missed messages
+**Focus improvement:** Deep work blocks without email interruptions
 **Response quality:** More thoughtful, less reactive communication
 
 **The unexpected bonus:** Colleagues started commenting on my improved response times and more effective communication style. The system didn't just save time—it elevated my professional image.
@@ -139,9 +139,9 @@ After implementing this system:
 
 This approach succeeds because it addresses the root causes, not just symptoms:
 
-**Automation over organization:** Tools do the sorting, not you  
-**Batching over constant checking:** Scheduled sessions prevent notification addiction  
-**Prevention over management:** Stop unwanted emails at the source  
+**Automation over organization:** Tools do the sorting, not you
+**Batching over constant checking:** Scheduled sessions prevent notification addiction
+**Prevention over management:** Stop unwanted emails at the source
 **Simplicity over complexity:** Five tools, three steps, sustainable habits
 
 ---

@@ -34,7 +34,7 @@ Keywords are simply the words and phrases people use when searching on Google ("
 - Use your main keyword in the blog post’s title (e.g., "How to Start a Free Blog Portfolio on GitHub" instead of "My Journey Online").
 - Sprinkle related keywords in section headers and throughout the post.
 
-**Example keywords for your blog:**  
+**Example keywords for your blog:**
 `free portfolio`, `github blog tips`, `seo on github pages`, `online presence`, `tech productivity`, `how to rank on google`
 
 ---
@@ -52,7 +52,7 @@ tags: [github blog, seo, google ranking]
 ***
 ```
 
-**Why it matters:**  
+**Why it matters:**
 Google and other engines scan file names and metadata to understand your pages.
 
 ---
@@ -92,7 +92,7 @@ Whenever you publish a new post, link to related articles and category pages wit
 
 > "For more productivity hacks, check out my [Inbox Zero Email Guide](2025-08-08-email-chaos-inbox-zero.md)."
 
-**Why?**  
+**Why?**
 Internal linking guides visitors deeper into your content and signals relevance to Google.
 
 ---

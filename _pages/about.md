@@ -20,19 +20,19 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
       <p>What drives me is the intersection of technology and human potential—where strategic thinking meets practical application to create solutions that don't just work, but truly matter.</p>
     </div>
     <div class="feature-card">
-    
+
   🎯 What I Do
-    
+
   I specialize in automation strategy, digital transformation, and innovation leadership. My approach combines deep technical expertise with strategic business acumen to deliver results that exceed expectations.
-    
+
   Whether it's streamlining complex processes, implementing cutting-edge technologies, or building high-performing teams, I focus on creating sustainable value and driving meaningful change.
     </div>
     <div class="feature-card">
-    
+
   💡 My Philosophy
-    
+
   I believe that the best innovations arise from understanding both the technical possibilities and the human needs they serve. Technology should amplify human potential, not replace it.
-    
+
   This philosophy guides everything I do—from the solutions I design to the teams I lead and the partnerships I build.
     </div>
   </div>
