@@ -8,10 +8,27 @@ feature_text: |
 feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3"
 ---
 <div class="container">
-  <div class="section hero">
-    <h1>Who I Am</h1>
-    <p class="lead"><strong>Blending technology, strategy, and leadership to spark innovation that matters</strong></p>
+  <div class="section hero blog-hero">
+    <h2>Who I Am</h2>
+    <p class="lead">Blending technology, strategy, and leadership to spark innovation that matters</p>
     <p>I'm Gabriele Iacopo Langellotto, a digital marketing professional turned automation innovation strategist, passionate about bridging the gap between cutting-edge technology and meaningful business impact.</p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">🚀</span>
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">💼</span>
+        <span class="stat-number">50+</span>
+        <span class="stat-label">Projects Completed</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🎓</span>
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Learning Journey</span>
+      </div>
+    </div>
   </div>
   <div class="card-grid">
     <div class="feature-card">

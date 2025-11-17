@@ -9,11 +9,28 @@ feature_image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixl
 ---
 
 <div class="container">
-  <div class="section hero">
-    <h1>Community</h1>
+  <div class="section hero blog-hero">
+    <h2>Community & Collaboration</h2>
     <p class="lead">
       Building meaningful connections and fostering innovation through collaboration, knowledge sharing, and mutual growth.
     </p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">🌟</span>
+        <span class="stat-number">1000+</span>
+        <span class="stat-label">Connections</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">💬</span>
+        <span class="stat-number">Active</span>
+        <span class="stat-label">Collaborations</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🎓</span>
+        <span class="stat-number">∞</span>
+        <span class="stat-label">Shared Knowledge</span>
+      </div>
+    </div>
   </div>
 
   <div class="card-grid">

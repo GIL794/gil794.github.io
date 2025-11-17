@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "DNA Sequence Analyzer: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
 categories: [Bioinformatics, Python, Data Science]

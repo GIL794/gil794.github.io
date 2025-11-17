@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<article class="blog-post-container">
+  <div class="post-header-wrapper">
+    <div class="post-header-content">
+      {% if page.categories.size > 0 %}
+        <div class="post-categories-header">
+          {% for category in page.categories limit:5 %}
+            <span class="category-badge-large">{{ category }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+      <h1 class="post-title-main">{{ page.title }}</h1>
+      
+      <div class="post-meta-header">
+        <div class="post-meta-item">
+          <span class="meta-icon">📅</span>
+          <time datetime="{{ page.date | date_to_xmlschema }}">
+            {{ page.date | date: "%B %d, %Y" }}
+          </time>
+        </div>
+        
+        {% if page.author %}
+          <div class="post-meta-item">
+            <span class="meta-icon">✍️</span>
+            <span>{{ page.author }}</span>
+          </div>
+        {% endif %}
+        
+        {% assign words = content | strip_html | number_of_words %}
+        {% assign reading_time = words | divided_by: 200 %}
+        {% if reading_time < 1 %}
+          {% assign reading_time = 1 %}
+        {% endif %}
+        <div class="post-meta-item">
+          <span class="meta-icon">📖</span>
+          <span>{{ reading_time }} min read</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-content-wrapper">
+    <div class="post-content">
+      {{ content }}
+    </div>
+    
+    {% if page.tags.size > 0 %}
+      <div class="post-tags-footer">
+        <h3>Tags</h3>
+        <div class="post-tags">
+          {% for tag in page.tags %}
+            <span class="tag-badge">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="post-navigation">
+    {% if page.previous.url %}
+      <a href="{{ page.previous.url | relative_url }}" class="post-nav-link post-nav-prev">
+        <span class="nav-label">← Previous Post</span>
+        <span class="nav-title">{{ page.previous.title }}</span>
+      </a>
+    {% endif %}
+    
+    {% if page.next.url %}
+      <a href="{{ page.next.url | relative_url }}" class="post-nav-link post-nav-next">
+        <span class="nav-label">Next Post →</span>
+        <span class="nav-title">{{ page.next.title }}</span>
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="post-footer-cta">
+    <h2>Ready to Transform Your Tech Challenges?</h2>
+    <p>Let's discuss how I can help you achieve similar results and turn your technology vision into reality.</p>
+    <div class="cta-buttons">
+      <a class="cta-btn" href="/contact/">Get In Touch</a>
+      <a class="cta-btn secondary" href="/blog/">Read More Articles</a>
+    </div>
+  </div>
+</article>

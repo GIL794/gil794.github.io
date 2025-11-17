@@ -9,9 +9,26 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 ---
 
 <div class="container">
-  <div class="section hero">
+  <div class="section hero blog-hero">
     <h2>What I Do</h2>
     <p class="lead">Transforming complex technology challenges into business opportunities through strategic innovation and expert implementation.</p>
+    <div class="blog-stats">
+      <div class="stat-item">
+        <span class="stat-icon">☁️</span>
+        <span class="stat-number">Cloud-First</span>
+        <span class="stat-label">Automation</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🤖</span>
+        <span class="stat-number">AI</span>
+        <span class="stat-label">For Business</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">🚀</span>
+        <span class="stat-number">Modern</span>
+        <span class="stat-label">Tech Leadership</span>
+      </div>
+    </div>
   </div>
 
   <div class="card-grid">

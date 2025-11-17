@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-09-02
 categories: [Blog, Free Tools]
