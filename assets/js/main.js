@@ -332,24 +332,91 @@
     images.forEach(img => imageObserver.observe(img));
   }
 
-  // Enhanced form handling
+  // Enhanced form handling with validation feedback
   function initFormEnhancements() {
     const forms = document.querySelectorAll('form');
     
     forms.forEach(form => {
+      // Add input animations
+      form.querySelectorAll('input, textarea').forEach(input => {
+        input.addEventListener('focus', function() {
+          this.style.transform = 'scale(1.02)';
+          this.style.boxShadow = '0 4px 12px rgba(249, 115, 22, 0.2)';
+          this.style.transition = 'all 0.3s ease';
+        });
+        
+        input.addEventListener('blur', function() {
+          this.style.transform = 'scale(1)';
+          this.style.boxShadow = 'none';
+        });
+      });
+      
       form.addEventListener('submit', function(e) {
         const button = form.querySelector('button[type="submit"]');
         if (button) {
           button.disabled = true;
+          const originalText = button.textContent;
+          button.dataset.originalText = originalText;
           button.textContent = 'Sending...';
+          button.style.background = 'linear-gradient(135deg, #10b981, #059669)';
           
           // Re-enable after 3 seconds as fallback
           setTimeout(() => {
             button.disabled = false;
-            button.textContent = button.dataset.originalText || 'Submit';
+            button.textContent = originalText;
+            button.style.background = '';
           }, 3000);
         }
       });
+    });
+  }
+  
+  // Add dynamic accent color animation
+  function initColorPulse() {
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes colorPulse {
+        0%, 100% { filter: hue-rotate(0deg); }
+        50% { filter: hue-rotate(10deg); }
+      }
+      
+      .logo-svg circle,
+      .header__logo svg circle {
+        animation: colorPulse 4s ease-in-out infinite;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+  
+  // Add easter egg: Konami code
+  function initEasterEgg() {
+    const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    let konamiIndex = 0;
+    
+    document.addEventListener('keydown', (e) => {
+      if (e.key === konamiCode[konamiIndex]) {
+        konamiIndex++;
+        if (konamiIndex === konamiCode.length) {
+          // Activate party mode!
+          document.body.style.animation = 'rainbow 2s linear infinite';
+          const style = document.createElement('style');
+          style.textContent = `
+            @keyframes rainbow {
+              0% { filter: hue-rotate(0deg); }
+              100% { filter: hue-rotate(360deg); }
+            }
+          `;
+          document.head.appendChild(style);
+          
+          setTimeout(() => {
+            document.body.style.animation = '';
+          }, 5000);
+          
+          konamiIndex = 0;
+        }
+      } else {
+        konamiIndex = 0;
+      }
     });
   }
 
@@ -389,6 +456,8 @@
     
     initFormEnhancements();
     initPrintStyles();
+    initColorPulse();
+    initEasterEgg();
     
     // Add class to indicate JS is loaded
     document.documentElement.classList.add('js-loaded');

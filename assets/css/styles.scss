@@ -511,6 +511,171 @@ section {
   to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
+// Enhanced Home Page Sections
+.main-content {
+  h2 {
+    position: relative;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      border-radius: 2px;
+    }
+  }
+  
+  h3 {
+    color: var(--text-primary);
+    margin-top: 2rem;
+    transition: color var(--transition-fast);
+    
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+  
+  p strong {
+    color: var(--primary-color);
+    font-weight: 600;
+  }
+}
+
+// Enhanced link styles
+a:not([class]) {
+  color: var(--secondary-color);
+  text-decoration: none;
+  position: relative;
+  transition: color var(--transition-fast);
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--primary-color);
+    transition: width var(--transition-normal);
+  }
+  
+  &:hover {
+    color: var(--primary-color);
+    
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+// Horizontal rule styling
+hr {
+  border: none;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--primary-color), var(--secondary-color), transparent);
+  margin: 3rem 0;
+  animation: shimmer 3s ease-in-out infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
+}
+
+// Quote/Callout styling
+blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding: 1rem 1.5rem;
+  margin: 2rem 0;
+  background: linear-gradient(90deg, rgba(249, 115, 22, 0.05), transparent);
+  border-radius: 0 8px 8px 0;
+  position: relative;
+  
+  &::before {
+    content: '"';
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 3rem;
+    color: var(--primary-color);
+    opacity: 0.3;
+  }
+}
+
+// Code block enhancements
+code {
+  background: rgba(249, 115, 22, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Courier New', monospace;
+  font-size: 0.9em;
+  color: var(--primary-dark);
+}
+
+pre {
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  
+  code {
+    background: none;
+    color: #f9fafb;
+    padding: 0;
+  }
+}
+
+// List enhancements
+ul, ol {
+  li {
+    margin: 0.5rem 0;
+    padding-left: 0.5rem;
+    position: relative;
+    
+    &::marker {
+      color: var(--primary-color);
+    }
+  }
+}
+
+// Table styling
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  
+  th {
+    background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+  }
+  
+  td {
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  
+  tr {
+    transition: background var(--transition-fast);
+    
+    &:hover {
+      background: rgba(249, 115, 22, 0.05);
+    }
+  }
+}
+
 
 
 // ========== BLOG-SPECIFIC STYLES ==========
