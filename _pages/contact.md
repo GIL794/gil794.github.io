@@ -118,7 +118,7 @@ feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=
     <p>No matter what brings you here, I'm excited to connect and explore how we can work together to achieve your goals.</p>
 
     <div style="margin-top: 2rem;">
-      <a class="cta-btn" href="mailto:contact@example.com">Send a Message</a>
+      <a class="cta-btn" href="mailto:gilangellotto@gmail.com">Send a Message</a>
       <a class="cta-btn secondary" href="/about/" style="margin-left: 1rem;">Learn More About Me</a>
     </div>
   </div>

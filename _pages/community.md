@@ -22,7 +22,7 @@ feature_image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixl
       <p><strong>Connect with industry leaders and innovators</strong></p>
       <p>I actively participate in and contribute to various professional communities, from technology forums to industry conferences. Let's connect and share insights about the latest trends in automation, cloud computing, and digital transformation.</p>
 
-    **Where to Find Me:**
+      **Where to Find Me:**
 
     - Technology conferences and meetups
     - Professional LinkedIn discussions
@@ -94,6 +94,7 @@ feature_image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixl
 
     <div class="card-grid">
       <div class="feature-card">
+
         **🔄 Continuous Learning**
 
         Technology evolves rapidly, and staying curious and open to new ideas is essential for growth and innovation.
@@ -106,6 +107,7 @@ feature_image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixl
       </div>
 
       <div class="feature-card">
+
         **🌍 Inclusive Growth**
 
         The best solutions emerge when diverse perspectives and experiences come together to solve complex challenges.

@@ -39,7 +39,7 @@ navigation_header:
   - title: Projects
     url: /projects/
   - title: Community
-    url: /community
+    url: /community/
   - title: Contact
     url: /contact/
 # Pagination
