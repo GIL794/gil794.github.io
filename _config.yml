@@ -26,7 +26,6 @@ plugins:
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
-  - jekyll-paginate
 # Navigation
 navigation_header:
   - title: Home 
@@ -40,7 +39,7 @@ navigation_header:
   - title: Projects
     url: /projects/
   - title: Community
-    url: /community
+    url: /community/
   - title: Contact
     url: /contact/
 # Pagination

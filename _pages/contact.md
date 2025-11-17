@@ -21,70 +21,60 @@ feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=
       <h3>📧 Professional Inquiries</h3>
       <p><strong>Business partnerships and project discussions</strong></p>
       <p>Looking to discuss a potential project, explore partnership opportunities, or need expert guidance on your digital transformation journey? Let's schedule a conversation to explore how I can help you achieve your goals.</p>
-      
-    **Perfect For:**
-    
-    - Technology consulting projects
-    - Digital transformation initiatives
-    - Automation strategy development
-    - Partnership opportunities
-    - Speaking engagements
-      
-    <a class="cta-btn" href="mailto:contact@example.com">Send a Message</a>
+      <p><strong>Perfect For:</strong></p>
+      <ul>
+        <li>Technology consulting projects</li>
+        <li>Digital transformation initiatives</li>
+        <li>Automation strategy development</li>
+        <li>Partnership opportunities</li>
+        <li>Speaking engagements</li>
+      </ul>
+      <a class="cta-btn" href="mailto:gilangellotto@gmail.com">Send a Message</a>
     </div>
 
     <div class="feature-card">
-    **🌟 Collaboration & Community**
-    
-    *Innovation through connection*
-    
-    Interested in collaborating on open source projects, joining community initiatives, or contributing to thought leadership discussions? I'm always excited to connect with like-minded professionals who share a passion for technology and innovation.
-      
-    **Let's Explore:**
-    
-    - Open source contributions
-    - Research collaborations
-    - Community projects
-    - Knowledge sharing opportunities
-    - Industry discussions
-    
-    <a class="cta-btn" href="/community/">Join the Community</a>
+      <h3>🌟 Collaboration & Community</h3>
+      <p><em>Innovation through connection</em></p>
+      <p>Interested in collaborating on open source projects, joining community initiatives, or contributing to thought leadership discussions? I'm always excited to connect with like-minded professionals who share a passion for technology and innovation.</p>
+      <p><strong>Let's Explore:</strong></p>
+      <ul>
+        <li>Open source contributions</li>
+        <li>Research collaborations</li>
+        <li>Community projects</li>
+        <li>Knowledge sharing opportunities</li>
+        <li>Industry discussions</li>
+      </ul>
+      <a class="cta-btn" href="/community/">Join the Community</a>
     </div>
 
     <div class="feature-card">
-    **📚 Learning & Mentorship**
-    
-    *Growing together through shared knowledge*
-    
-    Whether you're early in your career or looking to expand your expertise in automation and digital transformation, I'm passionate about helping others grow. Let's discuss mentoring opportunities or knowledge sharing sessions.
-      
-    **Available For:**
-    
-    - Career guidance and mentorship
-    - Technical skill development
-    - Industry insights and trends
-    - Best practices sharing
-    - Professional development
-    
-    <a class="cta-btn" href="mailto:contact@example.com">Get in Touch</a>
+      <h3>📚 Learning & Mentorship</h3>
+      <p><em>Growing together through shared knowledge</em></p>
+      <p>Whether you're early in your career or looking to expand your expertise in automation and digital transformation, I'm passionate about helping others grow. Let's discuss mentoring opportunities or knowledge sharing sessions.</p>
+      <p><strong>Available For:</strong></p>
+      <ul>
+        <li>Career guidance and mentorship</li>
+        <li>Technical skill development</li>
+        <li>Industry insights and trends</li>
+        <li>Best practices sharing</li>
+        <li>Professional development</li>
+      </ul>
+      <a class="cta-btn" href="mailto:gilangellotto@gmail.com">Get in Touch</a>
     </div>
 
     <div class="feature-card">
-    **🚀 Quick Questions**
-    
-    *Fast answers to immediate needs*
-    
-    Have a quick question about technology trends, need a brief consultation, or want to explore how automation might benefit your organization? Don't hesitate to reach out for a quick conversation.
-      
-    **Great For:**
-    
-    - Technology feasibility questions
-    - Quick consultations
-    - Industry trend discussions
-    - Tool recommendations
-    - Process optimization ideas
-    
-    <a class="cta-btn" href="mailto:contact@example.com">Ask Away</a>
+      <h3>🚀 Quick Questions</h3>
+      <p><em>Fast answers to immediate needs</em></p>
+      <p>Have a quick question about technology trends, need a brief consultation, or want to explore how automation might benefit your organization? Don't hesitate to reach out for a quick conversation.</p>
+      <p><strong>Great For:</strong></p>
+      <ul>
+        <li>Technology feasibility questions</li>
+        <li>Quick consultations</li>
+        <li>Industry trend discussions</li>
+        <li>Tool recommendations</li>
+        <li>Process optimization ideas</li>
+      </ul>
+      <a class="cta-btn" href="mailto:gilangellotto@gmail.com">Ask Away</a>
     </div>
   </div>
 
@@ -94,21 +84,18 @@ feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=
     
     <div class="card-grid">
       <div class="feature-card">
-        **⏱️ Response Time**
-        
-        I typically respond to messages within 24-48 hours during business days. Complex inquiries may require additional time for a thorough response.
+        <h4>⏱️ Response Time</h4>
+        <p>I typically respond to messages within 24-48 hours during business days. Complex inquiries may require additional time for a thorough response.</p>
       </div>
       
       <div class="feature-card">
-        **🎯 Best Contact Method**
-        
-        For professional inquiries and detailed discussions, email works best. For community and collaboration topics, feel free to connect through social channels.
+        <h4>🎯 Best Contact Method</h4>
+        <p>For professional inquiries and detailed discussions, email works best. For community and collaboration topics, feel free to connect through social channels.</p>
       </div>
       
       <div class="feature-card">
-        **🔍 What to Include**
-        
-        Help me provide the most relevant response by including your project scope, timeline, and specific questions or challenges you're facing.
+        <h4>🔍 What to Include</h4>
+        <p>Help me provide the most relevant response by including your project scope, timeline, and specific questions or challenges you're facing.</p>
       </div>
     </div>
   </div>
@@ -118,7 +105,7 @@ feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=
     <p>No matter what brings you here, I'm excited to connect and explore how we can work together to achieve your goals.</p>
     
     <div style="margin-top: 2rem;">
-      <a class="cta-btn" href="mailto:contact@example.com">Send a Message</a>
+      <a class="cta-btn" href="mailto:gilangellotto@gmail.com">Send a Message</a>
       <a class="cta-btn secondary" href="/about/" style="margin-left: 1rem;">Learn More About Me</a>
     </div>
   </div>

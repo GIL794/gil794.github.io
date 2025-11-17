@@ -21,78 +21,64 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       <h3>🌫️ Cloud Infrastructure Modernization</h3>
       <p><strong>Cloud Architecture & DevOps</strong></p>
       <p>Legacy system transformation enabling 10x faster deployment cycles and 99.9% uptime reliability. Built on modern containerization and DevOps principles that scale with business growth.</p>
-      
-    **Key Achievements:**
-    
-    - Containerized microservices architecture
-    - Automated CI/CD pipelines
-    - Infrastructure as Code implementation
-    - Cost optimization reducing operational expenses by 40%
-    - Zero-downtime deployment capabilities
-      
-    **Technologies:** Docker, Kubernetes, AWS, Terraform, Jenkins
-    
-    <a class="cta-btn" href="/contact/">Discuss Your Migration</a>
+      <p><strong>Key Achievements:</strong></p>
+      <ul>
+        <li>Containerized microservices architecture</li>
+        <li>Automated CI/CD pipelines</li>
+        <li>Infrastructure as Code implementation</li>
+        <li>Cost optimization reducing operational expenses by 40%</li>
+        <li>Zero-downtime deployment capabilities</li>
+      </ul>
+      <p><strong>Technologies:</strong> Docker, Kubernetes, AWS, Terraform, Jenkins</p>
+      <a class="cta-btn" href="/contact/">Discuss Your Migration</a>
     </div>
 
     <div class="feature-card">
-    **🤖 Intelligent Process Automation Platform**
-    
-    *AI & Machine Learning*
-    
-    End-to-end automation platform that reduced manual processing time by 85% while improving accuracy and compliance. Features intelligent decision-making and adaptive workflows.
-      
-    **Impact Delivered:**
-    
-    - 85% reduction in manual processing time
-    - 99.7% accuracy rate in automated decisions
-    - Real-time compliance monitoring
-    - Self-learning algorithms for continuous improvement
-    - Seamless integration with existing systems
-    
-    **Technologies:** Python, TensorFlow, Apache Airflow, Redis, PostgreSQL
-    
-    <a class="cta-btn" href="/contact/">Explore Automation</a>
+      <h3>🤖 Intelligent Process Automation Platform</h3>
+      <p><em>AI & Machine Learning</em></p>
+      <p>End-to-end automation platform that reduced manual processing time by 85% while improving accuracy and compliance. Features intelligent decision-making and adaptive workflows.</p>
+      <p><strong>Impact Delivered:</strong></p>
+      <ul>
+        <li>85% reduction in manual processing time</li>
+        <li>99.7% accuracy rate in automated decisions</li>
+        <li>Real-time compliance monitoring</li>
+        <li>Self-learning algorithms for continuous improvement</li>
+        <li>Seamless integration with existing systems</li>
+      </ul>
+      <p><strong>Technologies:</strong> Python, TensorFlow, Apache Airflow, Redis, PostgreSQL</p>
+      <a class="cta-btn" href="/contact/">Explore Automation</a>
     </div>
 
     <div class="feature-card">
-    **📊 Real-Time Analytics Dashboard**
-    
-    *Data Intelligence & Visualization*
-    
-    Comprehensive business intelligence platform processing 1M+ events per hour with real-time insights. Empowers data-driven decision making across all organizational levels.
-      
-    **Business Results:**
-    
-    - Processing 1M+ events per hour
-    - Sub-second query response times
-    - Interactive dashboards and reports
-    - Predictive analytics capabilities
-    - Mobile-responsive design
-    
-    **Technologies:** Apache Kafka, Elasticsearch, React, D3.js, Apache Spark
-    
-    <a class="cta-btn" href="/contact/">Build Your Dashboard</a>
+      <h3>📊 Real-Time Analytics Dashboard</h3>
+      <p><em>Data Intelligence & Visualization</em></p>
+      <p>Comprehensive business intelligence platform processing 1M+ events per hour with real-time insights. Empowers data-driven decision making across all organizational levels.</p>
+      <p><strong>Business Results:</strong></p>
+      <ul>
+        <li>Processing 1M+ events per hour</li>
+        <li>Sub-second query response times</li>
+        <li>Interactive dashboards and reports</li>
+        <li>Predictive analytics capabilities</li>
+        <li>Mobile-responsive design</li>
+      </ul>
+      <p><strong>Technologies:</strong> Apache Kafka, Elasticsearch, React, D3.js, Apache Spark</p>
+      <a class="cta-btn" href="/contact/">Build Your Dashboard</a>
     </div>
 
     <div class="feature-card">
-    **🚀 Digital Transformation Strategy**
-    
-    *Strategic Consulting*
-    
-    Comprehensive digital transformation roadmap for a Fortune 500 company, resulting in 200% improvement in operational efficiency and $2M annual cost savings.
-      
-    **Transformation Outcomes:**
-    
-    - 200% improvement in operational efficiency
-    - $2M annual cost savings
-    - Streamlined cross-department workflows
-    - Enhanced customer experience metrics
-    - Future-ready technology stack
-    
-    **Focus Areas:** Process optimization, Technology assessment, Change management
-    
-    <a class="cta-btn" href="/contact/">Start Your Journey</a>
+      <h3>🚀 Digital Transformation Strategy</h3>
+      <p><em>Strategic Consulting</em></p>
+      <p>Comprehensive digital transformation roadmap for a Fortune 500 company, resulting in 200% improvement in operational efficiency and $2M annual cost savings.</p>
+      <p><strong>Transformation Outcomes:</strong></p>
+      <ul>
+        <li>200% improvement in operational efficiency</li>
+        <li>$2M annual cost savings</li>
+        <li>Streamlined cross-department workflows</li>
+        <li>Enhanced customer experience metrics</li>
+        <li>Future-ready technology stack</li>
+      </ul>
+      <p><strong>Focus Areas:</strong> Process optimization, Technology assessment, Change management</p>
+      <a class="cta-btn" href="/contact/">Start Your Journey</a>
     </div>
   </div>
 
@@ -102,27 +88,23 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     
     <div class="card-grid">
       <div class="feature-card">
-        **🔍 Discovery & Analysis**
-        
-        Deep dive into your current systems, processes, and objectives to identify optimization opportunities and potential challenges.
+        <h4>🔍 Discovery & Analysis</h4>
+        <p>Deep dive into your current systems, processes, and objectives to identify optimization opportunities and potential challenges.</p>
       </div>
       
       <div class="feature-card">
-        **🎨 Design & Architecture**
-        
-        Create robust, scalable solutions that align with your business goals and integrate seamlessly with existing infrastructure.
+        <h4>🎨 Design & Architecture</h4>
+        <p>Create robust, scalable solutions that align with your business goals and integrate seamlessly with existing infrastructure.</p>
       </div>
       
       <div class="feature-card">
-        **🔧 Implementation & Testing**
-        
-        Agile development approach with continuous testing, feedback integration, and quality assurance throughout the process.
+        <h4>🔧 Implementation & Testing</h4>
+        <p>Agile development approach with continuous testing, feedback integration, and quality assurance throughout the process.</p>
       </div>
       
       <div class="feature-card">
-        **🚀 Deployment & Optimization**
-        
-        Smooth rollout with comprehensive monitoring, performance optimization, and ongoing support to ensure long-term success.
+        <h4>🚀 Deployment & Optimization</h4>
+        <p>Smooth rollout with comprehensive monitoring, performance optimization, and ongoing support to ensure long-term success.</p>
       </div>
     </div>
   </div>
