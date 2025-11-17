@@ -2,11 +2,18 @@
 layout: default
 title: Blog
 permalink: /blog/
+feature_text: |
+  # Insights & Innovation
+  Exploring AI, technology, automation, and business strategy in the modern digital landscape
+feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80"
 ---
 
-# Blog
-
-Welcome to my blog! Here you'll find insights on AI, technology, automation, and business strategy.
+<div class="container">
+  <div class="section hero">
+    <h2>Latest Articles</h2>
+    <p class="lead">Deep dives into technology trends, practical guides, and strategic insights for modern businesses.</p>
+  </div>
+</div>
 
 <div class="blog-container">
   <div class="blog-grid">

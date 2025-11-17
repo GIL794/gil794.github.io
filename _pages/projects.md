@@ -3,8 +3,8 @@ layout: default
 title: Projects
 permalink: /projects/
 feature_text: |
- # Featured Projects
- Transforming ideas into impactful solutions through strategic technology implementation
+  # Featured Projects
+  Transforming ideas into impactful solutions through strategic technology implementation
 feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=rb-4.0.3"
 ---
 

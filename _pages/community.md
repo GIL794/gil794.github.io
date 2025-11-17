@@ -3,8 +3,8 @@ layout: default
 title: Community
 permalink: /community/
 feature_text: |
- # Building Connections
- Join a thriving community of innovators, technologists, and forward-thinking professionals
+  # Building Connections
+  Join a thriving community of innovators, technologists, and forward-thinking professionals
 feature_image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3"
 ---
 

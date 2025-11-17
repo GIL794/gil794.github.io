@@ -3,7 +3,7 @@ layout: default
 title: Contact
 permalink: /contact/
 feature_text: |
- ## Let's Connect & Collaborate
+  # Let's Connect & Collaborate
   Ready to build something amazing together?
 feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3"
 ---

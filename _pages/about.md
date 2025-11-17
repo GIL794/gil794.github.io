@@ -3,8 +3,8 @@ layout: default
 title: About
 permalink: /about/
 feature_text: |
- # Who I Am
- Blending technology, strategy, and leadership to spark innovation that matters
+  # Who I Am
+  Blending technology, strategy, and leadership to spark innovation that matters
 feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3"
 ---
 <div class="container">
