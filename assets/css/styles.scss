@@ -568,28 +568,304 @@ section {
   padding: 3rem 0 1rem;
   margin-top: 4rem;
   border-top: 3px solid var(--primary-color);
+  position: relative;
+  overflow: hidden;
+  
+  // Subtle animated background effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.05), transparent);
+    animation: footerShimmer 8s ease-in-out infinite;
+  }
   
   .footer__content {
     animation: fadeIn 0.8s ease-out;
+    position: relative;
+    z-index: 1;
   }
   
+  // Main footer section with grid layout
+  .footer__main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rgba(249, 115, 22, 0.2);
+    
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+    }
+  }
+  
+  // Footer sections
+  .footer__section {
+    &--main {
+      grid-column: span 1;
+      
+      @media (min-width: 1024px) {
+        grid-column: span 2;
+      }
+    }
+  }
+  
+  // Footer title styling
   .footer__title {
     color: white;
     margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
     background: linear-gradient(135deg, var(--primary-color), #60a5fa);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    line-height: 1.3;
+    
+    @media (max-width: 768px) {
+      font-size: 1.3rem;
+    }
   }
   
-  .footer__social-link,
-  .footer__link {
-    transition: all var(--transition-fast);
+  // Footer description and copyright
+  .footer__description {
+    color: rgba(249, 249, 251, 0.85);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
+  
+  .footer__copyright {
+    color: rgba(249, 249, 251, 0.7);
+    font-size: 0.875rem;
+    margin-top: 0.75rem;
+  }
+  
+  // Footer section headings
+  .footer__heading {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 40px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      border-radius: 2px;
+    }
+  }
+  
+  // Contact section
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .footer__email {
+    color: rgba(249, 249, 251, 0.9);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    transition: all var(--transition-normal);
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      transition: width var(--transition-normal);
+    }
     
     &:hover {
       color: var(--primary-color);
       transform: translateX(4px);
+      
+      &::before {
+        width: 100%;
+      }
+      
+      .footer__icon {
+        transform: scale(1.2) rotate(5deg);
+      }
     }
+  }
+  
+  // Social media section
+  .footer__social {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  
+  .footer__social-link {
+    color: rgba(249, 249, 251, 0.9);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+    transition: all var(--transition-normal);
+    position: relative;
+    font-weight: 500;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      transition: width var(--transition-normal);
+    }
+    
+    &:hover {
+      color: var(--primary-color);
+      transform: translateX(4px);
+      
+      &::before {
+        width: 100%;
+      }
+      
+      .footer__icon {
+        transform: scale(1.2) rotate(5deg);
+      }
+    }
+  }
+  
+  // Footer icons
+  .footer__icon {
+    font-size: 1.2em;
+    transition: transform var(--transition-normal);
+    display: inline-block;
+  }
+  
+  // Footer bottom bar
+  .footer__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 1.5rem;
+    
+    @media (max-width: 768px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+  }
+  
+  // Footer links
+  .footer__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    
+    @media (max-width: 768px) {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+  
+  .footer__link {
+    color: rgba(249, 249, 251, 0.85);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.9rem;
+    position: relative;
+    padding: 0.25rem 0;
+    transition: all var(--transition-normal);
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+      transform: translateX(-50%);
+      transition: width var(--transition-normal);
+    }
+    
+    &:hover {
+      color: var(--primary-color);
+      
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+  
+  // Footer attribution
+  .footer__attribution {
+    color: rgba(249, 249, 251, 0.7);
+    font-size: 0.85rem;
+    
+    a {
+      color: rgba(249, 249, 251, 0.85);
+      text-decoration: none;
+      transition: color var(--transition-fast);
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 0;
+        height: 1px;
+        background: var(--primary-color);
+        transition: width var(--transition-normal);
+      }
+      
+      &:hover {
+        color: var(--primary-color);
+        
+        &::after {
+          width: 100%;
+        }
+      }
+    }
+    
+    p {
+      margin: 0;
+      line-height: 1.6;
+    }
+  }
+}
+
+// Footer shimmer animation
+@keyframes footerShimmer {
+  0% {
+    left: -100%;
+  }
+  50%, 100% {
+    left: 100%;
   }
 }
 
