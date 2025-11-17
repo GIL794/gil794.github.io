@@ -217,6 +217,23 @@ main {
   }
 }
 
+// Main content wrapper
+.main-content {
+  width: 100%;
+  
+  // Direct children that aren't .container should be centered
+  > *:not(.container) {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 2rem;
+    
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+}
+
 // Center all main content sections
 .main,
 .content,
@@ -512,6 +529,35 @@ section {
     @media (max-width: 768px) {
       padding: 3rem 0;
     }
+    
+    h1, h2 {
+      margin-bottom: 1rem;
+    }
+    
+    .lead {
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      max-width: 800px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+      
+      @media (max-width: 768px) {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+// Lead paragraph styling
+.lead {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-weight: 400;
+  
+  @media (max-width: 768px) {
+    font-size: 1.1rem;
   }
 }
 
