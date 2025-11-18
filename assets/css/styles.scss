@@ -1623,6 +1623,8 @@ table {
     letter-spacing: 0.5px;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid rgba(249, 115, 22, 0.2);
+    text-decoration: none;
+    cursor: pointer;
     
     &:hover {
       background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
@@ -1833,7 +1835,7 @@ table {
 
 // Improve category badge interactions
 .category-badge {
-  cursor: default;
+  cursor: pointer;
   user-select: none;
 }
 
@@ -1926,6 +1928,8 @@ html {
   letter-spacing: 0.5px;
   border: 2px solid rgba(249, 115, 22, 0.3);
   transition: all var(--transition-normal);
+  text-decoration: none;
+  cursor: pointer;
   
   &:hover {
     background: linear-gradient(135deg, var(--primary-color), var(--primary-dark));
