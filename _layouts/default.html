@@ -8,6 +8,9 @@
     <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | default: 'Gabriele Iacopo Langellotto' | escape }}</title>
     <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="{{ '/assets/favicon.svg' | relative_url }}">
+
     <!-- Stylesheets -->
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
