@@ -42,7 +42,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     <div class="feature-card">
       <h3>🤖 AI for Business</h3>
       <p><strong>Turn artificial intelligence into real competitive advantage.</strong></p>
-      <p>From strategy to implementation, I guide organizations in leveraging AI to solve complex problems and drive growth. Whether it's machine learning, process automation, or data intelligence, I help you unlock AI's full potential.</p>
+      <p>From strategy to implementation, I guide organisations in leveraging AI to solve complex problems and drive growth. Whether it's machine learning, process automation, or data intelligence, I help you unlock AI's full potential.</p>
       <a class="cta-btn" href="/services/">Learn More</a>
     </div>
 
@@ -82,7 +82,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
   <div class="section">
     <h2>Featured Work</h2>
-    <p>Discover how I've helped organizations achieve breakthrough results through strategic technology implementation.</p>
+    <p>Discover how I've helped organisations achieve breakthrough results through strategic technology implementation.</p>
     
     <div class="card-grid">
       <div class="feature-card">
@@ -99,7 +99,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
       <div class="feature-card">
         <h3>📊 Real-Time Analytics Dashboard</h3>
-        <p>Built comprehensive BI platform processing 1M+ events/hour with sub-second query times, enabling data-driven decisions across the organization.</p>
+        <p>Built comprehensive BI platform processing 1M+ events/hour with sub-second query times, enabling data-driven decisions across the organisation.</p>
         <a class="cta-btn secondary" href="/projects/">Explore Project</a>
       </div>
     </div>
@@ -107,7 +107,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
   <hr>
 
-  <div class="section" style="text-align: center;">
+  <div class="section" style="text-align: centre;">
     <h2>Ready to Transform Your Tech Challenges?</h2>
     <p class="lead">Let's build the future together and turn your technology vision into reality.</p>
     <div style="margin-top: 2rem;">

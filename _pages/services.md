@@ -37,13 +37,13 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     <div class="feature-card">
       <h3>☁️ Cloud-First Automation</h3>
       <p><strong>Streamline operations. Eliminate bottlenecks. Scale with confidence.</strong></p>
-      <p>I architect cloud-native solutions that modernize your infrastructure and automate critical processes. From legacy system migrations to containerized microservices, I help organizations achieve maximum efficiency and bulletproof scalability that grows with your business.</p>
+      <p>I architect cloud-native solutions that modernise your infrastructure and automate critical processes. From legacy system migrations to containerised microservices, I help organisations achieve maximum efficiency and bulletproof scalability that grows with your business.</p>
       <p><strong>Key Features:</strong></p>
       <ul>
         <li>Cloud migration strategies</li>
         <li>Infrastructure as Code (IaC)</li>
-        <li>CI/CD pipeline optimization</li>
-        <li>Container orchestration</li>
+        <li>CI/CD pipeline optimisation</li>
+        <parameter name="Container orchestration</li>
         <li>Serverless architecture</li>
       </ul>
       <a class="cta-btn" href="/contact/">Start Your Migration</a>
@@ -55,7 +55,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
       <p>I design and implement intelligent automation systems that free your team from routine work while ensuring accuracy and consistency. From RPA to AI-powered workflows, I create solutions that learn and adapt to your business needs.</p>
       <p><strong>What You Get:</strong></p>
       <ul>
-        <li>Process analysis and optimization</li>
+        <li>Process analysis and optimisation</li>
         <li>Custom automation development</li>
         <li>AI-powered decision making</li>
         <li>Workflow orchestration</li>
@@ -67,7 +67,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     <div class="feature-card">
       <h3>📊 Data Intelligence & Analytics</h3>
       <p><em>Transform raw data into actionable business intelligence.</em></p>
-      <p>I build comprehensive data platforms that collect, process, and analyze your business data in real-time. From ETL pipelines to predictive analytics, I help organizations make data-driven decisions with confidence.</p>
+      <p>I build comprehensive data platforms that collect, process, and analyse your business data in real-time. From ETL pipelines to predictive analytics, I help organisations make data-driven decisions with confidence.</p>
       <p><strong>Solutions Include:</strong></p>
       <ul>
         <li>Data pipeline development</li>
@@ -82,7 +82,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     <div class="feature-card">
       <h3>🚀 Digital Transformation Strategy</h3>
       <p><em>Navigate the digital landscape with a proven roadmap to success.</em></p>
-      <p>I partner with leadership teams to develop comprehensive digital transformation strategies that align technology initiatives with business objectives. From technology assessment to implementation planning, I guide organizations through successful digital evolution.</p>
+      <p>I partner with leadership teams to develop comprehensive digital transformation strategies that align technology initiatives with business objectives. From technology assessment to implementation planning, I guide organisations through successful digital evolution.</p>
       <p><strong>Strategic Services:</strong></p>
       <ul>
         <li>Technology assessment</li>

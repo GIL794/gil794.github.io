@@ -82,14 +82,14 @@ feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=
     <div class="feature-card">
       <h3>🚀 Quick Questions</h3>
       <p><em>Fast answers to immediate needs</em></p>
-      <p>Have a quick question about technology trends, need a brief consultation, or want to explore how automation might benefit your organization? Don't hesitate to reach out for a quick conversation.</p>
+      <p>Have a quick question about technology trends, need a brief consultation, or want to explore how automation might benefit your organisation? Don't hesitate to reach out for a quick conversation.</p>
       <p><strong>Great For:</strong></p>
       <ul>
         <li>Technology feasibility questions</li>
         <li>Quick consultations</li>
         <li>Industry trend discussions</li>
         <li>Tool recommendations</li>
-        <li>Process optimization ideas</li>
+        <li>Process optimisation ideas</li>
       </ul>
       <a class="cta-btn" href="mailto:gilangellotto@gmail.com">Ask Away</a>
     </div>
