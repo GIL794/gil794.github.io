@@ -1,15 +1,15 @@
 ---
 layout: post
-title: "DNA Sequence Analyzer: Building Smart Genomic Analysis Tools with Python"
+title: "DNA Sequence Analyser: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
 categories: [Bioinformatics, Python, Data Science]
 tags: [dna analysis, genomics, python, machine learning, bioinformatics, computational biology]
-excerpt: "Discover how to build a powerful DNA sequence analyzer using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
+excerpt: "Discover how to build a powerful DNA sequence analyser using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
 ---
 
 Hey there, Gabriele here!
 
-In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyzer—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
+In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyser—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
 
 ---
 
@@ -23,13 +23,13 @@ DNA is the blueprint of life, containing instructions encoded in just four nucle
 - **Engineer organisms** for industrial and agricultural applications
 - **Solve forensic cases** and establish paternity
 
-With genomic data becoming increasingly accessible (thanks to initiatives like the Human Genome Project), the ability to analyze and interpret DNA sequences is more valuable than ever.
+With genomic data becoming increasingly accessible (thanks to initiatives like the Human Genome Project), the ability to analyse and interpret DNA sequences is more valuable than ever.
 
 ---
 
-## **Project Overview: What Our DNA Analyzer Does**
+## **Project Overview: What Our DNA Analyser Does**
 
-The DNA Sequence Analyzer I built is a comprehensive Python-based tool that performs multiple analysis tasks:
+The DNA Sequence Analyser I built is a comprehensive Python-based tool that performs multiple analysis tasks:
 
 ### **Core Features**
 
@@ -68,14 +68,14 @@ The DNA Sequence Analyzer I built is a comprehensive Python-based tool that perf
 - Biopython (sequence handling)
 - NumPy (numerical computations)
 - Pandas (data manipulation)
-- Matplotlib/Seaborn (visualization)
+- Matplotlib/Seaborn (visualisation)
 - Scikit-learn (pattern recognition)
 ```
 
 ### **Project Structure**
 
 ```
-dna-sequence-analyzer/
+dna-sequence-analyser/
 ├── src/
 │   ├── core/
 │   │   ├── sequence_parser.py
@@ -85,7 +85,7 @@ dna-sequence-analyzer/
 │   │   ├── statistics.py
 │   │   ├── mutation_detector.py
 │   │   └── alignment.py
-│   ├── visualization/
+│   ├── visualisation/
 │   │   ├── sequence_plotter.py
 │   │   └── report_generator.py
 │   └── utils/
@@ -315,9 +315,9 @@ class MutationDetector:
 
 ---
 
-## **Visualization: Making Data Interpretable**
+## **Visualisation: Making Data Interpretable**
 
-Raw data is powerful, but visualization makes it actionable:
+Raw data is powerful, but visualisation makes it actionable:
 
 ```python
 import matplotlib.pyplot as plt
@@ -325,13 +325,13 @@ import seaborn as sns
 
 class SequencePlotter:
     """
-    Generate insightful visualizations
+    Generate insightful visualisations
     """
     
     @staticmethod
     def plot_gc_content(positions, gc_values, title="GC Content Along Sequence"):
         """
-        Visualize GC content variation
+        Visualise GC content variation
         """
         plt.figure(figsize=(14, 6))
         plt.plot(positions, gc_values, linewidth=2, color='#0366d6')
@@ -369,11 +369,11 @@ class SequencePlotter:
 
 ---
 
-## **Performance Optimization**
+## **Performance Optimisation**
 
 For large genomic datasets (millions of base pairs), performance is critical:
 
-### **Optimization Strategies**
+### **Optimisation Strategies**
 
 1. **Lazy Loading**: Process sequences in chunks rather than loading entire genomes into memory
 2. **Vectorization**: Use NumPy for numerical operations instead of Python loops
@@ -384,20 +384,20 @@ For large genomic datasets (millions of base pairs), performance is critical:
 from multiprocessing import Pool
 import numpy as np
 
-def analyze_sequence_batch(sequences, num_processes=4):
+def analyse_sequence_batch(sequences, num_processes=4):
     """
     Parallel processing of multiple sequences
     """
     with Pool(processes=num_processes) as pool:
-        results = pool.map(analyze_single_sequence, sequences)
+        results = pool.map(analyse_single_sequence, sequences)
     
     return results
 
-def analyze_single_sequence(sequence):
+def analyse_single_sequence(sequence):
     """Worker function for parallel processing"""
-    analyzer = NucleotideAnalyzer()
+    analyser = NucleotideAnalyzer()
     return {
-        'gc_content': analyzer.calculate_gc_content(sequence),
+        'gc_content': analyser.calculate_gc_content(sequence),
         'length': len(sequence),
         'orfs': PatternFinder.find_orfs(sequence)
     }
@@ -411,13 +411,13 @@ def analyze_single_sequence(sequence):
 
 ## **Real-World Applications**
 
-This DNA analyzer has been applied to several practical scenarios:
+This DNA analyser has been applied to several practical scenarios:
 
 ### **1. Cancer Genomics Research**
 Identified tumor-specific mutations in patient samples, helping oncologists select targeted therapies.
 
 ### **2. Agricultural Biotechnology**
-Analyzed crop genome sequences to identify drought-resistance genes for breeding programs.
+Analysed crop genome sequences to identify drought-resistance genes for breeding programs.
 
 ### **3. Evolutionary Biology**
 Compared homologous genes across species to construct phylogenetic trees and understand evolutionary relationships.
@@ -473,14 +473,14 @@ The project roadmap includes exciting additions:
 
 ## **Getting Started: Try It Yourself**
 
-Want to build your own DNA analyzer? Here's a quick start guide:
+Want to build your own DNA analyser? Here's a quick start guide:
 
 ### **Installation**
 
 ```bash
 # Clone the repository
-git clone https://github.com/GIL794/dna-sequence-analyzer.git
-cd dna-sequence-analyzer
+git clone https://github.com/GIL794/dna-sequence-analyser.git
+cd dna-sequence-analyser
 
 # Create virtual environment
 python -m venv venv
@@ -495,14 +495,14 @@ pip install -r requirements.txt
 ```python
 from dna_analyzer import DNAAnalyzer
 
-# Initialize analyzer
-analyzer = DNAAnalyzer()
+# Initialize analyser
+analyser = DNAAnalyzer()
 
 # Load sequence
-sequence = analyzer.load_fasta('sample_genome.fasta')
+sequence = analyser.load_fasta('sample_genome.fasta')
 
 # Perform analysis
-results = analyzer.analyze(
+results = analyser.analyse(
     sequence=sequence,
     compute_gc=True,
     find_orfs=True,
@@ -510,20 +510,20 @@ results = analyzer.analyze(
 )
 
 # Generate report
-analyzer.generate_report(results, output='analysis_report.html')
+analyser.generate_report(results, output='analysis_report.html')
 ```
 
 ---
 
 ## **Key Takeaways**
 
-Building a DNA sequence analyzer taught me valuable lessons applicable beyond bioinformatics:
+Building a DNA sequence analyser taught me valuable lessons applicable beyond bioinformatics:
 
 ✅ **Domain Knowledge is Critical**: Understanding biology was as important as coding skills
 
 ✅ **Validation Matters**: Always verify computational results against ground truth
 
-✅ **Performance Optimization**: Big data requires thoughtful architecture from day one
+✅ **Performance Optimisation**: Big data requires thoughtful architecture from day one
 
 ✅ **User-Centric Design**: Tools must be accessible to non-programmers
 
@@ -536,7 +536,7 @@ Building a DNA sequence analyzer taught me valuable lessons applicable beyond bi
 If this sparked your interest in bioinformatics, check out these resources:
 
 - **Books**: "Bioinformatics Programming Using Python" by Mitchell Model
-- **Online Courses**: Coursera's "Genomic Data Science Specialization"
+- **Online Courses**: Coursera's "Genomic Data Science Specialisation"
 - **Documentation**: [BioPython Tutorial](https://biopython.org/wiki/Documentation)
 - **Datasets**: [NCBI GenBank](https://www.ncbi.nlm.nih.gov/genbank/)
 - **Community**: [Biostars Q&A Forum](https://www.biostars.org/)

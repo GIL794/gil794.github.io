@@ -29,7 +29,7 @@ At first glance, this seems like a simple division problem. But here's where it 
 
 ### **The Mathematical Beauty**
 
-This isn't just a puzzle—it's a **combinatorial optimization problem** that touches on several mathematical concepts:
+This isn't just a puzzle—it's a **combinatorial optimisation problem** that touches on several mathematical concepts:
 
 1. **Partition Theory**: We're partitioning a set of integers into subsets with equal sums
 2. **Combinatorics**: The number of possible distributions is astronomical (C(49,7) × C(42,7) × ... ≈ 10^20)
@@ -69,7 +69,7 @@ def distribute(children, available_coins, so_far):
     """
     Recursively find valid distribution using backtracking.
     
-    Key optimizations:
+    Key optimisations:
     - Early termination when constraints violated
     - Prune branches that can't lead to solutions
     - Only generate combinations that sum to target weight
@@ -120,7 +120,7 @@ for kid_coins in combinations(available_coins, MAX_COINS_PER_CHILD):
 next_available = set(available_coins) - set(kid_coins)
 ```
 
-### **Algorithm Flow Visualization**
+### **Algorithm Flow Visualisation**
 
 ```
 Start: 49 coins available, 7 children to distribute
@@ -201,7 +201,7 @@ The Coin Distribution Puzzle is just the beginning. This repository is designed 
 - Diophantine equations and integer solutions
 - Modular arithmetic applications
 
-🎲 **Combinatorial Optimization**
+🎲 **Combinatorial Optimisation**
 - Graph coloring problems
 - Traveling salesman variants
 - Knapsack problem variations
@@ -244,9 +244,9 @@ This project thrives on community contributions! Whether you're a seasoned mathe
 
 ✨ **Submit New Problems**: Have a favorite mathematical puzzle? Add it to the collection!
 
-🚀 **Optimize Existing Solutions**: Found a more efficient algorithm? Submit a PR!
+🚀 **Optimise Existing Solutions**: Found a more efficient algorithm? Submit a PR!
 
-📚 **Improve Documentation**: Enhance explanations, add visualizations, or create tutorials
+📚 **Improve Documentation**: Enhance explanations, add visualisations, or create tutorials
 
 🐛 **Report Issues**: Found a bug or edge case? Let me know!
 
@@ -262,7 +262,7 @@ This project thrives on community contributions! Whether you're a seasoned mathe
    - Real-world applications (if applicable)
 
 2. Code should follow Python best practices (PEP 8)
-3. Solutions should prioritize clarity and educational value
+3. Solutions should prioritise clarity and educational value
 
 ---
 
@@ -274,7 +274,7 @@ In an era dominated by machine learning and AI, it's easy to overlook the founda
 Breaking complex problems into manageable, solvable components—a skill that transcends programming languages and frameworks.
 
 ### **Mathematical Literacy**
-Understanding the mathematical structures underlying computational problems enables better algorithm design and optimization.
+Understanding the mathematical structures underlying computational problems enables better algorithm design and optimisation.
 
 ### **Educational Value**
 These problems serve as excellent learning resources for students, educators, and professionals looking to sharpen their analytical skills.
@@ -286,7 +286,7 @@ There's something deeply satisfying about transforming an abstract puzzle into w
 
 ## **Technical Stack & Tools**
 
-The repository is deliberately lightweight to maximize accessibility:
+The repository is deliberately lightweight to maximise accessibility:
 
 | Component | Technology | Rationale |
 |-----------|-----------|-----------|
@@ -344,7 +344,7 @@ Here's how to get started:
 1. ⭐ **Star the repository** on GitHub
 2. 🔍 **Clone and experiment** with the code
 3. 🎯 **Try solving it yourself** before looking at the solution
-4. 💡 **Contribute your own problems** or optimizations
+4. 💡 **Contribute your own problems** or optimisations
 
 ### **For Educators**
 - Use these problems as teaching examples
@@ -365,7 +365,7 @@ I'd love to hear from you:
 - What mathematical puzzles fascinate you?
 - Have you solved similar problems? Share your approach!
 - What problems would you like to see added next?
-- Found an optimization? Let's discuss it!
+- Found an optimisation? Let's discuss it!
 
 Drop your thoughts in the comments below or reach out directly. Let's build this collection together!
 
@@ -385,10 +385,10 @@ Drop your thoughts in the comments below or reach out directly. Let's build this
 
 ## **Final Thoughts**
 
-The Coin Distribution Puzzle exemplifies what I love about the intersection of mathematics and computer science: **elegant problems that yield to systematic, logical thinking**. Whether you're optimizing cloud infrastructure, building AI systems, or simply enjoying a good puzzle, the principles remain the same:
+The Coin Distribution Puzzle exemplifies what I love about the intersection of mathematics and computer science: **elegant problems that yield to systematic, logical thinking**. Whether you're optimising cloud infrastructure, building AI systems, or simply enjoying a good puzzle, the principles remain the same:
 
 1. **Understand the problem deeply**
-2. **Identify constraints and optimize around them**
+2. **Identify constraints and optimise around them**
 3. **Choose appropriate data structures and algorithms**
 4. **Write clear, maintainable code**
 5. **Share knowledge and learn from others**

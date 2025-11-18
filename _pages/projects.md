@@ -12,7 +12,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
   <div class="section hero blog-hero">
     <h2>Featured Projects</h2>
     <p class="lead">
-      Discover how I've helped organizations transform their technology landscape and achieve breakthrough results.
+      Discover how I've helped organisations transform their technology landscape and achieve breakthrough results.
     </p>
     <div class="blog-stats">
       <div class="stat-item">
@@ -40,10 +40,10 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       <p>Legacy system transformation enabling 10x faster deployment cycles and 99.9% uptime reliability. Built on modern containerization and DevOps principles that scale with business growth.</p>
       <p><strong>Key Achievements:</strong></p>
       <ul>
-        <li>Containerized microservices architecture</li>
+        <li>Containerised microservices architecture</li>
         <li>Automated CI/CD pipelines</li>
         <li>Infrastructure as Code implementation</li>
-        <li>Cost optimization reducing operational expenses by 40%</li>
+        <li>Cost optimisation reducing operational expenses by 40%</li>
         <li>Zero-downtime deployment capabilities</li>
       </ul>
       <p><strong>Technologies:</strong> Docker, Kubernetes, AWS, Terraform, Jenkins</p>
@@ -68,8 +68,8 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
 
     <div class="feature-card">
       <h3>📊 Real-Time Analytics Dashboard</h3>
-      <p><em>Data Intelligence & Visualization</em></p>
-      <p>Comprehensive business intelligence platform processing 1M+ events per hour with real-time insights. Empowers data-driven decision making across all organizational levels.</p>
+      <p><em>Data Intelligence & Visualisation</em></p>
+      <p>Comprehensive business intelligence platform processing 1M+ events per hour with real-time insights. Empowers data-driven decision making across all organisational levels.</p>
       <p><strong>Business Results:</strong></p>
       <ul>
         <li>Processing 1M+ events per hour</li>
@@ -94,7 +94,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
         <li>Enhanced customer experience metrics</li>
         <li>Future-ready technology stack</li>
       </ul>
-      <p><strong>Focus Areas:</strong> Process optimization, Technology assessment, Change management</p>
+      <p><strong>Focus Areas:</strong> Process optimisation, Technology assessment, Change management</p>
       <a class="cta-btn" href="/contact/">Start Your Journey</a>
     </div>
   </div>
@@ -106,7 +106,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     <div class="card-grid">
       <div class="feature-card">
         <h3>🔍 Discovery & Analysis</h3>
-        <p>Deep dive into your current systems, processes, and objectives to identify optimization opportunities and potential challenges.</p>
+        <p>Deep dive into your current systems, processes, and objectives to identify optimisation opportunities and potential challenges.</p>
       </div>
 
       <div class="feature-card">
@@ -120,8 +120,8 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       </div>
 
       <div class="feature-card">
-        <h3>🚀 Deployment & Optimization</h3>
-        <p>Smooth rollout with comprehensive monitoring, performance optimization, and ongoing support to ensure long-term success.</p>
+        <h3>🚀 Deployment & Optimisation</h3>
+        <p>Smooth rollout with comprehensive monitoring, performance optimisation, and ongoing support to ensure long-term success.</p>
       </div>
     </div>
   </div>
