@@ -604,11 +604,16 @@ section {
   // Main footer section with grid layout
   .footer__main {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 3rem;
     margin-bottom: 3rem;
     padding-bottom: 2.5rem;
     border-bottom: 2px solid rgba(249, 115, 22, 0.25);
+    align-items: start;
+    
+    @media (max-width: 1024px) {
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
     
     @media (max-width: 768px) {
       grid-template-columns: 1fr;
@@ -622,9 +627,24 @@ section {
   .footer__section {
     &--main {
       grid-column: span 1;
+      text-align: left;
+    }
+    
+    &--social {
+      grid-column: span 1;
+      text-align: center;
       
-      @media (min-width: 1024px) {
-        grid-column: span 2;
+      @media (max-width: 768px) {
+        text-align: left;
+      }
+    }
+    
+    &--contact {
+      grid-column: span 1;
+      text-align: right;
+      
+      @media (max-width: 768px) {
+        text-align: left;
       }
     }
   }
@@ -675,7 +695,8 @@ section {
       content: '';
       position: absolute;
       bottom: -8px;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       width: 60px;
       height: 3px;
       background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
@@ -684,11 +705,29 @@ section {
     }
   }
   
+  // Adjust heading underline for left-aligned sections
+  .footer__section--main .footer__heading::after {
+    left: 0;
+    transform: none;
+  }
+  
+  // Adjust heading underline for right-aligned sections
+  .footer__section--contact .footer__heading::after {
+    left: auto;
+    right: 0;
+    transform: none;
+  }
+  
   // Contact section
   .footer__contact {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    align-items: flex-end;
+    
+    @media (max-width: 768px) {
+      align-items: flex-start;
+    }
   }
   
   .footer__email {
@@ -736,6 +775,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.75rem;
+    align-items: center;
+    
+    @media (max-width: 768px) {
+      align-items: flex-start;
+    }
   }
   
   .footer__social-link {
