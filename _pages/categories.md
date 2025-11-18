@@ -18,7 +18,8 @@ feature_image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?aut
 <div class="categories-container">
   <div class="categories-grid">
     {% assign all_categories = site.posts | map: "categories" | join: "," | split: "," | uniq | sort %}
-    {% assign all_categories = all_categories | concat: "Latest" | uniq %}
+    {% assign latest_array = "Latest" | split: "," %}
+    {% assign all_categories = all_categories | concat: latest_array | uniq %}
     
     {% for category in all_categories %}
       {% if category != "" %}
@@ -48,7 +49,8 @@ feature_image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?aut
                 <p class="post-item-excerpt">{{ post.excerpt | strip_html | truncatewords: 20 }}</p>
                 {% if post.categories.size > 0 %}
                   <div class="post-item-categories">
-                    {% assign post_categories = post.categories | concat: "Latest" | uniq %}
+                    {% assign latest_cat_array = "Latest" | split: "," %}
+                    {% assign post_categories = post.categories | concat: latest_cat_array | uniq %}
                     {% for cat in post_categories limit:3 %}
                       {% if cat != category %}
                         <a href="#{{ cat | slugify }}" class="mini-category-badge">{{ cat }}</a>

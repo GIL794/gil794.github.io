@@ -37,7 +37,8 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
     {% for post in site.posts %}
       <article class="post-card">
         <div class="card-content">
-          {% assign all_categories = post.categories | concat: "Latest" | uniq %}
+          {% assign latest_array = "Latest" | split: "," %}
+          {% assign all_categories = post.categories | concat: latest_array | uniq %}
           {% if all_categories.size > 0 %}
             <div class="post-categories">
               {% for category in all_categories limit:4 %}
