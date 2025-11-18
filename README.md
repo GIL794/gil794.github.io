@@ -225,7 +225,7 @@ Edit `_config.yml` to change:
 
 ## 🎨 Customisation
 
-### Color Scheme
+### Colour Scheme
 
 Edit CSS custom properties in `assets/css/styles.scss`:
 

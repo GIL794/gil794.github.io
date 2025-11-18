@@ -167,7 +167,7 @@ This document provides a comprehensive analysis and actionable recommendations f
   Current: Single large styles.scss (1119 lines)
   Recommended Structure:
   ├── styles.scss (main import file)
-  ├── _variables.scss (colors, fonts, spacing)
+  ├── _variables.scss (colours, fonts, spacing)
   ├── _mixins.scss (reusable style patterns)
   ├── _base.scss (reset, typography)
   ├── _layout.scss (grid, container, sections)
@@ -420,12 +420,12 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 5.1 WCAG 2.1 AA Compliance
 
 #### HIGH PRIORITY
-- **Color Contrast**
+- **Colour Contrast**
   ```
   Current: Good overall
   Actions:
   - Verify all text meets 4.5:1 contrast ratio
-  - Check link colors against backgrounds
+  - Check link colours against backgrounds
   - Test with browser extensions (WAVE, Axe)
   ```
 
@@ -907,7 +907,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 - **A/B Testing**
   ```
   Test variations:
-  - CTA button text and colors
+  - CTA button text and colours
   - Headline formulas
   - Layout configurations
   - Content formats
