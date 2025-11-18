@@ -336,9 +336,9 @@ Want to dive deeper? Here are resources that inspired this work:
 
 ---
 
-## **Call to Action**
+## **Ready to explore computational mathematics?**
 
-Ready to explore computational mathematics? Here's how to get started:
+Here's how to get started:
 
 ### **For Developers**
 1. ⭐ **Star the repository** on GitHub
