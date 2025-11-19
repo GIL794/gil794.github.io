@@ -33,14 +33,16 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
 </div>
 
 <div class="blog-container">
-  <div class="blog-grid">
+  <div class="blog-grid" id="blog-posts-container">
     {% for post in site.posts %}
       <article class="post-card">
         <div class="card-content">
-          {% if post.categories.size > 0 %}
+          {% assign latest_array = "Latest" | split: "," %}
+          {% assign all_categories = post.categories | concat: latest_array | uniq %}
+          {% if all_categories.size > 0 %}
             <div class="post-categories">
-              {% for category in post.categories limit:3 %}
-                <span class="category-badge">{{ category }}</span>
+              {% for category in all_categories limit:4 %}
+                <a href="/categories/#{{ category | slugify }}" class="category-badge">{{ category }}</a>
               {% endfor %}
             </div>
           {% endif %}

@@ -430,6 +430,57 @@
     });
   }
 
+  // Randomize blog posts display order
+  function randomizeBlogPosts() {
+    const blogGrid = document.getElementById('blog-posts-container');
+    if (!blogGrid) return;
+    
+    const posts = Array.from(blogGrid.children);
+    
+    // Fisher-Yates shuffle algorithm
+    for (let i = posts.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [posts[i], posts[j]] = [posts[j], posts[i]];
+    }
+    
+    // Re-append posts in shuffled order
+    posts.forEach(post => blogGrid.appendChild(post));
+  }
+
+  // Add smooth scrolling for category anchors
+  function initCategoryNavigation() {
+    // Handle hash navigation on page load
+    if (window.location.hash && window.location.pathname.includes('/categories')) {
+      setTimeout(() => {
+        const target = document.querySelector(window.location.hash);
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          // Add highlight effect
+          target.style.animation = 'highlightPulse 2s ease-in-out';
+          setTimeout(() => {
+            target.style.animation = '';
+          }, 2000);
+        }
+      }, 300);
+    }
+    
+    // Add highlight animation CSS
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes highlightPulse {
+        0%, 100% { 
+          box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+          border-color: rgba(249, 115, 22, 0.1);
+        }
+        50% { 
+          box-shadow: 0 12px 50px rgba(249, 115, 22, 0.4);
+          border-color: rgba(249, 115, 22, 0.6);
+        }
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
   // Initialize all functionality when DOM is ready
   ready(() => {
     // Core functionality
@@ -443,6 +494,10 @@
 
     initFormEnhancements();
     initPrintStyles();
+    
+    // Blog-specific functionality
+    randomizeBlogPosts();
+    initCategoryNavigation();
 
     // Add class to indicate JS is loaded
     document.documentElement.classList.add('js-loaded');

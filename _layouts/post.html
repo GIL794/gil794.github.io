@@ -5,10 +5,12 @@ layout: default
 <article class="blog-post-container">
   <div class="post-header-wrapper">
     <div class="post-header-content">
-      {% if page.categories.size > 0 %}
+      {% assign latest_array = "Latest" | split: "," %}
+      {% assign all_categories = page.categories | concat: latest_array | uniq %}
+      {% if all_categories.size > 0 %}
         <div class="post-categories-header">
-          {% for category in page.categories limit:5 %}
-            <span class="category-badge-large">{{ category }}</span>
+          {% for category in all_categories limit:6 %}
+            <a href="/categories/#{{ category | slugify }}" class="category-badge-large">{{ category }}</a>
           {% endfor %}
         </div>
       {% endif %}
