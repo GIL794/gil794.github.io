@@ -35,7 +35,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     <div class="feature-card">
       <h3>☁️ Cloud-First Automation</h3>
       <p><strong>Streamline your operations with intelligent cloud solutions.</strong></p>
-      <p>I help businesses modernize their infrastructure and automate processes for maximum efficiency and scalability. From legacy system migrations to cutting-edge containerized architectures, I design solutions that grow with your business.</p>
+      <p>I help businesses modernise their infrastructure and automate processes for maximum efficiency and scalability. From legacy system migrations to cutting-edge containerised architectures, I design solutions that grow with your business.</p>
       <a class="cta-btn" href="/services/">Explore Solutions</a>
     </div>
 

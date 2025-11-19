@@ -43,7 +43,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
         <li>Cloud migration strategies</li>
         <li>Infrastructure as Code (IaC)</li>
         <li>CI/CD pipeline optimisation</li>
-        <parameter name="Container orchestration</li>
+        <li>Container orchestration</li>
         <li>Serverless architecture</li>
       </ul>
       <a class="cta-btn" href="/contact/">Start Your Migration</a>
