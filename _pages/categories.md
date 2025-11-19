@@ -11,7 +11,7 @@ feature_image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?aut
 <div class="container">
   <div class="section hero">
     <h2>Browse by Category</h2>
-    <p class="lead">Find articles organized by topic to explore specific areas of interest</p>
+    <p class="lead">Find articles organised by topic to explore specific areas of interest</p>
   </div>
 </div>
 

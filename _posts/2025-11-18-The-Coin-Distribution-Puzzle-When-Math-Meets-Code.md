@@ -202,7 +202,7 @@ The Coin Distribution Puzzle is just the beginning. This repository is designed 
 - Modular arithmetic applications
 
 🎲 **Combinatorial Optimisation**
-- Graph coloring problems
+- Graph colouring problems
 - Traveling salesman variants
 - Knapsack problem variations
 

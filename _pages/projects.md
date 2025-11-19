@@ -35,9 +35,9 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
 
   <div class="card-grid">
     <div class="feature-card">
-      <h3>🌫️ Cloud Infrastructure Modernization</h3>
+      <h3>🌫️ Cloud Infrastructure Modernisation</h3>
       <p><strong>Cloud Architecture & DevOps</strong></p>
-      <p>Legacy system transformation enabling 10x faster deployment cycles and 99.9% uptime reliability. Built on modern containerization and DevOps principles that scale with business growth.</p>
+      <p>Legacy system transformation enabling 10x faster deployment cycles and 99.9% uptime reliability. Built on modern containerisation and DevOps principles that scale with business growth.</p>
       <p><strong>Key Achievements:</strong></p>
       <ul>
         <li>Containerised microservices architecture</li>

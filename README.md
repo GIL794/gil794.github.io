@@ -231,11 +231,11 @@ Edit CSS custom properties in `assets/css/styles.scss`:
 
 ```scss
 :root {
-  --primary-color: #f97316;      // Orange
+  --primary-colour: #f97316;      // Orange
   --primary-dark: #ea580c;       // Dark orange
-  --secondary-color: #0366d6;    // Blue
-  --text-primary: #1f2937;       // Dark gray
-  --text-secondary: #6b7280;     // Medium gray
+  --secondary-colour: #0366d6;    // Blue
+  --text-primary: #1f2937;       // Dark grey
+  --text-secondary: #6b7280;     // Medium grey
 }
 ```
 

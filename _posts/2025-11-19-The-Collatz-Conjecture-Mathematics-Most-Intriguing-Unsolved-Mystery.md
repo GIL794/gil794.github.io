@@ -130,7 +130,7 @@ The analyser includes:
 ```python
 def analyze_collatz(start, end):
     """
-    Analyze multiple sequences to find patterns.
+    Analyse multiple sequences to find patterns.
     
     Tracks:
     - Longest sequence in the range
