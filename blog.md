@@ -10,8 +10,8 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
 
 <div class="container">
   <div class="section hero blog-hero">
-    <h2>Latest Articles</h2>
-    <p class="lead">Deep dives into technology trends, practical guides, and strategic insights for modern businesses and developers.</p>
+    <h2>Explore the Unexpected - Curated Tech Insights</h2>
+    <p class="lead">Discover handpicked articles on AI, automation, and technology strategy. Each piece is carefully curated to bring you diverse perspectives—from technical deep dives to strategic business insights—ensuring every visit reveals something new and valuable.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">📚</span>
