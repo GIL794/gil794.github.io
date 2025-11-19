@@ -800,7 +800,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 #### LOW PRIORITY
 - **Strategic Affiliates**
   ```
-  Relevant programs:
+  Relevant programmes:
   - Cloud platforms (AWS, Azure, GCP)
   - SaaS tools you recommend
   - Online courses
@@ -1052,7 +1052,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 - [ ] Create podcast series
 - [ ] Build community features
 - [ ] Expand content team/contributors
-- [ ] Launch referral program
+- [ ] Launch referral programme
 - [ ] Host webinars or workshops
 - [ ] Speak at conferences
 - [ ] Comprehensive A/B testing

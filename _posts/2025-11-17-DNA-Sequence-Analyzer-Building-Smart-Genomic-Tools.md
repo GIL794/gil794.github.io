@@ -417,7 +417,7 @@ This DNA analyser has been applied to several practical scenarios:
 Identified tumor-specific mutations in patient samples, helping oncologists select targeted therapies.
 
 ### **2. Agricultural Biotechnology**
-Analysed crop genome sequences to identify drought-resistance genes for breeding programs.
+Analysed crop genome sequences to identify drought-resistance genes for breeding programmes.
 
 ### **3. Evolutionary Biology**
 Compared homologous genes across species to construct phylogenetic trees and understand evolutionary relationships.
