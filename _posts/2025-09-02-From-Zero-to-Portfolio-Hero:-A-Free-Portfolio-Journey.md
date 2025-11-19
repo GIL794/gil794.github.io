@@ -2,7 +2,7 @@
 layout: post
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-09-02
-categories: [Blog, Free Tools]
+categories: [Blogging, Free Tools]
 tags: [SEO, Web Development, Personal Branding]
 excerpt: "Learn how to create a professional blog portfolio directly on GitHub—for free! No hosting fees, version control built-in, and fully customisable."
 ---
