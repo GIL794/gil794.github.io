@@ -2,6 +2,7 @@
 layout: post
 title: "DNA Sequence Analyser: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
+time: "09:00"
 categories: [Bioinformatics, Python, Data Science]
 tags: [dna analysis, genomics, python, machine learning, bioinformatics, computational biology]
 excerpt: "Discover how to build a powerful DNA sequence analyser using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."

@@ -2,6 +2,7 @@
 layout: post
 title: "The Fibonacci Sequence: Nature's Mathematical Blueprint"
 date: 2025-11-20
+time: "17:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [fibonacci, golden ratio, algorithms, python, number theory, computational mathematics]
 excerpt: "Uncover the mathematical sequence that appears everywhere from sunflowers to stock markets. Explore multiple algorithms, the golden ratio connection, and why Fibonacci numbers fascinate mathematicians and nature lovers alike."
