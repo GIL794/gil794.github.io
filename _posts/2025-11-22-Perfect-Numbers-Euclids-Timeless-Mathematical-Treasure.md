@@ -2,6 +2,7 @@
 layout: post
 title: "Perfect Numbers: Euclid's Timeless Mathematical Treasure"
 date: 2025-11-22
+time: "17:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [perfect numbers, number theory, algorithms, python, mersenne primes, computational mathematics]
 excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 51 perfect numbers are known despite millennia of searching."

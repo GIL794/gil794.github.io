@@ -2,6 +2,7 @@
 layout: post
 title: "Email Chaos to Inbox Zero: How I Finally Tamed My Email Monster (And You Can Too!)"
 date: 2025-09-02
+time: "09:00"
 categories: [Productivity, Free Tools]
 tags: [email productivity, free tools, time management, workflow optimisation]
 excerpt: "Discover the completely free tools and simple strategies that helped me go from 847 unread emails to Inbox Zero—and how you can do the same."

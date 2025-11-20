@@ -2,6 +2,7 @@
 layout: post
 title: "The Sieve of Eratosthenes: Ancient Algorithm, Timeless Efficiency"
 date: 2025-11-23
+time: "09:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [prime numbers, algorithms, python, sieve of eratosthenes, number theory, computational mathematics]
 excerpt: "Discover the 2,000-year-old algorithm that remains one of the most efficient ways to find prime numbers. Explore twin primes, prime gaps, and the patterns hiding in mathematics's most fundamental building blocks."

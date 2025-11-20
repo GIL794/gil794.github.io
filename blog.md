@@ -35,7 +35,7 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
 <div class="blog-container">
   <div class="blog-grid" id="blog-posts-container">
     {% for post in site.posts %}
-      <article class="post-card">
+      <article class="post-card" data-post-date="{{ post.date | date: '%Y-%m-%d' }}" data-post-time="{{ post.time | default: '09:00' }}">
         <div class="card-content">
           {% assign latest_array = "Latest" | split: "," %}
           {% assign all_categories = post.categories | concat: latest_array | uniq %}
@@ -84,3 +84,65 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
     {% endfor %}
   </div>
 </div>
+
+<script>
+/**
+ * Filter blog posts to show 2 per day (9 AM and 5 PM)
+ * Posts are made visible according to their scheduled time
+ */
+(function() {
+  'use strict';
+  
+  function filterBlogPostsByTime() {
+    const now = new Date();
+    const currentDate = now.toISOString().split('T')[0]; // YYYY-MM-DD format
+    const currentHour = now.getHours();
+    const currentMinute = now.getMinutes();
+    const currentTimeInMinutes = currentHour * 60 + currentMinute;
+    
+    const posts = document.querySelectorAll('.post-card[data-post-date]');
+    
+    posts.forEach(post => {
+      const postDate = post.getAttribute('data-post-date');
+      const postTime = post.getAttribute('data-post-time') || '09:00';
+      
+      // Parse post time (HH:MM format)
+      const [postHour, postMinute] = postTime.split(':').map(Number);
+      const postTimeInMinutes = postHour * 60 + postMinute;
+      
+      // Determine visibility based on date and time
+      let shouldShow = false;
+      
+      if (postDate < currentDate) {
+        // Past posts are always visible
+        shouldShow = true;
+      } else if (postDate === currentDate) {
+        // For today's posts, check if current time has passed the post time
+        shouldShow = currentTimeInMinutes >= postTimeInMinutes;
+      } else {
+        // Future posts are hidden
+        shouldShow = false;
+      }
+      
+      // Apply visibility
+      if (shouldShow) {
+        post.style.display = '';
+        post.classList.remove('post-hidden');
+      } else {
+        post.style.display = 'none';
+        post.classList.add('post-hidden');
+      }
+    });
+  }
+  
+  // Run filter when page loads
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', filterBlogPostsByTime);
+  } else {
+    filterBlogPostsByTime();
+  }
+  
+  // Re-run filter every minute to catch time changes
+  setInterval(filterBlogPostsByTime, 60000);
+})();
+</script>

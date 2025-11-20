@@ -2,6 +2,7 @@
 layout: post
 title: "Pythagorean Triples: The Geometry Behind Perfect Right Triangles"
 date: 2025-11-24
+time: "17:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [pythagorean triples, geometry, algorithms, python, number theory, computational mathematics]
 excerpt: "Explore the integer solutions to a² + b² = c²—the Pythagorean triples that define perfect right triangles. Discover ancient Babylonian methods, Euclid's formula, and why these triples appear throughout mathematics and construction."

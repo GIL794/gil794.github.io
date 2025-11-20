@@ -2,6 +2,7 @@
 layout: post
 title: "The Collatz Conjecture: Mathematics's Most Intriguing Unsolved Mystery"
 date: 2025-11-19
+time: "09:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [number theory, algorithms, python, unsolved problems, computational mathematics, collatz conjecture]
 excerpt: "Dive into one of mathematics's most captivating unsolved problems: the Collatz conjecture. Explore how simple rules create complex patterns and discover why this 3n+1 problem has puzzled mathematicians for decades."

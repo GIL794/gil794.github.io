@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Coin Distribution Puzzle: When Math Meets Code"
+time: "17:00"
 date: 2025-11-18
 categories: [Algorithms, Python, Mathematics]
 tags: [combinatorics, algorithms, python, problem solving, computational mathematics, backtracking]

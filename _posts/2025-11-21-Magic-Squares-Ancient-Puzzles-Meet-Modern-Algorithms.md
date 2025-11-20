@@ -2,6 +2,7 @@
 layout: post
 title: "Magic Squares: Ancient Puzzles Meet Modern Algorithms"
 date: 2025-11-21
+time: "09:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [magic squares, algorithms, python, combinatorics, puzzle solving, computational mathematics]
 excerpt: "Discover the mathematical elegance of magic squares—ancient puzzles where every row, column, and diagonal sum to the same number. Explore three distinct algorithms for generating these mystical grids."

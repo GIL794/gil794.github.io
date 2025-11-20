@@ -2,6 +2,7 @@
 layout: post
 title: "From Invisible to Discoverable: How to Make Your GitHub Blog Rank on Google with SEO"
 date: 2025-09-02
+time: "09:00"
 categories: [SEO, Blogging, Free Tools]
 tags: [github blog, seo, google ranking, discoverability, online presence, free website]
 excerpt: "Transform your GitHub blog from invisible to discoverable with practical SEO strategies that actually work. Learn how to rank on Google and attract real visitors."
