@@ -42,13 +42,15 @@ This document provides a comprehensive analysis and actionable recommendations f
 **Recommendations:**
 
 #### HIGH PRIORITY
+
 - **Establish Publishing Schedule**: Aim for at least 2-4 posts per month
   - Consistency signals authority to search engines
   - Regular content keeps readers engaged
   - Builds anticipation and loyalty
 
 - **Content Calendar Implementation**
-  ```
+  
+  ```text
   Suggested Monthly Themes:
   - Week 1: Technical deep-dives (AI, Cloud, Automation)
   - Week 2: Case studies and project showcases
@@ -69,6 +71,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 **Recommendations:**
 
 #### HIGH PRIORITY
+
 - **Expand Technical Depth**
   - Add code examples with syntax highlighting
   - Include architecture diagrams (use Mermaid.js or draw.io)
@@ -90,6 +93,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 **Missing Content Opportunities:**
 
 #### MEDIUM PRIORITY
+
 - **Portfolio Projects**
   - Currently only 4 placeholder projects
   - Add 6-8 detailed case studies with:
@@ -118,6 +122,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 1.4 Multimedia Integration
 
 #### MEDIUM PRIORITY
+
 - **Video Content**
   - Create YouTube channel for tutorials
   - Embed videos in blog posts
@@ -141,8 +146,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 2.1 Site Structure Enhancements
 
 #### HIGH PRIORITY
+
 - **Add Missing Essential Pages**
-  ```
+
+  ```text
   Create these pages:
   - /portfolio/ - Dedicated portfolio landing page
   - /resources/ - Tools, templates, guides
@@ -162,7 +169,9 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 2.2 Code Quality & Organisation
 
 #### MEDIUM PRIORITY
+
 - **Modularize CSS**
+
   ```scss
   Current: Single large styles.scss (1119 lines)
   Recommended Structure:
@@ -178,6 +187,7 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **JavaScript Enhancement**
+
   ```javascript
   Current: Basic main.js
   Recommendations:
@@ -192,6 +202,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 2.3 Advanced Features
 
 #### MEDIUM PRIORITY
+
 - **Search Functionality**
   - Implement [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
   - Alternative: Algolia integration for advanced search
@@ -219,6 +230,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 2.4 Progressive Web App (PWA)
 
 #### LOW PRIORITY
+
 - **PWA Implementation**
   - Add manifest.json
   - Implement service worker for offline access
@@ -232,7 +244,9 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 3.1 On-Page SEO Improvements
 
 #### HIGH PRIORITY
+
 - **Meta Description Optimisation**
+
   ```yaml
   Current: Basic descriptions
   Recommended: Unique, compelling 150-160 character descriptions
@@ -257,7 +271,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   - Add image sitemaps
 
 - **Internal Linking Strategy**
-  ```
+
+  ```text
   Create link architecture:
   - Homepage → Services → Projects (case studies)
   - Blog posts → Related services
@@ -269,6 +284,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 3.2 Technical SEO
 
 #### HIGH PRIORITY
+
 - **XML Sitemap Enhancement**
   - Verify sitemap.xml is generating correctly
   - Submit to Google Search Console
@@ -276,7 +292,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   - Add sitemap to robots.txt
 
 - **Robots.txt Optimisation**
-  ```
+
+  ```text
   Create /robots.txt:
   User-agent: *
   Allow: /
@@ -296,6 +313,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 3.3 Local SEO (if applicable)
 
 #### LOW PRIORITY
+
 - If targeting local clients:
   - Add location-specific pages
   - Claim Google Business Profile
@@ -305,8 +323,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 3.4 Content SEO
 
 #### MEDIUM PRIORITY
+
 - **Keyword Research & Targeting**
-  ```
+
+  ```text
   High-value keywords to target:
   - "AI solution architect"
   - "cloud automation consultant"
@@ -333,8 +353,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 4.1 Page Speed Improvements
 
 #### HIGH PRIORITY
+
 - **Image Optimisation**
-  ```
+
+  ```text
   Current: Using Unsplash direct links
   Recommendations:
   - Download and optimise images locally
@@ -346,7 +368,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **CSS Optimisation**
-  ```
+
+  ```text
   Actions:
   - Minify CSS in production
   - Remove unused CSS (PurgeCSS)
@@ -355,7 +378,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **JavaScript Optimisation**
-  ```
+
+  ```text
   Actions:
   - Minify JavaScript
   - Defer or async load non-critical JS
@@ -366,8 +390,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 4.2 Caching Strategy
 
 #### MEDIUM PRIORITY
+
 - **Browser Caching**
-  ```
+
+  ```text
   Add _headers file for Netlify:
   /*
     Cache-Control: public, max-age=31536000
@@ -385,8 +411,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 4.3 Core Web Vitals
 
 #### HIGH PRIORITY
+
 - **Monitor & Improve**
-  ```
+
+  ```text
   Target Metrics:
   - LCP (Largest Contentful Paint): < 2.5s
   - FID (First Input Delay): < 100ms
@@ -407,6 +435,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 4.4 Mobile Performance
 
 #### MEDIUM PRIORITY
+
 - **Mobile-First Optimisation**
   - Test on real devices
   - Optimise touch targets (min 44x44px)
@@ -420,8 +449,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 5.1 WCAG 2.1 AA Compliance
 
 #### HIGH PRIORITY
+
 - **Colour Contrast**
-  ```
+
+  ```text
   Current: Good overall
   Actions:
   - Verify all text meets 4.5:1 contrast ratio
@@ -436,7 +467,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   - Test with keyboard only (no mouse)
 
 - **Screen Reader Support**
-  ```
+
+  ```text
   Improvements:
   - Add ARIA labels where needed
   - Use semantic HTML consistently
@@ -448,7 +480,9 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 5.2 Semantic HTML
 
 #### MEDIUM PRIORITY
+
 - **Improve Structure**
+
   ```html
   Use semantic elements:
   - <nav> for navigation
@@ -462,12 +496,15 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 5.3 Forms Accessibility
 
 #### MEDIUM PRIORITY
+
+```text
 - When adding contact forms:
   - Label all inputs with <label>
   - Add aria-required for required fields
   - Provide clear error messages
   - Show success confirmations
   - Support form validation
+```
 
 ---
 
@@ -476,13 +513,15 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 6.1 HTTPS & Secure Headers
 
 #### HIGH PRIORITY
+
 - **Enforce HTTPS**
   - GitHub Pages provides free HTTPS ✓
   - Ensure all external resources use HTTPS
   - Add canonical URLs with https://
 
 - **Security Headers**
-  ```
+
+  ```text
   Recommended headers (if moving to Netlify/Cloudflare):
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
@@ -494,7 +533,9 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 6.2 Dependency Security
 
 #### MEDIUM PRIORITY
+
 - **Regular Updates**
+
   ```bash
   Monthly routine:
   - bundle update
@@ -504,6 +545,7 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Audit Dependencies**
+
   ```bash
   bundle audit
   ```
@@ -511,6 +553,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 6.3 Privacy & GDPR
 
 #### MEDIUM PRIORITY
+
 - **Privacy Policy**
   - Create comprehensive privacy policy page
   - Disclose analytics usage
@@ -525,6 +568,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 6.4 Content Security
 
 #### LOW PRIORITY
+
 - **Protect Original Content**
   - Add copyright notices
   - Use watermarks on custom graphics
@@ -538,13 +582,15 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 7.1 Navigation Improvements
 
 #### HIGH PRIORITY
+
 - **Search Bar**
   - Add prominent search in header
   - Implement autocomplete
   - Show recent searches
 
 - **Breadcrumbs**
-  ```
+
+  ```text
   Home > Blog > AI & Machine Learning > Article Title
   ```
 
@@ -556,7 +602,9 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 7.2 Reading Experience
 
 #### MEDIUM PRIORITY
+
 - **Typography Enhancements**
+
   ```css
   Recommendations:
   - Increase line-height: 1.7-1.8
@@ -580,6 +628,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 7.3 Interactive Elements
 
 #### MEDIUM PRIORITY
+
 - **Feedback Mechanisms**
   - "Was this helpful?" buttons
   - Quick reaction emojis
@@ -595,6 +644,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 7.4 404 & Error Pages
 
 #### LOW PRIORITY
+
 - **Custom 404 Page**
   - Create engaging 404 page
   - Include search functionality
@@ -608,8 +658,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 8.1 Email Marketing
 
 #### HIGH PRIORITY
+
 - **Newsletter Implementation**
-  ```
+
+  ```text
   Tools to consider:
   - Mailchimp (free tier: 500 subscribers)
   - ConvertKit (for creators)
@@ -618,7 +670,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Lead Magnet Creation**
-  ```
+
+  ```text
   Content upgrades:
   - "Ultimate Cloud Migration Checklist" (PDF)
   - "AI Implementation Framework" (Template)
@@ -627,7 +680,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Email Sequence**
-  ```
+
+  ```text
   Welcome Series:
   Day 1: Introduction & free resource
   Day 3: Best blog posts
@@ -639,8 +693,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 8.2 Social Media Strategy
 
 #### HIGH PRIORITY
+
 - **LinkedIn Optimisation**
-  ```
+
+  ```text
   Actions:
   - Share all new blog posts
   - Create carousel posts from blog content
@@ -651,7 +707,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Twitter/X Strategy**
-  ```
+
+  ```text
   Content ideas:
   - Thread summaries of blog posts
   - Quick tips and insights
@@ -662,7 +719,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **YouTube Channel**
-  ```
+
+  ```text
   Video content:
   - Tutorial series
   - Project walkthroughs
@@ -675,8 +733,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 8.3 Content Distribution
 
 #### MEDIUM PRIORITY
+
 - **Content Syndication**
-  ```
+
+  ```text
   Platforms to consider:
   - Dev.to (developer community)
   - Medium (broader audience)
@@ -686,7 +746,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Community Engagement**
-  ```
+
+  ```text
   Participate in:
   - Reddit (r/programming, r/automation, r/cloudcomputing)
   - Hacker News (share valuable content)
@@ -698,6 +759,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 8.4 SEO Content Marketing
 
 #### MEDIUM PRIORITY
+
 - **Guest Blogging**
   - Write for industry publications
   - Contribute to tech blogs
@@ -705,7 +767,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   - Expand audience reach
 
 - **Backlink Building**
-  ```
+
+  ```text
   Strategies:
   - Create linkable assets (research, infographics)
   - Broken link building
@@ -717,8 +780,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 8.5 Analytics & Tracking
 
 #### HIGH PRIORITY
+
 - **Google Analytics 4**
-  ```
+
+  ```text
   Setup:
   - Create GA4 property
   - Add tracking code to all pages
@@ -728,7 +793,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Google Search Console**
-  ```
+
+  ```text
   Actions:
   - Verify site ownership
   - Submit sitemap
@@ -738,7 +804,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Additional Analytics**
-  ```
+
+  ```text
   Consider:
   - Hotjar (heatmaps, session recordings)
   - Plausible Analytics (privacy-friendly)
@@ -747,7 +814,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Key Metrics to Track**
-  ```
+
+  ```text
   Essential KPIs:
   - Unique visitors
   - Page views per session
@@ -766,8 +834,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 9.1 Service Offerings
 
 #### HIGH PRIORITY
+
 - **Productize Services**
-  ```
+
+  ```text
   Create packages:
   - "AI Strategy Session" (1-hour consultation)
   - "Cloud Migration Assessment" (3-day engagement)
@@ -784,8 +854,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 9.2 Digital Products
 
 #### MEDIUM PRIORITY
+
 - **Create & Sell**
-  ```
+
+  ```text
   Product ideas:
   - E-books (comprehensive guides)
   - Video courses (Gumroad, Teachable)
@@ -798,8 +870,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 9.3 Affiliate Marketing
 
 #### LOW PRIORITY
+
 - **Strategic Affiliates**
-  ```
+
+  ```text
   Relevant programmes:
   - Cloud platforms (AWS, Azure, GCP)
   - SaaS tools you recommend
@@ -813,6 +887,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 9.4 Sponsorships
 
 #### LOW PRIORITY
+
 - **Once established**
   - Accept sponsored content
   - Brand partnerships
@@ -826,8 +901,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 10.1 Regular Maintenance Schedule
 
 #### HIGH PRIORITY
+
 - **Weekly Tasks**
-  ```
+
+  ```text
   ☐ Review analytics
   ☐ Respond to comments
   ☐ Check for broken links
@@ -836,7 +913,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Monthly Tasks**
-  ```
+
+  ```text
   ☐ Update dependencies (bundle update)
   ☐ Review and update old content
   ☐ Check SEO rankings
@@ -846,7 +924,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Quarterly Tasks**
-  ```
+
+  ```text
   ☐ Comprehensive SEO audit
   ☐ Performance testing
   ☐ Accessibility audit
@@ -858,8 +937,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 10.2 Monitoring Tools
 
 #### MEDIUM PRIORITY
+
 - **Uptime Monitoring**
-  ```
+
+  ```text
   Services:
   - UptimeRobot (free)
   - Pingdom
@@ -868,7 +949,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **Performance Monitoring**
-  ```
+
+  ```text
   Tools:
   - Google PageSpeed Insights
   - Lighthouse CI (automated)
@@ -877,7 +959,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **SEO Monitoring**
-  ```
+
+  ```text
   Track:
   - Keyword rankings (Ahrefs, SEMrush, free alternatives)
   - Backlinks (Google Search Console)
@@ -888,13 +971,15 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 10.3 Backup Strategy
 
 #### MEDIUM PRIORITY
+
 - **Version Control**
   - Git repository is primary backup ✓
   - Keep clean commit history
   - Tag major versions
 
 - **Content Backup**
-  ```
+
+  ```text
   Additional backups:
   - Clone repository monthly to external drive
   - Export analytics data quarterly
@@ -904,8 +989,10 @@ This document provides a comprehensive analysis and actionable recommendations f
 ### 10.4 Continuous Improvement
 
 #### ONGOING
+
 - **A/B Testing**
-  ```
+
+  ```text
   Test variations:
   - CTA button text and colours
   - Headline formulas
@@ -914,7 +1001,8 @@ This document provides a comprehensive analysis and actionable recommendations f
   ```
 
 - **User Feedback**
-  ```
+
+  ```text
   Collect insights:
   - User surveys (Typeform, Google Forms)
   - Feedback widgets
@@ -996,6 +1084,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 - [ ] Add Resources page
 
 **Expected Outcomes:**
+
 - Basic analytics in place
 - Consistent publishing schedule
 - Growing email list
@@ -1017,6 +1106,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 - [ ] Create lead magnets (2-3 downloadable resources)
 
 **Expected Outcomes:**
+
 - Improved SEO rankings
 - Better Core Web Vitals scores
 - Increased time on site
@@ -1038,6 +1128,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 - [ ] Implement booking system
 
 **Expected Outcomes:**
+
 - Diversified traffic sources
 - Increased authority and backlinks
 - Revenue generation
@@ -1059,6 +1150,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 - [ ] International SEO (if applicable)
 
 **Expected Outcomes:**
+
 - Multiple revenue streams
 - Strong brand recognition
 - Established community
@@ -1069,6 +1161,7 @@ This document provides a comprehensive analysis and actionable recommendations f
 ## 📊 Success Metrics & KPIs
 
 ### Traffic Metrics
+
 - **Target Year 1**: 10,000+ monthly visitors
 - **Target Year 2**: 50,000+ monthly visitors
 - Organic search: 60-70% of traffic
@@ -1076,23 +1169,27 @@ This document provides a comprehensive analysis and actionable recommendations f
 - Social: 10-15% of traffic
 
 ### Engagement Metrics
+
 - Average session duration: > 3 minutes
 - Pages per session: > 2.5
 - Bounce rate: < 60%
 - Return visitor rate: > 30%
 
 ### Conversion Metrics
+
 - Newsletter signup rate: 3-5%
 - Contact form submissions: 10-20/month
 - Email list growth: 100+ subscribers/month
 
 ### SEO Metrics
+
 - Domain Authority: > 30 (Year 1)
 - Ranking keywords: > 100
 - Top 10 rankings: > 20
 - Backlinks: > 50 quality links
 
 ### Business Metrics
+
 - Qualified leads: 5-10/month
 - Consultation requests: 2-5/month
 - Project inquiries: 1-3/month
@@ -1113,18 +1210,21 @@ Your portfolio blog has a strong foundation with excellent design, responsive la
 ### Priority Focus Areas
 
 **Immediate (This Month):**
+
 - Analytics setup
 - Newsletter implementation
 - Blog posting consistency
 - SEO basics
 
 **Short-term (Months 2-3):**
+
 - Content expansion
 - Performance optimisation
 - Social media presence
 - Lead generation
 
 **Long-term (Months 4-12):**
+
 - Authority building
 - Product creation
 - Community development
@@ -1135,6 +1235,7 @@ Your portfolio blog has a strong foundation with excellent design, responsive la
 ## 📚 Additional Resources
 
 ### Recommended Tools
+
 - **SEO**: Ahrefs, SEMrush (paid) | Ubersuggest, Google Search Console (free)
 - **Analytics**: Google Analytics 4, Microsoft Clarity
 - **Design**: Figma, Canva, Adobe Express
@@ -1143,6 +1244,7 @@ Your portfolio blog has a strong foundation with excellent design, responsive la
 - **Video**: Loom, OBS Studio, DaVinci Resolve
 
 ### Learning Resources
+
 - **Jekyll**: Official documentation, CloudCannon tutorials
 - **SEO**: Moz Beginner's Guide, Backlinko
 - **Content Marketing**: HubSpot Academy, Content Marketing Institute
@@ -1173,6 +1275,7 @@ Your blog is already professional and well-crafted. These recommendations will h
 
 ---
 
+```html
 <div align="center">
 
 **📊 Keep this document updated as you implement changes!**
@@ -1180,3 +1283,4 @@ Your blog is already professional and well-crafted. These recommendations will h
 Good luck with your blog growth journey! 🚀
 
 </div>
+```

@@ -1,16 +1,17 @@
 ---
-layout: post
+layout: default 
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
-date: 2025-09-02
-time: "17:00"
-categories: [Blogging, Free Tools]
+date: 2025-08-07
+categories: [Blog, Free Tools]
 tags: [SEO, Web Development, Personal Branding]
-excerpt: "Learn how to create a professional blog portfolio directly on GitHub—for free! No hosting fees, version control built-in, and fully customisable."
 ---
+
+# From Zero to Portfolio Hero: A Free Portfolio Journey
+
 
 Hey there, Gabriele here!
 
-I know the struggle... You want to showcase your work, share your insights, or just have a creative outlet, but starting a blog or portfolio feels like scaling Mount Everest without a rope. Especially when "free" options either come with hidden costs, ugly ads, or complex setups.
+I know the struggle... You want to showcase your work, share your insights, or just have a creative outlet, but starting a blog or portfolio feels like scaling Mount Everest without a rope. Especially when "free" options either come with hidden costs, ugly ads, or complex setups. 
 
 For ages, I wrestled with this, hearing similar frustrations from friends and colleagues: "How do I build a professional-looking online presence without breaking the bank or learning a new programming language?"
 
@@ -24,7 +25,7 @@ Before we dive into the "how," let’s talk "why." GitHub, primarily known for c
 
 *   **Absolutely Free:** No hosting fees, ever.
 *   **Version Control Built-In:** Every change is tracked, so you can revert if needed.
-*   **Customisable:** Use themes, HTML, CSS, and JavaScript for a unique look.
+*   **Customizable:** Use themes, HTML, CSS, and JavaScript for a unique look.
 *   **SEO-Friendly:** With proper setup, Google and other search engines can find your content.
 *   **Community Support:** A massive community means tons of resources and help if you get stuck.
 
@@ -108,7 +109,7 @@ To make sure your amazing content gets discovered:
 
 *   **Keyword-Rich Titles & Content:** Use words and phrases your target audience searches for.
 *   **Descriptive File Names:** Use hyphens, not spaces, and include keywords (e.g., `free-blog-github-tutorial.md`).
-*   **`README.md` Optimisation:** Your repository’s `README.md` also gets indexed. Use it to introduce your blog and link to popular posts.
+*   **`README.md` Optimization:** Your repository’s `README.md` also gets indexed. Use it to introduce your blog and link to popular posts.
 *   **Internal Linking:** Link between your blog posts and to your portfolio pieces.
 *   **External Linking:** Share your blog on social media (LinkedIn, etc.) and other platforms.
 *   **Regular Updates:** Search engines love fresh content. Post consistently!
@@ -122,7 +123,7 @@ This is just the start! As you get comfortable, you might explore:
 
 *   **Jekyll or Hugo:** Static site generators that simplify blog management, themes, and navigation, but require a bit more setup.
 *   **Custom Domains:** Connect your own domain name (e.g., `www.yourblog.com`) to your GitHub Pages site for a more professional look.
-*   **CSS Styling:** Learn basic CSS to customise colours, fonts, and layout.
+*   **CSS Styling:** Learn basic CSS to customize colors, fonts, and layout.
 *   **GitHub Actions:** Automate parts of your blog, like deploying new posts.
 *   **Start With A Theme:** I find always helpful to start with something already initiated, is easier to roam around and understand what each thing does and where its house is. Check out this [link](https://chadbaldwin.net/2021/03/14/how-to-build-a-sql-blog.html/).
 
