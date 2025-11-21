@@ -12,86 +12,86 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
   <div class="section hero blog-hero">
     <h2>Services</h2>
     <p class="lead">
-      Transform your technology challenges into competitive advantages through expert solutions that drive real business results.
+      Leverage 10+ years of cross-industry experience and proven AI/ML expertise to transform your technology challenges into measurable business advantages.
     </p>
     <div class="blog-stats">
       <div class="stat-item">
-        <span class="stat-icon">☁️</span>
-        <span class="stat-number">4</span>
-        <span class="stat-label">Core Services</span>
+        <span class="stat-icon">🤖</span>
+        <span class="stat-number">5</span>
+        <span class="stat-label">AI Products Launched</span>
       </div>
       <div class="stat-item">
         <span class="stat-icon">⚡</span>
-        <span class="stat-number">85%</span>
-        <span class="stat-label">Avg Efficiency Gain</span>
+        <span class="stat-number">75%</span>
+        <span class="stat-label">Productivity Gains</span>
       </div>
       <div class="stat-item">
         <span class="stat-icon">🎯</span>
-        <span class="stat-number">100%</span>
-        <span class="stat-label">Results Focused</span>
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years Experience</span>
       </div>
     </div>
   </div>
 
   <div class="card-grid">
     <div class="feature-card">
-      <h3>☁️ Cloud-First Automation</h3>
-      <p><strong>Streamline operations. Eliminate bottlenecks. Scale with confidence.</strong></p>
-      <p>I architect cloud-native solutions that modernise your infrastructure and automate critical processes. From legacy system migrations to containerised microservices, I help organisations achieve maximum efficiency and bulletproof scalability that grows with your business.</p>
-      <p><strong>Key Features:</strong></p>
+      <h3>🤖 NLP & AI Solution Architecture</h3>
+      <p><strong>Proven expertise: 5 successful AI products launched with 75% productivity gains.</strong></p>
+      <p>At AllianceNews Ltd, I craft sophisticated NLP prompts and architect AI/ML solutions that deliver measurable business impact. From natural language processing to machine learning model deployment, I translate complex business requirements into scalable, production-ready AI systems.</p>
+      <p><strong>Key Capabilities:</strong></p>
       <ul>
-        <li>Cloud migration strategies</li>
-        <li>Infrastructure as Code (IaC)</li>
-        <li>CI/CD pipeline optimisation</li>
-        <li>Container orchestration</li>
-        <li>Serverless architecture</li>
+        <li>NLP/NLG prompt engineering and optimization</li>
+        <li>AI/ML solution architecture (AWS focus)</li>
+        <li>Machine learning model development and deployment</li>
+        <li>Stakeholder communication and requirements translation</li>
+        <li>AI product development and launch strategy</li>
       </ul>
-      <a class="cta-btn" href="/contact/">Start Your Migration</a>
+      <a class="cta-btn" href="/contact/">Discuss AI Solutions</a>
     </div>
 
     <div class="feature-card">
-      <h3>🤖 Intelligent Process Automation</h3>
-      <p><em>Turn repetitive tasks into strategic advantages through smart automation.</em></p>
-      <p>I design and implement intelligent automation systems that free your team from routine work while ensuring accuracy and consistency. From RPA to AI-powered workflows, I create solutions that learn and adapt to your business needs.</p>
+      <h3>📊 Data Science & Analytics</h3>
+      <p><em>Transform data into strategic insights with academic rigor and practical experience.</em></p>
+      <p>Combining formal education in Data Science and AI (University of East London) with hands-on experience, I help organisations unlock the value in their data. From exploratory analysis to predictive modeling, I deliver actionable insights that drive business decisions.</p>
       <p><strong>What You Get:</strong></p>
       <ul>
-        <li>Process analysis and optimisation</li>
-        <li>Custom automation development</li>
-        <li>AI-powered decision making</li>
-        <li>Workflow orchestration</li>
-        <li>Performance monitoring</li>
-      </ul>
-      <a class="cta-btn" href="/contact/">Automate Your Processes</a>
-    </div>
-
-    <div class="feature-card">
-      <h3>📊 Data Intelligence & Analytics</h3>
-      <p><em>Transform raw data into actionable business intelligence.</em></p>
-      <p>I build comprehensive data platforms that collect, process, and analyse your business data in real-time. From ETL pipelines to predictive analytics, I help organisations make data-driven decisions with confidence.</p>
-      <p><strong>Solutions Include:</strong></p>
-      <ul>
-        <li>Data pipeline development</li>
-        <li>Real-time analytics</li>
-        <li>Predictive modeling</li>
-        <li>Dashboard creation</li>
-        <li>Data governance</li>
+        <li>Data analysis and visualization</li>
+        <li>Predictive modeling and forecasting</li>
+        <li>Statistical analysis and hypothesis testing</li>
+        <li>Business intelligence dashboard development</li>
+        <li>Data-driven decision support systems</li>
       </ul>
       <a class="cta-btn" href="/contact/">Unlock Your Data</a>
     </div>
 
     <div class="feature-card">
-      <h3>🚀 Digital Transformation Strategy</h3>
-      <p><em>Navigate the digital landscape with a proven roadmap to success.</em></p>
-      <p>I partner with leadership teams to develop comprehensive digital transformation strategies that align technology initiatives with business objectives. From technology assessment to implementation planning, I guide organisations through successful digital evolution.</p>
-      <p><strong>Strategic Services:</strong></p>
+      <h3>🚀 Digital Marketing & Business Growth</h3>
+      <p><em>10+ years delivering 100% growth in social media, leads, and online sales.</em></p>
+      <p>From Digital Marketing Manager at DREAMPOWER Ltd (2014-2018) to Letting & Marketing Manager at GIL LETTINGS (2019-2021), I've consistently delivered exceptional results through strategic R&D, social media management, and brand development across B2B and B2C contexts.</p>
+      <p><strong>Proven Strategies:</strong></p>
       <ul>
-        <li>Technology assessment</li>
-        <li>Digital roadmap creation</li>
-        <li>Change management</li>
-        <li>Team training & development</li>
-        <li>ROI measurement</li>
+        <li>Digital marketing strategy and execution</li>
+        <li>Social media management and growth</li>
+        <li>Brand development and visibility</li>
+        <li>SEO, web development, and UI/UX optimization</li>
+        <li>Lead generation and conversion optimization</li>
       </ul>
-      <a class="cta-btn" href="/contact/">Plan Your Transformation</a>
+      <a class="cta-btn" href="/contact/">Grow Your Business</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>🎓 Training & Education</h3>
+      <p><em>HP Lecturer sharing knowledge and building high-performing teams.</em></p>
+      <p>With cross-functional expertise spanning AI/ML, data science, digital marketing, and business management, I provide comprehensive training and mentorship. Whether it's technical upskilling or strategic leadership development, I help teams and individuals reach their full potential.</p>
+      <p><strong>Training Areas:</strong></p>
+      <ul>
+        <li>AI/ML fundamentals and applications</li>
+        <li>Data science and analytics</li>
+        <li>Digital marketing and business strategy</li>
+        <li>Team leadership and project management</li>
+        <li>Cross-functional collaboration and communication</li>
+      </ul>
+      <a class="cta-btn" href="/contact/">Elevate Your Team</a>
     </div>
   </div>
 
@@ -100,18 +100,18 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
 
     <div class="card-grid">
       <div class="feature-card">
-        <h3>🎯 Results-Focused</h3>
-        <p>Every solution I deliver is designed with clear success metrics and measurable business impact in mind.</p>
+        <h3>🎯 Proven Track Record</h3>
+        <p>Real results from real projects: 5 AI products launched, 75% productivity gains, 50% engagement improvements, and consistent 100% growth in digital marketing initiatives across multiple industries.</p>
       </div>
 
       <div class="feature-card">
-        <h3>🔧 Hands-On Expertise</h3>
-        <p>I don't just strategize—I roll up my sleeves and build solutions that work in the real world.</p>
+        <h3>🔧 Cross-Functional Expertise</h3>
+        <p>Unique blend of AI/ML technical capabilities, data science academic foundation, 10+ years digital marketing mastery, and business management credentials—I bridge the gap between technology and business.</p>
       </div>
 
       <div class="feature-card">
-        <h3>📈 Scalable Solutions</h3>
-        <p>Every system I create is designed to grow with your business and adapt to changing requirements.</p>
+        <h3>🌍 Global Perspective</h3>
+        <p>Multilingual professional (Italian, English, Spanish, French) with international business experience enabling effective stakeholder communication and collaboration across diverse teams and markets.</p>
       </div>
     </div>
   </div>
