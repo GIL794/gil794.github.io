@@ -99,7 +99,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
       <div class="feature-card">
         <h3>🎓 Education & Continuous Learning</h3>
-        <p><strong>Academic Pursuit:</strong> Actively expanding AI/ML expertise through BSc (Hons) Data Science and AI at University of East London, while simultaneously applying knowledge as HP Lecturer and AI Solution Architect.</p>
+        <p><strong>Academic Pursuit:</strong> Actively expanding AI/ML expertise through BSc (Hons) Data Science and AI at University of East London. Simultaneously applying knowledge as HP Lecturer and AI Solution Architect in production environments.</p>
         <a class="cta-btn secondary" href="/about/">View Education</a>
       </div>
     </div>

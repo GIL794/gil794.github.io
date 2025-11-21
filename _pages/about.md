@@ -11,7 +11,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
   <div class="section hero blog-hero">
     <h2>Who I Am</h2>
     <p class="lead">Blending technology, strategy, and leadership to spark innovation that matters</p>
-    <p>I'm Gabriele Iacopo Langellotto, an AI Solution Architect at AllianceNews Ltd and HP Lecturer, currently pursuing a BSc (Hons) in Data Science and Artificial Intelligence at the University of East London. With over a decade of experience spanning digital marketing, business management, and AI/ML solution architecture, I'm passionate about transforming complex technology challenges into strategic business advantages.</p>
+    <p>I'm Gabriele Iacopo Langellotto, an AI Solution Architect at AllianceNews Ltd and HP Lecturer. I'm currently pursuing a BSc (Hons) in Data Science and Artificial Intelligence at the University of East London. With over a decade of experience spanning digital marketing, business management, and AI/ML solution architecture, I'm passionate about transforming complex technology challenges into strategic business advantages.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">🚀</span>
