@@ -19,14 +19,14 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
         <span class="stat-label">AI Products Launched</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">📈</span>
-        <span class="stat-number">75%</span>
-        <span class="stat-label">Productivity Increase</span>
+        <span class="stat-icon">⛓️</span>
+        <span class="stat-number">9+</span>
+        <span class="stat-label">GitHub Projects</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">👥</span>
-        <span class="stat-number">50%</span>
-        <span class="stat-label">Engagement Improvement</span>
+        <span class="stat-icon">💻</span>
+        <span class="stat-number">6+</span>
+        <span class="stat-label">Tech Stacks Mastered</span>
       </div>
     </div>
   </div>
@@ -40,14 +40,28 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     </div>
 
     <div class="feature-card">
-      <h3>📊 Data Science & Analytics</h3>
-      <p><strong>Turning data into strategic business advantages.</strong></p>
-      <p>Currently pursuing BSc (Hons) in Data Science and AI at University of East London while applying cutting-edge techniques in production. From data analysis to predictive modeling, I help organisations make data-driven decisions with confidence.</p>
-      <a class="cta-btn" href="/services/">Learn More</a>
+      <h3>⛓️ Blockchain & Smart Contracts</h3>
+      <p><strong>Building the decentralized future with Web3 technologies.</strong></p>
+      <p>Developing smart contracts with Solidity and PyTeal on Algorand blockchain. Created AI-powered contract generators, decentralized lending platforms, and cryptographic implementations including ECC and RSA. Combining blockchain innovation with practical security solutions.</p>
+      <a class="cta-btn" href="/projects/">View Blockchain Projects</a>
     </div>
 
     <div class="feature-card">
-      <h3>🎓 Knowledge Sharing</h3>
+      <h3>💻 Full-Stack Development</h3>
+      <p><strong>Modern web applications from concept to deployment.</strong></p>
+      <p>Expert in React, Next.js, and TypeScript for frontend development, paired with Python and JavaScript backends. Building responsive, performant applications with modern frameworks like TailwindCSS. From static sites to complex web applications—I deliver quality code.</p>
+      <a class="cta-btn" href="/projects/">See Web Projects</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>📊 Data Science & Mathematical Computing</h3>
+      <p><strong>Turning algorithms and data into strategic advantages.</strong></p>
+      <p>Currently pursuing BSc (Hons) in Data Science and AI at University of East London. Implemented complex algorithms including Traveling Salesman Problem solvers, Riemann Hypothesis explorers, and cryptographic systems. From data analysis to computational mathematics—solving problems that matter.</p>
+      <a class="cta-btn" href="/projects/">Explore Algorithm Projects</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>🎓 Knowledge Sharing & Teaching</h3>
       <p><strong>HP Lecturer elevating the tech community.</strong></p>
       <p>With 10+ years of combined experience in digital marketing, business management, and AI/ML, I share proven strategies through teaching and mentorship. I believe in fostering innovation and building high-performing teams that deliver results.</p>
       <a class="cta-btn" href="/blog/">Read Insights</a>
@@ -65,12 +79,17 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
       <div class="feature-card">
         <h3>🔧 Proven AI/ML Expertise</h3>
-        <p>2+ years of hands-on AI solution architecture with measurable results: 5 products launched, 75% productivity gains, and 50% engagement improvements at AllianceNews Ltd.</p>
+        <p>2+ years of hands-on AI solution architecture with measurable results: 5 products launched, 75% productivity gains, and 50% engagement improvements at AllianceNews Ltd. Plus AI-powered blockchain contract generators and NLP solutions.</p>
+      </div>
+
+      <div class="feature-card">
+        <h3>⛓️ Blockchain & Web3 Innovation</h3>
+        <p>Hands-on experience with smart contracts (Solidity, PyTeal), Algorand blockchain development, decentralized applications, and cryptographic implementations. Building the future of finance with Web3 technologies.</p>
       </div>
 
       <div class="feature-card">
         <h3>📈 Business & Technical Balance</h3>
-        <p>Unique combination of digital marketing mastery (2014-2021), business management credentials, and cutting-edge AI/ML technical capabilities—I speak both languages fluently.</p>
+        <p>Unique combination of digital marketing mastery (2014-2021), business management credentials, and cutting-edge AI/ML, blockchain, and full-stack technical capabilities—I speak both languages fluently.</p>
       </div>
 
       <div class="feature-card">
