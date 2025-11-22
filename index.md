@@ -11,7 +11,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 <div class="container">
   <div class="section hero blog-hero">
     <h2>What I Do</h2>
-    <p class="lead">AI Solution Architect at AllianceNews Ltd | HP Lecturer | Transforming complex technology challenges into measurable business wins.</p>
+    <p class="lead">AI Solution Architect | HP Lecturer | Transforming complex technology challenges into measurable business wins.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">🤖</span>
