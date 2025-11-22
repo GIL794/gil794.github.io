@@ -10,92 +10,92 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
 
 <div class="container">
   <div class="section hero blog-hero">
-    <h2>Featured Projects</h2>
+    <h2>Featured Projects & Experience</h2>
     <p class="lead">
-      Discover how I've helped organisations transform their technology landscape and achieve breakthrough results.
+      Real results from current and past professional engagements across AI/ML, digital marketing, and business transformation.
     </p>
     <div class="blog-stats">
       <div class="stat-item">
-        <span class="stat-icon">🌐</span>
-        <span class="stat-number">10x</span>
-        <span class="stat-label">Faster Deployments</span>
+        <span class="stat-icon">🤖</span>
+        <span class="stat-number">5</span>
+        <span class="stat-label">AI Products Launched</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">📊</span>
-        <span class="stat-number">1M+</span>
-        <span class="stat-label">Events/Hour</span>
+        <span class="stat-icon">📈</span>
+        <span class="stat-number">75%</span>
+        <span class="stat-label">Productivity Gains</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">💰</span>
-        <span class="stat-number">$2M</span>
-        <span class="stat-label">Annual Savings</span>
+        <span class="stat-icon">💼</span>
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years Experience</span>
       </div>
     </div>
   </div>
 
   <div class="card-grid">
     <div class="feature-card">
-      <h3>🌫️ Cloud Infrastructure Modernisation</h3>
-      <p><strong>Cloud Architecture & DevOps</strong></p>
-      <p>Legacy system transformation enabling 10x faster deployment cycles and 99.9% uptime reliability. Built on modern containerisation and DevOps principles that scale with business growth.</p>
+      <h3>🤖 NLP Product Development - AllianceNews Ltd</h3>
+      <p><strong>AI Solution Architect | March 2024 - Present</strong></p>
+      <p>Leading AI/ML solution architecture for a financial information services company, successfully launching 5 AI products using advanced NLP techniques. Achieved 75% productivity increase and 50% employee engagement improvement through effective stakeholder communication and high-impact service development.</p>
       <p><strong>Key Achievements:</strong></p>
       <ul>
-        <li>Containerised microservices architecture</li>
-        <li>Automated CI/CD pipelines</li>
-        <li>Infrastructure as Code implementation</li>
-        <li>Cost optimisation reducing operational expenses by 40%</li>
-        <li>Zero-downtime deployment capabilities</li>
+        <li>Launched 5 successful AI products using NLP/NLG technologies</li>
+        <li>75% increase in productivity across teams</li>
+        <li>50% improvement in employee engagement rates</li>
+        <li>Effective requirements translation and stakeholder communication</li>
+        <li>AWS cloud architecture implementation</li>
       </ul>
-      <p><strong>Technologies:</strong> Docker, Kubernetes, AWS, Terraform, Jenkins</p>
-      <a class="cta-btn" href="/contact/">Discuss Your Migration</a>
+      <p><strong>Technologies:</strong> NLP/NLG, AWS, Python, Machine Learning</p>
+      <a class="cta-btn" href="/contact/">Discuss AI Solutions</a>
     </div>
 
     <div class="feature-card">
-      <h3>🤖 Intelligent Process Automation Platform</h3>
-      <p><em>AI & Machine Learning</em></p>
-      <p>End-to-end automation platform that reduced manual processing time by 85% while improving accuracy and compliance. Features intelligent decision-making and adaptive workflows.</p>
+      <h3>📊 Digital Marketing & Business Growth - GIL LETTINGS</h3>
+      <p><em>Letting & Marketing Manager | Oct 2019 - Oct 2021</em></p>
+      <p>Led comprehensive digital transformation and marketing operations for real estate company, achieving 100% growth across all key metrics through strategic innovation and effective team management.</p>
       <p><strong>Impact Delivered:</strong></p>
       <ul>
-        <li>85% reduction in manual processing time</li>
-        <li>99.7% accuracy rate in automated decisions</li>
-        <li>Real-time compliance monitoring</li>
-        <li>Self-learning algorithms for continuous improvement</li>
-        <li>Seamless integration with existing systems</li>
+        <li>100% growth in online sales through strategic CRM and platform optimization</li>
+        <li>100% social media and brand visibility growth</li>
+        <li>100% customer satisfaction and referral growth</li>
+        <li>Team recruitment, training, and cohesion management</li>
+        <li>R&D, digital marketing, and email marketing strategy execution</li>
       </ul>
-      <p><strong>Technologies:</strong> Python, TensorFlow, Apache Airflow, Redis, PostgreSQL</p>
-      <a class="cta-btn" href="/contact/">Explore Automation</a>
+      <p><strong>Focus Areas:</strong> Operations Management, Team Leadership, Marketing Strategy, Brand Management</p>
+      <a class="cta-btn" href="/contact/">Explore Marketing Solutions</a>
     </div>
 
     <div class="feature-card">
-      <h3>📊 Real-Time Analytics Dashboard</h3>
-      <p><em>Data Intelligence & Visualisation</em></p>
-      <p>Comprehensive business intelligence platform processing 1M+ events per hour with real-time insights. Empowers data-driven decision making across all organisational levels.</p>
+      <h3>🌐 Digital Marketing Excellence - DREAMPOWER Ltd</h3>
+      <p><em>Digital Marketing Manager | Jan 2014 - Sep 2018</em></p>
+      <p>Directed comprehensive digital marketing strategy for 4+ years, driving business expansion through web, social media, and mobile communication optimization. Successfully managed B2B/B2C relationships and represented the company in international events.</p>
       <p><strong>Business Results:</strong></p>
       <ul>
-        <li>Processing 1M+ events per hour</li>
-        <li>Sub-second query response times</li>
-        <li>Interactive dashboards and reports</li>
-        <li>Predictive analytics capabilities</li>
-        <li>Mobile-responsive design</li>
+        <li>Strategic digital marketing campaign development and execution</li>
+        <li>Market research and data-driven decision making</li>
+        <li>Customer order management and content creation</li>
+        <li>Team training and development initiatives</li>
+        <li>International event representation and relationship building</li>
       </ul>
-      <p><strong>Technologies:</strong> Apache Kafka, Elasticsearch, React, D3.js, Apache Spark</p>
-      <a class="cta-btn" href="/contact/">Build Your Dashboard</a>
+      <p><strong>Expertise:</strong> Digital Strategy, Social Media, Content Marketing, B2B/B2C Sales</p>
+      <a class="cta-btn" href="/contact/">Learn More</a>
     </div>
 
     <div class="feature-card">
-      <h3>🚀 Digital Transformation Strategy</h3>
-      <p><em>Strategic Consulting</em></p>
-      <p>Comprehensive digital transformation roadmap for a Fortune 500 company, resulting in 200% improvement in operational efficiency and $2M annual cost savings.</p>
-      <p><strong>Transformation Outcomes:</strong></p>
+      <h3>🎓 Academic & Teaching Projects</h3>
+      <p><em>HP Lecturer & BSc Student</em></p>
+      <p>Combining formal education in Data Science and AI (University of East London) with teaching responsibilities as HP Lecturer. Developing cutting-edge knowledge in AI, machine learning, and data science while sharing expertise with the tech community.</p>
+      <p><strong>Current Focus:</strong></p>
       <ul>
-        <li>200% improvement in operational efficiency</li>
-        <li>$2M annual cost savings</li>
-        <li>Streamlined cross-department workflows</li>
-        <li>Enhanced customer experience metrics</li>
-        <li>Future-ready technology stack</li>
+        <li>Advanced AI and machine learning coursework</li>
+        <li>Programming for data science applications</li>
+        <li>Statistical analysis and modeling</li>
+        <li>Knowledge sharing through HP Lecturer role</li>
+        <li>Continuous learning and skill development</li>
       </ul>
-      <p><strong>Focus Areas:</strong> Process optimisation, Technology assessment, Change management</p>
-      <a class="cta-btn" href="/contact/">Start Your Journey</a>
+      <p><strong>Institution:</strong> University of East London (2023 - Present)</p>
+      <a class="cta-btn" href="/contact/">Discuss Collaboration</a>
     </div>
   </div>
 

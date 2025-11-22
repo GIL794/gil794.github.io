@@ -11,45 +11,45 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 <div class="container">
   <div class="section hero blog-hero">
     <h2>What I Do</h2>
-    <p class="lead">Transforming complex technology challenges into business opportunities through strategic innovation and expert implementation.</p>
+    <p class="lead">AI Solution Architect at AllianceNews Ltd | HP Lecturer | Transforming complex technology challenges into measurable business wins.</p>
     <div class="blog-stats">
       <div class="stat-item">
-        <span class="stat-icon">☁️</span>
-        <span class="stat-number">Cloud-First</span>
-        <span class="stat-label">Automation</span>
-      </div>
-      <div class="stat-item">
         <span class="stat-icon">🤖</span>
-        <span class="stat-number">AI</span>
-        <span class="stat-label">For Business</span>
+        <span class="stat-number">5</span>
+        <span class="stat-label">AI Products Launched</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">🚀</span>
-        <span class="stat-number">Modern</span>
-        <span class="stat-label">Tech Leadership</span>
+        <span class="stat-icon">📈</span>
+        <span class="stat-number">75%</span>
+        <span class="stat-label">Productivity Increase</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-icon">👥</span>
+        <span class="stat-number">50%</span>
+        <span class="stat-label">Engagement Improvement</span>
       </div>
     </div>
   </div>
 
   <div class="card-grid">
     <div class="feature-card">
-      <h3>☁️ Cloud-First Automation</h3>
-      <p><strong>Streamline your operations with intelligent cloud solutions.</strong></p>
-      <p>I help businesses modernise their infrastructure and automate processes for maximum efficiency and scalability. From legacy system migrations to cutting-edge containerised architectures, I design solutions that grow with your business.</p>
-      <a class="cta-btn" href="/services/">Explore Solutions</a>
+      <h3>🤖 NLP & AI Solutions</h3>
+      <p><strong>Proven track record: 5 successful AI products launched</strong></p>
+      <p>At AllianceNews Ltd, I craft sophisticated NLP prompts and develop AI-powered solutions that deliver measurable results—75% productivity increase and 50% improvement in employee engagement. I translate complex business requirements into scalable AI architectures that drive real impact.</p>
+      <a class="cta-btn" href="/services/">Explore AI Solutions</a>
     </div>
 
     <div class="feature-card">
-      <h3>🤖 AI for Business</h3>
-      <p><strong>Turn artificial intelligence into real competitive advantage.</strong></p>
-      <p>From strategy to implementation, I guide organisations in leveraging AI to solve complex problems and drive growth. Whether it's machine learning, process automation, or data intelligence, I help you unlock AI's full potential.</p>
+      <h3>📊 Data Science & Analytics</h3>
+      <p><strong>Turning data into strategic business advantages.</strong></p>
+      <p>Currently pursuing BSc (Hons) in Data Science and AI at University of East London while applying cutting-edge techniques in production. From data analysis to predictive modeling, I help organisations make data-driven decisions with confidence.</p>
       <a class="cta-btn" href="/services/">Learn More</a>
     </div>
 
     <div class="feature-card">
-      <h3>🚀 Modern Tech Leadership</h3>
-      <p><strong>Build high-performing engineering teams that deliver results.</strong></p>
-      <p>I share proven leadership strategies and management techniques that foster innovation and drive successful project outcomes. Transform your team's capabilities and create a culture of continuous improvement.</p>
+      <h3>🎓 Knowledge Sharing</h3>
+      <p><strong>HP Lecturer elevating the tech community.</strong></p>
+      <p>With 10+ years of combined experience in digital marketing, business management, and AI/ML, I share proven strategies through teaching and mentorship. I believe in fostering innovation and building high-performing teams that deliver results.</p>
       <a class="cta-btn" href="/blog/">Read Insights</a>
     </div>
   </div>
@@ -59,48 +59,48 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     
     <div class="card-grid">
       <div class="feature-card">
-        <h3>💡 Strategic Vision</h3>
-        <p>I don't just implement technology—I align it with your business objectives to create lasting value and competitive advantage.</p>
+        <h3>💡 Cross-Industry Experience</h3>
+        <p>10+ years spanning finance, real estate, media, and hospitality—giving me unique insights into diverse business challenges and technology solutions across sectors.</p>
       </div>
 
       <div class="feature-card">
-        <h3>🔧 Hands-On Expertise</h3>
-        <p>From architecture design to deployment, I bring deep technical knowledge across cloud platforms, AI/ML, and modern engineering practices.</p>
+        <h3>🔧 Proven AI/ML Expertise</h3>
+        <p>2+ years of hands-on AI solution architecture with measurable results: 5 products launched, 75% productivity gains, and 50% engagement improvements at AllianceNews Ltd.</p>
       </div>
 
       <div class="feature-card">
-        <h3>📈 Proven Results</h3>
-        <p>My track record includes successful digital transformations, significant cost reductions, and measurable improvements in operational efficiency.</p>
+        <h3>📈 Business & Technical Balance</h3>
+        <p>Unique combination of digital marketing mastery (2014-2021), business management credentials, and cutting-edge AI/ML technical capabilities—I speak both languages fluently.</p>
       </div>
 
       <div class="feature-card">
-        <h3>🎓 Knowledge Sharing</h3>
-        <p>As an HP Lecturer and thought leader, I'm committed to elevating the entire tech community through education and mentorship.</p>
+        <h3>🌍 Global Perspective</h3>
+        <p>Multilingual professional (Italian, English, Spanish, French) with international business experience—enabling effective stakeholder communication and global collaboration.</p>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>Featured Work</h2>
-    <p>Discover how I've helped organisations achieve breakthrough results through strategic technology implementation.</p>
+    <h2>Recent Achievements</h2>
+    <p>Real results from current and recent professional engagements.</p>
     
     <div class="card-grid">
       <div class="feature-card">
-        <h3>🌐 Cloud Infrastructure Modernization</h3>
-        <p>Transformed legacy systems enabling 10x faster deployment cycles, 99.9% uptime, and 40% cost reduction through modern containerization and DevOps.</p>
-        <a class="cta-btn secondary" href="/projects/">View Case Study</a>
+        <h3>🤖 NLP Product Development (AllianceNews Ltd)</h3>
+        <p><strong>Current Role:</strong> Successfully launched 5 AI products using advanced NLP techniques, achieving 75% productivity increase and 50% improvement in employee engagement rates through effective stakeholder communication and high-impact service development.</p>
+        <a class="cta-btn secondary" href="/about/">Learn More</a>
       </div>
 
       <div class="feature-card">
-        <h3>⚡ Intelligent Automation Platform</h3>
-        <p>Delivered 85% reduction in manual processing time with 99.7% accuracy through AI-powered workflows and adaptive decision-making systems.</p>
-        <a class="cta-btn secondary" href="/projects/">See Details</a>
+        <h3>🏢 Digital Marketing & Business Growth</h3>
+        <p><strong>2014-2021:</strong> Led digital transformation initiatives as Marketing Manager and Letting & Marketing Manager, achieving 100% growth in social media presence, lead engagement, and online sales through strategic R&D and execution.</p>
+        <a class="cta-btn secondary" href="/about/">See Experience</a>
       </div>
 
       <div class="feature-card">
-        <h3>📊 Real-Time Analytics Dashboard</h3>
-        <p>Built comprehensive BI platform processing 1M+ events/hour with sub-second query times, enabling data-driven decisions across the organisation.</p>
-        <a class="cta-btn secondary" href="/projects/">Explore Project</a>
+        <h3>🎓 Education & Continuous Learning</h3>
+        <p><strong>Academic Pursuit:</strong> Actively expanding AI/ML expertise through BSc (Hons) Data Science and AI at University of East London. Simultaneously applying knowledge as HP Lecturer and AI Solution Architect in production environments.</p>
+        <a class="cta-btn secondary" href="/about/">View Education</a>
       </div>
     </div>
   </div>
