@@ -19,7 +19,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
         <span class="stat-label">AI Products Launched</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">⛓️</span>
+        <span class="stat-icon">📦</span>
         <span class="stat-number">9+</span>
         <span class="stat-label">GitHub Projects</span>
       </div>
