@@ -50,6 +50,47 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
     </div>
   </div>
   <div class="section">
+    <h2>Technical Expertise</h2>
+    <p>Diverse skill set spanning AI/ML, blockchain development, full-stack engineering, and mathematical computing.</p>
+    <div class="card-grid">
+      <div class="feature-card">
+        <h3>🤖 AI & Machine Learning</h3>
+        <p><strong>Production Experience:</strong> NLP/NLG, GPT-4 integration, prompt engineering, AWS AI services</p>
+        <p><strong>Projects:</strong> 5 AI products launched, AI-powered smart contract generator, natural language processing solutions</p>
+      </div>
+      <div class="feature-card">
+        <h3>⛓️ Blockchain & Cryptography</h3>
+        <p><strong>Smart Contracts:</strong> Solidity, PyTeal, Algorand blockchain</p>
+        <p><strong>Cryptography:</strong> Elliptic Curve Cryptography (ECC), RSA, modular arithmetic</p>
+        <p><strong>Tools:</strong> Hardhat 3, Web3.js, DeFi platforms</p>
+      </div>
+      <div class="feature-card">
+        <h3>💻 Full-Stack Development</h3>
+        <p><strong>Frontend:</strong> React, Next.js, TailwindCSS, SCSS, responsive design</p>
+        <p><strong>Backend:</strong> Python, JavaScript, TypeScript, API development</p>
+        <p><strong>Web:</strong> Jekyll, GitHub Pages, modern web standards</p>
+      </div>
+      <div class="feature-card">
+        <h3>📊 Data Science & Algorithms</h3>
+        <p><strong>Mathematics:</strong> Number theory, cryptographic algorithms, complexity analysis</p>
+        <p><strong>Optimization:</strong> NP-hard problems, Traveling Salesman, graph algorithms</p>
+        <p><strong>Research:</strong> Riemann Hypothesis explorer, prime number analysis</p>
+      </div>
+      <div class="feature-card">
+        <h3>🎮 Game Development</h3>
+        <p><strong>Framework:</strong> Pygame, Python game mechanics</p>
+        <p><strong>Projects:</strong> Roman numeral Sudoku, ball catch games, interactive puzzles</p>
+      </div>
+      <div class="feature-card">
+        <h3>🛠️ Development Tools</h3>
+        <p><strong>Cloud:</strong> AWS architecture and deployment</p>
+        <p><strong>Version Control:</strong> Git, GitHub, collaborative development</p>
+        <p><strong>Frameworks:</strong> Streamlit, Next.js, Jekyll, Hardhat</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
     <h2>Education & Professional Development</h2>
     <div class="card-grid">
       <div class="feature-card">

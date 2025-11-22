@@ -51,6 +51,83 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     </div>
 
     <div class="feature-card">
+      <h3>🔗 AI-Powered Algorand Smart Contract Creator</h3>
+      <p><strong>Personal Project | 2025</strong></p>
+      <p>Production-grade platform for generating, validating, and deploying Algorand PyTeal smart contracts using natural language and GPT-4. Features multi-layer validation, auto-correction, and TestNet deployment capabilities.</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Natural language to PyTeal contract generation using GPT-4</li>
+        <li>Multi-layer validation: syntax, security, and compilation checks</li>
+        <li>One-click deployment to Algorand TestNet</li>
+        <li>OWASP-aligned security, EU AI Act Tier 2 compliant</li>
+        <li>Complete audit trail and explainability features</li>
+      </ul>
+      <p><strong>Technologies:</strong> Python, Algorand, PyTeal, OpenAI/GPT-4, Streamlit, Smart Contracts</p>
+      <a class="cta-btn" href="https://github.com/GIL794/algorand-ai-contract-creator" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>🎯 Math Problems & Code Solutions</h3>
+      <p><strong>Personal Project | 2025</strong></p>
+      <p>Comprehensive collection of 14 mathematical problems spanning from classic puzzles to million-dollar Millennium Prize Problems. Demonstrates algorithm design, cryptography, and computational mathematics with clean, educational Python implementations.</p>
+      <p><strong>Notable Implementations:</strong></p>
+      <ul>
+        <li>Riemann Zeta Function & Critical Line Explorer (Millennium Prize Problem)</li>
+        <li>Elliptic Curve Cryptography (Bitcoin/TLS foundation)</li>
+        <li>Traveling Salesman Problem with 5 algorithms (NP-hard optimization)</li>
+        <li>RSA encryption and modular arithmetic</li>
+        <li>Prime number sieves, Fibonacci analyzers, and number theory</li>
+      </ul>
+      <p><strong>Technologies:</strong> Python, Cryptography, Algorithms, Mathematics, ECC, RSA</p>
+      <a class="cta-btn" href="https://github.com/GIL794/Math-Problems-Code-Solutions" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>💰 ArcCredit - Decentralized Lending Platform</h3>
+      <p><strong>Personal Project | 2025</strong></p>
+      <p>Blockchain-based decentralized lending platform that removes intermediaries, credit scores, and lengthy processes. Built with Hardhat 3 Beta featuring TypeScript, Solidity smart contracts, and native testing support.</p>
+      <p><strong>Key Features:</strong></p>
+      <ul>
+        <li>Decentralized instant funding without traditional credit checks</li>
+        <li>Smart contract-based lending and borrowing mechanisms</li>
+        <li>Hardhat 3 Beta with TypeScript configuration</li>
+        <li>Comprehensive Solidity smart contract implementation</li>
+      </ul>
+      <p><strong>Technologies:</strong> JavaScript, TypeScript, Hardhat 3, Solidity, Smart Contracts, Blockchain</p>
+      <a class="cta-btn" href="https://github.com/GIL794/ArcCredit" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>🎮 Aenigma Numerorum Caesaris</h3>
+      <p><strong>Personal Project | 2025</strong></p>
+      <p>Roman Numeral Sudoku game with Pygame featuring play, pause/resume, hints, and on-screen rules. A unique twist on the classic puzzle game combining ancient Roman numerals with modern gaming mechanics.</p>
+      <p><strong>Features:</strong></p>
+      <ul>
+        <li>Interactive Sudoku gameplay with Roman numerals (I-IX)</li>
+        <li>Hint system and game state management</li>
+        <li>Pause/resume, new game, and quit functionality</li>
+        <li>Local gameplay with intuitive controls</li>
+      </ul>
+      <p><strong>Technologies:</strong> Python 3.11, Pygame, Game Development</p>
+      <a class="cta-btn" href="https://github.com/GIL794/Aenigma-Numerorum-Caesaris" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="feature-card">
+      <h3>🌐 AI Hub Project</h3>
+      <p><strong>Personal Project | 2025</strong></p>
+      <p>Modern web application built with Next.js showcasing AI capabilities and services. Features responsive design with TailwindCSS and React components for an optimal user experience.</p>
+      <p><strong>Technical Stack:</strong></p>
+      <ul>
+        <li>Next.js framework with React components</li>
+        <li>TailwindCSS for modern, responsive styling</li>
+        <li>Auto-updating development environment</li>
+        <li>Optimized for performance and user experience</li>
+      </ul>
+      <p><strong>Technologies:</strong> Next.js, React, JavaScript, TailwindCSS</p>
+      <a class="cta-btn" href="https://github.com/GIL794/AI-Hub-Project" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="feature-card">
       <h3>📊 Digital Marketing & Business Growth - GIL LETTINGS</h3>
       <p><em>Letting & Marketing Manager | Oct 2019 - Oct 2021</em></p>
       <p>Led comprehensive digital transformation and marketing operations for real estate company, achieving 100% growth across all key metrics through strategic innovation and effective team management.</p>
@@ -96,6 +173,73 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       </ul>
       <p><strong>Institution:</strong> University of East London (2023 - Present)</p>
       <a class="cta-btn" href="/contact/">Discuss Collaboration</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Technical Skills & Technologies</h2>
+    <p>Comprehensive expertise across modern technology stack demonstrated through production work and personal projects.</p>
+
+    <div class="card-grid">
+      <div class="feature-card">
+        <h3>🤖 AI & Machine Learning</h3>
+        <ul>
+          <li><strong>NLP/NLG:</strong> GPT-4, OpenAI API integration, prompt engineering</li>
+          <li><strong>ML Frameworks:</strong> Python-based AI solution architecture</li>
+          <li><strong>Cloud AI:</strong> AWS AI services, model deployment</li>
+          <li><strong>Applications:</strong> 5 production AI products launched</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>⛓️ Blockchain & Web3</h3>
+        <ul>
+          <li><strong>Smart Contracts:</strong> Solidity, PyTeal, Algorand</li>
+          <li><strong>Development Tools:</strong> Hardhat 3, Web3.js</li>
+          <li><strong>Cryptography:</strong> ECC, RSA, modular arithmetic</li>
+          <li><strong>DeFi:</strong> Decentralized lending platforms, contract creation</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>💻 Full-Stack Development</h3>
+        <ul>
+          <li><strong>Frontend:</strong> React, Next.js, TailwindCSS, SCSS</li>
+          <li><strong>Backend:</strong> Python, JavaScript, TypeScript</li>
+          <li><strong>Static Sites:</strong> Jekyll, GitHub Pages</li>
+          <li><strong>UI/UX:</strong> Responsive design, modern web standards</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>🔐 Cryptography & Security</h3>
+        <ul>
+          <li><strong>Modern Crypto:</strong> Elliptic Curve Cryptography (ECC)</li>
+          <li><strong>Classic Algorithms:</strong> RSA, modular exponentiation</li>
+          <li><strong>Security Standards:</strong> OWASP Top 10, EU AI Act compliance</li>
+          <li><strong>Applications:</strong> Bitcoin/TLS foundations, secure systems</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>📊 Data Science & Mathematics</h3>
+        <ul>
+          <li><strong>Algorithms:</strong> Graph theory, optimization, complexity analysis</li>
+          <li><strong>Mathematical Computing:</strong> Prime numbers, number theory</li>
+          <li><strong>Problem Solving:</strong> NP-hard problems, TSP, Riemann Hypothesis</li>
+          <li><strong>Statistical Analysis:</strong> Data-driven decision making</li>
+        </ul>
+      </div>
+
+      <div class="feature-card">
+        <h3>🎮 Game Development</h3>
+        <ul>
+          <li><strong>Python Gaming:</strong> Pygame framework</li>
+          <li><strong>Game Mechanics:</strong> State management, user interactions</li>
+          <li><strong>UI Design:</strong> Interactive interfaces, controls</li>
+          <li><strong>Projects:</strong> Roman numeral Sudoku, ball catch games</li>
+        </ul>
+      </div>
     </div>
   </div>
 
