@@ -42,7 +42,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     <div class="feature-card">
       <h3>⛓️ Blockchain & Smart Contracts</h3>
       <p><strong>Building the decentralized future with Web3 technologies.</strong></p>
-      <p>Developing smart contracts with Solidity and PyTeal on Algorand blockchain. Created AI-powered contract generators, decentralized lending platforms, and cryptographic implementations including ECC and RSA. Combining blockchain innovation with practical security solutions.</p>
+      <p>Polkadot Blockchain Academy graduate (May 2025) with expertise in Substrate framework and Polkadot ecosystem. Developing smart contracts with Solidity and PyTeal on Algorand blockchain. Created AI-powered contract generators, decentralized lending platforms, and cryptographic implementations including ECC and RSA. Combining blockchain innovation with practical security solutions.</p>
       <a class="cta-btn" href="/projects/">View Blockchain Projects</a>
     </div>
 
@@ -84,7 +84,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
       <div class="feature-card">
         <h3>⛓️ Blockchain & Web3 Innovation</h3>
-        <p>Hands-on experience with smart contracts (Solidity, PyTeal), Algorand blockchain development, decentralized applications, and cryptographic implementations. Building the future of finance with Web3 technologies.</p>
+        <p>Polkadot Blockchain Academy certified (May 2025) with hands-on experience in Substrate framework and Polkadot ecosystem. Expertise in smart contracts (Solidity, PyTeal), Algorand blockchain development, decentralized applications, and cryptographic implementations. Building the future of finance with Web3 technologies.</p>
       </div>
 
       <div class="feature-card">
@@ -114,6 +114,12 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
         <h3>🏢 Digital Marketing & Business Growth</h3>
         <p><strong>2014-2021:</strong> Led digital transformation initiatives as Marketing Manager and Letting & Marketing Manager, achieving 100% growth in social media presence, lead engagement, and online sales through strategic R&D and execution.</p>
         <a class="cta-btn secondary" href="/about/">See Experience</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>⛓️ Polkadot Blockchain Academy Graduate</h3>
+        <p><strong>May 2025:</strong> Successfully completed the Polkadot Blockchain Academy 4-week online campus program, earning certification in Substrate framework, Polkadot ecosystem architecture, and advanced Web3 development. Mastering the technology powering the next generation of decentralized applications.</p>
+        <a class="cta-btn secondary" href="/about/">View Certificate</a>
       </div>
 
       <div class="feature-card">

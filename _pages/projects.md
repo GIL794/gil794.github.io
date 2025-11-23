@@ -98,6 +98,22 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     </div>
 
     <div class="feature-card">
+      <h3>⛓️ Polkadot Blockchain Academy Graduate</h3>
+      <p><strong>Professional Certification | May 2025</strong></p>
+      <p>Successfully completed the intensive 4-week online campus program at Polkadot Blockchain Academy, gaining comprehensive expertise in the Polkadot ecosystem and Substrate framework. Mastered advanced blockchain concepts, consensus mechanisms, runtime development, and Web3 architecture.</p>
+      <p><strong>Key Learning Areas:</strong></p>
+      <ul>
+        <li>Substrate framework and runtime development</li>
+        <li>Polkadot architecture and parachain development</li>
+        <li>Consensus mechanisms and blockchain security</li>
+        <li>Web3 ecosystem and decentralized applications</li>
+        <li>Cross-chain communication and interoperability</li>
+      </ul>
+      <p><strong>Technologies:</strong> Substrate, Rust, Polkadot, Web3, Blockchain</p>
+      <a class="cta-btn" href="/about/">View Certificate</a>
+    </div>
+
+    <div class="feature-card">
       <h3>🎮 Aenigma Numerorum Caesaris</h3>
       <p><strong>Personal Project | 2025</strong></p>
       <p>Roman Numeral Sudoku game with Pygame featuring play, pause/resume, hints, and on-screen rules. A unique twist on the classic puzzle game combining ancient Roman numerals with modern gaming mechanics.</p>
@@ -194,6 +210,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       <div class="feature-card">
         <h3>⛓️ Blockchain & Web3</h3>
         <ul>
+          <li><strong>Polkadot Ecosystem:</strong> Substrate framework, Polkadot Blockchain Academy certified (May 2025)</li>
           <li><strong>Smart Contracts:</strong> Solidity, PyTeal, Algorand</li>
           <li><strong>Development Tools:</strong> Hardhat 3, Web3.js</li>
           <li><strong>Cryptography:</strong> ECC, RSA, modular arithmetic</li>
