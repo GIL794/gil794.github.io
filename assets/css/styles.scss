@@ -1147,7 +1147,7 @@ section {
   h1, h2 {
     animation: slideInDown 0.8s ease-out;
     color: var(--primary-color); // Fallback for browsers without background-clip support
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1391,7 +1391,7 @@ table {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1.25rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
