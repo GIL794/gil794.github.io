@@ -41,7 +41,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.45);
     padding: 4rem 2rem;
     
     @media (max-width: 768px) {
@@ -59,12 +59,15 @@
   
   &__text {
     h1, h2 {
-      color: white;
+      color: var(--primary-color); // Fallback
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
       font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
       line-height: 1.2;
-      text-shadow: 0 3px 15px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.9);
       
       @media (max-width: 768px) {
         font-size: 2rem;
@@ -94,11 +97,14 @@
   }
   
   &__title {
-    color: white;
+    color: var(--primary-color); // Fallback
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-size: 3rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.9);
     
     @media (max-width: 768px) {
       font-size: 2.5rem;
@@ -118,7 +124,7 @@
   
   // Text-only variant (no image)
   &--text-only {
-    background: rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.45);
     padding: 4rem 2rem;
     margin-bottom: 3rem;
     
@@ -135,7 +141,11 @@
     
     .site-feature__text {
       h1, h2 {
-        color: white;
+        color: var(--primary-color); // Fallback
+        background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
         font-size: 2.5rem;
         font-weight: 700;
         margin-bottom: 1rem;
