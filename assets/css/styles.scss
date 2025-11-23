@@ -1587,7 +1587,6 @@ table {
   
   @media (max-width: 480px) {
     max-width: 100%;
-    margin: 0 auto;
   }
   
   // Gradient overlay on top
@@ -1658,12 +1657,10 @@ table {
   
   @media (max-width: 768px) {
     padding: 2rem;
-    text-align: left;
   }
   
   @media (max-width: 480px) {
     padding: 1.5rem;
-    text-align: left;
   }
   
   .post-title {
