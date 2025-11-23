@@ -60,9 +60,10 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
       </div>
       <div class="feature-card">
         <h3>⛓️ Blockchain & Cryptography</h3>
-        <p><strong>Smart Contracts:</strong> Solidity, PyTeal, Algorand blockchain</p>
+        <p><strong>Smart Contracts:</strong> Solidity, PyTeal, Algorand blockchain, Substrate (Polkadot)</p>
         <p><strong>Cryptography:</strong> Elliptic Curve Cryptography (ECC), RSA, modular arithmetic</p>
-        <p><strong>Tools:</strong> Hardhat 3, Web3.js, DeFi platforms</p>
+        <p><strong>Tools:</strong> Hardhat 3, Web3.js, DeFi platforms, Polkadot ecosystem</p>
+        <p><strong>Certified:</strong> Polkadot Blockchain Academy Graduate (May 2025)</p>
       </div>
       <div class="feature-card">
         <h3>💻 Full-Stack Development</h3>
@@ -98,6 +99,12 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
         <p><strong>BSc (Hons) Data Science and Artificial Intelligence</strong><br>
         University of East London (2023 - Present)</p>
         <p>Relevant modules: Artificial Intelligence, Programming for Data Science, Machine Learning, Statistical Analysis</p>
+      </div>
+      <div class="feature-card">
+        <h3>⛓️ Polkadot Blockchain Academy</h3>
+        <p><strong>4-Week Online Campus Program - Certificate</strong><br>
+        Polkadot Blockchain Academy (May 2025)</p>
+        <p>Successfully completed comprehensive blockchain development program focusing on Polkadot ecosystem, Substrate framework, and Web3 technologies.</p>
       </div>
       <div class="feature-card">
         <h3>📚 Previous Education</h3>
