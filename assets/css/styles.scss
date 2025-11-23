@@ -630,6 +630,13 @@ section {
       margin-bottom: 1rem;
     }
     
+    h2 {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
     .lead {
       font-size: 1.25rem;
       color: var(--text-secondary);
