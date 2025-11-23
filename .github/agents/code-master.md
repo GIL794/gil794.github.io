@@ -4,7 +4,7 @@
 # To make this agent available, merge this file into the default repository branch.
 # For format details, see: https://gh.io/customagents/config
 
-name: CodeFix Master
+name: CodeFix-Master
 description: Expert-level code fixing agent specialising in bug identification, refactoring, and code quality optimisation across Python, JavaScript, Go, Rust, and Java with security-first approach.
 
 ---
