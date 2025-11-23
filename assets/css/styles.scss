@@ -1146,8 +1146,11 @@ section {
 [class*="feature"] {
   h1, h2 {
     animation: slideInDown 0.8s ease-out;
-    color: white !important;
-    text-shadow: 0 3px 15px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 0.9);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: none;
   }
 }
 
