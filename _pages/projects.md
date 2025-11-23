@@ -52,8 +52,8 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
 
     <div class="feature-card">
       <h3>🔗 AI-Powered Algorand Smart Contract Creator</h3>
-      <p><strong>Personal Project | 2025</strong></p>
-      <p>Production-grade platform for generating, validating, and deploying Algorand PyTeal smart contracts using natural language and GPT-4. Features multi-layer validation, auto-correction, and TestNet deployment capabilities.</p>
+      <p><strong>Group Project | EasyA x Algorand Blockchain Hackathon (36 hours) | 2025</strong></p>
+      <p>Production-grade platform for generating, validating, and deploying Algorand PyTeal smart contracts using natural language and GPT-4. Developed collaboratively with 3 other developers and data science/AI students at University of East London. Features multi-layer validation, auto-correction, and TestNet deployment capabilities.</p>
       <p><strong>Key Features:</strong></p>
       <ul>
         <li>Natural language to PyTeal contract generation using GPT-4</li>
@@ -84,8 +84,8 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
 
     <div class="feature-card">
       <h3>💰 ArcCredit - Decentralized Lending Platform</h3>
-      <p><strong>Personal Project | 2025</strong></p>
-      <p>Blockchain-based decentralized lending platform that removes intermediaries, credit scores, and lengthy processes. Built with Hardhat 3 Beta featuring TypeScript, Solidity smart contracts, and native testing support.</p>
+      <p><strong>Group Project | EncodeClub x Arc Blockchain Hackathon (3 days) | 2025</strong></p>
+      <p>Blockchain-based decentralized lending platform that removes intermediaries, credit scores, and lengthy processes. Developed collaboratively with another developer and data science/AI student at University of East London. Built with Hardhat 3 Beta featuring TypeScript, Solidity smart contracts, and native testing support.</p>
       <p><strong>Key Features:</strong></p>
       <ul>
         <li>Decentralized instant funding without traditional credit checks</li>
