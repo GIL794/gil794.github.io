@@ -630,6 +630,13 @@ section {
       margin-bottom: 1rem;
     }
     
+    h2 {
+      background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    
     .lead {
       font-size: 1.25rem;
       color: var(--text-secondary);
@@ -1146,10 +1153,12 @@ section {
 [class*="feature"] {
   h1, h2 {
     animation: slideInDown 0.8s ease-out;
-    background: linear-gradient(135deg, var(--primary-color) 60%, var(--secondary-color) 100%);
+    color: var(--primary-color); // Fallback for browsers without background-clip support
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    text-shadow: none;
   }
 }
 
@@ -1389,7 +1398,7 @@ table {
     font-size: 2.5rem;
     font-weight: 800;
     margin-bottom: 1.25rem;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-color) 60%, var(--secondary-color) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
