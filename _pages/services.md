@@ -52,7 +52,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     <div class="feature-card">
       <h3>📊 Data Science & Analytics</h3>
       <p><em>Transform data into strategic insights with academic rigor and practical experience.</em></p>
-      <p>Combining formal education in Data Science and AI (University of East London) with hands-on experience, I help organisations unlock the value in their data. From exploratory analysis to predictive modeling, I deliver actionable insights that drive business decisions.</p>
+      <p>Combining formal education in Data Science and AI (University of East London) with hands-on experience, I help organizations unlock the value in their data. From exploratory analysis to predictive modeling, I deliver actionable insights that drive business decisions.</p>
       <p><strong>What You Get:</strong></p>
       <ul>
         <li>Data analysis and visualization</li>

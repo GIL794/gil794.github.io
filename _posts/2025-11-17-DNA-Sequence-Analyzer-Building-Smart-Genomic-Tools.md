@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "DNA Sequence Analyser: Building Smart Genomic Analysis Tools with Python"
+title: "DNA Sequence Analyzer: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
 time: "09:00"
 categories: [Bioinformatics, Python, Data Science]
 tags: [dna analysis, genomics, python, machine learning, bioinformatics, computational biology]
-excerpt: "Discover how to build a powerful DNA sequence analyser using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
+excerpt: "Discover how to build a powerful DNA sequence analyzer using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
 ---
 
 Hey there, Gabriele here!
 
-In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyser—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
+In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyzer—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
 
 ---
 
@@ -28,9 +28,9 @@ With genomic data becoming increasingly accessible (thanks to initiatives like t
 
 ---
 
-## **Project Overview: What Our DNA Analyser Does**
+## **Project Overview: What Our DNA Analyzer Does**
 
-The DNA Sequence Analyser I built is a comprehensive Python-based tool that performs multiple analysis tasks:
+The DNA Sequence Analyzer I built is a comprehensive Python-based tool that performs multiple analysis tasks:
 
 ### **Core Features**
 
@@ -69,14 +69,14 @@ The DNA Sequence Analyser I built is a comprehensive Python-based tool that perf
 - Biopython (sequence handling)
 - NumPy (numerical computations)
 - Pandas (data manipulation)
-- Matplotlib/Seaborn (visualisation)
+- Matplotlib/Seaborn (visualization)
 - Scikit-learn (pattern recognition)
 ```
 
 ### **Project Structure**
 
 ```
-dna-sequence-analyser/
+dna-sequence-analyzer/
 ├── src/
 │   ├── core/
 │   │   ├── sequence_parser.py
@@ -86,7 +86,7 @@ dna-sequence-analyser/
 │   │   ├── statistics.py
 │   │   ├── mutation_detector.py
 │   │   └── alignment.py
-│   ├── visualisation/
+│   ├── visualization/
 │   │   ├── sequence_plotter.py
 │   │   └── report_generator.py
 │   └── utils/
@@ -316,9 +316,9 @@ class MutationDetector:
 
 ---
 
-## **Visualisation: Making Data Interpretable**
+## **Visualization: Making Data Interpretable**
 
-Raw data is powerful, but visualisation makes it actionable:
+Raw data is powerful, but visualization makes it actionable:
 
 ```python
 import matplotlib.pyplot as plt
@@ -326,13 +326,13 @@ import seaborn as sns
 
 class SequencePlotter:
     """
-    Generate insightful visualisations
+    Generate insightful visualizations
     """
     
     @staticmethod
     def plot_gc_content(positions, gc_values, title="GC Content Along Sequence"):
         """
-        Visualise GC content variation
+        Visualize GC content variation
         """
         plt.figure(figsize=(14, 6))
         plt.plot(positions, gc_values, linewidth=2, color='#0366d6')
@@ -480,8 +480,8 @@ Want to build your own DNA analyser? Here's a quick start guide:
 
 ```bash
 # Clone the repository
-git clone https://github.com/GIL794/dna-sequence-analyser.git
-cd dna-sequence-analyser
+git clone https://github.com/GIL794/dna-sequence-analyzer.git
+cd dna-sequence-analyzer
 
 # Create virtual environment
 python -m venv venv

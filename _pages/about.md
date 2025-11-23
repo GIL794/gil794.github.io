@@ -118,7 +118,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
   <div class="section">
     <h2>Let's Connect</h2>
     <p>I'm always excited to connect with fellow innovators, discuss emerging technologies, or explore potential collaborations. Whether you're looking to transform your business processes, build cutting-edge solutions, or simply want to share ideas about the future of technology, I'd love to hear from you.</p>
-    <div style="text-align: centre; margin-top: 2rem;">
+    <div style="text-align: center; margin-top: 2rem;">
       <a class="cta-btn" href="/contact/">Get In Touch</a>
       <a class="cta-btn secondary" href="/projects/" style="margin-left: 1rem;">View My Work</a>
     </div>

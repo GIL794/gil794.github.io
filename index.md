@@ -126,7 +126,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
   <hr>
 
-  <div class="section" style="text-align: centre;">
+  <div class="section" style="text-align: center;">
     <h2>Ready to Transform Your Tech Challenges?</h2>
     <p class="lead">Let's build the future together and turn your technology vision into reality.</p>
     <div style="margin-top: 2rem;">
