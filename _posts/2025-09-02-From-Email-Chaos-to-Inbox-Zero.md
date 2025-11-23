@@ -25,7 +25,7 @@ But here's the good news: I cracked the code. Using completely **free tools and 
 
 Before diving into solutions, let's address why most email advice doesn't work. The problem isn't that we're lazy or disorganized—it's that **email was never designed for modern workplace communication**.
 
-Traditional email management feels like organising a junk drawer. You can create temporary order, but the fundamental design ensures chaos returns. Complex folder systems, elaborate tagging, and time-consuming rules often take longer to maintain than they save.
+Traditional email management feels like organizing a junk drawer. You can create temporary order, but the fundamental design ensures chaos returns. Complex folder systems, elaborate tagging, and time-consuming rules often take longer to maintain than they save.
 
 The real culprits behind email overwhelm:
 
@@ -138,7 +138,7 @@ After implementing this system:
 
 This approach succeeds because it addresses the root causes, not just symptoms:
 
-**Automation over organisation:** Tools do the sorting, not you
+**Automation over organization:** Tools do the sorting, not you
 **Batching over constant checking:** Scheduled sessions prevent notification addiction
 **Prevention over management:** Stop unwanted emails at the source
 **Simplicity over complexity:** Five tools, three steps, sustainable habits
