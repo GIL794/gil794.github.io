@@ -43,14 +43,20 @@
     justify-content: center;
     background: rgba(0, 0, 0, 0.45);
     padding: 4rem 2rem;
+    box-sizing: border-box;
     
     @media (max-width: 768px) {
       padding: 3rem 1.5rem;
+    }
+    
+    @media (max-width: 480px) {
+      padding: 2rem 1rem;
     }
   }
   
   &__content {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     color: white;
@@ -188,11 +194,17 @@
   --transition-slow: 0.5s ease;
 }
 
+// Universal box-sizing for consistent layout
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 // Smooth scrolling and prevent horizontal overflow
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   width: 100%;
+  max-width: 100vw;
 }
 
 // Body animations and prevent horizontal overflow
@@ -202,6 +214,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   width: 100%;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes fadeIn {
@@ -214,6 +229,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  width: 100%;
   
   @media (max-width: 768px) {
     padding: 0 1rem;
@@ -226,7 +242,7 @@ body {
 
 // Main content centering
 main {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   
@@ -242,6 +258,7 @@ main {
 // Main content wrapper
 .main-content {
   width: 100%;
+  max-width: 100%;
   
   // Direct children that aren't .container should be centered
   > *:not(.container) {
@@ -269,6 +286,7 @@ section {
   margin-left: auto;
   margin-right: auto;
   text-align: left;
+  width: 100%;
 }
 
 // Enhanced Header with Dynamic Effects
@@ -617,6 +635,35 @@ section {
     font-size: 0.95rem;
     width: 100%;
     max-width: 100%;
+    margin-left: 0 !important; // Override inline styles on mobile
+    margin-right: 0 !important;
+    margin-top: 0.75rem;
+    
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+// Button group container for proper mobile stacking
+.cta-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    align-items: center;
+    
+    .cta-btn {
+      margin: 0 !important;
+      width: 100%;
+      max-width: 300px;
+    }
   }
 }
 
@@ -658,6 +705,11 @@ section {
         font-size: 1.1rem;
       }
     }
+  }
+  
+  // Centered section variant
+  &--centered {
+    text-align: center;
   }
 }
 
@@ -2611,35 +2663,62 @@ table {
     text-size-adjust: 100%;
   }
   
-  // Ensure all interactive elements have adequate touch targets
-  button, a, input, textarea, select {
+  // Ensure all interactive elements have adequate touch targets (WCAG 2.1 Level AAA)
+  button, input, textarea, select {
     min-height: 44px;
     min-width: 44px;
+  }
+  
+  // Links need min-height but not min-width to avoid breaking text flow
+  a {
+    min-height: 44px;
   }
   
   // Improve spacing for small screens
   h1 {
     font-size: 1.75rem;
     line-height: 1.2;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   h2 {
     font-size: 1.5rem;
     line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
   h3 {
     font-size: 1.25rem;
     line-height: 1.3;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
   
-  // Prevent horizontal overflow
-  * {
+  // Prevent horizontal overflow on all elements
+  img, video, iframe, embed, object {
     max-width: 100%;
+    height: auto;
   }
   
-  img, video, iframe {
-    height: auto;
+  // Ensure text doesn't overflow
+  p, span, li, a, strong, em {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  
+  // Tables should scroll horizontally
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  // Pre and code blocks should scroll
+  pre, code {
+    overflow-x: auto;
+    max-width: 100%;
   }
   
   // Better spacing for sections on mobile

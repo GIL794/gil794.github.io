@@ -120,9 +120,9 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     <h2>Ready to Transform Your Business?</h2>
     <p>Let's discuss how these services can solve your specific challenges and drive your business forward.</p>
 
-    <div style="margin-top: 2rem;">
+    <div class="cta-buttons">
       <a class="cta-btn" href="/contact/">Get Started Today</a>
-      <a class="cta-btn secondary" href="/projects/" style="margin-left: 1rem;">View Case Studies</a>
+      <a class="cta-btn secondary" href="/projects/">View Case Studies</a>
     </div>
   </div>
 </div>

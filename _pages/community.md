@@ -121,9 +121,9 @@ feature_image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixl
     <h2>Ready to Connect?</h2>
     <p>Whether you're interested in collaboration, knowledge sharing, or simply want to connect with like-minded professionals, I'd love to hear from you.</p>
 
-    <div style="margin-top: 2rem;">
+    <div class="cta-buttons">
       <a class="cta-btn" href="/contact/">Start a Conversation</a>
-      <a class="cta-btn secondary" href="/about/" style="margin-left: 1rem;">Learn More About Me</a>
+      <a class="cta-btn secondary" href="/about/">Learn More About Me</a>
     </div>
   </div>
 </div>

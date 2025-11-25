@@ -132,12 +132,12 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
   <hr>
 
-  <div class="section" style="text-align: center;">
+  <div class="section section--centered">
     <h2>Ready to Transform Your Tech Challenges?</h2>
     <p class="lead">Let's build the future together and turn your technology vision into reality.</p>
-    <div style="margin-top: 2rem;">
+    <div class="cta-buttons">
       <a class="cta-btn" href="/contact/">Get In Touch</a>
-      <a class="cta-btn secondary" href="/about/" style="margin-left: 1rem;">Learn More About Me</a>
+      <a class="cta-btn secondary" href="/about/">Learn More About Me</a>
     </div>
   </div>
 </div>

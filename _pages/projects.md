@@ -291,9 +291,9 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     <h2>Ready to Start Your Next Project?</h2>
     <p>Let's discuss how I can help you achieve similar results and transform your technology challenges into competitive advantages.</p>
 
-    <div style="margin-top: 2rem;">
+    <div class="cta-buttons">
       <a class="cta-btn" href="/contact/">Start a Conversation</a>
-      <a class="cta-btn secondary" href="/services/" style="margin-left: 1rem;">View All Services</a>
+      <a class="cta-btn secondary" href="/services/">View All Services</a>
     </div>
   </div>
 </div>
