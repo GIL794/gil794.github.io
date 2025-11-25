@@ -667,23 +667,6 @@ section {
   }
 }
 
-// Fallback for divs with inline margin-top styles
-div[style*="margin-top"]:has(.cta-btn) {
-  @media (max-width: 480px) {
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    width: 100%;
-    align-items: center;
-    
-    .cta-btn {
-      margin: 0 !important;
-      width: 100%;
-      max-width: 300px;
-    }
-  }
-}
-
 // Section spacing utilities
 .section {
   padding: 4rem 0;
@@ -722,6 +705,11 @@ div[style*="margin-top"]:has(.cta-btn) {
         font-size: 1.1rem;
       }
     }
+  }
+  
+  // Centered section variant
+  &--centered {
+    text-align: center;
   }
 }
 
@@ -2675,8 +2663,14 @@ table {
     text-size-adjust: 100%;
   }
   
-  // Ensure all interactive elements have adequate touch targets
-  button, a, input, textarea, select {
+  // Ensure all interactive elements have adequate touch targets (WCAG 2.1 Level AAA)
+  button, input, textarea, select {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  // Links need min-height but not min-width to avoid breaking text flow
+  a {
     min-height: 44px;
   }
   
