@@ -22,7 +22,7 @@ The web development landscape has evolved dramatically. Gone are the days of wri
 - 🔄 **Hot module replacement** for instant development feedback
 - 🎨 **Utility-first styling** that scales beautifully
 - 📱 **Mobile-first responsive design** out of the box
-- 🚀 **Production-ready optimizations** without manual configuration
+- 🚀 **Production-ready optimisations** without manual configuration
 
 The AI Hub Project leverages these advantages to create a seamless user experience.
 
@@ -161,7 +161,7 @@ AI-Hub-Project/
 When you're ready to deploy:
 
 ```bash
-# Create an optimized production build
+# Create an optimised production build
 npm run build
 
 # Start the production server
@@ -170,7 +170,7 @@ npm run start
 
 Next.js automatically:
 - Minifies JavaScript and CSS
-- Optimizes images
+- Optimises images
 - Generates static HTML where possible
 - Implements code splitting
 - Enables compression
@@ -236,9 +236,9 @@ Access it at `/api/hello` - perfect for form submissions, data fetching, or inte
 
 ## **Performance Optimization Techniques**
 
-### **Image Optimization**
+### **Image Optimisation**
 
-Next.js includes automatic image optimization:
+Next.js includes automatic image optimisation:
 
 ```jsx
 import Image from 'next/image';
@@ -308,7 +308,7 @@ The AI Hub Project architecture is perfect for:
 Choosing Next.js over Create React App provides:
 - Built-in routing without React Router complexity
 - Automatic code splitting
-- SEO optimization out of the box
+- SEO optimisation out of the box
 - API routes for backend logic
 
 ### **2. Embrace Utility-First CSS**
@@ -329,8 +329,8 @@ Break your UI into small, reusable pieces:
 
 ### **4. Performance First**
 
-Use Next.js features to optimize:
-- Image component for automatic optimization
+Use Next.js features to optimise:
+- Image component for automatic optimisation
 - Dynamic imports for code splitting
 - Static generation for fast load times
 - API routes for efficient data fetching
@@ -399,7 +399,7 @@ Want to dive deeper? Check out:
 The combination of Next.js, React, and TailwindCSS represents the modern approach to web development:
 
 ✅ **Developer Experience**: Hot reload, TypeScript support, great tooling  
-✅ **Performance**: SSR, SSG, automatic optimizations  
+✅ **Performance**: SSR, SSG, automatic optimisations  
 ✅ **Scalability**: Component architecture, code splitting  
 ✅ **SEO**: Server-side rendering, meta tags, sitemaps  
 ✅ **Maintainability**: Type safety, modular components, utility CSS  

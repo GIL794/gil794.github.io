@@ -686,7 +686,7 @@ Based on real usage:
 2. **Novel Logic**: Unusual requirements may need manual review
 3. **TestNet Only**: Mainnet deployment requires professional audit
 4. **AI Hallucination**: Always verify generated code
-5. **Gas Costs**: Not optimized for minimal fees
+5. **Gas Costs**: Not optimised for minimal fees
 
 ### **Important Disclaimers**
 

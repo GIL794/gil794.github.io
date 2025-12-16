@@ -243,7 +243,7 @@ This project thrives on community contributions! Whether you're a seasoned mathe
 
 ### **How You Can Contribute**
 
-✨ **Submit New Problems**: Have a favorite mathematical puzzle? Add it to the collection!
+✨ **Submit New Problems**: Have a favourite mathematical puzzle? Add it to the collection!
 
 🚀 **Optimise Existing Solutions**: Found a more efficient algorithm? Submit a PR!
 

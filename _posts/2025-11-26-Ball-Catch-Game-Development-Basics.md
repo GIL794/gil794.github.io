@@ -561,7 +561,7 @@ Ball Catch teaches:
 - **Game Architecture**: Event-driven programming
 - **Graphics Programming**: 2D rendering basics
 - **User Input**: Real-time control handling
-- **Problem Solving**: Debugging and optimization
+- **Problem Solving**: Debugging and optimisation
 
 ### **Portfolio Building**
 

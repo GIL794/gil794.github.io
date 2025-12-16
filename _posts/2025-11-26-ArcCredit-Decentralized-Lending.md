@@ -468,7 +468,7 @@ describe("LendingPool", function () {
 - ✅ Happy path scenarios
 - ✅ Edge cases and boundaries
 - ✅ Failure conditions
-- ✅ Gas usage optimization
+- ✅ Gas usage optimisation
 - ✅ Integration tests
 
 ---
