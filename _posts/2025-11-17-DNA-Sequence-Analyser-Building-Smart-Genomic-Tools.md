@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "DNA Sequence Analyzer: Building Smart Genomic Analysis Tools with Python"
+title: "DNA Sequence Analyser: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
 time: "09:00"
 categories: [Bioinformatics, Python, Data Science]
 tags: [dna analysis, genomics, python, machine learning, bioinformatics, computational biology]
-excerpt: "Discover how to build a powerful DNA sequence analyzer using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
+excerpt: "Discover how to build a powerful DNA sequence analyser using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
 ---
 
 Hey there, Gabriele here!
 
-In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyzer—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
+In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyser—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
 
 ---
 
@@ -28,9 +28,9 @@ With genomic data becoming increasingly accessible (thanks to initiatives like t
 
 ---
 
-## **Project Overview: What Our DNA Analyzer Does**
+## **Project Overview: What Our DNA Analyser Does**
 
-The DNA Sequence Analyzer I built is a comprehensive Python-based tool that performs multiple analysis tasks:
+The DNA Sequence Analyser I built is a comprehensive Python-based tool that performs multiple analysis tasks:
 
 ### **Core Features**
 

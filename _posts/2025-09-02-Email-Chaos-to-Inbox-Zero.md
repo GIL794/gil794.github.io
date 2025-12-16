@@ -81,10 +81,10 @@ This free time tracker helped me realise I was spending 3 hours daily on email�
 Gmail's free filtering system is incredibly powerful but underutilized. Filters automatically sort incoming emails based on sender, subject, or keywords.
 
 **My setup:**
-- **Client emails** → Auto-labeled and starred
+- **Client emails** → Auto-labelled and starred
 - **Project updates** → Separate folder, bypass inbox
 - **Internal team messages** → Auto-categorised by department
-- **Receipts/confirmations** → Auto-archived after labeling
+- **Receipts/confirmations** → Auto-archived after labelling
 
 **Time saved:** 45 minutes daily on manual email sorting.
 
