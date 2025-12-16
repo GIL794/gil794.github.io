@@ -620,4 +620,4 @@ Let's build the future of finance together! 🚀
 
 ---
 
-*This post is part of my series on blockchain innovation and Web3 technologies. Stay tuned for more deep dives into decentralized systems and smart contract development.*
+*This post is part of my series on blockchain innovation and Web3 technologies. Stay tuned for more deep dives into decentralised systems and smart contract development.*
