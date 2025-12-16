@@ -20,7 +20,7 @@ What if you could describe a smart contract in plain English and have AI generat
 
 Traditional blockchain development faces significant barriers:
 
-- 🧠 **Steep Learning Curve**: Solidity, PyTeal, and other languages are specialized
+- 🧠 **Steep Learning Curve**: Solidity, PyTeal, and other languages are specialised
 - 🐛 **High Error Cost**: Bugs can lead to millions in losses
 - ⏰ **Time-Intensive**: Even simple contracts take hours to write
 - 🔒 **Security Risks**: One mistake = permanent vulnerability
@@ -755,13 +755,13 @@ AI-assisted blockchain development will:
 
 ## **Final Thoughts**
 
-The convergence of AI and blockchain represents a paradigm shift in how we build decentralized applications. The Algorand AI Contract Creator is an early step toward a future where smart contract development is accessible to everyone—not just blockchain experts.
+The convergence of AI and blockchain represents a paradigm shift in how we build decentralised applications. The Algorand AI Contract Creator is an early step toward a future where smart contract development is accessible to everyone—not just blockchain experts.
 
 By combining GPT-4's natural language understanding with Algorand's efficient blockchain and robust validation systems, we're lowering barriers to entry while maintaining security standards.
 
-**Yes, it's possible. No magic involved—just decentralization, automation, and AI working in harmony.**
+**Yes, it's possible. No magic involved—just decentralisation, automation, and AI working in harmony.**
 
-Ready to generate your first AI-powered smart contract? Let's build the decentralized future together!
+Ready to generate your first AI-powered smart contract? Let's build the decentralised future together!
 
 **Connect with me:**
 - 🌐 Portfolio: [gil794.github.io](https://gil794.github.io)

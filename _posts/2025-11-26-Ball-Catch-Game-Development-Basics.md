@@ -499,7 +499,7 @@ clock.tick(120)  # Smoother
 
 **Collision not working:**
 ```python
-# Add debug visualization
+# Add debug visualisation
 pygame.draw.rect(screen, (0, 255, 0), 
                 (basket_x, basket_y, basket_width, basket_height), 2)
 print(f"Ball: ({ball_x}, {ball_y}), Basket: ({basket_x}, {basket_y})")

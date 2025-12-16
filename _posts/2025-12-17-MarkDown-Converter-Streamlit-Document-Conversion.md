@@ -114,7 +114,7 @@ No Flask boilerplate, no HTML templates, no JavaScript complexity—just Python.
 
 ### **The Conversion Engines**
 
-Each format uses specialized Python libraries:
+Each format uses specialised Python libraries:
 
 **DOCX Conversion** (python-docx):
 ```python
@@ -288,7 +288,7 @@ Here's what's on the roadmap:
 - **Custom templates** for DOCX and PPTX
 - **Cloud storage integration** (Google Drive, Dropbox)
 - **API endpoint** for programmatic access
-- **Style customization** for each output format
+- **Style customisation** for each output format
 
 ### **Quality Improvements**
 - **Better error handling** with user-friendly messages
@@ -326,7 +326,7 @@ git checkout -b feature/new-converter
 
 ## **Why This Matters**
 
-In a world of increasing format fragmentation, tools that bridge the gap are essential. **MarkDown Converter democratizes document conversion**, making it accessible to anyone who can use a web browser.
+In a world of increasing format fragmentation, tools that bridge the gap are essential. **MarkDown Converter democratises document conversion**, making it accessible to anyone who can use a web browser.
 
 Whether you're a developer, writer, educator, or content creator, this tool saves time and eliminates the friction of format conversion.
 

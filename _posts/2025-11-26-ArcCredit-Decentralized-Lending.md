@@ -5,12 +5,12 @@ date: 2025-11-26
 time: "09:00"
 categories: [Blockchain, DeFi, Web3]
 tags: [blockchain, defi, smart contracts, hardhat, solidity, decentralized finance, web3, ethereum]
-excerpt: "Explore ArcCredit—a revolutionary decentralized lending platform that eliminates middlemen and democratizes access to credit. Learn how blockchain technology is reshaping financial services for the better."
+excerpt: "Explore ArcCredit—a revolutionary decentralised lending platform that eliminates middlemen and democratises access to credit. Learn how blockchain technology is reshaping financial services for the better."
 ---
 
 Hey there, Gabriele here!
 
-What if you could get instant funding without credit checks, lengthy applications, or predatory interest rates? What if the entire lending process was transparent, automated, and controlled by code rather than banks? Welcome to **[ArcCredit](https://github.com/GIL794/ArcCredit)**—a decentralized lending platform that's reimagining how people access credit in the Web3 era.
+What if you could get instant funding without credit checks, lengthy applications, or predatory interest rates? What if the entire lending process was transparent, automated, and controlled by code rather than banks? Welcome to **[ArcCredit](https://github.com/GIL794/ArcCredit)**—a decentralised lending platform that's reimagining how people access credit in the Web3 era.
 
 ---
 
@@ -605,9 +605,9 @@ Want to dive deeper into DeFi development?
 
 ## **Final Thoughts**
 
-The future of finance is decentralized, transparent, and accessible to all. ArcCredit is a small step toward that future—a world where your dreams aren't limited by your credit score or your banker's mood.
+The future of finance is decentralised, transparent, and accessible to all. ArcCredit is a small step toward that future—a world where your dreams aren't limited by your credit score or your banker's mood.
 
-By leveraging blockchain technology and smart contracts, we're building financial infrastructure that's fairer, faster, and more inclusive. **No magic involved, just decentralization.**
+By leveraging blockchain technology and smart contracts, we're building financial infrastructure that's fairer, faster, and more inclusive. **No magic involved, just decentralisation.**
 
 **Ready to be part of the financial revolution?** Check out the code, suggest improvements, or deploy your own instance!
 

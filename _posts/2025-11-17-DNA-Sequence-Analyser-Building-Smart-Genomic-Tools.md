@@ -19,7 +19,7 @@ In the intersection of technology and life sciences lies one of the most excitin
 DNA is the blueprint of life, containing instructions encoded in just four nucleotides: Adenine (A), Thymine (T), Guanine (G), and Cytosine (C). Understanding these sequences helps us:
 
 - **Identify genetic diseases** and predict health risks
-- **Develop targeted therapies** and personalized medicine
+- **Develop targeted therapies** and personalised medicine
 - **Track evolutionary relationships** between species
 - **Engineer organisms** for industrial and agricultural applications
 - **Solve forensic cases** and establish paternity
@@ -69,7 +69,7 @@ The DNA Sequence Analyser I built is a comprehensive Python-based tool that perf
 - Biopython (sequence handling)
 - NumPy (numerical computations)
 - Pandas (data manipulation)
-- Matplotlib/Seaborn (visualization)
+- Matplotlib/Seaborn (visualisation)
 - Scikit-learn (pattern recognition)
 ```
 
@@ -312,13 +312,13 @@ class MutationDetector:
 **Clinical Relevance:**
 - Transitions (purine ↔ purine, pyrimidine ↔ pyrimidine) are more common than transversions
 - Context helps understand potential impact on protein function
-- Foundation for personalized medicine approaches
+- Foundation for personalised medicine approaches
 
 ---
 
-## **Visualization: Making Data Interpretable**
+## **Visualisation: Making Data Interpretable**
 
-Raw data is powerful, but visualization makes it actionable:
+Raw data is powerful, but visualisation makes it actionable:
 
 ```python
 import matplotlib.pyplot as plt
