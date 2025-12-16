@@ -141,7 +141,7 @@ class SequenceParser:
 **Why This Approach Works:**
 - Handles large files efficiently using BioPython's lazy parsing
 - Validates data integrity before processing
-- Normalizes sequences to uppercase for consistency
+- Normalises sequences to uppercase for consistency
 
 ---
 
@@ -332,7 +332,7 @@ class SequencePlotter:
     @staticmethod
     def plot_gc_content(positions, gc_values, title="GC Content Along Sequence"):
         """
-        Visualize GC content variation
+        Visualise GC content variation
         """
         plt.figure(figsize=(14, 6))
         plt.plot(positions, gc_values, linewidth=2, color='#0366d6')
@@ -377,7 +377,7 @@ For large genomic datasets (millions of base pairs), performance is critical:
 ### **Optimisation Strategies**
 
 1. **Lazy Loading**: Process sequences in chunks rather than loading entire genomes into memory
-2. **Vectorization**: Use NumPy for numerical operations instead of Python loops
+2. **Vectorisation**: Use NumPy for numerical operations instead of Python loops
 3. **Caching**: Store frequently accessed computations (e.g., GC content for windows)
 4. **Parallel Processing**: Use multiprocessing for independent sequence analyses
 

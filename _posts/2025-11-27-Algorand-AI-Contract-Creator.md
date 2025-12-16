@@ -713,7 +713,7 @@ Based on real usage:
 
 AI-assisted blockchain development will:
 
-1. **Democratize Access**: Anyone can prototype blockchain ideas
+1. **Democratise Access**: Anyone can prototype blockchain ideas
 2. **Reduce Costs**: $500K audits → $50K + AI generation
 3. **Accelerate Innovation**: Days instead of months
 4. **Improve Security**: AI spots patterns humans miss

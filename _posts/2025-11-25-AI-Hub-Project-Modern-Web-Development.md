@@ -53,7 +53,7 @@ export default function Home() {
 
 1. **File-Based Routing**: No need for complex routing configurations
 2. **API Routes**: Build backend endpoints right in your Next.js app
-3. **Image Optimization**: Automatic lazy loading and responsive images
+3. **Image Optimisation**: Automatic lazy loading and responsive images
 4. **Code Splitting**: Load only what users need, when they need it
 5. **TypeScript Support**: Full type safety for robust applications
 
@@ -83,7 +83,7 @@ function AIFeatureCard({ title, description, icon }) {
 
 ### **TailwindCSS: Utility-First Styling**
 
-TailwindCSS revolutionizes how we write CSS:
+TailwindCSS revolutionises how we write CSS:
 
 ```jsx
 // Instead of writing custom CSS for every element
@@ -234,7 +234,7 @@ Access it at `/api/hello` - perfect for form submissions, data fetching, or inte
 
 ---
 
-## **Performance Optimization Techniques**
+## **Performance Optimisation Techniques**
 
 ### **Image Optimisation**
 
@@ -293,7 +293,7 @@ function App() {
 The AI Hub Project architecture is perfect for:
 
 - 🤖 **AI/ML Dashboards**: Display model predictions and analytics
-- 📊 **Data Visualization Tools**: Interactive charts and graphs
+- 📊 **Data Visualisation Tools**: Interactive charts and graphs
 - 🛍️ **E-commerce Platforms**: Fast, SEO-friendly product pages
 - 📝 **Content Management Systems**: Blog platforms and documentation sites
 - 🎓 **Learning Platforms**: Educational content with rich interactions
