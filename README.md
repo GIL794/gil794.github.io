@@ -115,18 +115,25 @@ This repository powers my professional portfolio and blog—a modern, responsive
    cd gil794.github.io
    ```
 
-2. **Install Dependencies**
+2. **Set Up Private Drafts Folder** (Optional)
+   ```bash
+   mkdir -p _drafts
+   # The _drafts/ folder is gitignored and ready to use
+   # See _drafts/README.md for usage instructions
+   ```
+
+3. **Install Dependencies**
    ```bash
    gem install bundler
    bundle install
    ```
 
-3. **Run the Development Server**
+4. **Run the Development Server**
    ```bash
    bundle exec jekyll serve
    ```
 
-4. **View Locally**
+5. **View Locally**
    Open your browser and navigate to `http://localhost:4000`
 
 ### Development with Live Reload
