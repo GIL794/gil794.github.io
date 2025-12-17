@@ -167,6 +167,10 @@ gil794.github.io/
 │   └── contact.md         # Contact information
 ├── _posts/                # Blog posts (Markdown)
 │   └── YYYY-MM-DD-title.md
+├── _drafts/               # Private drafts (NOT published)
+│   ├── README.md         # Draft management guide
+│   ├── draft-ideas.md    # Quick idea list
+│   └── *.md              # Work-in-progress posts
 ├── assets/                # Static assets
 │   ├── css/
 │   │   └── styles.scss    # Main stylesheet
@@ -184,6 +188,21 @@ gil794.github.io/
 ---
 
 ## ✍️ Content Management
+
+### Managing Draft Posts (Private)
+
+The `_drafts/` folder stores unpublished blog post ideas and drafts:
+
+- **Private**: Listed in `.gitignore` so drafts are NOT published to the live blog
+- **Local Only**: Visible only in your local repository, not to blog visitors
+- **Flexible Format**: Store quick ideas, outlines, or full drafts
+
+See `_drafts/README.md` for detailed usage instructions and examples.
+
+To preview drafts locally without publishing:
+```bash
+bundle exec jekyll serve --drafts
+```
 
 ### Creating a New Blog Post
 
@@ -204,6 +223,8 @@ gil794.github.io/
 3. Write your content in Markdown
 
 4. Commit and push—the site will automatically rebuild
+
+**Publishing a draft**: When ready, move the file from `_drafts/` to `_posts/` and rename to the required `YYYY-MM-DD-title.md` format (see step 1 above).
 
 ### Adding a New Page
 
