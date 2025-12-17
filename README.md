@@ -224,7 +224,7 @@ bundle exec jekyll serve --drafts
 
 4. Commit and push—the site will automatically rebuild
 
-**Publishing a Draft**: When ready, move the file from `_drafts/` to `_posts/` and rename to the required format.
+**Publishing a draft**: When ready, move the file from `_drafts/` to `_posts/` and rename to the required `YYYY-MM-DD-title.md` format (see step 1 above).
 
 ### Adding a New Page
 
