@@ -35,3 +35,6 @@ Thumbs.db
 tmp/
 temp/
 *.tmp
+
+# Private drafts folder (not published to blog)
+_drafts/
