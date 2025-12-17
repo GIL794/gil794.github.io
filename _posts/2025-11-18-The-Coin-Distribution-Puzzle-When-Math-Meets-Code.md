@@ -198,7 +198,7 @@ The Coin Distribution Puzzle is just the beginning. This repository is designed 
 ### **Planned Problem Categories**
 
 🔢 **Number Theory Challenges**
-- Prime number puzzles and factorization problems
+- Prime number puzzles and factorisation problems
 - Diophantine equations and integer solutions
 - Modular arithmetic applications
 
@@ -243,7 +243,7 @@ This project thrives on community contributions! Whether you're a seasoned mathe
 
 ### **How You Can Contribute**
 
-✨ **Submit New Problems**: Have a favorite mathematical puzzle? Add it to the collection!
+✨ **Submit New Problems**: Have a favourite mathematical puzzle? Add it to the collection!
 
 🚀 **Optimise Existing Solutions**: Found a more efficient algorithm? Submit a PR!
 

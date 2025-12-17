@@ -499,7 +499,7 @@ clock.tick(120)  # Smoother
 
 **Collision not working:**
 ```python
-# Add debug visualization
+# Add debug visualisation
 pygame.draw.rect(screen, (0, 255, 0), 
                 (basket_x, basket_y, basket_width, basket_height), 2)
 print(f"Ball: ({ball_x}, {ball_y}), Basket: ({basket_x}, {basket_y})")
@@ -561,7 +561,7 @@ Ball Catch teaches:
 - **Game Architecture**: Event-driven programming
 - **Graphics Programming**: 2D rendering basics
 - **User Input**: Real-time control handling
-- **Problem Solving**: Debugging and optimization
+- **Problem Solving**: Debugging and optimisation
 
 ### **Portfolio Building**
 

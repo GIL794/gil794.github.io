@@ -10,7 +10,7 @@ excerpt: "Transform your Markdown files into any format you need with a single c
 
 Hey there, Gabriele here!
 
-How many times have you written something in Markdown only to realize you need it as a Word document for a client, a PDF for distribution, or an HTML page for your website? Today, I'm excited to share **[MarkDown Converter](https://github.com/GIL794/MarkDown-Converter)**—a versatile web application that transforms your Markdown files into virtually any format you need, all through an elegant Streamlit interface.
+How many times have you written something in Markdown only to realise you need it as a Word document for a client, a PDF for distribution, or an HTML page for your website? Today, I'm excited to share **[MarkDown Converter](https://github.com/GIL794/MarkDown-Converter)**—a versatile web application that transforms your Markdown files into virtually any format you need, all through an elegant Streamlit interface.
 
 ---
 
@@ -114,7 +114,7 @@ No Flask boilerplate, no HTML templates, no JavaScript complexity—just Python.
 
 ### **The Conversion Engines**
 
-Each format uses specialized Python libraries:
+Each format uses specialised Python libraries:
 
 **DOCX Conversion** (python-docx):
 ```python
@@ -245,7 +245,7 @@ docker run -p 8501:8501 gil794/markdown-converter
 | **DOCX Generation** | python-docx | Word document creation |
 | **PDF Creation** | ReportLab | PDF file generation |
 | **PPT Slides** | python-pptx | PowerPoint presentation |
-| **Syntax Highlighting** | Pygments | Code block coloring |
+| **Syntax Highlighting** | Pygments | Code block colouring |
 | **Web Server** | Built-in Streamlit | Auto-reloading dev server |
 
 ---
@@ -288,13 +288,13 @@ Here's what's on the roadmap:
 - **Custom templates** for DOCX and PPTX
 - **Cloud storage integration** (Google Drive, Dropbox)
 - **API endpoint** for programmatic access
-- **Style customization** for each output format
+- **Style customisation** for each output format
 
 ### **Quality Improvements**
 - **Better error handling** with user-friendly messages
 - **Preview mode** before downloading
 - **Conversion history** for recently converted files
-- **Performance optimization** for large documents
+- **Performance optimisation** for large documents
 
 ---
 
@@ -326,7 +326,7 @@ git checkout -b feature/new-converter
 
 ## **Why This Matters**
 
-In a world of increasing format fragmentation, tools that bridge the gap are essential. **MarkDown Converter democratizes document conversion**, making it accessible to anyone who can use a web browser.
+In a world of increasing format fragmentation, tools that bridge the gap are essential. **MarkDown Converter democratises document conversion**, making it accessible to anyone who can use a web browser.
 
 Whether you're a developer, writer, educator, or content creator, this tool saves time and eliminates the friction of format conversion.
 

@@ -4,7 +4,7 @@ title: "Email Chaos to Inbox Zero: How I Finally Tamed My Email Monster (And You
 date: 2025-09-02
 time: "09:00"
 categories: [Productivity, Free Tools]
-tags: [email productivity, free tools, time management, workflow optimization]
+tags: [email productivity, free tools, time management, workflow optimisation]
 excerpt: "Discover the completely free tools and simple strategies that helped me go from 847 unread emails to Inbox Zero—and how you can do the same."
 ---
 
@@ -24,9 +24,9 @@ But here's the good news: I cracked the code. Using completely **free tools and 
 
 ## **The Email Epidemic: Why Traditional Management Fails**
 
-Before diving into solutions, let's address why most email advice doesn't work. The problem isn't that we're lazy or disorganized—it's that **email was never designed for modern workplace communication**.
+Before diving into solutions, let's address why most email advice doesn't work. The problem isn't that we're lazy or disorganised—it's that **email was never designed for modern workplace communication**.
 
-Traditional email management feels like organizing a junk drawer. You can create temporary order, but the fundamental design ensures chaos returns. Complex folder systems, elaborate tagging, and time-consuming rules often take longer to maintain than they save.
+Traditional email management feels like organising a junk drawer. You can create temporary order, but the fundamental design ensures chaos returns. Complex folder systems, elaborate tagging, and time-consuming rules often take longer to maintain than they save.
 
 The real culprits behind email overwhelm:
 
@@ -81,10 +81,10 @@ This free time tracker helped me realise I was spending 3 hours daily on email�
 Gmail's free filtering system is incredibly powerful but underutilized. Filters automatically sort incoming emails based on sender, subject, or keywords.
 
 **My setup:**
-- **Client emails** → Auto-labeled and starred
+- **Client emails** → Auto-labelled and starred
 - **Project updates** → Separate folder, bypass inbox
 - **Internal team messages** → Auto-categorised by department
-- **Receipts/confirmations** → Auto-archived after labeling
+- **Receipts/confirmations** → Auto-archived after labelling
 
 **Time saved:** 45 minutes daily on manual email sorting.
 
@@ -139,7 +139,7 @@ After implementing this system:
 
 This approach succeeds because it addresses the root causes, not just symptoms:
 
-**Automation over organization:** Tools do the sorting, not you
+**Automation over organisation:** Tools do the sorting, not you
 **Batching over constant checking:** Scheduled sessions prevent notification addiction
 **Prevention over management:** Stop unwanted emails at the source
 **Simplicity over complexity:** Five tools, three steps, sustainable habits

@@ -180,7 +180,7 @@ def generate_doubly_even_magic_square(n):
     Algorithm:
     1. Fill sequentially (1 to n²)
     2. Identify diagonals in 4×4 sub-squares
-    3. Swap elements across center
+    3. Swap elements across centre
     
     Time Complexity: O(n²)
     """

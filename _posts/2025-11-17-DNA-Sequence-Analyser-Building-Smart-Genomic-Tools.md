@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "DNA Sequence Analyzer: Building Smart Genomic Analysis Tools with Python"
+title: "DNA Sequence Analyser: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
 time: "09:00"
 categories: [Bioinformatics, Python, Data Science]
 tags: [dna analysis, genomics, python, machine learning, bioinformatics, computational biology]
-excerpt: "Discover how to build a powerful DNA sequence analyzer using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
+excerpt: "Discover how to build a powerful DNA sequence analyser using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
 ---
 
 Hey there, Gabriele here!
 
-In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyzer—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
+In the intersection of technology and life sciences lies one of the most exciting frontiers: **bioinformatics**. Today, I want to share my journey building a DNA sequence analyser—a tool that transforms raw genetic sequences into actionable insights. Whether you're a developer curious about biology or a researcher looking to automate genomic analysis, this post will guide you through the fundamentals and beyond.
 
 ---
 
@@ -19,7 +19,7 @@ In the intersection of technology and life sciences lies one of the most excitin
 DNA is the blueprint of life, containing instructions encoded in just four nucleotides: Adenine (A), Thymine (T), Guanine (G), and Cytosine (C). Understanding these sequences helps us:
 
 - **Identify genetic diseases** and predict health risks
-- **Develop targeted therapies** and personalized medicine
+- **Develop targeted therapies** and personalised medicine
 - **Track evolutionary relationships** between species
 - **Engineer organisms** for industrial and agricultural applications
 - **Solve forensic cases** and establish paternity
@@ -28,9 +28,9 @@ With genomic data becoming increasingly accessible (thanks to initiatives like t
 
 ---
 
-## **Project Overview: What Our DNA Analyzer Does**
+## **Project Overview: What Our DNA Analyser Does**
 
-The DNA Sequence Analyzer I built is a comprehensive Python-based tool that performs multiple analysis tasks:
+The DNA Sequence Analyser I built is a comprehensive Python-based tool that performs multiple analysis tasks:
 
 ### **Core Features**
 
@@ -69,7 +69,7 @@ The DNA Sequence Analyzer I built is a comprehensive Python-based tool that perf
 - Biopython (sequence handling)
 - NumPy (numerical computations)
 - Pandas (data manipulation)
-- Matplotlib/Seaborn (visualization)
+- Matplotlib/Seaborn (visualisation)
 - Scikit-learn (pattern recognition)
 ```
 
@@ -141,7 +141,7 @@ class SequenceParser:
 **Why This Approach Works:**
 - Handles large files efficiently using BioPython's lazy parsing
 - Validates data integrity before processing
-- Normalizes sequences to uppercase for consistency
+- Normalises sequences to uppercase for consistency
 
 ---
 
@@ -312,13 +312,13 @@ class MutationDetector:
 **Clinical Relevance:**
 - Transitions (purine ↔ purine, pyrimidine ↔ pyrimidine) are more common than transversions
 - Context helps understand potential impact on protein function
-- Foundation for personalized medicine approaches
+- Foundation for personalised medicine approaches
 
 ---
 
-## **Visualization: Making Data Interpretable**
+## **Visualisation: Making Data Interpretable**
 
-Raw data is powerful, but visualization makes it actionable:
+Raw data is powerful, but visualisation makes it actionable:
 
 ```python
 import matplotlib.pyplot as plt
@@ -332,7 +332,7 @@ class SequencePlotter:
     @staticmethod
     def plot_gc_content(positions, gc_values, title="GC Content Along Sequence"):
         """
-        Visualize GC content variation
+        Visualise GC content variation
         """
         plt.figure(figsize=(14, 6))
         plt.plot(positions, gc_values, linewidth=2, color='#0366d6')
@@ -377,7 +377,7 @@ For large genomic datasets (millions of base pairs), performance is critical:
 ### **Optimisation Strategies**
 
 1. **Lazy Loading**: Process sequences in chunks rather than loading entire genomes into memory
-2. **Vectorization**: Use NumPy for numerical operations instead of Python loops
+2. **Vectorisation**: Use NumPy for numerical operations instead of Python loops
 3. **Caching**: Store frequently accessed computations (e.g., GC content for windows)
 4. **Parallel Processing**: Use multiprocessing for independent sequence analyses
 
