@@ -228,7 +228,7 @@ A comprehensive guide to Python game development using Pygame:
 
 ### Publishing Schedule Recommendations
 
-Based on the scheduled publishing system (9 AM and 5 PM posts), here's a suggested timeline:
+Based on the scheduled publishing system (9 AM and 5 PM posts, as documented in BLOG_POST_SCHEDULING.md), here's a suggested timeline:
 
 **Month 1:**
 - Week 1: Polkadot Blockchain Academy post
@@ -265,8 +265,8 @@ Based on the scheduled publishing system (9 AM and 5 PM posts), here's a suggest
 
 - Link Polkadot certification to hackathon projects (Web3 ecosystem)
 - Link digital marketing posts to portfolio building posts
-- Link NLP in Production to AI Hub Project (both AI platforms)
-- Link game development to Math Problems (both educational Python)
+- Link NLP in Production to existing AI Hub Project post (both AI platforms)
+- Link game development to Math Problems posts (both educational Python)
 - Link Smart Contract security to both Algorand and ArcCredit projects
 
 ---
