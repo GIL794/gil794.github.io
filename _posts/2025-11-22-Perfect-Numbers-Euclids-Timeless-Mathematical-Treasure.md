@@ -5,7 +5,7 @@ date: 2025-11-22
 time: "17:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [perfect numbers, number theory, algorithms, python, mersenne primes, computational mathematics]
-excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 51 perfect numbers are known despite millennia of searching."
+excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 52 perfect numbers are known despite millennia of searching."
 ---
 
 Hey there, Gabriele here!
@@ -236,7 +236,7 @@ def find_perfect_numbers_euclid(max_exponent):
 - Worldwide volunteer computing project
 - Discovered most recent Mersenne primes
 - Demonstrates distributed problem-solving
-- Largest known prime: 2^82,589,933 - 1 (24,862,048 digits!)
+- Largest known prime: 2^136,279,841 - 1 (41,024,320 digits!)
 
 ### **Software Testing**
 
@@ -318,7 +318,7 @@ p=19: Mersenne=524,287, Perfect=137,438,691,328
 
 ## **The Known Perfect Numbers**
 
-As of 2024, only **51 perfect numbers** are known!
+As of October 2024, only **52 perfect numbers** are known!
 
 | # | p | Mersenne Prime (2^p - 1) | Perfect Number | Digits |
 |---|---|--------------------------|----------------|--------|
@@ -329,8 +329,9 @@ As of 2024, only **51 perfect numbers** are known!
 | 5 | 13 | 8,191 | 33,550,336 | 8 |
 | ... | ... | ... | ... | ... |
 | 51 | 82,589,933 | 2^82,589,933 - 1 | ... | 49,724,095 |
+| 52 | 136,279,841 | 2^136,279,841 - 1 | ... | 82,048,640 |
 
-The largest known perfect number has nearly **50 million digits**!
+The largest known perfect number has over **82 million digits**!
 
 ---
 
