@@ -236,7 +236,7 @@ def find_perfect_numbers_euclid(max_exponent):
 - Worldwide volunteer computing project
 - Discovered most recent Mersenne primes
 - Demonstrates distributed problem-solving
-- Largest known prime: 2^82,589,933 - 1 (24,862,048 digits!)
+- Largest known prime: 2^136,279,841 - 1 (41,024,320 digits!)
 
 ### **Software Testing**
 
@@ -328,9 +328,10 @@ As of October 2024, only **52 perfect numbers** are known!
 | 4 | 7 | 127 | 8,128 | 4 |
 | 5 | 13 | 8,191 | 33,550,336 | 8 |
 | ... | ... | ... | ... | ... |
-| 52 | 82,589,933 | 2^82,589,933 - 1 | ... | 49,724,095 |
+| 51 | 82,589,933 | 2^82,589,933 - 1 | ... | 49,724,095 |
+| 52 | 136,279,841 | 2^136,279,841 - 1 | ... | 82,048,640 |
 
-The largest known perfect number has nearly **50 million digits**!
+The largest known perfect number has over **82 million digits**!
 
 ---
 
