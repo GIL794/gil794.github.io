@@ -5,7 +5,7 @@ date: 2025-11-22
 time: "17:00"
 categories: [Algorithms, Python, Mathematics]
 tags: [perfect numbers, number theory, algorithms, python, mersenne primes, computational mathematics]
-excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 51 perfect numbers are known despite millennia of searching."
+excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 52 perfect numbers are known despite millennia of searching."
 ---
 
 Hey there, Gabriele here!
@@ -318,7 +318,7 @@ p=19: Mersenne=524,287, Perfect=137,438,691,328
 
 ## **The Known Perfect Numbers**
 
-As of 2024, only **51 perfect numbers** are known!
+As of October 2024, only **52 perfect numbers** are known!
 
 | # | p | Mersenne Prime (2^p - 1) | Perfect Number | Digits |
 |---|---|--------------------------|----------------|--------|
@@ -328,7 +328,7 @@ As of 2024, only **51 perfect numbers** are known!
 | 4 | 7 | 127 | 8,128 | 4 |
 | 5 | 13 | 8,191 | 33,550,336 | 8 |
 | ... | ... | ... | ... | ... |
-| 51 | 82,589,933 | 2^82,589,933 - 1 | ... | 49,724,095 |
+| 52 | 82,589,933 | 2^82,589,933 - 1 | ... | 49,724,095 |
 
 The largest known perfect number has nearly **50 million digits**!
 
