@@ -42,6 +42,8 @@ navigation_header:
     url: /community/
   - title: Contact
     url: /contact/
+  - title: Business Card
+    url: /card/
 # Pagination
 paginate: 5
 paginate_path: "/blog/page:num/"
