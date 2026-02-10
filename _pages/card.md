@@ -297,22 +297,22 @@ permalink: /card/
         <h3 class="card-section-title">Core Expertise</h3>
         <div class="card-skills">
           <span class="card-skill-badge">AI/ML Solutions</span>
+          <span class="card-skill-badge">Polkadot/Substrate</span>
+          <span class="card-skill-badge">Technical Education</span>
           <span class="card-skill-badge">Blockchain/Web3</span>
-          <span class="card-skill-badge">Full-Stack Development</span>
           <span class="card-skill-badge">NLP & LLMs</span>
-          <span class="card-skill-badge">Python</span>
-          <span class="card-skill-badge">React/Next.js</span>
-          <span class="card-skill-badge">Solidity</span>
-          <span class="card-skill-badge">Data Science</span>
+          <span class="card-skill-badge">Full-Stack Development</span>
+          <span class="card-skill-badge">Python & Solidity</span>
+          <span class="card-skill-badge">Smart Contracts</span>
         </div>
       </div>
 
       <div class="achievements-highlight">
         <h4>Key Achievements</h4>
+        <div class="achievement-item">HP Lecturer - Empowering students in AI & Blockchain technologies</div>
+        <div class="achievement-item">Polkadot Blockchain Academy Graduate (May 2025) - Substrate expertise</div>
         <div class="achievement-item">5 AI products launched with 75% productivity gains</div>
-        <div class="achievement-item">Polkadot Blockchain Academy Graduate (May 2025)</div>
-        <div class="achievement-item">10+ years cross-industry experience</div>
-        <div class="achievement-item">Multilingual: English, Italian, Spanish, French</div>
+        <div class="achievement-item">10+ years cross-industry experience in tech & education</div>
       </div>
       
       <div class="card-cta">
