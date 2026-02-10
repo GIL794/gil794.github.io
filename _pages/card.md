@@ -45,9 +45,11 @@ permalink: /card/
   border-radius: 50%;
 }
 
-.card-content {
+.business-card .card-content {
   position: relative;
   z-index: 1;
+  background: transparent;
+  color: white;
 }
 
 .card-header {
