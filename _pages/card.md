@@ -336,7 +336,7 @@ permalink: /card/
       <div class="card-cta">
         <a href="/contact/" class="card-cta-button">Get In Touch</a>
         <a href="/projects/" class="card-cta-button secondary">View Portfolio</a>
-        <a href="#" onclick="window.print(); return false;" class="card-cta-button secondary">Print Card</a>
+        <button onclick="window.print()" class="card-cta-button secondary" style="border: none; cursor: pointer;">Print Card</button>
       </div>
     </div>
   </div>
@@ -344,7 +344,10 @@ permalink: /card/
   <div class="qr-section">
     <h3>Scan to View Full Portfolio</h3>
     <div class="qr-code-container">
-      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://gil794.github.io" alt="QR Code to Portfolio">
+      <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://gil794.github.io" alt="QR Code to Portfolio" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+      <div style="display: none; padding: 20px; text-align: center;">
+        <p>Visit: <strong>gil794.github.io</strong></p>
+      </div>
     </div>
     <p class="qr-instructions">
       Scan this QR code with your phone to instantly access my complete portfolio, projects, and blog.
