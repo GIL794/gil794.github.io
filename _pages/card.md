@@ -13,7 +13,7 @@ permalink: /card/
 }
 
 .business-card {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #f97316 0%, #0366d6 100%);
   border-radius: 20px;
   padding: 60px 50px;
   color: white;
@@ -23,27 +23,7 @@ permalink: /card/
   margin-bottom: 40px;
 }
 
-.business-card::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -20%;
-  width: 400px;
-  height: 400px;
-  background: rgba(255,255,255,0.1);
-  border-radius: 50%;
-}
 
-.business-card::after {
-  content: '';
-  position: absolute;
-  bottom: -30%;
-  left: -10%;
-  width: 300px;
-  height: 300px;
-  background: rgba(255,255,255,0.05);
-  border-radius: 50%;
-}
 
 .business-card .card-content {
   position: relative;
@@ -144,7 +124,7 @@ permalink: /card/
 
 .card-cta-button {
   background: white;
-  color: #667eea;
+  color: #f97316;
   padding: 14px 28px;
   border-radius: 8px;
   text-decoration: none;
@@ -168,7 +148,7 @@ permalink: /card/
 
 .card-cta-button.secondary:hover {
   background: white;
-  color: #667eea;
+  color: #f97316;
 }
 
 /* QR Code Section */
@@ -357,30 +337,4 @@ permalink: /card/
   </div>
 </div>
 
-<script>
-// Add some interactive effects
-document.addEventListener('DOMContentLoaded', function() {
-  const card = document.querySelector('.business-card');
-  
-  // Add subtle tilt effect on desktop
-  if (window.innerWidth > 768) {
-    card.addEventListener('mousemove', function(e) {
-      const rect = card.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-      
-      const centerX = rect.width / 2;
-      const centerY = rect.height / 2;
-      
-      const rotateX = (y - centerY) / 30;
-      const rotateY = (centerX - x) / 30;
-      
-      card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-    });
-    
-    card.addEventListener('mouseleave', function() {
-      card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
-    });
-  }
-});
-</script>
+
