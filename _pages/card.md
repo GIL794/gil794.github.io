@@ -281,7 +281,7 @@ permalink: /card/
 }
 </style>
 
-<div class="business-card-container">
+<div class="business-card-container container">
   <div class="business-card">
     <div class="card-content">
       <div class="card-header">
