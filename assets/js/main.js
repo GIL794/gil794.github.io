@@ -490,6 +490,7 @@
     // Only initialize if IntersectionObserver is supported
     if ('IntersectionObserver' in window) {
       initLazyLoading();
+      initRoadmapAnimations();
     }
 
     initFormEnhancements();
@@ -504,5 +505,65 @@
 
     console.log('GIL794 site JavaScript loaded successfully');
   });
+
+  // Interactive Roadmap scroll animations
+  function initRoadmapAnimations() {
+    const roadmapItems = document.querySelectorAll('.roadmap-item');
+    if (roadmapItems.length === 0) return;
+    
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const roadmapObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('roadmap-visible');
+          // Keep observing to allow re-animation if scrolled back
+        } else {
+          // Optional: Remove class to re-animate when scrolling back up
+          // entry.target.classList.remove('roadmap-visible');
+        }
+      });
+    }, observerOptions);
+    
+    roadmapItems.forEach(item => {
+      roadmapObserver.observe(item);
+    });
+    
+    // Add parallax effect to timeline on scroll
+    let ticking = false;
+    
+    function updateRoadmapParallax() {
+      const timeline = document.querySelector('.roadmap-timeline');
+      if (!timeline) return;
+      
+      const scrolled = window.pageYOffset;
+      const timelineTop = timeline.offsetTop;
+      const timelineHeight = timeline.offsetHeight;
+      
+      // Calculate progress through the timeline
+      if (scrolled > timelineTop - window.innerHeight && scrolled < timelineTop + timelineHeight) {
+        const progress = (scrolled - (timelineTop - window.innerHeight)) / (timelineHeight + window.innerHeight);
+        
+        // Animate the timeline line gradient based on scroll progress
+        const timelineLine = timeline.querySelector('::before');
+        // This is done via CSS, but we could add dynamic effects here if needed
+      }
+      
+      ticking = false;
+    }
+    
+    function requestRoadmapTick() {
+      if (!ticking) {
+        requestAnimationFrame(updateRoadmapParallax);
+        ticking = true;
+      }
+    }
+    
+    window.addEventListener('scroll', requestRoadmapTick);
+  }
+
 
 })();
