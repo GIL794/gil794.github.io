@@ -2808,34 +2808,85 @@ table {
   max-width: 900px;
   margin: 0 auto;
   padding: 2rem 0;
+  
+  // Subtle background pattern for visual interest
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 25% 25%, rgba(249, 115, 22, 0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+    pointer-events: none;
+    z-index: 0;
+  }
 }
 
 .roadmap-timeline {
   position: relative;
   padding-left: 3rem;
+  z-index: 1;
   
   @media (max-width: 768px) {
     padding-left: 2rem;
   }
   
-  // Vertical timeline line
+  // Vertical timeline line with enhanced gradient and glow
   &::before {
     content: '';
     position: absolute;
     left: 1.5rem;
     top: 0;
     bottom: 0;
-    width: 3px;
+    width: 4px;
     background: linear-gradient(180deg, 
       var(--primary-color) 0%, 
-      var(--secondary-color) 50%, 
+      var(--secondary-color) 30%,
+      #fbbf24 50%,
+      var(--secondary-color) 70%, 
       var(--primary-color) 100%);
-    border-radius: 2px;
+    border-radius: 3px;
+    box-shadow: 
+      0 0 10px rgba(249, 115, 22, 0.3),
+      0 0 20px rgba(249, 115, 22, 0.15);
     
     @media (max-width: 768px) {
       left: 1rem;
-      width: 2px;
+      width: 3px;
     }
+  }
+  
+  // Animated progress indicator
+  &::after {
+    content: '';
+    position: absolute;
+    left: 1.5rem;
+    top: 0;
+    width: 4px;
+    height: 0;
+    background: linear-gradient(180deg, 
+      transparent 0%,
+      rgba(249, 115, 22, 0.5) 50%,
+      transparent 100%);
+    border-radius: 3px;
+    animation: timelineProgress 2s ease-in-out forwards;
+    
+    @media (max-width: 768px) {
+      left: 1rem;
+      width: 3px;
+    }
+  }
+}
+
+@keyframes timelineProgress {
+  0% {
+    height: 0;
+  }
+  100% {
+    height: 100%;
   }
 }
 
@@ -2868,32 +2919,81 @@ table {
   position: absolute;
   left: -2.4rem;
   top: 0.5rem;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   background: white;
   border: 4px solid var(--primary-color);
   border-radius: 50%;
-  box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.2);
-  z-index: 2;
-  transition: all 0.4s ease;
+  box-shadow: 
+    0 0 0 4px rgba(249, 115, 22, 0.15),
+    0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   
   @media (max-width: 768px) {
     left: -1.9rem;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-width: 3px;
   }
   
-  // Pulse animation on hover
-  .roadmap-item:hover & {
-    transform: scale(1.3);
-    box-shadow: 0 0 0 8px rgba(249, 115, 22, 0.3);
-    animation: pulse 1.5s ease-in-out infinite;
+  // Inner glow effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    
+    @media (max-width: 768px) {
+      width: 4px;
+      height: 4px;
+    }
   }
   
-  // Active state when visible
+  // Enhanced pulse animation on hover
+  .roadmap-item:hover & {
+    transform: scale(1.4);
+    box-shadow: 
+      0 0 0 8px rgba(249, 115, 22, 0.2),
+      0 0 0 12px rgba(249, 115, 22, 0.1),
+      0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: pulseEnhanced 1.5s ease-in-out infinite;
+    
+    &::before {
+      opacity: 1;
+    }
+  }
+  
+  // Active state when visible with enhanced gradient
   .roadmap-visible & {
-    background: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-color: var(--secondary-color);
+    box-shadow: 
+      0 0 0 4px rgba(249, 115, 22, 0.2),
+      0 0 15px rgba(249, 115, 22, 0.4),
+      0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes pulseEnhanced {
+  0%, 100% {
+    box-shadow: 
+      0 0 0 8px rgba(249, 115, 22, 0.2),
+      0 0 0 12px rgba(249, 115, 22, 0.1),
+      0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  50% {
+    box-shadow: 
+      0 0 0 12px rgba(249, 115, 22, 0.15),
+      0 0 0 20px rgba(249, 115, 22, 0.05),
+      0 4px 16px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -2907,36 +3007,69 @@ table {
 }
 
 .roadmap-content {
-  background: white;
-  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
   padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 
+    0 8px 32px rgba(0, 0, 0, 0.08),
+    0 2px 8px rgba(0, 0, 0, 0.04),
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(249, 115, 22, 0.1);
   position: relative;
-  transition: all 0.4s ease;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
   
   @media (max-width: 768px) {
     padding: 1.5rem;
-    border-radius: 12px;
+    border-radius: 16px;
   }
   
-  // Hover effect
-  .roadmap-item:hover & {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 35px rgba(249, 115, 22, 0.2);
-    border-color: rgba(249, 115, 22, 0.3);
-  }
-  
-  // Shine effect
-  &::before {
+  // Subtle gradient overlay
+  &::after {
     content: '';
     position: absolute;
     top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at top right, rgba(249, 115, 22, 0.08), transparent 70%);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  // Hover effect with enhanced depth
+  .roadmap-item:hover & {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 
+      0 16px 48px rgba(249, 115, 22, 0.2),
+      0 8px 24px rgba(0, 0, 0, 0.1),
+      inset 0 1px 0 rgba(255, 255, 255, 1);
+    border-color: rgba(249, 115, 22, 0.4);
+    background: rgba(255, 255, 255, 1);
+    
+    &::after {
+      opacity: 1;
+    }
+  }
+  
+  // Enhanced shine effect
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
     left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.1), transparent);
-    transition: left 0.6s ease;
+    width: 60%;
+    height: 200%;
+    background: linear-gradient(
+      90deg, 
+      transparent, 
+      rgba(255, 255, 255, 0.3) 50%, 
+      transparent
+    );
+    transform: rotate(25deg);
+    transition: left 0.7s cubic-bezier(0.4, 0, 0.2, 1);
     pointer-events: none;
   }
   
@@ -2947,12 +3080,14 @@ table {
   h3 {
     margin: 0.5rem 0 1rem;
     color: var(--text-primary);
-    font-size: 1.3rem;
-    font-weight: 600;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    font-size: 1.35rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), #fbbf24);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    letter-spacing: -0.02em;
+    line-height: 1.3;
     
     @media (max-width: 768px) {
       font-size: 1.15rem;
@@ -2961,54 +3096,90 @@ table {
   
   p {
     color: var(--text-secondary);
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0.5rem 0;
+    font-size: 0.95rem;
     
     @media (max-width: 768px) {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
     }
     
     strong {
       color: var(--primary-color);
-      font-weight: 600;
+      font-weight: 700;
     }
   }
 }
 
 .roadmap-year {
   display: inline-block;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color), #fbbf24);
   color: white;
-  padding: 0.4rem 1rem;
-  border-radius: 20px;
+  padding: 0.5rem 1.2rem;
+  border-radius: 25px;
   font-size: 0.85rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px rgba(249, 115, 22, 0.3);
+  font-weight: 800;
+  letter-spacing: 0.8px;
+  box-shadow: 
+    0 4px 12px rgba(249, 115, 22, 0.3),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  transition: all 0.3s ease;
   
   @media (max-width: 768px) {
-    font-size: 0.8rem;
-    padding: 0.3rem 0.8rem;
+    font-size: 0.75rem;
+    padding: 0.4rem 1rem;
+  }
+  
+  .roadmap-item:hover & {
+    transform: scale(1.05);
+    box-shadow: 
+      0 6px 16px rgba(249, 115, 22, 0.4),
+      0 2px 8px rgba(0, 0, 0, 0.15);
   }
 }
 
 .roadmap-highlight {
   margin-top: 1rem;
-  padding: 1rem;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(251, 146, 60, 0.05));
-  border-left: 3px solid var(--primary-color);
-  border-radius: 8px;
+  padding: 1.25rem;
+  background: linear-gradient(
+    135deg, 
+    rgba(249, 115, 22, 0.08), 
+    rgba(251, 146, 60, 0.08),
+    rgba(251, 191, 36, 0.05)
+  );
+  border-left: 4px solid var(--primary-color);
+  border-radius: 12px;
   font-size: 0.9rem;
+  box-shadow: 
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    0 2px 8px rgba(249, 115, 22, 0.1);
+  position: relative;
+  overflow: hidden;
   
   @media (max-width: 768px) {
-    padding: 0.8rem;
+    padding: 1rem;
     font-size: 0.85rem;
+  }
+  
+  // Decorative gradient accent
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(249, 115, 22, 0.05));
+    pointer-events: none;
   }
   
   strong {
     color: var(--primary-color);
     display: block;
-    margin-bottom: 0.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+    font-size: 0.95rem;
   }
 }
 
@@ -3017,35 +3188,77 @@ table {
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 2rem;
   margin-top: 4rem;
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(249, 115, 22, 0.05), rgba(251, 146, 60, 0.05));
-  border-radius: 16px;
-  border: 2px solid rgba(249, 115, 22, 0.2);
+  padding: 2.5rem;
+  background: linear-gradient(
+    135deg, 
+    rgba(249, 115, 22, 0.08), 
+    rgba(251, 146, 60, 0.06),
+    rgba(251, 191, 36, 0.04)
+  );
+  border-radius: 24px;
+  border: 2px solid rgba(249, 115, 22, 0.25);
+  box-shadow: 
+    0 8px 32px rgba(249, 115, 22, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
   
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 3rem;
-    padding: 1.5rem;
+    padding: 2rem;
+    border-radius: 20px;
+  }
+  
+  // Decorative gradient overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at center,
+      rgba(251, 191, 36, 0.1),
+      transparent 70%
+    );
+    pointer-events: none;
   }
 }
 
 .summary-stat {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-4px);
+  }
   
   .summary-number {
     display: block;
-    font-size: 2.5rem;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    font-size: 2.8rem;
+    font-weight: 800;
+    background: linear-gradient(
+      135deg, 
+      var(--primary-color), 
+      var(--secondary-color),
+      #fbbf24
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     margin-bottom: 0.5rem;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    text-shadow: 0 2px 4px rgba(249, 115, 22, 0.1);
     
     @media (max-width: 768px) {
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
   }
   
@@ -3053,12 +3266,89 @@ table {
     display: block;
     color: var(--text-secondary);
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 1.2px;
     
     @media (max-width: 768px) {
       font-size: 0.85rem;
     }
+  }
+}
+  
+  .summary-label {
+    display: block;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    
+    @media (max-width: 768px) {
+      font-size: 0.85rem;
+    }
+  }
+}
+
+// Icon background circles for visual hierarchy
+.icon-bg {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.15), rgba(251, 146, 60, 0.15));
+  box-shadow: 
+    0 4px 12px rgba(249, 115, 22, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
+  }
+  
+  // Hover effect on parent
+  .roadmap-item:hover & {
+    transform: rotate(10deg) scale(1.15);
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.25), rgba(251, 146, 60, 0.25));
+    box-shadow: 
+      0 6px 16px rgba(249, 115, 22, 0.25),
+      inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  }
+  
+  // Specific color variations for different icon types
+  &.icon-rocket {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.15), rgba(249, 115, 22, 0.15));
+  }
+  
+  &.icon-building {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.15), rgba(147, 197, 253, 0.15));
+  }
+  
+  &.icon-education {
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.15), rgba(167, 139, 250, 0.15));
+  }
+  
+  &.icon-books {
+    background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(110, 231, 183, 0.15));
+  }
+  
+  &.icon-robot {
+    background: linear-gradient(135deg, rgba(249, 115, 22, 0.2), rgba(251, 191, 36, 0.2));
+  }
+  
+  &.icon-teacher {
+    background: linear-gradient(135deg, rgba(236, 72, 153, 0.15), rgba(251, 207, 232, 0.15));
+  }
+  
+  &.icon-chain {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(196, 181, 253, 0.15));
   }
 }

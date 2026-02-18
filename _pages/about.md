@@ -101,7 +101,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">2014-2018</div>
-            <h3>🚀 Digital Marketing Manager</h3>
+            <h3><span class="icon-bg icon-rocket">🚀</span> Digital Marketing Manager</h3>
             <p><strong>DREAMPOWER Ltd</strong></p>
             <p>Launched my professional journey in digital marketing, developing skills in online strategy, brand management, and customer engagement.</p>
           </div>
@@ -111,7 +111,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">2019-2021</div>
-            <h3>🏢 Letting & Marketing Manager</h3>
+            <h3><span class="icon-bg icon-building">🏢</span> Letting & Marketing Manager</h3>
             <p><strong>GIL LETTINGS</strong></p>
             <p>Expanded into real estate management, combining marketing expertise with business operations and client relationship management.</p>
           </div>
@@ -121,7 +121,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">2021-2022</div>
-            <h3>🎓 International Business Management</h3>
+            <h3><span class="icon-bg icon-education">🎓</span> International Business Management</h3>
             <p><strong>University of the West of Scotland</strong></p>
             <p>Formalized business knowledge through academic study, building strategic thinking and global business perspective.</p>
           </div>
@@ -131,7 +131,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">2022-2023</div>
-            <h3>📚 Business and Marketing</h3>
+            <h3><span class="icon-bg icon-books">📚</span> Business and Marketing</h3>
             <p><strong>Anglia Ruskin University</strong></p>
             <p>Advanced marketing studies integrating digital transformation and business analytics.</p>
           </div>
@@ -141,7 +141,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">2023 - Present</div>
-            <h3>🤖 AI Solution Architect</h3>
+            <h3><span class="icon-bg icon-robot">🤖</span> AI Solution Architect</h3>
             <p><strong>AllianceNews Ltd</strong></p>
             <p>Leading AI product development with NLP technologies, achieving 75% productivity increase and launching 5 AI products.</p>
             <div class="roadmap-highlight">
@@ -154,7 +154,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">2023 - Present</div>
-            <h3>🎓 BSc (Hons) Data Science & AI</h3>
+            <h3><span class="icon-bg icon-education">🎓</span> BSc (Hons) Data Science & AI</h3>
             <p><strong>University of East London</strong></p>
             <p>Pursuing advanced studies in AI, Machine Learning, and Data Science while working full-time as an AI architect.</p>
             <div class="roadmap-highlight">
@@ -167,7 +167,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">Current</div>
-            <h3>👨‍🏫 HP Lecturer</h3>
+            <h3><span class="icon-bg icon-teacher">👨‍🏫</span> HP Lecturer</h3>
             <p><strong>Teaching & Mentorship</strong></p>
             <p>Sharing knowledge and elevating the tech community through education and mentorship in AI and technology.</p>
           </div>
@@ -177,7 +177,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
             <div class="roadmap-year">May 2025</div>
-            <h3>⛓️ Polkadot Blockchain Academy Graduate</h3>
+            <h3><span class="icon-bg icon-chain">⛓️</span> Polkadot Blockchain Academy Graduate</h3>
             <p><strong>4-Week Online Campus Program - Certificate</strong></p>
             <p>Completed comprehensive blockchain development program focusing on Polkadot ecosystem, Substrate framework, and Web3 technologies.</p>
           </div>
