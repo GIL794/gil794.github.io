@@ -2857,7 +2857,7 @@ table {
   }
   
   // Staggered animation delay
-  @for $i from 1 through 10 {
+  @for $i from 1 through 9 {
     &:nth-child(#{$i}).roadmap-visible {
       transition-delay: #{$i * 0.1}s;
     }
