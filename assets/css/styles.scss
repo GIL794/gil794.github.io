@@ -3275,20 +3275,6 @@ table {
     }
   }
 }
-  
-  .summary-label {
-    display: block;
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    
-    @media (max-width: 768px) {
-      font-size: 0.85rem;
-    }
-  }
-}
 
 // Icon background circles for visual hierarchy
 .icon-bg {
