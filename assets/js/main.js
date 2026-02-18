@@ -490,6 +490,7 @@
     // Only initialize if IntersectionObserver is supported
     if ('IntersectionObserver' in window) {
       initLazyLoading();
+      initRoadmapAnimations();
     }
 
     initFormEnhancements();
@@ -504,5 +505,29 @@
 
     console.log('GIL794 site JavaScript loaded successfully');
   });
+
+  // Interactive Roadmap scroll animations
+  function initRoadmapAnimations() {
+    const roadmapItems = document.querySelectorAll('.roadmap-item');
+    if (roadmapItems.length === 0) return;
+    
+    const observerOptions = {
+      threshold: 0.2,
+      rootMargin: '0px 0px -50px 0px'
+    };
+    
+    const roadmapObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('roadmap-visible');
+        }
+      });
+    }, observerOptions);
+    
+    roadmapItems.forEach(item => {
+      roadmapObserver.observe(item);
+    });
+  }
+
 
 })();
