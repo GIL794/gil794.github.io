@@ -279,7 +279,7 @@ h1, h2, h3, h4, h5, h6, .site-feature__title, .header__title {
   }
   
   @media (max-width: 480px) {
-    padding: 0 0.75rem;
+    padding: 0 0.6rem;
   }
 }
 
@@ -294,7 +294,7 @@ main {
   }
   
   @media (max-width: 480px) {
-    padding: 0.75rem;
+    padding: 0.6rem;
   }
 }
 
@@ -315,7 +315,7 @@ main {
     }
     
     @media (max-width: 480px) {
-      padding: 0 0.75rem;
+      padding: 0 0.6rem;
     }
   }
 }
@@ -407,11 +407,7 @@ section {
     }
     
     @media (max-width: 480px) {
-      font-size: 0.9rem;
-    }
-    
-    @media (max-width: 380px) {
-      font-size: 0.8rem;
+      font-size: 0.85rem;
     }
   }
 }
@@ -493,12 +489,7 @@ section {
     }
     
     @media (max-width: 480px) {
-      padding: 0.35rem 0.5rem;
-      font-size: 0.8rem;
-    }
-    
-    @media (max-width: 380px) {
-      padding: 0.3rem 0.4rem;
+      padding: 0.3rem 0.45rem;
       font-size: 0.8rem;
     }
   }
@@ -2802,31 +2793,7 @@ table {
   }
 }
 
-// Extra small devices (< 380px)
-@media (max-width: 380px) {
-  .container {
-    padding: 0 0.5rem;
-  }
-  
-  .main-content > *:not(.container) {
-    padding: 0 0.5rem;
-  }
-  
-  .header__content {
-    padding: 0.5rem 0;
-  }
-  
-  // Make navigation even more compact
-  .nav--main ul {
-    gap: 0.25rem;
-    font-size: 0.8rem;
-  }
-  
-  .nav--main a {
-    padding: 0.25rem 0.35rem;
-    font-size: 0.8rem;
-  }
-}
+
 
 // Landscape mode on mobile - optimise header
 @media (max-width: 768px) and (orientation: landscape) {
