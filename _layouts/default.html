@@ -38,7 +38,7 @@
     <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title | default: 'Gabriele Iacopo Langellotto' }}">
 
     <!-- JSON-LD Structured Data -->
-    {% if page.layout == 'post' %}
+    {% if page.id %}
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
