@@ -38,7 +38,7 @@ A detailed account of the 4-week intensive Polkadot Blockchain Academy online ca
 **Description:**
 A comprehensive case study detailing the digital transformation journey at GIL LETTINGS, where strategic marketing initiatives achieved 100% growth across all key metrics. This post would explore:
 - Initial assessment: Identifying opportunities in real estate marketing
-- Digital strategy development: CRM optimization and platform selection
+- Digital strategy development: CRM optimisation and platform selection
 - Social media transformation: Building brand visibility from ground up
 - Team building: Recruitment, training, and cohesion strategies
 - Customer satisfaction initiatives: Achieving 100% growth in referrals
@@ -68,7 +68,7 @@ An in-depth exploration of digital marketing strategy execution over 4+ years at
 - Long-term digital marketing strategy development
 - Market research methodologies and data analysis
 - Social media evolution: Platforms, strategies, and ROI (2014-2018)
-- Mobile communication optimization techniques
+- Mobile communication optimisation techniques
 - Content creation and content marketing strategies
 - B2B vs B2C: Different approaches for different audiences
 - International event representation and networking
@@ -125,7 +125,7 @@ While individual problems from this repository have blog posts, a meta-post abou
 - Educational approach: Theory meets implementation
 - Progression from simple (primes) to complex (Riemann Hypothesis)
 - Cryptography foundations: ECC and RSA
-- Algorithm analysis and optimization
+- Algorithm analysis and optimisation
 - Using code to understand mathematical concepts
 - The value of educational repositories for portfolio building
 - Community engagement and contributions
@@ -213,7 +213,7 @@ A comprehensive guide to Python game development using Pygame:
 - Game state management
 - UI/UX design for games
 - Different game genres: Puzzle vs Action
-- Code organization for game projects
+- Code organisation for game projects
 - Adding features: Hints, pause/resume, scoring
 - Testing and debugging game logic
 - Publishing and distribution
@@ -286,7 +286,7 @@ Based on the scheduled publishing system (9 AM and 5 PM posts, as documented in 
 ### Tutorials & Guides
 - "Getting Started with Substrate Development"
 - "OpenAI GPT-4 Integration Best Practices"
-- "Jekyll Blog Optimization for Developers"
+- "Jekyll Blog Optimisation for Developers"
 
 ---
 

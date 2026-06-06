@@ -159,7 +159,7 @@ Fallback: If JavaScript is disabled, all posts will be visible (progressive enha
 - **No External Dependencies**: Pure JavaScript, no libraries required
 - **Client-Side Only**: No server-side processing or API calls
 
-## Customization
+## Customisation
 
 ### Changing Publication Times
 

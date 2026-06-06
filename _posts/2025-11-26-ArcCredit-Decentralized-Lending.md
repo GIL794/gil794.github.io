@@ -1,17 +1,18 @@
 ---
 layout: post
-title: "ArcCredit: Revolutionizing Credit Access Through Decentralization"
+title: "ArcCredit: Revolutionizing Credit Access Through Decentralisation"
 date: 2025-11-26
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Blockchain, DeFi, Web3]
-tags: [blockchain, defi, smart contracts, hardhat, solidity, decentralized finance, web3, ethereum]
-excerpt: "Explore ArcCredit—a revolutionary decentralized lending platform that eliminates middlemen and democratises access to credit. Learn how blockchain technology is reshaping financial services for the better."
+categories: [Blockchain/DeFi]
+tags: [blockchain, defi, smart-contracts, hardhat, solidity, decentralised-finance, web3, ethereum]
+excerpt: "Explore ArcCredit—a revolutionary decentralized lending platform that eliminates middlemen and democratizes access to credit. Learn how blockchain technology is reshaping financial services for the better and enabling instant funding."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
 
-What if you could get instant funding without credit checks, lengthy applications, or predatory interest rates? What if the entire lending process was transparent, automated, and controlled by code rather than banks? Welcome to **[ArcCredit](https://github.com/GIL794/ArcCredit)**—a decentralized lending platform that's reimagining how people access credit in the Web3 era.
+What if you could get instant funding without credit checks, lengthy applications, or predatory interest rates? What if the entire lending process was transparent, automated, and controlled by code rather than banks? Welcome to **[ArcCredit](https://github.com/GIL794/ArcCredit)**—a decentralised lending platform that's reimagining how people access credit in the Web3 era.
 
 ---
 
@@ -92,7 +93,7 @@ export default config;
 - ⚡ **Faster Compilation**: Improved performance
 - 🧪 **Better Testing**: Enhanced testing framework
 - 🔧 **Modern Tooling**: Latest JavaScript features
-- 📊 **Gas Optimization**: Built-in profiling
+- 📊 **Gas Optimisation**: Built-in profiling
 
 ### **Smart Contract Architecture**
 
@@ -208,7 +209,7 @@ contract LendingPool {
 2. **Automatic Liquidation**: Overdue loans liquidate automatically
 3. **Transparent Rates**: Interest calculated on-chain
 4. **Event Logging**: All actions recorded immutably
-5. **Gas Optimized**: Efficient storage and computation
+5. **Gas Optimised**: Efficient storage and computation
 
 ---
 
@@ -370,7 +371,7 @@ Before mainnet deployment:
 - ✅ **Formal Verification**: Mathematical proof of correctness
 - ✅ **Bug Bounty**: Community security testing
 - ✅ **Testnet Deployment**: Extensive testing on Sepolia/Goerli
-- ✅ **Gas Optimization**: Minimize transaction costs
+- ✅ **Gas Optimisation**: Minimize transaction costs
 - ✅ **Emergency Pause**: Circuit breaker for critical bugs
 
 ---
@@ -492,7 +493,7 @@ Before mainnet launch:
 
 1. **Security Audit**: Get professional review
 2. **Insurance**: Consider smart contract insurance
-3. **Gas Optimization**: Minimize user costs
+3. **Gas Optimisation**: Minimize user costs
 4. **Documentation**: Clear user guides
 5. **Monitoring**: Set up alerts for unusual activity
 6. **Governance**: Implement community control mechanisms
@@ -503,7 +504,7 @@ Before mainnet launch:
 
 ### **Why ArcCredit Matters**
 
-Decentralized lending represents a paradigm shift:
+Decentralised lending represents a paradigm shift:
 
 - 🌍 **Financial Inclusion**: Global access without discrimination
 - 💰 **Better Rates**: No middlemen means lower costs
@@ -606,7 +607,7 @@ Want to dive deeper into DeFi development?
 
 ## **Final Thoughts**
 
-The future of finance is decentralized, transparent, and accessible to all. ArcCredit is a small step toward that future—a world where your dreams aren't limited by your credit score or your banker's mood.
+The future of finance is decentralised, transparent, and accessible to all. ArcCredit is a small step toward that future—a world where your dreams aren't limited by your credit score or your banker's mood.
 
 By leveraging blockchain technology and smart contracts, we're building financial infrastructure that's fairer, faster, and more inclusive. **No magic involved, just decentralisation.**
 
@@ -621,4 +622,4 @@ Let's build the future of finance together! 🚀
 
 ---
 
-*This post is part of my series on blockchain innovation and Web3 technologies. Stay tuned for more deep dives into decentralized systems and smart contract development.*
+*This post is part of my series on blockchain innovation and Web3 technologies. Stay tuned for more deep dives into decentralised systems and smart contract development.*

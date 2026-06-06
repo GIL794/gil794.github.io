@@ -4,9 +4,10 @@ title: "AI Hub Project: Building Modern Web Apps with Next.js and React"
 date: 2025-11-25
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Web Development, JavaScript, React]
-tags: [nextjs, react, tailwindcss, web development, frontend, modern web, ai hub]
-excerpt: "Dive into modern web development with the AI Hub Project—a Next.js application showcasing the power of React and TailwindCSS for building fast, responsive, and beautiful web interfaces."
+categories: [Web Development]
+tags: [nextjs, react, tailwindcss, web-development, frontend, modern-web, ai-hub]
+excerpt: "Dive into modern web development with the AI Hub Project—a Next.js application showcasing the power of React and TailwindCSS for building fast, responsive, and beautiful web interfaces optimized for production."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
@@ -23,7 +24,7 @@ The web development landscape has evolved dramatically. Gone are the days of wri
 - 🔄 **Hot module replacement** for instant development feedback
 - 🎨 **Utility-first styling** that scales beautifully
 - 📱 **Mobile-first responsive design** out of the box
-- 🚀 **Production-ready optimizations** without manual configuration
+- 🚀 **Production-ready optimisations** without manual configuration
 
 The AI Hub Project leverages these advantages to create a seamless user experience.
 
@@ -54,7 +55,7 @@ export default function Home() {
 
 1. **File-Based Routing**: No need for complex routing configurations
 2. **API Routes**: Build backend endpoints right in your Next.js app
-3. **Image Optimization**: Automatic lazy loading and responsive images
+3. **Image Optimisation**: Automatic lazy loading and responsive images
 4. **Code Splitting**: Load only what users need, when they need it
 5. **TypeScript Support**: Full type safety for robust applications
 
@@ -89,7 +90,7 @@ TailwindCSS revolutionises how we write CSS:
 ```jsx
 // Instead of writing custom CSS for every element
 // Use utility classes that compose beautifully
-<div className="flex items-center justify-between p-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg">
+<div className="flex items-centre justify-between p-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg shadow-lg">
   <h2 className="text-2xl font-bold text-white">AI Hub</h2>
   <button className="px-4 py-2 bg-white text-blue-600 rounded hover:bg-gray-100 transition">
     Get Started
@@ -235,11 +236,11 @@ Access it at `/api/hello` - perfect for form submissions, data fetching, or inte
 
 ---
 
-## **Performance Optimization Techniques**
+## **Performance Optimisation Techniques**
 
-### **Image Optimization**
+### **Image Optimisation**
 
-Next.js includes automatic image optimization:
+Next.js includes automatic image optimisation:
 
 ```jsx
 import Image from 'next/image';
@@ -309,7 +310,7 @@ The AI Hub Project architecture is perfect for:
 Choosing Next.js over Create React App provides:
 - Built-in routing without React Router complexity
 - Automatic code splitting
-- SEO optimization out of the box
+- SEO optimisation out of the box
 - API routes for backend logic
 
 ### **2. Embrace Utility-First CSS**
@@ -331,7 +332,7 @@ Break your UI into small, reusable pieces:
 ### **4. Performance First**
 
 Use Next.js features to optimise:
-- Image component for automatic optimization
+- Image component for automatic optimisation
 - Dynamic imports for code splitting
 - Static generation for fast load times
 - API routes for efficient data fetching
@@ -400,7 +401,7 @@ Want to dive deeper? Check out:
 The combination of Next.js, React, and TailwindCSS represents the modern approach to web development:
 
 ✅ **Developer Experience**: Hot reload, TypeScript support, great tooling  
-✅ **Performance**: SSR, SSG, automatic optimizations  
+✅ **Performance**: SSR, SSG, automatic optimisations  
 ✅ **Scalability**: Component architecture, code splitting  
 ✅ **SEO**: Server-side rendering, meta tags, sitemaps  
 ✅ **Maintainability**: Type safety, modular components, utility CSS  

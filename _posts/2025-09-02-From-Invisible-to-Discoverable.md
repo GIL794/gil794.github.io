@@ -4,16 +4,17 @@ title: "From Invisible to Discoverable: How to Make Your GitHub Blog Rank on Goo
 date: 2025-09-02
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [SEO, Blogging, Free Tools]
-tags: [github blog, seo, google ranking, discoverability, online presence, free website]
-excerpt: "Transform your GitHub blog from invisible to discoverable with practical SEO strategies that actually work. Learn how to rank on Google and attract real visitors."
+categories: [Web Development, Tools & Utilities]
+tags: [github-blog, seo, google-ranking, discoverability, online-presence, free-website]
+excerpt: "Transform your GitHub blog from invisible to discoverable with practical SEO strategies that actually work. Learn how to rank on Google, structure your site correctly, and attract real visitors."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
 
 When I first launched my blog on GitHub Pages, I assumed publishing great content was all it took for Google and other search engines to find me. Instead, my posts were like whispers in a stadium—technically online, but practically invisible to anyone searching for advice or inspiration.
 
-Fast-forward to today, and my blog now appears for relevant searches: everything from "free gitHub blog portfolio" to "how to organize posts with Jekyll". What changed? **SEO**—search engine optimization. And while SEO can feel mysterious (or intimidating), I promise: anyone can make their blog discoverable with a few simple steps, no coding degree required.
+Fast-forward to today, and my blog now appears for relevant searches: everything from "free gitHub blog portfolio" to "how to organise posts with Jekyll". What changed? **SEO**—search engine optimisation. And while SEO can feel mysterious (or intimidating), I promise: anyone can make their blog discoverable with a few simple steps, no coding degree required.
 
 Ready to go from invisible to discoverable? Let’s dive in!
 

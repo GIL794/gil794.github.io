@@ -3,8 +3,10 @@ layout: default
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-08-07
 author: "Gabriele I. Langellotto"
-categories: [Blog, Free Tools]
-tags: [SEO, Web Development, Personal Branding]
+categories: [Tools & Utilities, Web Development]
+tags: [seo, web-development, personal-branding]
+excerpt: "Discover the step-by-step journey of creating a completely free, highly customizable personal portfolio and blog directly on GitHub Pages. Learn how to launch your online presence easily and optimize it for search engines."
+updated: 2026-06-06
 ---
 
 # From Zero to Portfolio Hero: A Free Portfolio Journey
@@ -110,7 +112,7 @@ To make sure your amazing content gets discovered:
 
 *   **Keyword-Rich Titles & Content:** Use words and phrases your target audience searches for.
 *   **Descriptive File Names:** Use hyphens, not spaces, and include keywords (e.g., `free-blog-github-tutorial.md`).
-*   **`README.md` Optimization:** Your repository’s `README.md` also gets indexed. Use it to introduce your blog and link to popular posts.
+*   **`README.md` Optimisation:** Your repository’s `README.md` also gets indexed. Use it to introduce your blog and link to popular posts.
 *   **Internal Linking:** Link between your blog posts and to your portfolio pieces.
 *   **External Linking:** Share your blog on social media (LinkedIn, etc.) and other platforms.
 *   **Regular Updates:** Search engines love fresh content. Post consistently!

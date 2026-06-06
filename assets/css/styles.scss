@@ -240,7 +240,7 @@ body {
   }
 }
 
-// Main content centering
+// Main content centring
 main {
   max-width: 100%;
   margin: 0 auto;
@@ -260,7 +260,7 @@ main {
   width: 100%;
   max-width: 100%;
   
-  // Direct children that aren't .container should be centered
+  // Direct children that aren't .container should be centred
   > *:not(.container) {
     max-width: 1200px;
     margin-left: auto;
@@ -277,7 +277,7 @@ main {
   }
 }
 
-// Center all main content sections
+// Centre all main content sections
 .main,
 .content,
 article,
@@ -311,7 +311,6 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 0;
-  flex-direction: row; // Force horizontal layout
   
   @media (max-width: 768px) {
     flex-wrap: wrap;
@@ -372,7 +371,6 @@ section {
     gap: 1.5rem;
     
     // Force horizontal layout on all screen sizes
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-end;
     
@@ -441,7 +439,7 @@ section {
     
     @media (max-width: 380px) {
       padding: 0.3rem 0.4rem;
-      font-size: 0.75rem;
+      font-size: 0.8rem;
     }
   }
 }
@@ -707,7 +705,7 @@ section {
     }
   }
   
-  // Centered section variant
+  // Centred section variant
   &--centered {
     text-align: center;
   }
@@ -1197,7 +1195,7 @@ section {
   transition: width 0.1s ease;
 }
 
-// Performance optimizations
+// Performance optimisations
 .site-header {
   will-change: box-shadow, border-color;
 }
@@ -2748,16 +2746,16 @@ table {
   // Make navigation even more compact
   .nav--main ul {
     gap: 0.25rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
   
   .nav--main a {
     padding: 0.25rem 0.35rem;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
-// Landscape mode on mobile - optimize header
+// Landscape mode on mobile - optimise header
 @media (max-width: 768px) and (orientation: landscape) {
   .site-header {
     position: sticky;
@@ -2785,7 +2783,7 @@ table {
   }
 }
 
-// Tablet-specific optimizations
+// Tablet-specific optimisations
 @media (min-width: 768px) and (max-width: 1024px) {
   .container {
     padding: 0 1.5rem;
@@ -3336,5 +3334,18 @@ table {
   
   &.icon-chain {
     background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(196, 181, 253, 0.15));
+  }
+}
+
+// Prefers-reduced-motion support
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
   }
 }

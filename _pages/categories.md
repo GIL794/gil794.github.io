@@ -11,7 +11,7 @@ feature_image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?aut
 <div class="container">
   <div class="section hero">
     <h2>Browse by Category</h2>
-    <p class="lead">Find articles organized by topic to explore specific areas of interest</p>
+    <p class="lead">Find articles organised by topic to explore specific areas of interest</p>
   </div>
 </div>
 
@@ -99,7 +99,7 @@ feature_image: "https://images.unsplash.com/photo-1516116216624-53e697fedbea?aut
 .category-header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: centre;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
   border-bottom: 3px solid rgba(249, 115, 22, 0.2);

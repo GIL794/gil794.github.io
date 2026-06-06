@@ -4,9 +4,10 @@ title: "Aenigma Numerorum Caesaris: Where Roman Numerals Meet Sudoku"
 date: 2025-11-25
 time: "17:00"
 author: "Gabriele I. Langellotto"
-categories: [Game Development, Python, PyGame]
-tags: [game development, pygame, sudoku, roman numerals, python, puzzle games, educational games]
-excerpt: "Discover the ancient meets modern in this unique Sudoku game using Roman numerals. Learn how to build engaging puzzle games with Python and Pygame while exploring classical Roman culture."
+categories: [Game Development]
+tags: [game-development, pygame, sudoku, roman-numerals, python, puzzle-games, educational-games]
+excerpt: "Discover the ancient meets modern in this unique Sudoku game using Roman numerals. Learn how to build engaging puzzle games with Python and Pygame while exploring classical Roman culture and custom UI rendering."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!

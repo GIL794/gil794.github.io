@@ -74,7 +74,7 @@ feature_image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixl
       <div class="feature-card">
         <h3>📊 Data Science & Algorithms</h3>
         <p><strong>Mathematics:</strong> Number theory, cryptographic algorithms, complexity analysis</p>
-        <p><strong>Optimization:</strong> NP-hard problems, Traveling Salesman, graph algorithms</p>
+        <p><strong>Optimisation:</strong> NP-hard problems, Traveling Salesman, graph algorithms</p>
         <p><strong>Research:</strong> Riemann Hypothesis explorer, prime number analysis</p>
       </div>
       <div class="feature-card">

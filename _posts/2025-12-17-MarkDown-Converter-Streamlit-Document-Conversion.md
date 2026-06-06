@@ -4,14 +4,15 @@ title: "MarkDown Converter: Streamlining Your Document Workflow"
 date: 2025-12-17
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Web Development, Python, Productivity]
-tags: [markdown, streamlit, document conversion, python, web app, pdf, docx, automation, productivity tools]
-excerpt: "Transform your Markdown files into any format you need with a single click. Discover how MarkDown Converter makes document conversion effortless with a beautiful web interface powered by Streamlit."
+categories: [Web Development, Tools & Utilities]
+tags: [markdown, streamlit, document-conversion, python, web-app, pdf, docx, automation, productivity-tools]
+excerpt: "Transform your Markdown files into any format you need with a single click. Discover how MarkDown Converter makes document conversion effortless with a beautiful web interface powered by Streamlit and pandoc."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
 
-How many times have you written something in Markdown only to realize you need it as a Word document for a client, a PDF for distribution, or an HTML page for your website? Today, I'm excited to share **[MarkDown Converter](https://github.com/GIL794/MarkDown-Converter)**—a versatile web application that transforms your Markdown files into virtually any format you need, all through an elegant Streamlit interface.
+How many times have you written something in Markdown only to realise you need it as a Word document for a client, a PDF for distribution, or an HTML page for your website? Today, I'm excited to share **[MarkDown Converter](https://github.com/GIL794/MarkDown-Converter)**—a versatile web application that transforms your Markdown files into virtually any format you need, all through an elegant Streamlit interface.
 
 ---
 
@@ -295,7 +296,7 @@ Here's what's on the roadmap:
 - **Better error handling** with user-friendly messages
 - **Preview mode** before downloading
 - **Conversion history** for recently converted files
-- **Performance optimization** for large documents
+- **Performance optimisation** for large documents
 
 ---
 

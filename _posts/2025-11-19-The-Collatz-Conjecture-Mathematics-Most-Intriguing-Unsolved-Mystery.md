@@ -4,9 +4,10 @@ title: "The Collatz Conjecture: Mathematics's Most Intriguing Unsolved Mystery"
 date: 2025-11-19
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Algorithms, Python, Mathematics]
-tags: [number theory, algorithms, python, unsolved problems, computational mathematics, collatz conjecture]
+categories: [Algorithms, Mathematics]
+tags: [number-theory, algorithms, python, unsolved-problems, computational-mathematics, collatz-conjecture]
 excerpt: "Dive into one of mathematics's most captivating unsolved problems: the Collatz conjecture. Explore how simple rules create complex patterns and discover why this 3n+1 problem has puzzled mathematicians for decades."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
@@ -185,7 +186,7 @@ While seemingly abstract, the Collatz conjecture relates to:
 - **Hash Functions**: One-way mathematical transformations
 - **Security Protocols**: Unpredictable patterns
 
-### **Algorithmic Optimization**
+### **Algorithmic Optimisation**
 - **Branch Prediction**: Understanding iterative patterns
 - **Cache Efficiency**: Sequential access patterns
 - **Parallel Computing**: Independent sequence calculations
@@ -278,7 +279,7 @@ Have ideas for analysing the conjecture? I'd love your contributions!
 
 ### **Potential Enhancements**
 
-🚀 **Optimizations**:
+🚀 **Optimisations**:
 - Memoization to avoid recalculating known sequences
 - GPU acceleration for massive parallel analysis
 - Visualisation tools (sequence graphs, tree structures)
@@ -361,7 +362,7 @@ Here's how to get started:
 1. ⭐ **Star the repository** on GitHub
 2. 🔍 **Clone and experiment** with different starting numbers
 3. 🎯 **Try finding unusual sequences** (long, high-peaked, etc.)
-4. 💡 **Contribute optimizations** or visualisation tools
+4. 💡 **Contribute optimisations** or visualisation tools
 
 ### **For Mathematicians**
 - Analyse patterns in sequence behaviour

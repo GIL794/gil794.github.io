@@ -33,6 +33,11 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
 </div>
 
 <div class="blog-container">
+  <noscript>
+    <div style="background-color: rgba(249, 115, 22, 0.1); border-left: 4px solid var(--primary-color); padding: 1rem; margin-bottom: 2rem; border-radius: 8px; font-size: 0.95rem; color: var(--text-primary);">
+      ⚠️ <strong>JavaScript is disabled:</strong> All blog posts, including future scheduled articles, are displayed below. Enable JavaScript to filter posts dynamically by schedule.
+    </div>
+  </noscript>
   <div class="blog-grid" id="blog-posts-container">
     {% for post in site.posts %}
       <article class="post-card" data-post-date="{{ post.date | date: '%Y-%m-%d' }}" data-post-time="{{ post.time | default: '09:00' }}">
@@ -142,7 +147,7 @@ feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?aut
     filterBlogPostsByTime();
   }
   
-  // Re-run filter every minute to catch time changes
-  setInterval(filterBlogPostsByTime, 60000);
+  // Re-run filter every 2 minutes to catch time changes
+  setInterval(filterBlogPostsByTime, 120000);
 })();
 </script>

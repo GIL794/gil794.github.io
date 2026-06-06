@@ -21,7 +21,7 @@
 - [Project Structure](#-project-structure)
 - [Content Management](#-content-management)
 - [Customisation](#-customisation)
-- [SEO Optimization](#-seo-optimization)
+- [SEO Optimisation](#-seo-optimisation)
 - [Deployment](#-deployment)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -60,7 +60,7 @@ This repository powers my professional portfolio and blog—a modern, responsive
 - **Contact**: Multiple channels for professional inquiries and partnerships
 
 ### 🔍 SEO & Performance
-- **Search Engine Optimized**: Structured metadata, semantic HTML, and keyword optimization
+- **Search Engine Optimised**: Structured metadata, semantic HTML, and keyword optimisation
 - **Fast Loading**: Static site generation for lightning-fast page loads
 - **Social Media Ready**: Open Graph and Twitter Card metadata for rich social sharing
 - **XML Sitemap**: Automatic sitemap generation for search engine crawling
@@ -89,7 +89,7 @@ This repository powers my professional portfolio and blog—a modern, responsive
 
 ### Jekyll Plugins
 
-- `jekyll-seo-tag` - SEO optimization
+- `jekyll-seo-tag` - SEO optimisation
 - `jekyll-sitemap` - Automatic sitemap generation
 - `jekyll-feed` - RSS feed generation
 - `jekyll-paginate` - Blog post pagination
@@ -285,7 +285,7 @@ feature_image: "https://images.unsplash.com/photo-your-image-id"
 
 ---
 
-## 🔍 SEO Optimization
+## 🔍 SEO Optimisation
 
 This site is optimised for search engines with:
 
@@ -355,7 +355,7 @@ While this is a personal portfolio, suggestions and improvements are welcome!
 
 ### Areas for Contribution
 - Bug fixes and improvements
-- Performance optimizations
+- Performance optimisations
 - Accessibility enhancements
 - Documentation improvements
 - Design suggestions

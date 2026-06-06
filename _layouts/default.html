@@ -15,19 +15,52 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!-- SEO and Social Media Meta Tags -->
-    {% if page.featured_image or site.featured_image %}
-      <meta property="og:image" content="{{ page.featured_image | default: site.featured_image | relative_url }}">
+    {% if page.featured_image or page.feature_image or page.image or site.featured_image %}
+      <meta property="og:image" content="{{ page.featured_image | default: page.feature_image | default: page.image | default: site.featured_image | relative_url }}">
     {% endif %}
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | default: 'Gabriele Iacopo Langellotto' | escape }}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="article">
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | default: 'Gabriele Iacopo Langellotto' | escape }}">
+    <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
+    {% if page.featured_image or page.feature_image or page.image or site.featured_image %}
+      <meta name="twitter:image" content="{{ page.featured_image | default: page.feature_image | default: page.image | default: site.featured_image | relative_url }}">
+    {% endif %}
 
     <!-- Canonical URL -->
     <link rel="canonical" href="{{ page.url | absolute_url }}">
 
     <!-- RSS Feed -->
     <link type="application/atom+xml" rel="alternate" href="{{ '/feed.xml' | relative_url }}" title="{{ site.title | default: 'Gabriele Iacopo Langellotto' }}">
+
+    <!-- JSON-LD Structured Data -->
+    {% if page.layout == 'post' %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ page.title | jsonify }},
+      "image": [
+        {{ page.featured_image | default: page.feature_image | default: page.image | default: site.featured_image | absolute_url | jsonify }}
+      ],
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      {% if page.updated %}
+      "dateModified": {{ page.updated | date: "%Y-%m-%d" | jsonify }},
+      {% else %}
+      "dateModified": {{ page.date | date_to_xmlschema | jsonify }},
+      {% endif %}
+      "author": [{
+          "@type": "Person",
+          "name": {{ page.author | default: site.author | jsonify }},
+          "url": "https://www.linkedin.com/in/gabriele-iacopo-langellotto-aa7095a9/"
+        }]
+    }
+    </script>
+    {% endif %}
   </head>
 
   <body>

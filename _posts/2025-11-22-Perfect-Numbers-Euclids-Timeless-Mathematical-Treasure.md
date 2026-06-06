@@ -4,9 +4,10 @@ title: "Perfect Numbers: Euclid's Timeless Mathematical Treasure"
 date: 2025-11-22
 time: "17:00"
 author: "Gabriele I. Langellotto"
-categories: [Algorithms, Python, Mathematics]
-tags: [perfect numbers, number theory, algorithms, python, mersenne primes, computational mathematics]
-excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 52 perfect numbers are known despite millennia of searching."
+categories: [Algorithms, Mathematics]
+tags: [perfect-numbers, number-theory, algorithms, python, mersenne-primes, computational-mathematics]
+excerpt: "Explore perfect numbers—rare integers equal to the sum of their divisors. Discover Euclid's 2,000-year-old formula, Mersenne primes, and why only 52 perfect numbers are known despite millennia of searching and computing."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
@@ -117,7 +118,7 @@ def get_proper_divisors(n):
     """
     Find all proper divisors of n (excluding n itself).
     
-    Optimization: Only check up to √n
+    Optimisation: Only check up to √n
     
     Time Complexity: O(√n)
     """
@@ -387,7 +388,7 @@ Interested in extending the perfect number finder?
 
 ### **Enhancement Ideas**
 
-🚀 **Optimizations**:
+🚀 **Optimisations**:
 - Implement Lucas-Lehmer primality test
 - Use GMP library for arbitrary-precision arithmetic
 - Parallel processing for multiple exponent testing
@@ -466,7 +467,7 @@ Here's how to get started:
 
 ### **For Educators**
 - Teach number theory using perfect numbers
-- Demonstrate algorithm optimization
+- Demonstrate algorithm optimisation
 - Connect ancient and modern mathematics
 - Inspire with unsolved problems
 

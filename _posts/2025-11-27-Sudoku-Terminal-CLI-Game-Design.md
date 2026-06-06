@@ -4,9 +4,10 @@ title: "Sudoku Terminal: The Art of CLI Game Design"
 date: 2025-11-27
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Game Development, Python, CLI]
-tags: [sudoku, python, terminal games, cli applications, puzzle games, algorithm design, interactive cli]
-excerpt: "Explore the elegant world of terminal-based gaming with Sudoku Terminal. Learn how to create engaging interactive experiences without a GUI, using nothing but Python and your command line."
+categories: [Game Development, Software Engineering]
+tags: [sudoku, python, terminal-games, cli-applications, puzzle-games, algorithm-design, interactive-cli]
+excerpt: "Explore the elegant world of terminal-based gaming with Sudoku Terminal. Learn how to create engaging interactive experiences without a GUI, using nothing but Python, your command line, and robust backtracking generation algorithms."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!

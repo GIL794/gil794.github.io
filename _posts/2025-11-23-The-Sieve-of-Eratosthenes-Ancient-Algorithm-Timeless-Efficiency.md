@@ -4,9 +4,10 @@ title: "The Sieve of Eratosthenes: Ancient Algorithm, Timeless Efficiency"
 date: 2025-11-23
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Algorithms, Python, Mathematics]
-tags: [prime numbers, algorithms, python, sieve of eratosthenes, number theory, computational mathematics]
+categories: [Algorithms, Mathematics]
+tags: [prime-numbers, algorithms, python, sieve-of-eratosthenes, number-theory, computational-mathematics]
 excerpt: "Discover the 2,000-year-old algorithm that remains one of the most efficient ways to find prime numbers. Explore twin primes, prime gaps, and the patterns hiding in mathematics's most fundamental building blocks."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
@@ -127,7 +128,7 @@ def sieve_of_eratosthenes(limit):
     return [num for num in range(2, limit + 1) if is_prime[num]]
 ```
 
-**Optimization**: Start marking from i² because smaller multiples already marked by smaller primes!
+**Optimisation**: Start marking from i² because smaller multiples already marked by smaller primes!
 
 ### **Prime Checking Function**
 
@@ -138,7 +139,7 @@ def is_prime(n):
     
     Time Complexity: O(√n)
     
-    Optimization: Check only 2 and odd numbers up to √n
+    Optimisation: Check only 2 and odd numbers up to √n
     """
     if n < 2:
         return False
@@ -218,7 +219,7 @@ def prime_factorisation(n):
 - Sieve: ~15 million operations
 - **Speed-up: ~2000×**
 
-### **Optimizations**
+### **Optimisations**
 
 **Segmented Sieve**: For very large n, process in chunks
 - Reduces memory from O(n) to O(√n)
@@ -226,7 +227,7 @@ def prime_factorisation(n):
 
 **Wheel Factorization**: Skip multiples of small primes
 - Eliminates 2/3 of candidates (multiples of 2, 3)
-- Further optimization possible with more wheels
+- Further optimisation possible with more wheels
 
 ---
 
@@ -413,9 +414,9 @@ A 2,200-year-old algorithm remains competitive with modern techniques. Sometimes
 
 Sieve uses O(n) space to achieve O(n log log n) time. Space-time trade-offs are fundamental to algorithm design.
 
-### **3. Optimization Through Insight**
+### **3. Optimisation Through Insight**
 
-Starting from i² instead of 2i seems minor but dramatically reduces operations. Small optimizations compound.
+Starting from i² instead of 2i seems minor but dramatically reduces operations. Small optimisations compound.
 
 ### **4. Specialised Beats General**
 
@@ -429,7 +430,7 @@ Interested in extending the prime sieve?
 
 ### **Enhancement Ideas**
 
-🚀 **Optimizations**:
+🚀 **Optimisations**:
 - Implement segmented sieve for large ranges
 - Add wheel factorization (skip multiples of 2, 3, 5)
 - Parallel sieve using multiple threads

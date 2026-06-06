@@ -33,10 +33,10 @@ _drafts/
    - Privacy and security guarantees
    - How to create and preview drafts
    - Publishing workflow
-   - Organization tips and best practices
+   - Organisation tips and best practices
    - FAQ section
 
-2. **draft-ideas.md** - Organized brainstorming template with:
+2. **draft-ideas.md** - Organised brainstorming template with:
    - Quick ideas checklist
    - Topic categories (AI/ML, Blockchain, Full-Stack, Data Science, Career)
    - Potential titles and formats

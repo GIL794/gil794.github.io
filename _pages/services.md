@@ -40,7 +40,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
       <p>At AllianceNews Ltd, I engineer sophisticated NLP prompts and architect AI/ML solutions that deliver measurable business impact. From natural language processing to machine learning model deployment, I translate complex business requirements into scalable, production-ready AI systems.</p>
       <p><strong>Key Capabilities:</strong></p>
       <ul>
-        <li>NLP/NLG prompt engineering and optimization</li>
+        <li>NLP/NLG prompt engineering and optimisation</li>
         <li>AI/ML solution architecture (AWS focus)</li>
         <li>Machine learning model development and deployment</li>
         <li>Stakeholder communication and requirements translation</li>
@@ -52,7 +52,7 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
     <div class="feature-card">
       <h3>📊 Data Science & Analytics</h3>
       <p><em>Transform data into strategic insights with academic rigor and practical experience.</em></p>
-      <p>Combining formal education in Data Science and AI (University of East London) with hands-on experience, I help organizations unlock the value in their data. From exploratory analysis to predictive modeling, I deliver actionable insights that drive business decisions.</p>
+      <p>Combining formal education in Data Science and AI (University of East London) with hands-on experience, I help organisations unlock the value in their data. From exploratory analysis to predictive modeling, I deliver actionable insights that drive business decisions.</p>
       <p><strong>What You Get:</strong></p>
       <ul>
         <li>Data analysis and visualization</li>
@@ -73,8 +73,8 @@ feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixl
         <li>Digital marketing strategy and execution</li>
         <li>Social media management and growth</li>
         <li>Brand development and visibility</li>
-        <li>SEO, web development, and UI/UX optimization</li>
-        <li>Lead generation and conversion optimization</li>
+        <li>SEO, web development, and UI/UX optimisation</li>
+        <li>Lead generation and conversion optimisation</li>
       </ul>
       <a class="cta-btn" href="/contact/">Grow Your Business</a>
     </div>

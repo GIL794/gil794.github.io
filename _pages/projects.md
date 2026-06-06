@@ -74,7 +74,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       <ul>
         <li>Riemann Zeta Function & Critical Line Explorer (Millennium Prize Problem)</li>
         <li>Elliptic Curve Cryptography (Bitcoin/TLS foundation)</li>
-        <li>Traveling Salesman Problem with 5 algorithms (NP-hard optimization)</li>
+        <li>Traveling Salesman Problem with 5 algorithms (NP-hard optimisation)</li>
         <li>RSA encryption and modular arithmetic</li>
         <li>Prime number sieves, Fibonacci analyzers, and number theory</li>
       </ul>
@@ -83,12 +83,12 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     </div>
 
     <div class="feature-card">
-      <h3>💰 ArcCredit - Decentralized Lending Platform</h3>
+      <h3>💰 ArcCredit - Decentralised Lending Platform</h3>
       <p><strong>Group Project | EncodeClub x Arc Blockchain Hackathon (3 days) | 2025</strong></p>
-      <p>Blockchain-based decentralized lending platform that removes intermediaries, credit scores, and lengthy processes. Developed collaboratively with another developer and data science/AI student at University of East London. Built with Hardhat 3 Beta featuring TypeScript, Solidity smart contracts, and native testing support.</p>
+      <p>Blockchain-based decentralised lending platform that removes intermediaries, credit scores, and lengthy processes. Developed collaboratively with another developer and data science/AI student at University of East London. Built with Hardhat 3 Beta featuring TypeScript, Solidity smart contracts, and native testing support.</p>
       <p><strong>Key Features:</strong></p>
       <ul>
-        <li>Decentralized instant funding without traditional credit checks</li>
+        <li>Decentralised instant funding without traditional credit checks</li>
         <li>Smart contract-based lending and borrowing mechanisms</li>
         <li>Hardhat 3 Beta with TypeScript configuration</li>
         <li>Comprehensive Solidity smart contract implementation</li>
@@ -106,7 +106,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
         <li>Substrate framework and runtime development</li>
         <li>Polkadot architecture and parachain development</li>
         <li>Consensus mechanisms and blockchain security</li>
-        <li>Web3 ecosystem and decentralized applications</li>
+        <li>Web3 ecosystem and decentralised applications</li>
         <li>Cross-chain communication and interoperability</li>
       </ul>
       <p><strong>Technologies:</strong> Substrate, Rust, Polkadot, Web3, Blockchain</p>
@@ -137,7 +137,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
         <li>Next.js framework with React components</li>
         <li>TailwindCSS for modern, responsive styling</li>
         <li>Auto-updating development environment</li>
-        <li>Optimized for performance and user experience</li>
+        <li>Optimised for performance and user experience</li>
       </ul>
       <p><strong>Technologies:</strong> Next.js, React, JavaScript, TailwindCSS</p>
       <a class="cta-btn" href="https://github.com/GIL794/AI-Hub-Project" target="_blank">View on GitHub</a>
@@ -149,7 +149,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       <p>Led comprehensive digital transformation and marketing operations for real estate company, achieving 100% growth across all key metrics through strategic innovation and effective team management.</p>
       <p><strong>Impact Delivered:</strong></p>
       <ul>
-        <li>100% growth in online sales through strategic CRM and platform optimization</li>
+        <li>100% growth in online sales through strategic CRM and platform optimisation</li>
         <li>100% social media and brand visibility growth</li>
         <li>100% customer satisfaction and referral growth</li>
         <li>Team recruitment, training, and cohesion management</li>
@@ -162,7 +162,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
     <div class="feature-card">
       <h3>🌐 Digital Marketing Excellence - DREAMPOWER Ltd</h3>
       <p><em>Digital Marketing Manager | Jan 2014 - Sep 2018</em></p>
-      <p>Directed comprehensive digital marketing strategy for 4+ years, driving business expansion through web, social media, and mobile communication optimization. Successfully managed B2B/B2C relationships and represented the company in international events.</p>
+      <p>Directed comprehensive digital marketing strategy for 4+ years, driving business expansion through web, social media, and mobile communication optimisation. Successfully managed B2B/B2C relationships and represented the company in international events.</p>
       <p><strong>Business Results:</strong></p>
       <ul>
         <li>Strategic digital marketing campaign development and execution</li>
@@ -214,7 +214,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
           <li><strong>Smart Contracts:</strong> Solidity, PyTeal, Algorand</li>
           <li><strong>Development Tools:</strong> Hardhat 3, Web3.js</li>
           <li><strong>Cryptography:</strong> ECC, RSA, modular arithmetic</li>
-          <li><strong>DeFi:</strong> Decentralized lending platforms, contract creation</li>
+          <li><strong>DeFi:</strong> Decentralised lending platforms, contract creation</li>
         </ul>
       </div>
 
@@ -241,7 +241,7 @@ feature_image: "https://images.unsplash.com/photo-1555949963-aa79dcee981c?ixlib=
       <div class="feature-card">
         <h3>📊 Data Science & Mathematics</h3>
         <ul>
-          <li><strong>Algorithms:</strong> Graph theory, optimization, complexity analysis</li>
+          <li><strong>Algorithms:</strong> Graph theory, optimisation, complexity analysis</li>
           <li><strong>Mathematical Computing:</strong> Prime numbers, number theory</li>
           <li><strong>Problem Solving:</strong> NP-hard problems, TSP, Riemann Hypothesis</li>
           <li><strong>Statistical Analysis:</strong> Data-driven decision making</li>

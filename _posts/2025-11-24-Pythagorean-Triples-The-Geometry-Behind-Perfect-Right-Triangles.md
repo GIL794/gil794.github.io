@@ -4,9 +4,10 @@ title: "Pythagorean Triples: The Geometry Behind Perfect Right Triangles"
 date: 2025-11-24
 time: "09:00"
 author: "Gabriele I. Langellotto"
-categories: [Algorithms, Python, Mathematics]
-tags: [pythagorean triples, geometry, algorithms, python, number theory, computational mathematics]
+categories: [Algorithms, Mathematics]
+tags: [pythagorean-triples, geometry, algorithms, python, number-theory, computational-mathematics]
 excerpt: "Explore the integer solutions to a² + b² = c²—the Pythagorean triples that define perfect right triangles. Discover ancient Babylonian methods, Euclid's formula, and why these triples appear throughout mathematics and construction."
+updated: 2026-06-06
 ---
 
 Hey there, Gabriele here!
@@ -465,7 +466,7 @@ Interested in extending the triple finder?
 
 ### **Enhancement Ideas**
 
-🚀 **Optimizations**:
+🚀 **Optimisations**:
 - Implement tree-based generation
 - Parallel triple computation
 - Memory-efficient streaming for large limits
