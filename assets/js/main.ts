@@ -7,7 +7,7 @@
   'use strict';
 
   // DOM ready function
-  function ready(fn) {
+  function ready(fn: () => void) {
     if (document.readyState !== 'loading') {
       fn();
     } else {
@@ -101,9 +101,10 @@
     
     // Observe all cards and sections
     document.querySelectorAll('.feature-card, .post-card, section').forEach(el => {
-      el.style.opacity = '0';
-      el.style.transform = 'translateY(20px)';
-      el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+      const htmlEl = el as HTMLElement;
+      htmlEl.style.opacity = '0';
+      htmlEl.style.transform = 'translateY(20px)';
+      htmlEl.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
       observer.observe(el);
     });
     
@@ -123,24 +124,25 @@
     const heroElements = document.querySelectorAll('h1, .feature_text h1, .feature-text h1');
     
     heroElements.forEach(element => {
-      const text = element.textContent;
+      const htmlEl = element as HTMLElement;
+      const text = htmlEl.textContent || '';
       if (text.length > 20) { // Only animate longer headings
-        element.textContent = '';
-        element.style.borderRight = '2px solid var(--primary-color)';
-        element.style.paddingRight = '5px';
-        element.style.animation = 'blink 0.7s step-end infinite';
+        htmlEl.textContent = '';
+        htmlEl.style.borderRight = '2px solid var(--primary-color)';
+        htmlEl.style.paddingRight = '5px';
+        htmlEl.style.animation = 'blink 0.7s step-end infinite';
         
         let i = 0;
         const typeSpeed = 50;
         
         function type() {
           if (i < text.length) {
-            element.textContent += text.charAt(i);
+            htmlEl.textContent += text.charAt(i);
             i++;
             setTimeout(type, typeSpeed);
           } else {
-            element.style.borderRight = 'none';
-            element.style.animation = 'none';
+            htmlEl.style.borderRight = 'none';
+            htmlEl.style.animation = 'none';
           }
         }
         
@@ -162,9 +164,10 @@
   // Add hover effects to links
   function enhanceLinkEffects() {
     document.querySelectorAll('a:not(.no-effect)').forEach(link => {
-      link.addEventListener('mouseenter', function(e) {
-        if (!this.classList.contains('cta-btn') && !this.classList.contains('read-more-btn')) {
-          this.style.transition = 'all 0.3s ease';
+      link.addEventListener('mouseenter', (e: Event) => {
+        const el = e.target as HTMLAnchorElement;
+        if (!el.classList.contains('cta-btn') && !el.classList.contains('read-more-btn')) {
+          el.style.transition = 'all 0.3s ease';
         }
       });
     });
@@ -174,6 +177,8 @@
   function initParticleEffect() {
     const hero = document.querySelector('.feature_text, .feature-text, [class*="feature"]');
     if (!hero) return;
+    
+    const heroEl = hero as HTMLElement;
     
     const canvas = document.createElement('canvas');
     canvas.style.position = 'absolute';
@@ -185,20 +190,28 @@
     canvas.style.opacity = '0.3';
     canvas.style.zIndex = '0';
     
-    if (hero.style.position !== 'relative' && hero.style.position !== 'absolute') {
-      hero.style.position = 'relative';
+    if (heroEl.style.position !== 'relative' && heroEl.style.position !== 'absolute') {
+      heroEl.style.position = 'relative';
     }
     
-    hero.insertBefore(canvas, hero.firstChild);
+    heroEl.insertBefore(canvas, heroEl.firstChild);
     
     const ctx = canvas.getContext('2d');
-    canvas.width = hero.offsetWidth;
-    canvas.height = hero.offsetHeight;
+    if (!ctx) return;
     
-    const particles = [];
+    canvas.width = heroEl.offsetWidth;
+    canvas.height = heroEl.offsetHeight;
+    
+    const particles: Particle[] = [];
     const particleCount = 30;
     
     class Particle {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      radius: number;
+      
       constructor() {
         this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
@@ -216,10 +229,10 @@
       }
       
       draw() {
-        ctx.beginPath();
-        ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-        ctx.fillStyle = 'rgba(249, 115, 22, 0.5)';
-        ctx.fill();
+        ctx!.beginPath();
+        ctx!.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+        ctx!.fillStyle = 'rgba(249, 115, 22, 0.5)';
+        ctx!.fill();
       }
     }
     
@@ -228,7 +241,7 @@
     }
     
     function animate() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx!.clearRect(0, 0, canvas.width, canvas.height);
       
       particles.forEach(particle => {
         particle.update();
@@ -243,12 +256,12 @@
           const distance = Math.sqrt(dx * dx + dy * dy);
           
           if (distance < 100) {
-            ctx.beginPath();
-            ctx.strokeStyle = `rgba(249, 115, 22, ${0.2 * (1 - distance / 100)})`;
-            ctx.lineWidth = 0.5;
-            ctx.moveTo(p1.x, p1.y);
-            ctx.lineTo(p2.x, p2.y);
-            ctx.stroke();
+            ctx!.beginPath();
+            ctx!.strokeStyle = `rgba(249, 115, 22, ${0.2 * (1 - distance / 100)})`;
+            ctx!.lineWidth = 0.5;
+            ctx!.moveTo(p1.x, p1.y);
+            ctx!.lineTo(p2.x, p2.y);
+            ctx!.stroke();
           }
         });
       });
@@ -260,14 +273,14 @@
     
     // Handle resize
     window.addEventListener('resize', () => {
-      canvas.width = hero.offsetWidth;
-      canvas.height = hero.offsetHeight;
+      canvas.width = heroEl.offsetWidth;
+      canvas.height = heroEl.offsetHeight;
     });
   }
 
   // Enhanced navigation scroll behavior
   function initStickyHeader() {
-    const header = document.querySelector('.site-header');
+    const header = document.querySelector('.site-header') as HTMLElement | null;
     if (!header) return;
 
     let lastScrollY = window.scrollY;
@@ -277,9 +290,9 @@
       const scrollY = window.scrollY;
 
       if (scrollY > 50) {
-        header.classList.add('scrolled');
+        header!.classList.add('scrolled');
       } else {
-        header.classList.remove('scrolled');
+        header!.classList.remove('scrolled');
       }
 
       lastScrollY = scrollY;
@@ -299,16 +312,18 @@
   // Smooth scroll for anchor links
   function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
+      anchor.addEventListener('click', function (this: HTMLAnchorElement, e: Event) {
         e.preventDefault();
         const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
+        if (targetId) {
+          const targetElement = document.querySelector(targetId);
 
-        if (targetElement) {
-          targetElement.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
         }
       });
     });
@@ -321,8 +336,8 @@
     const imageObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
-          const img = entry.target;
-          img.src = img.dataset.src;
+          const img = entry.target as HTMLImageElement;
+          img.src = img.dataset.src || '';
           img.classList.remove('lazy');
           observer.unobserve(img);
         }
@@ -339,24 +354,24 @@
     forms.forEach(form => {
       // Add input animations
       form.querySelectorAll('input, textarea').forEach(input => {
-        input.addEventListener('focus', function() {
+        input.addEventListener('focus', function(this: HTMLInputElement) {
           this.style.transform = 'scale(1.02)';
           this.style.boxShadow = '0 4px 12px rgba(249, 115, 22, 0.2)';
           this.style.transition = 'all 0.3s ease';
         });
         
-        input.addEventListener('blur', function() {
+        input.addEventListener('blur', function(this: HTMLInputElement) {
           this.style.transform = 'scale(1)';
           this.style.boxShadow = 'none';
         });
       });
       
       form.addEventListener('submit', function(e) {
-        const button = form.querySelector('button[type="submit"]');
+        const button = form.querySelector('button[type="submit"]') as HTMLButtonElement | null;
         if (button) {
           button.disabled = true;
           const originalText = button.textContent;
-          button.dataset.originalText = originalText;
+          button.dataset['originalText'] = originalText || '';
           button.textContent = 'Sending...';
 
           // Re-enable after 3 seconds as fallback
@@ -452,7 +467,7 @@
     // Handle hash navigation on page load
     if (window.location.hash && window.location.pathname.includes('/categories')) {
       setTimeout(() => {
-        const target = document.querySelector(window.location.hash);
+        const target = document.querySelector(window.location.hash) as HTMLElement | null;
         if (target) {
           target.scrollIntoView({ behavior: 'smooth', block: 'start' });
           // Add highlight effect

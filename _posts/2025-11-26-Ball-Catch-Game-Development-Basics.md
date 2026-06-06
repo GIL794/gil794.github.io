@@ -3,6 +3,7 @@ layout: post
 title: "Ball Catch: Your First Step into Game Development with Pygame"
 date: 2025-11-26
 time: "17:00"
+author: "Gabriele I. Langellotto"
 categories: [Game Development, Python, Pygame]
 tags: [pygame, python, game development, beginner tutorial, interactive games, learning to code]
 excerpt: "Start your game development journey with Ball Catch—a simple yet engaging Pygame project perfect for beginners. Learn fundamental game programming concepts while building something fun!"
@@ -561,7 +562,7 @@ Ball Catch teaches:
 - **Game Architecture**: Event-driven programming
 - **Graphics Programming**: 2D rendering basics
 - **User Input**: Real-time control handling
-- **Problem Solving**: Debugging and optimisation
+- **Problem Solving**: Debugging and optimization
 
 ### **Portfolio Building**
 

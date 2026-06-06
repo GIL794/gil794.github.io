@@ -3,6 +3,7 @@ layout: post
 title: "Algorand AI Contract Creator: Generating Smart Contracts with Natural Language"
 date: 2025-11-27
 time: "17:00"
+author: "Gabriele I. Langellotto"
 categories: [AI, Blockchain, Smart Contracts]
 tags: [algorand, ai, gpt-4, pyteal, smart contracts, blockchain, natural language processing, automation]
 excerpt: "Discover how AI and blockchain converge in the Algorand AI Contract Creator—a revolutionary platform that transforms natural language descriptions into production-ready PyTeal smart contracts using GPT-4."
@@ -755,13 +756,13 @@ AI-assisted blockchain development will:
 
 ## **Final Thoughts**
 
-The convergence of AI and blockchain represents a paradigm shift in how we build decentralised applications. The Algorand AI Contract Creator is an early step toward a future where smart contract development is accessible to everyone—not just blockchain experts.
+The convergence of AI and blockchain represents a paradigm shift in how we build decentralized applications. The Algorand AI Contract Creator is an early step toward a future where smart contract development is accessible to everyone—not just blockchain experts.
 
 By combining GPT-4's natural language understanding with Algorand's efficient blockchain and robust validation systems, we're lowering barriers to entry while maintaining security standards.
 
 **Yes, it's possible. No magic involved—just decentralisation, automation, and AI working in harmony.**
 
-Ready to generate your first AI-powered smart contract? Let's build the decentralised future together!
+Ready to generate your first AI-powered smart contract? Let's build the decentralized future together!
 
 **Connect with me:**
 - 🌐 Portfolio: [gil794.github.io](https://gil794.github.io)

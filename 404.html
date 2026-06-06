@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Page Not Found"
+permalink: /404.html
+---
+
+<div class="error-container" style="text-align: center; padding: 60px 20px; min-height: 60vh; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+  <h1 style="font-size: 120px; font-weight: bold; margin: 0; color: #f97316;">404</h1>
+  
+  <h2 style="font-size: 32px; margin: 20px 0; color: #333;">Page Not Found</h2>
+  
+  <p style="font-size: 18px; color: #666; margin: 20px 0; max-width: 500px;">
+    Oops! The page you're looking for doesn't exist. It might have been moved, deleted, or the link might be broken.
+  </p>
+  
+  <div style="margin: 40px 0; padding: 30px; background: #f9f9f9; border-left: 4px solid #f97316; border-radius: 4px; text-align: left; max-width: 500px;">
+    <h3 style="margin-top: 0; color: #333;">Here's what you can do:</h3>
+    <ul style="color: #666; line-height: 1.8;">
+      <li><strong>Go Home:</strong> Return to the <a href="/" style="color: #f97316; text-decoration: none; font-weight: bold;">homepage</a></li>
+      <li><strong>Browse Posts:</strong> Explore the <a href="/blog.html" style="color: #f97316; text-decoration: none; font-weight: bold;">blog</a> for interesting articles</li>
+      <li><strong>Check Categories:</strong> Browse by <a href="/categories.html" style="color: #f97316; text-decoration: none; font-weight: bold;">category</a></li>
+      <li><strong>Get in Touch:</strong> Have a question? <a href="/contact.html" style="color: #f97316; text-decoration: none; font-weight: bold;">Contact me</a></li>
+    </ul>
+  </div>
+  
+  <div style="margin-top: 40px;">
+    <h3 style="color: #333; margin-bottom: 20px;">Popular Posts</h3>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; max-width: 600px;">
+      {% for post in site.posts limit: 3 %}
+      <div style="padding: 15px; border: 1px solid #ddd; border-radius: 4px;">
+        <a href="{{ post.url }}" style="color: #f97316; text-decoration: none; font-weight: bold;">{{ post.title }}</a>
+        <p style="color: #999; font-size: 14px; margin: 8px 0 0 0;">{{ post.date | date: "%B %d, %Y" }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid #ddd; color: #999; font-size: 14px;">
+    <p>Error Code: 404 | Page Not Found</p>
+  </div>
+</div>
+
+<style>
+  .error-container a {
+    transition: color 0.3s ease;
+  }
+  
+  .error-container a:hover {
+    color: #ff7e30;
+  }
+  
+  @media (max-width: 768px) {
+    .error-container h1 {
+      font-size: 80px;
+    }
+    
+    .error-container h2 {
+      font-size: 24px;
+    }
+    
+    .error-container p {
+      font-size: 16px;
+    }
+  }
+</style>

@@ -3,6 +3,7 @@ layout: post
 title: "The Coin Distribution Puzzle: When Math Meets Code"
 time: "17:00"
 date: 2025-11-18
+author: "Gabriele I. Langellotto"
 categories: [Algorithms, Python, Mathematics]
 tags: [combinatorics, algorithms, python, problem solving, computational mathematics, backtracking]
 excerpt: "Explore a fascinating mathematical puzzle: distributing 49 coins of different weights among 7 children equally. Discover how computational thinking transforms complex combinatorial problems into elegant algorithmic solutions."

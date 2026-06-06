@@ -3,6 +3,7 @@ layout: post
 title: "The Fibonacci Sequence: Nature's Mathematical Blueprint"
 date: 2025-11-20
 time: "17:00"
+author: "Gabriele I. Langellotto"
 categories: [Algorithms, Python, Mathematics]
 tags: [fibonacci, golden ratio, algorithms, python, number theory, computational mathematics]
 excerpt: "Uncover the mathematical sequence that appears everywhere from sunflowers to stock markets. Explore multiple algorithms, the golden ratio connection, and why Fibonacci numbers fascinate mathematicians and nature lovers alike."
@@ -80,7 +81,7 @@ The Fibonacci sequence appears in nature due to **optimal packing problems**:
 1. **Space Efficiency**: Fibonacci spirals maximise seed packing in circular flower heads
 2. **Growth Patterns**: Self-similar structures naturally follow recursive definitions
 3. **Golden Angle**: 137.5° (golden ratio in circular degrees) optimises sunlight exposure
-4. **Minimisation**: Nature "discovers" Fibonacci through evolutionary optimisation
+4. **Minimization**: Nature "discovers" Fibonacci through evolutionary optimization
 
 ### **Mathematical Properties**
 
@@ -290,7 +291,7 @@ Even Fibonacci numbers: 0, 2, 8, 34, 144...
 
 ## **Technical Deep Dive**
 
-### **Optimisation: Memoisation**
+### **Optimization: Memoization**
 
 For recursive approaches, memoisation dramatically improves performance:
 

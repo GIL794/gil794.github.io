@@ -3,6 +3,7 @@ layout: post
 title: "DNA Sequence Analyser: Building Smart Genomic Analysis Tools with Python"
 date: 2025-11-17
 time: "09:00"
+author: "Gabriele I. Langellotto"
 categories: [Bioinformatics, Python, Data Science]
 tags: [dna analysis, genomics, python, machine learning, bioinformatics, computational biology]
 excerpt: "Discover how to build a powerful DNA sequence analyser using Python. From basic nucleotide analysis to advanced pattern recognition, learn to create tools that unlock insights from genetic data."
@@ -370,11 +371,11 @@ class SequencePlotter:
 
 ---
 
-## **Performance Optimisation**
+## **Performance Optimization**
 
 For large genomic datasets (millions of base pairs), performance is critical:
 
-### **Optimisation Strategies**
+### **Optimization Strategies**
 
 1. **Lazy Loading**: Process sequences in chunks rather than loading entire genomes into memory
 2. **Vectorisation**: Use NumPy for numerical operations instead of Python loops
@@ -524,7 +525,7 @@ Building a DNA sequence analyser taught me valuable lessons applicable beyond bi
 
 ✅ **Validation Matters**: Always verify computational results against ground truth
 
-✅ **Performance Optimisation**: Big data requires thoughtful architecture from day one
+✅ **Performance Optimization**: Big data requires thoughtful architecture from day one
 
 ✅ **User-Centric Design**: Tools must be accessible to non-programmers
 

@@ -2,6 +2,7 @@
 layout: default 
 title: "From Zero to Portfolio Hero: A Free Portfolio Journey"
 date: 2025-08-07
+author: "Gabriele I. Langellotto"
 categories: [Blog, Free Tools]
 tags: [SEO, Web Development, Personal Branding]
 ---

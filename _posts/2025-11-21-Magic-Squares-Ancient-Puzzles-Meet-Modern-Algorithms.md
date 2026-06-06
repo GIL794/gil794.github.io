@@ -3,6 +3,7 @@ layout: post
 title: "Magic Squares: Ancient Puzzles Meet Modern Algorithms"
 date: 2025-11-21
 time: "09:00"
+author: "Gabriele I. Langellotto"
 categories: [Algorithms, Python, Mathematics]
 tags: [magic squares, algorithms, python, combinatorics, puzzle solving, computational mathematics]
 excerpt: "Discover the mathematical elegance of magic squares—ancient puzzles where every row, column, and diagonal sum to the same number. Explore three distinct algorithms for generating these mystical grids."
@@ -180,7 +181,7 @@ def generate_doubly_even_magic_square(n):
     Algorithm:
     1. Fill sequentially (1 to n²)
     2. Identify diagonals in 4×4 sub-squares
-    3. Swap elements across centre
+    3. Swap elements across center
     
     Time Complexity: O(n²)
     """
@@ -346,12 +347,12 @@ M(n) = n(n² + 1) / 2
 - **n=5**: 275,305,224 unique
 - **n≥3**: Always has solutions
 
-**Centre Value (odd squares)**:
+**Center Value (odd squares)**:
 ```
-Centre = (n² + 1) / 2
+Center = (n² + 1) / 2
 ```
 
-For 3×3: Centre = (9+1)/2 = 5
+For 3×3: Center = (9+1)/2 = 5
 
 ### **Extensions**
 

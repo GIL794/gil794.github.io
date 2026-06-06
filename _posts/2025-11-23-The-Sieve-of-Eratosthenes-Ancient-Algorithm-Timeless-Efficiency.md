@@ -3,6 +3,7 @@ layout: post
 title: "The Sieve of Eratosthenes: Ancient Algorithm, Timeless Efficiency"
 date: 2025-11-23
 time: "09:00"
+author: "Gabriele I. Langellotto"
 categories: [Algorithms, Python, Mathematics]
 tags: [prime numbers, algorithms, python, sieve of eratosthenes, number theory, computational mathematics]
 excerpt: "Discover the 2,000-year-old algorithm that remains one of the most efficient ways to find prime numbers. Explore twin primes, prime gaps, and the patterns hiding in mathematics's most fundamental building blocks."
@@ -126,7 +127,7 @@ def sieve_of_eratosthenes(limit):
     return [num for num in range(2, limit + 1) if is_prime[num]]
 ```
 
-**Optimisation**: Start marking from i² because smaller multiples already marked by smaller primes!
+**Optimization**: Start marking from i² because smaller multiples already marked by smaller primes!
 
 ### **Prime Checking Function**
 
@@ -137,7 +138,7 @@ def is_prime(n):
     
     Time Complexity: O(√n)
     
-    Optimisation: Check only 2 and odd numbers up to √n
+    Optimization: Check only 2 and odd numbers up to √n
     """
     if n < 2:
         return False
@@ -217,15 +218,15 @@ def prime_factorisation(n):
 - Sieve: ~15 million operations
 - **Speed-up: ~2000×**
 
-### **Optimisations**
+### **Optimizations**
 
 **Segmented Sieve**: For very large n, process in chunks
 - Reduces memory from O(n) to O(√n)
 - Maintains O(n log log n) time
 
-**Wheel Factorisation**: Skip multiples of small primes
+**Wheel Factorization**: Skip multiples of small primes
 - Eliminates 2/3 of candidates (multiples of 2, 3)
-- Further optimisation possible with more wheels
+- Further optimization possible with more wheels
 
 ---
 
@@ -412,9 +413,9 @@ A 2,200-year-old algorithm remains competitive with modern techniques. Sometimes
 
 Sieve uses O(n) space to achieve O(n log log n) time. Space-time trade-offs are fundamental to algorithm design.
 
-### **3. Optimisation Through Insight**
+### **3. Optimization Through Insight**
 
-Starting from i² instead of 2i seems minor but dramatically reduces operations. Small optimisations compound.
+Starting from i² instead of 2i seems minor but dramatically reduces operations. Small optimizations compound.
 
 ### **4. Specialised Beats General**
 
@@ -428,9 +429,9 @@ Interested in extending the prime sieve?
 
 ### **Enhancement Ideas**
 
-🚀 **Optimisations**:
+🚀 **Optimizations**:
 - Implement segmented sieve for large ranges
-- Add wheel factorisation (skip multiples of 2, 3, 5)
+- Add wheel factorization (skip multiples of 2, 3, 5)
 - Parallel sieve using multiple threads
 
 📊 **Analysis Tools**:
