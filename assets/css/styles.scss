@@ -431,11 +431,19 @@ section {
 }
 
 // Logo and branding with animations
-.header__logo, .header__brand {
+.header__logo {
   flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  
+  .logo-link {
+    display: flex;
+    align-items: center;
+  }
   
   .logo-svg {
     transition: transform var(--transition-normal);
+    display: block;
     
     &:hover {
       transform: rotate(360deg) scale(1.1);
@@ -457,6 +465,12 @@ section {
       transition: fill var(--transition-normal);
     }
   }
+}
+
+.header__brand {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
   
   .header__title {
     text-decoration: none;
@@ -464,6 +478,8 @@ section {
     font-weight: 600;
     transition: color var(--transition-fast);
     font-size: 1rem;
+    display: flex;
+    align-items: center;
     
     &:hover {
       color: var(--primary-color);
@@ -484,6 +500,8 @@ section {
   
   margin-left: auto;
   margin-right: 1.5rem;
+  display: flex;
+  align-items: center;
   
   @media (max-width: 1024px) {
     grid-column: 1 / span 2;
@@ -496,6 +514,7 @@ section {
   
   ul {
     display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -521,7 +540,8 @@ section {
   li {
     margin: 0;
     padding: 0;
-    display: inline-block; // Force horizontal display
+    display: flex;
+    align-items: center;
     
     @media (max-width: 480px) {
       flex: 0 0 auto;
