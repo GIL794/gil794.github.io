@@ -5,7 +5,7 @@ permalink: /contact/
 feature_text: |
   # Let's Connect & Collaborate
   Ready to build something amazing together?
-feature_image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3"
+feature_image: "/assets/images/featured_contact.png"
 ---
 
 <div class="container">

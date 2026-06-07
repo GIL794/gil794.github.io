@@ -4,7 +4,7 @@ title: Home
 feature_text: |
   # See Your Future Better
   AI Solution Architect helping businesses transform complex technology challenges into strategic advantages through innovation, automation, and modern engineering leadership.
-feature_image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1600&q=80"
+feature_image: "/assets/images/featured_home.png"
 excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Business Strategy Expert"
 ---
 

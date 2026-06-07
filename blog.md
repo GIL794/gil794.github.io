@@ -5,7 +5,7 @@ permalink: /blog/
 feature_text: |
   # Insights & Innovation
   Exploring AI, technology, automation, and business strategy in the modern digital landscape
-feature_image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1600&q=80"
+feature_image: "/assets/images/featured_blog.png"
 ---
 
 <div class="container">

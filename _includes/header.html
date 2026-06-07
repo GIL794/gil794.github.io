@@ -1,29 +1,31 @@
 <header class="site-header">
   <div class="container">
     <div class="header__content">
-      <!-- Logo with SVG initials 'GIL' -->
-      <div class="header__logo">
-        <a class="logo-link" href="{{ '/' | relative_url }}">
-          <svg class="logo-svg" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GIL Logo">
-            <title>GIL Logo</title>
-            <circle cx="30" cy="20" r="19.5" fill="white" stroke="#f97316" stroke-width="1"/>
-            <text x="16" y="27" text-anchor="middle" fill="#f97316" font-family="Georgia, serif" font-size="14" font-weight="bold">G</text>
-            <text x="30" y="31" text-anchor="middle" fill="#f97316" font-family="Georgia, serif" font-size="30" font-weight="bold">I</text>
-            <text x="44" y="27" text-anchor="middle" fill="#f97316" font-family="Georgia, serif" font-size="14" font-weight="bold">L</text>
-          </svg>
-        </a>
-      </div>
-
-      <!-- Site branding -->
-      <div class="header__brand">
-        {% if site.logo %}
-          <a class="header__title" href="{{ '/' | relative_url }}">
-            {% include site-logo.html %}
+      <div class="header__left">
+        <!-- Logo with SVG initials 'GIL' -->
+        <div class="header__logo">
+          <a class="logo-link" href="{{ '/' | relative_url }}">
+            <svg class="logo-svg" width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GIL Logo">
+              <title>GIL Logo</title>
+              <circle cx="30" cy="20" r="19.5" fill="white" stroke="#f97316" stroke-width="1"/>
+              <text x="16" y="27" text-anchor="middle" fill="#f97316" font-family="Georgia, serif" font-size="14" font-weight="bold">G</text>
+              <text x="30" y="31" text-anchor="middle" fill="#f97316" font-family="Georgia, serif" font-size="30" font-weight="bold">I</text>
+              <text x="44" y="27" text-anchor="middle" fill="#f97316" font-family="Georgia, serif" font-size="14" font-weight="bold">L</text>
+            </svg>
           </a>
-        {% endif %}
-        <a class="header__title" href="{{ '/' | relative_url }}">
-          {{ site.title | default: "Gabriele Iacopo Langellotto" }}
-        </a>
+        </div>
+
+        <!-- Site branding -->
+        <div class="header__brand">
+          {% if site.logo %}
+            <a class="header__title" href="{{ '/' | relative_url }}">
+              {% include site-logo.html %}
+            </a>
+          {% endif %}
+          <a class="header__title" href="{{ '/' | relative_url }}">
+            {{ site.title | default: "Gabriele Iacopo Langellotto" }}
+          </a>
+        </div>
       </div>
 
       <!-- Single Navigation Menu -->
@@ -45,6 +47,24 @@
           </ul>
         </nav>
       {% endif %}
+
+      <!-- Theme Toggle Button -->
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode" title="Toggle dark/light mode">
+        <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
     </div>
   </div>
 </header>

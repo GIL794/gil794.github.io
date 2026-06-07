@@ -5,7 +5,7 @@ permalink: /services/
 feature_text: |
   # Transform Your Business
   Expert solutions that drive real results through innovative technology
-feature_image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3"
+feature_image: "/assets/images/featured_services.png"
 ---
 
 <div class="container">

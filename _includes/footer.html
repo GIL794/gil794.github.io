@@ -4,7 +4,13 @@
 
       <!-- Main Footer Section -->
       <div class="footer__main">
-         <!-- Social Media & Support (Left) -->
+        <!-- Copyright and Branding (Left) -->
+        <div class="footer__section footer__section--main">
+          <h1 class="footer__title">{{ site.title | default: "Gabriele I. Langellotto" }}</h1>
+          <h3 class="footer__description">{{ site.description | default: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert - Transforming complex tech challenges into measurable business wins" }}</h3>
+        </div>
+
+         <!-- Social Media & Support (Centre) -->
         <div class="footer__section footer__section--social">
           <h4 class="footer__heading">Connect With Me</h4>
           <div class="footer__social">
@@ -21,12 +27,6 @@
               Buy Me a Coffee
             </a>
           </div>
-        </div>
-
-        <!-- Copyright and Branding (Centre) -->
-        <div class="footer__section footer__section--main">
-          <h1 class="footer__title">{{ site.title | default: "Gabriele I. Langellotto" }}</h1>
-          <h3 class="footer__description">{{ site.description | default: "AI Solution Architect | HP Lecturer | Automation Innovation & Business Strategy Expert" }}</h3>
         </div>
 
         <!-- Contact Information (Right) -->

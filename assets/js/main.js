@@ -409,9 +409,27 @@
             roadmapObserver.observe(item);
         });
     }
+    // Theme toggle button logic
+    function initThemeToggle() {
+        const toggleButton = document.getElementById('theme-toggle');
+        if (!toggleButton)
+            return;
+        toggleButton.addEventListener('click', () => {
+            let currentTheme = document.documentElement.getAttribute('data-theme');
+            // If data-theme is not explicitly set, determine it based on system preferences
+            if (!currentTheme) {
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                currentTheme = prefersDark ? 'dark' : 'light';
+            }
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    }
     // Initialize all functionality when DOM is ready
     ready(() => {
         // Core layout and effects
+        initThemeToggle();
         initStickyHeader();
         initSmoothScroll();
         initScrollProgress();
