@@ -11,7 +11,7 @@ feature_image: "/assets/images/featured_about.png"
   <div class="section hero blog-hero">
     <h2>Who I Am</h2>
     <p class="lead">Blending technology, strategy, and leadership to spark innovation that matters</p>
-    <p>I'm Gabriele Iacopo Langellotto, an AI Solution Architect at AllianceNews Ltd and HP Lecturer. I'm currently pursuing a BSc (Hons) in Data Science and Artificial Intelligence at the University of East London. With over a decade of experience spanning digital marketing, business management, and AI/ML solution architecture, I'm passionate about transforming complex technology challenges into strategic business advantages.</p>
+    <p>I'm Gabriele Iacopo Langellotto, an AI Solution Architect and HP Lecturer. I previously served as the AI Solution Architect at AllianceNews Ltd until December 2025. I'm currently pursuing a BSc (Hons) in Data Science and Artificial Intelligence at the University of East London. With over a decade of experience spanning digital marketing, business management, and AI/ML solution architecture, I'm passionate about transforming complex technology challenges into strategic business advantages.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">🚀</span>
@@ -34,11 +34,11 @@ feature_image: "/assets/images/featured_about.png"
     <div class="feature-card">
       <h3>🚀 My Journey</h3>
       <p>Starting as a Digital Marketing Manager at DREAMPOWER Ltd (2014-2018), I progressed through various leadership roles including Letting & Marketing Manager at GIL LETTINGS (2019-2021), before transitioning into AI and data science.</p>
-      <p>Currently, as an AI Solution Architect at AllianceNews Ltd, I've successfully launched 5 AI products using NLP technologies, achieving a 75% increase in productivity and 50% improvement in employee engagement rates. My journey combines business acumen with cutting-edge AI expertise.</p>
+      <p>Previously, as an AI Solution Architect at AllianceNews Ltd (until December 2025), I successfully launched 5 AI products using NLP technologies, achieving a 75% increase in productivity and 50% improvement in employee engagement rates. My journey combines business acumen with cutting-edge AI expertise.</p>
     </div>
     <div class="feature-card">
       <h3>🎯 What I Do Today</h3>
-      <p><strong>AI Solution Architect</strong> at AllianceNews Ltd, where I craft NLP prompts, develop high-impact service products, and effectively communicate requirements and opportunities to stakeholders.</p>
+      <p><strong>AI Solution Architect</strong> at AllianceNews Ltd (March 2024 - December 2025), where I crafted NLP prompts, developed high-impact service products, and effectively communicated requirements and opportunities to stakeholders.</p>
       <p><strong>HP Lecturer</strong>, sharing knowledge and elevating the tech community through education and mentorship.</p>
       <p><strong>Student</strong> at University of East London, pursuing BSc (Hons) in Data Science and AI, continuously expanding my expertise in artificial intelligence and data-driven technologies.</p>
     </div>
@@ -137,13 +137,13 @@ feature_image: "/assets/images/featured_about.png"
           </div>
         </div>
         
-        <div class="roadmap-item" data-year="2023-Present">
+        <div class="roadmap-item" data-year="2023-2025">
           <div class="roadmap-marker"></div>
           <div class="roadmap-content">
-            <div class="roadmap-year">2023 - Present</div>
+            <div class="roadmap-year">2023 - 2025</div>
             <h3><span class="icon-bg icon-robot">🤖</span> AI Solution Architect</h3>
             <p><strong>AllianceNews Ltd</strong></p>
-            <p>Leading AI product development with NLP technologies, achieving 75% productivity increase and launching 5 AI products.</p>
+            <p>Led AI product development with NLP technologies, achieving 75% productivity increase and launching 5 AI products.</p>
             <div class="roadmap-highlight">
               <strong>Impact:</strong> 75% productivity increase • 50% employee engagement improvement • 5 AI products launched
             </div>

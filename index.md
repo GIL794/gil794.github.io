@@ -35,7 +35,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     <div class="feature-card">
       <h3>🤖 NLP & AI Solutions</h3>
       <p><strong>Proven track record: 5 successful AI products launched</strong></p>
-      <p>At AllianceNews Ltd, I craft sophisticated NLP prompts and develop AI-powered solutions that deliver measurable results—75% productivity increase and 50% improvement in employee engagement. I translate complex business requirements into scalable AI architectures that drive real impact.</p>
+      <p>During my tenure at AllianceNews Ltd (until December 2025), I crafted sophisticated NLP prompts and developed AI-powered solutions that delivered measurable results—75% productivity increase and 50% improvement in employee engagement. I translated complex business requirements into scalable AI architectures that drove real impact.</p>
       <a class="cta-btn" href="/services/">Explore AI Solutions</a>
     </div>
 
@@ -79,7 +79,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
       <div class="feature-card">
         <h3>🔧 Proven AI/ML Expertise</h3>
-        <p>2+ years of hands-on AI solution architecture with measurable results: 5 products launched, 75% productivity gains, and 50% engagement improvements at AllianceNews Ltd. Plus AI-powered blockchain contract generators and NLP solutions.</p>
+        <p>2+ years of hands-on AI solution architecture with measurable results: 5 products launched, 75% productivity gains, and 50% engagement improvements at AllianceNews Ltd (until December 2025). Plus AI-powered blockchain contract generators and NLP solutions.</p>
       </div>
 
       <div class="feature-card">
@@ -106,7 +106,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
     <div class="card-grid">
       <div class="feature-card">
         <h3>🤖 NLP Product Development (AllianceNews Ltd)</h3>
-        <p><strong>Current Role:</strong> Successfully launched 5 AI products using advanced NLP techniques, achieving 75% productivity increase and 50% improvement in employee engagement rates through effective stakeholder communication and high-impact service development.</p>
+        <p><strong>March 2024 - Dec 2025:</strong> Successfully launched 5 AI products using advanced NLP techniques, achieving 75% productivity increase and 50% improvement in employee engagement rates through effective stakeholder communication and high-impact service development.</p>
         <a class="cta-btn secondary" href="/about/">Learn More</a>
       </div>
 
@@ -124,7 +124,7 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
 
       <div class="feature-card">
         <h3>🎓 Education & Continuous Learning</h3>
-        <p><strong>Academic Pursuit:</strong> Actively expanding AI/ML expertise through BSc (Hons) Data Science and AI at University of East London. Simultaneously applying knowledge as HP Lecturer and AI Solution Architect in production environments.</p>
+        <p><strong>Academic Pursuit:</strong> Actively expanding AI/ML expertise through BSc (Hons) Data Science and AI at University of East London. Simultaneously applying knowledge as HP Lecturer and developing AI solution architectures.</p>
         <a class="cta-btn secondary" href="/about/">View Education</a>
       </div>
     </div>

@@ -36,8 +36,8 @@ feature_image: "/assets/images/featured_projects.png"
   <div class="card-grid">
     <div class="feature-card">
       <h3>🤖 NLP Product Development - AllianceNews Ltd</h3>
-      <p><strong>AI Solution Architect | March 2024 - Present</strong></p>
-      <p>Leading AI/ML solution architecture for a financial information services company, successfully launching 5 AI products using advanced NLP techniques. Achieved 75% productivity increase and 50% employee engagement improvement through effective stakeholder communication and high-impact service development.</p>
+      <p><strong>AI Solution Architect | March 2024 - December 2025</strong></p>
+      <p>Led AI/ML solution architecture for a financial information services company, successfully launching 5 AI products using advanced NLP techniques. Achieved 75% productivity increase and 50% employee engagement improvement through effective stakeholder communication and high-impact service development.</p>
       <p><strong>Key Achievements:</strong></p>
       <ul>
         <li>Launched 5 successful AI products using NLP/NLG technologies</li>

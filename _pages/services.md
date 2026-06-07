@@ -37,7 +37,7 @@ feature_image: "/assets/images/featured_services.png"
     <div class="feature-card">
       <h3>🤖 NLP & AI Solution Architecture</h3>
       <p><strong>Proven expertise: 5 successful AI products launched with 75% productivity gains.</strong></p>
-      <p>At AllianceNews Ltd, I engineer sophisticated NLP prompts and architect AI/ML solutions that deliver measurable business impact. From natural language processing to machine learning model deployment, I translate complex business requirements into scalable, production-ready AI systems.</p>
+      <p>During my tenure at AllianceNews Ltd (until December 2025), I engineered sophisticated NLP prompts and architected AI/ML solutions that delivered measurable business impact. From natural language processing to machine learning model deployment, I translated complex business requirements into scalable, production-ready AI systems.</p>
       <p><strong>Key Capabilities:</strong></p>
       <ul>
         <li>NLP/NLG prompt engineering and optimisation</li>
