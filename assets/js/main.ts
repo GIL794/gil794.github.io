@@ -274,6 +274,322 @@
     });
   }
 
+  // Pointer aura with pixel sparks for fine pointers only
+  function initPointerAura() {
+    if (!('PointerEvent' in window)) return;
+
+    const hoverQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
+    const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+    if (!hoverQuery.matches || motionQuery.matches) return;
+
+    const canvas = document.createElement('canvas');
+    canvas.className = 'pointer-aura';
+    canvas.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(canvas);
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) {
+      canvas.remove();
+      return;
+    }
+
+    type TrailNode = {
+      x: number;
+      y: number;
+      size: number;
+      life: number;
+    };
+
+    type Spark = {
+      x: number;
+      y: number;
+      vx: number;
+      vy: number;
+      size: number;
+      rotation: number;
+      spin: number;
+      life: number;
+    };
+
+    const pointer = {
+      x: window.innerWidth / 2,
+      y: window.innerHeight / 2,
+      targetX: window.innerWidth / 2,
+      targetY: window.innerHeight / 2,
+      lastX: window.innerWidth / 2,
+      lastY: window.innerHeight / 2,
+      active: false,
+      intensity: 0
+    };
+
+    const trailNodes: TrailNode[] = [];
+    const sparks: Spark[] = [];
+    const maxTrailNodes = 18;
+    const maxSparks = 40;
+
+    let width = window.innerWidth;
+    let height = window.innerHeight;
+    let dpr = Math.min(window.devicePixelRatio || 1, 2);
+    let rafId = 0;
+    let lastFrame = performance.now();
+    let isRunning = false;
+
+    function hexToRgb(hex: string) {
+      const normalized = hex.trim().replace('#', '');
+      const expanded = normalized.length === 3
+        ? normalized.split('').map(char => char + char).join('')
+        : normalized;
+
+      const int = parseInt(expanded, 16);
+
+      if (Number.isNaN(int)) {
+        return { r: 249, g: 115, b: 22 };
+      }
+
+      return {
+        r: (int >> 16) & 255,
+        g: (int >> 8) & 255,
+        b: int & 255
+      };
+    }
+
+    function rgba(rgb: { r: number; g: number; b: number }, alpha: number) {
+      return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${Math.max(0, Math.min(1, alpha))})`;
+    }
+
+    function resolveAuraColours() {
+      const styles = getComputedStyle(document.documentElement);
+      const primary = hexToRgb(styles.getPropertyValue('--primary-color') || '#f97316');
+      const secondary = hexToRgb(styles.getPropertyValue('--primary-dark') || '#ea580c');
+
+      return { primary, secondary };
+    }
+
+    let colours = resolveAuraColours();
+
+    function resizeCanvas() {
+      width = window.innerWidth;
+      height = window.innerHeight;
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      colours = resolveAuraColours();
+    }
+
+    function startLoop() {
+      if (isRunning) return;
+
+      isRunning = true;
+      lastFrame = performance.now();
+      canvas.classList.add('pointer-aura--visible');
+      rafId = window.requestAnimationFrame(render);
+    }
+
+    function stopLoop() {
+      if (!isRunning) return;
+
+      isRunning = false;
+      canvas.classList.remove('pointer-aura--visible');
+      window.cancelAnimationFrame(rafId);
+    }
+
+    function addTrailNode(x: number, y: number, velocity: number) {
+      trailNodes.push({
+        x,
+        y,
+        size: Math.min(18, 8 + velocity * 0.15),
+        life: 1
+      });
+
+      while (trailNodes.length > maxTrailNodes) {
+        trailNodes.shift();
+      }
+    }
+
+    function spawnSparks(x: number, y: number, force: number, burst = false) {
+      const sparkCount = burst
+        ? 14
+        : Math.max(2, Math.min(6, Math.round(force / 6)));
+
+      for (let i = 0; i < sparkCount; i++) {
+        const angle = (Math.PI * 2 * i) / sparkCount + (Math.random() - 0.5) * 0.7;
+        const speed = (burst ? 1.8 : 0.8) + Math.random() * (burst ? 2.2 : 1.4) + force * 0.015;
+
+        sparks.push({
+          x,
+          y,
+          vx: Math.cos(angle) * speed,
+          vy: Math.sin(angle) * speed,
+          size: burst ? 3 + Math.random() * 3 : 2 + Math.random() * 2,
+          rotation: Math.random() * Math.PI * 2,
+          spin: (Math.random() - 0.5) * 0.18,
+          life: 1
+        });
+      }
+
+      while (sparks.length > maxSparks) {
+        sparks.shift();
+      }
+    }
+
+    function drawAura() {
+      if (pointer.intensity <= 0.02) return;
+
+      const outerRadius = 90 + pointer.intensity * 36;
+      const innerRadius = 12 + pointer.intensity * 8;
+      const gradient = ctx.createRadialGradient(
+        pointer.x,
+        pointer.y,
+        innerRadius,
+        pointer.x,
+        pointer.y,
+        outerRadius
+      );
+
+      gradient.addColorStop(0, rgba(colours.primary, 0.22 * pointer.intensity));
+      gradient.addColorStop(0.35, rgba(colours.primary, 0.12 * pointer.intensity));
+      gradient.addColorStop(0.7, rgba(colours.secondary, 0.05 * pointer.intensity));
+      gradient.addColorStop(1, rgba(colours.primary, 0));
+
+      ctx.fillStyle = gradient;
+      ctx.beginPath();
+      ctx.arc(pointer.x, pointer.y, outerRadius, 0, Math.PI * 2);
+      ctx.fill();
+    }
+
+    function drawTrail() {
+      trailNodes.forEach((node, index) => {
+        const alpha = node.life * (0.08 + index / (trailNodes.length * 18));
+        const size = Math.max(2, node.size * node.life);
+        const x = Math.round(node.x - size / 2);
+        const y = Math.round(node.y - size / 2);
+
+        ctx.fillStyle = rgba(index % 2 === 0 ? colours.primary : colours.secondary, alpha);
+        ctx.fillRect(x, y, size, size);
+      });
+    }
+
+    function drawSparks() {
+      sparks.forEach((spark, index) => {
+        const alpha = spark.life * (0.3 + (index % 4) * 0.04);
+        const size = spark.size * spark.life;
+
+        ctx.save();
+        ctx.translate(spark.x, spark.y);
+        ctx.rotate(spark.rotation);
+        ctx.fillStyle = rgba(index % 3 === 0 ? colours.secondary : colours.primary, alpha);
+        ctx.fillRect(-size / 2, -size / 2, size, size);
+        ctx.restore();
+      });
+    }
+
+    function render(timestamp: number) {
+      const frameDelta = Math.min(2.2, (timestamp - lastFrame) / 16.67);
+      lastFrame = timestamp;
+
+      ctx.clearRect(0, 0, width, height);
+
+      pointer.x += (pointer.targetX - pointer.x) * (0.16 * frameDelta);
+      pointer.y += (pointer.targetY - pointer.y) * (0.16 * frameDelta);
+      pointer.intensity += ((pointer.active ? 1 : 0) - pointer.intensity) * (0.12 * frameDelta);
+
+      for (let i = trailNodes.length - 1; i >= 0; i--) {
+        trailNodes[i].life -= 0.08 * frameDelta;
+
+        if (trailNodes[i].life <= 0) {
+          trailNodes.splice(i, 1);
+        }
+      }
+
+      for (let i = sparks.length - 1; i >= 0; i--) {
+        const spark = sparks[i];
+        spark.x += spark.vx * frameDelta;
+        spark.y += spark.vy * frameDelta;
+        spark.vx *= 0.985;
+        spark.vy *= 0.985;
+        spark.rotation += spark.spin * frameDelta;
+        spark.life -= 0.05 * frameDelta;
+
+        if (spark.life <= 0) {
+          sparks.splice(i, 1);
+        }
+      }
+
+      drawAura();
+      drawTrail();
+      drawSparks();
+
+      if (!pointer.active && pointer.intensity <= 0.03 && trailNodes.length === 0 && sparks.length === 0) {
+        stopLoop();
+        return;
+      }
+
+      rafId = window.requestAnimationFrame(render);
+    }
+
+    function handlePointerMove(event: PointerEvent) {
+      if (event.pointerType !== 'mouse') return;
+
+      if (!pointer.active && trailNodes.length === 0 && sparks.length === 0) {
+        pointer.x = event.clientX;
+        pointer.y = event.clientY;
+        pointer.lastX = event.clientX;
+        pointer.lastY = event.clientY;
+      }
+
+      const dx = event.clientX - pointer.lastX;
+      const dy = event.clientY - pointer.lastY;
+      const velocity = Math.min(48, Math.hypot(dx, dy));
+
+      pointer.active = true;
+      pointer.targetX = event.clientX;
+      pointer.targetY = event.clientY;
+      pointer.lastX = event.clientX;
+      pointer.lastY = event.clientY;
+
+      addTrailNode(event.clientX, event.clientY, velocity);
+
+      if (velocity > 3) {
+        spawnSparks(event.clientX, event.clientY, velocity);
+      }
+
+      startLoop();
+    }
+
+    function handlePointerDown(event: PointerEvent) {
+      if (event.pointerType !== 'mouse') return;
+
+      pointer.active = true;
+      pointer.targetX = event.clientX;
+      pointer.targetY = event.clientY;
+      spawnSparks(event.clientX, event.clientY, 22, true);
+      startLoop();
+    }
+
+    function deactivatePointer() {
+      pointer.active = false;
+    }
+
+    resizeCanvas();
+
+    window.addEventListener('resize', resizeCanvas, { passive: true });
+    window.addEventListener('pointermove', handlePointerMove, { passive: true });
+    window.addEventListener('pointerdown', handlePointerDown, { passive: true });
+    document.documentElement.addEventListener('pointerleave', deactivatePointer);
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        deactivatePointer();
+      }
+    });
+    window.addEventListener('blur', deactivatePointer);
+  }
+
   // Enhanced navigation scroll behavior
   function initStickyHeader() {
     const header = document.querySelector('.site-header') as HTMLElement | null;
@@ -478,6 +794,7 @@
     initScrollProgress();
     initBackToTop();
     initColourPulse();
+    initPointerAura();
 
     // Visual animation effects
     if ('IntersectionObserver' in window) {
