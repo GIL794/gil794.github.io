@@ -13,7 +13,6 @@ remote_theme: daviddarnes/alembic@main
 # Plugins
 plugins:
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-coffeescript
   - jekyll-commonmark-ghpages
   - jekyll-gist
@@ -22,7 +21,7 @@ plugins:
   - jekyll-optional-front-matter
   - jekyll-readme-index
   - jekyll-default-layout
-  - jekyll-titles-from-heading
+  - jekyll-titles-from-headings
   - jekyll-remote-theme
   - jekyll-sitemap
   - jekyll-feed
@@ -44,9 +43,6 @@ navigation_header:
     url: /contact/
   - title: Business Card
     url: /card/
-# Pagination
-paginate: 5
-paginate_path: "/blog/page:num/"
 # Collections
 collections:
   posts:

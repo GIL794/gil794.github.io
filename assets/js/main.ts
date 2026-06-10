@@ -394,25 +394,6 @@
     });
   }
 
-  // Randomise blog posts display order
-  function randomiseBlogPosts() {
-    const blogGrid = document.getElementById('blog-posts-container');
-    if (!blogGrid) return;
-    
-    const posts = Array.from(blogGrid.children);
-    
-    // Fisher-Yates shuffle algorithm
-    for (let i = posts.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      const temp = posts[i];
-      posts[i] = posts[j];
-      posts[j] = temp;
-    }
-    
-    // Re-append posts in shuffled order
-    posts.forEach(post => blogGrid.appendChild(post));
-  }
-
   // Add smooth scrolling for category anchors
   function initCategoryNavigation() {
     // Handle hash navigation on page load
@@ -513,7 +494,6 @@
     initParticleEffect();
     
     // Blog-specific functionality
-    randomiseBlogPosts();
     initCategoryNavigation();
 
     // Add class to indicate JS is loaded

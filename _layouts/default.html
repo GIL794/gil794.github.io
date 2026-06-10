@@ -33,20 +33,33 @@
     <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
     <!-- SEO and Social Media Meta Tags -->
-    {% if page.featured_image or page.feature_image or page.image or site.featured_image %}
-      <meta property="og:image" content="{{ page.featured_image | default: page.feature_image | default: page.image | default: site.featured_image | relative_url }}">
+    {% assign social_image = page.featured_image | default: page.feature_image | default: page.image | default: site.featured_image %}
+    {% assign page_type = 'website' %}
+    {% if page.layout == 'post' or page.collection == 'posts' or page.id %}
+      {% assign page_type = 'article' %}
+    {% endif %}
+    {% if social_image %}
+      {% if social_image contains '://' %}
+      <meta property="og:image" content="{{ social_image }}">
+      {% else %}
+      <meta property="og:image" content="{{ social_image | absolute_url }}">
+      {% endif %}
     {% endif %}
     <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | default: 'Gabriele Iacopo Langellotto' | escape }}">
     <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:type" content="article">
+    <meta property="og:type" content="{{ page_type }}">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | default: 'Gabriele Iacopo Langellotto' | escape }}">
     <meta name="twitter:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
-    {% if page.featured_image or page.feature_image or page.image or site.featured_image %}
-      <meta name="twitter:image" content="{{ page.featured_image | default: page.feature_image | default: page.image | default: site.featured_image | relative_url }}">
+    {% if social_image %}
+      {% if social_image contains '://' %}
+      <meta name="twitter:image" content="{{ social_image }}">
+      {% else %}
+      <meta name="twitter:image" content="{{ social_image | absolute_url }}">
+      {% endif %}
     {% endif %}
 
     <!-- Canonical URL -->

@@ -39,7 +39,8 @@ feature_image: "/assets/images/featured_blog.png"
     </div>
   </noscript>
   <div class="blog-grid" id="blog-posts-container">
-    {% for post in site.posts %}
+    {% assign sorted_posts = site.posts | sort: "date" | reverse %}
+    {% for post in sorted_posts %}
       <article class="post-card" data-post-date="{{ post.date | date: '%Y-%m-%d' }}" data-post-time="{{ post.time | default: '09:00' }}">
         <div class="card-content">
           {% assign latest_array = "Latest" | split: "," %}

@@ -79,7 +79,7 @@ This repository powers my professional portfolio and blog—a modern, responsive
 
 | Category | Technology |
 |----------|-----------|
-| **Static Site Generator** | [Jekyll](https://jekyllrb.com/) 4.x |
+| **Static Site Generator** | [Jekyll](https://jekyllrb.com/) via the GitHub Pages bundle |
 | **Theme** | [Alembic](https://github.com/daviddarnes/alembic) (Remote Theme) |
 | **Hosting** | [GitHub Pages](https://pages.github.com/) |
 | **Styling** | SCSS/CSS3 with custom properties |
@@ -92,7 +92,6 @@ This repository powers my professional portfolio and blog—a modern, responsive
 - `jekyll-seo-tag` - SEO optimisation
 - `jekyll-sitemap` - Automatic sitemap generation
 - `jekyll-feed` - RSS feed generation
-- `jekyll-paginate` - Blog post pagination
 - `jekyll-remote-theme` - Remote theme support
 - `jekyll-github-metadata` - GitHub repository metadata
 - Additional plugins for enhanced functionality
@@ -174,10 +173,7 @@ gil794.github.io/
 │   └── contact.md         # Contact information
 ├── _posts/                # Blog posts (Markdown)
 │   └── YYYY-MM-DD-title.md
-├── _drafts/               # Private drafts (NOT published)
-│   ├── README.md         # Draft management guide
-│   ├── draft-ideas.md    # Quick idea list
-│   └── *.md              # Work-in-progress posts
+├── drafts/                # Planning notes and draft ideas committed to the repo
 ├── assets/                # Static assets
 │   ├── css/
 │   │   └── styles.scss    # Main stylesheet
@@ -196,17 +192,13 @@ gil794.github.io/
 
 ## ✍️ Content Management
 
-### Managing Draft Posts (Private)
+### Managing Draft Content
 
-The `_drafts/` folder stores unpublished blog post ideas and drafts:
+This repository currently includes a committed `drafts/` folder for planning notes and content ideas.
 
-- **Private**: Listed in `.gitignore` so drafts are NOT published to the live blog
-- **Local Only**: Visible only in your local repository, not to blog visitors
-- **Flexible Format**: Store quick ideas, outlines, or full drafts
+If you want to keep unpublished posts private and preview them locally with native Jekyll draft support, create a local `_drafts/` folder. That folder is already ignored by git and will not be published.
 
-See `_drafts/README.md` for detailed usage instructions and examples.
-
-To preview drafts locally without publishing:
+To preview local `_drafts/` content without publishing:
 ```bash
 bundle exec jekyll serve --drafts
 ```
@@ -259,9 +251,9 @@ Edit CSS custom properties in `assets/css/styles.scss`:
 
 ```scss
 :root {
-  --primary-colour: #f97316;      // Orange
+  --primary-color: #f97316;       // Orange
   --primary-dark: #ea580c;       // Dark orange
-  --secondary-colour: #0366d6;    // Blue
+  --secondary-color: #0366d6;     // Blue
   --text-primary: #1f2937;       // Dark grey
   --text-secondary: #6b7280;     // Medium grey
 }
