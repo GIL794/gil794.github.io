@@ -2,16 +2,18 @@
 layout: default
 title: Home
 feature_text: |
-  # See Your Future Better
-  AI Solution Architect helping businesses transform complex technology challenges into strategic advantages through innovation, automation, and modern engineering leadership.
+  # AI Delivery With Business Clarity
+  I help teams turn complex AI, automation, and product challenges into measurable outcomes through architecture, hands-on delivery, and clear stakeholder communication.
 feature_image: "/assets/images/featured_home.png"
-excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Business Strategy Expert"
+excerpt: "AI Solution Architect helping teams turn AI, automation, and product ideas into measurable business outcomes."
 ---
 
 <div class="container">
   <div class="section hero blog-hero">
-    <h2>What I Do</h2>
-    <p class="lead">AI Solution Architect | HP Lecturer | Transforming complex technology challenges into measurable business wins.</p>
+    <span class="section-kicker">Professional Showcase</span>
+    <h2>Architecture, delivery, and strategic thinking for modern digital products</h2>
+    <p class="lead">AI Solution Architect and HP Lecturer with a track record spanning production AI, blockchain experimentation, digital growth, and technical education.</p>
+    <p class="section-copy section-copy--centered">This site brings together the work, thinking, and proof behind that experience: practical projects, measurable outcomes, and applied knowledge across AI, automation, product development, and business transformation.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">🤖</span>
@@ -19,14 +21,46 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
         <span class="stat-label">AI Products Launched</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">📦</span>
-        <span class="stat-number">9+</span>
-        <span class="stat-label">GitHub Projects</span>
+        <span class="stat-icon">⚡</span>
+        <span class="stat-number">75%</span>
+        <span class="stat-label">Productivity Gain Delivered</span>
       </div>
       <div class="stat-item">
-        <span class="stat-icon">💻</span>
-        <span class="stat-number">6+</span>
-        <span class="stat-label">Tech Stacks Mastered</span>
+        <span class="stat-icon">🧠</span>
+        <span class="stat-number">10+</span>
+        <span class="stat-label">Years Across Strategy & Delivery</span>
+      </div>
+    </div>
+    <div class="section-actions">
+      <a class="cta-btn" href="/contact/">Discuss a Project</a>
+      <a class="cta-btn secondary" href="/projects/">Browse Selected Work</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>How I Help</h2>
+    <p class="section-copy">I work where technical depth and business context need to meet. That can mean designing an AI-enabled product, translating stakeholder needs into execution-ready plans, or building the systems and prototypes that prove a concept quickly.</p>
+
+    <div class="card-grid">
+      <div class="feature-card">
+        <h3>AI Solution Architecture</h3>
+        <p class="feature-card__meta">From opportunity framing to implementation strategy</p>
+        <p>I design AI-driven services and workflows that connect business needs, data realities, and delivery constraints into a solution teams can actually ship.</p>
+        <a class="cta-btn" href="/services/">Explore Services</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>Product Prototyping & Validation</h3>
+        <p class="feature-card__meta">Fast experiments that reduce delivery risk</p>
+        <p>I build practical proofs of concept across web, automation, and blockchain so ideas can be validated with real users, technical feedback, and measurable signals.</p>
+        <a class="cta-btn" href="/projects/">See Prototypes</a>
+      </div>
+
+      <div class="feature-card">
+        <h3>Technical Communication</h3>
+        <p class="feature-card__meta">Clarity between business, product, and engineering</p>
+        <p>I translate complexity into decisions, roadmaps, and execution plans that stakeholders can align around without losing technical rigor.</p>
+        <a class="cta-btn" href="/about/">About My Approach</a>
       </div>
     </div>
   </div>
@@ -34,97 +68,102 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
   <div class="card-grid">
     <div class="feature-card">
       <h3>🤖 NLP & AI Solutions</h3>
-      <p><strong>Proven track record: 5 successful AI products launched</strong></p>
-      <p>During my tenure at AllianceNews Ltd (until December 2025), I crafted sophisticated NLP prompts and developed AI-powered solutions that delivered measurable results—75% productivity increase and 50% improvement in employee engagement. I translated complex business requirements into scalable AI architectures that drove real impact.</p>
-      <a class="cta-btn" href="/services/">Explore AI Solutions</a>
+      <p class="feature-card__meta">5 AI products launched in a production setting</p>
+      <p>Built and shaped AI-powered services using NLP, prompt design, stakeholder discovery, and delivery-focused architecture to create measurable operational impact.</p>
+      <a class="cta-btn" href="/services/">AI Solution Focus</a>
     </div>
 
     <div class="feature-card">
       <h3>⛓️ Blockchain & Smart Contracts</h3>
-      <p><strong>Building the decentralised future with Web3 technologies.</strong></p>
-      <p>Polkadot Blockchain Academy graduate (May 2025) with expertise in Substrate framework and Polkadot ecosystem. Developing smart contracts with Solidity and PyTeal on Algorand blockchain. Created AI-powered contract generators, decentralised lending platforms, and cryptographic implementations including ECC and RSA. Combining blockchain innovation with practical security solutions.</p>
-      <a class="cta-btn" href="/projects/">View Blockchain Projects</a>
+      <p class="feature-card__meta">Hands-on experimentation across Web3 and contract tooling</p>
+      <p>Explored smart-contract development, contract generation, DeFi concepts, and cryptographic implementations through hackathons, prototypes, and independent technical work.</p>
+      <a class="cta-btn" href="/projects/">Blockchain Projects</a>
     </div>
 
     <div class="feature-card">
       <h3>💻 Full-Stack Development</h3>
-      <p><strong>Modern web applications from concept to deployment.</strong></p>
-      <p>Expert in React, Next.js, and TypeScript for frontend development, paired with Python and JavaScript backends. Building responsive, performant applications with modern frameworks like TailwindCSS. From static sites to complex web applications—I deliver quality code.</p>
-      <a class="cta-btn" href="/projects/">See Web Projects</a>
+      <p class="feature-card__meta">Responsive web experiences and implementation-ready prototypes</p>
+      <p>Comfortable moving from frontend experience design to backend logic, using modern JavaScript, TypeScript, Python, and static-site tooling to deliver polished builds.</p>
+      <a class="cta-btn" href="/projects/">Web Projects</a>
     </div>
 
     <div class="feature-card">
       <h3>📊 Data Science & Mathematical Computing</h3>
-      <p><strong>Turning algorithms and data into strategic advantages.</strong></p>
-      <p>Currently pursuing BSc (Hons) in Data Science and AI at University of East London. Implemented complex algorithms including Traveling Salesman Problem solvers, Riemann Hypothesis explorers, and cryptographic systems. From data analysis to computational mathematics—solving problems that matter.</p>
-      <a class="cta-btn" href="/projects/">Explore Algorithm Projects</a>
+      <p class="feature-card__meta">Academic rigor applied to practical problem solving</p>
+      <p>Applied algorithmic thinking, cryptography, and mathematical exploration to create educational and technical projects that showcase analytical depth and implementation skill.</p>
+      <a class="cta-btn" href="/projects/">Algorithm Projects</a>
     </div>
 
     <div class="feature-card">
       <h3>🎓 Knowledge Sharing & Teaching</h3>
-      <p><strong>HP Lecturer elevating the tech community.</strong></p>
-      <p>With 10+ years of combined experience in digital marketing, business management, and AI/ML, I share proven strategies through teaching and mentorship. I believe in fostering innovation and building high-performing teams that deliver results.</p>
-      <a class="cta-btn" href="/blog/">Read Insights</a>
+      <p class="feature-card__meta">Teaching, mentoring, and publishing applied insights</p>
+      <p>Through lecturing and writing, I turn delivery experience into usable knowledge for students, peers, and teams looking to build with more confidence and clarity.</p>
+      <a class="cta-btn" href="/blog/">Read the Blog</a>
     </div>
   </div>
 
   <div class="section">
-    <h2>Why Work With Me?</h2>
+    <h2>Why Teams Bring Me In</h2>
+    <p class="section-copy">The value is not just technical breadth. It is the ability to connect strategy, execution, and communication so projects move forward with less ambiguity and more momentum.</p>
     
     <div class="card-grid">
       <div class="feature-card">
         <h3>💡 Cross-Industry Experience</h3>
-        <p>10+ years spanning finance, real estate, media, and hospitality—giving me unique insights into diverse business challenges and technology solutions across sectors.</p>
+        <p>Experience across finance, real estate, media, and hospitality brings perspective on how different organisations evaluate risk, speed, and ROI.</p>
       </div>
 
       <div class="feature-card">
         <h3>🔧 Proven AI/ML Expertise</h3>
-        <p>2+ years of hands-on AI solution architecture with measurable results: 5 products launched, 75% productivity gains, and 50% engagement improvements at AllianceNews Ltd (until December 2025). Plus AI-powered blockchain contract generators and NLP solutions.</p>
+        <p>Hands-on AI solution work with tangible outcomes: product launches, productivity gains, stronger engagement, and better translation from stakeholder need to shipped capability.</p>
       </div>
 
       <div class="feature-card">
         <h3>⛓️ Blockchain & Web3 Innovation</h3>
-        <p>Polkadot Blockchain Academy certified (May 2025) with hands-on experience in Substrate framework and Polkadot ecosystem. Expertise in smart contracts (Solidity, PyTeal), Algorand blockchain development, decentralised applications, and cryptographic implementations. Building the future of finance with Web3 technologies.</p>
+        <p>Exploration of emerging technologies is backed by real implementation work, not only theory, which makes experimentation more credible and commercially grounded.</p>
       </div>
 
       <div class="feature-card">
         <h3>📈 Business & Technical Balance</h3>
-        <p>Unique combination of digital marketing mastery (2014-2021), business management credentials, and cutting-edge AI/ML, blockchain, and full-stack technical capabilities—I speak both languages fluently.</p>
+        <p>Digital marketing, business management, and engineering experience make it easier to connect delivery decisions to audience, operations, and business priorities.</p>
       </div>
 
       <div class="feature-card">
         <h3>🌍 Global Perspective</h3>
-        <p>Multilingual professional (Italian, English, Spanish, French) with international business experience—enabling effective stakeholder communication and global collaboration.</p>
+        <p>Multilingual communication and international experience help reduce friction when working across teams, stakeholders, and diverse markets.</p>
       </div>
     </div>
   </div>
 
   <div class="section">
-    <h2>Recent Achievements</h2>
-    <p>Real results from current and recent professional engagements.</p>
+    <h2>Selected Proof Points</h2>
+    <p class="section-copy">A few highlights that show how strategy, execution, and measurable results come together in practice.</p>
     
     <div class="card-grid">
       <div class="feature-card">
         <h3>🤖 NLP Product Development (AllianceNews Ltd)</h3>
-        <p><strong>March 2024 - Dec 2025:</strong> Successfully launched 5 AI products using advanced NLP techniques, achieving 75% productivity increase and 50% improvement in employee engagement rates through effective stakeholder communication and high-impact service development.</p>
+        <p class="feature-card__meta">March 2024 - December 2025</p>
+        <p>Launched 5 AI products using NLP-led workflows and delivery-focused stakeholder communication, contributing to a 75% productivity uplift and a 50% improvement in employee engagement.</p>
         <a class="cta-btn secondary" href="/about/">Learn More</a>
       </div>
 
       <div class="feature-card">
         <h3>🏢 Digital Marketing & Business Growth</h3>
-        <p><strong>2014-2021:</strong> Led digital transformation initiatives as Marketing Manager and Letting & Marketing Manager, achieving 100% growth in social media presence, lead engagement, and online sales through strategic R&D and execution.</p>
+        <p class="feature-card__meta">2014 - 2021</p>
+        <p>Led digital transformation initiatives across marketing and operations, driving 100% growth in social presence, lead engagement, and online sales through structured execution.</p>
         <a class="cta-btn secondary" href="/about/">See Experience</a>
       </div>
 
       <div class="feature-card">
         <h3>⛓️ Polkadot Blockchain Academy Graduate</h3>
-        <p><strong>May 2025:</strong> Successfully completed the Polkadot Blockchain Academy 4-week online campus program, earning certification in Substrate framework, Polkadot ecosystem architecture, and advanced Web3 development. Mastering the technology powering the next generation of decentralised applications.</p>
+        <p class="feature-card__meta">May 2025</p>
+        <p>Completed the Polkadot Blockchain Academy online campus program, deepening applied understanding of Substrate, Web3 architecture, and decentralised system design.</p>
         <a class="cta-btn secondary" href="/about/">View Certificate</a>
       </div>
 
       <div class="feature-card">
         <h3>🎓 Education & Continuous Learning</h3>
-        <p><strong>Academic Pursuit:</strong> Actively expanding AI/ML expertise through BSc (Hons) Data Science and AI at University of East London. Simultaneously applying knowledge as HP Lecturer and developing AI solution architectures.</p>
+        <p class="feature-card__meta">Current academic and teaching track</p>
+        <p>Continuing to deepen AI and data science expertise through formal study while applying that knowledge through lecturing, project work, and technical writing.</p>
         <a class="cta-btn secondary" href="/about/">View Education</a>
       </div>
     </div>
@@ -133,11 +172,11 @@ excerpt: "AI Solution Architect | HP Lecturer | Engineering Innovation & Busines
   <hr>
 
   <div class="section section--centered">
-    <h2>Ready to Transform Your Tech Challenges?</h2>
-    <p class="lead">Let's build the future together and turn your technology vision into reality.</p>
+    <h2>Need a technical partner who can connect vision to delivery?</h2>
+    <p class="lead">Explore the work, review the thinking behind it, or start a conversation about the next product, automation, or AI initiative you want to ship.</p>
     <div class="cta-buttons">
-      <a class="cta-btn" href="/contact/">Get In Touch</a>
-      <a class="cta-btn secondary" href="/about/">Learn More About Me</a>
+      <a class="cta-btn" href="/contact/">Start the Conversation</a>
+      <a class="cta-btn secondary" href="/about/">Read My Story</a>
     </div>
   </div>
 </div>

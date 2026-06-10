@@ -23,15 +23,15 @@ permalink: /card/
         </div>
         <div class="card-contact-item">
           <span class="icon">🌐</span>
-          <a href="https://gil794.github.io" target="_blank">gil794.github.io</a>
+          <a href="https://gil794.github.io" target="_blank" rel="noopener noreferrer">gil794.github.io</a>
         </div>
         <div class="card-contact-item">
           <span class="icon">💼</span>
-          <a href="https://www.linkedin.com/in/gabriele-iacopo-langellotto-aa7095a9" target="_blank">LinkedIn Profile</a>
+          <a href="https://www.linkedin.com/in/gabriele-iacopo-langellotto-aa7095a9" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
         </div>
         <div class="card-contact-item">
           <span class="icon">🐙</span>
-          <a href="https://github.com/GIL794" target="_blank">github.com/GIL794</a>
+          <a href="https://github.com/GIL794" target="_blank" rel="noopener noreferrer">github.com/GIL794</a>
         </div>
       </div>
       
@@ -60,7 +60,7 @@ permalink: /card/
       <div class="card-cta">
         <a href="/contact/" class="card-cta-button">Get In Touch</a>
         <a href="/projects/" class="card-cta-button secondary">View Portfolio</a>
-        <button onclick="window.print()" class="card-cta-button secondary" style="border: none; cursor: pointer;">Print Card</button>
+        <button onclick="window.print()" class="card-cta-button card-cta-button--button secondary">Print Card</button>
       </div>
     </div>
   </div>
@@ -69,7 +69,7 @@ permalink: /card/
     <h3>Scan to View Full Portfolio</h3>
     <div class="qr-code-container">
       <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https://gil794.github.io" alt="QR Code to Portfolio" loading="lazy" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
-      <div style="display: none; padding: 20px; text-align: center;">
+      <div class="qr-fallback">
         <p>Visit: <strong>gil794.github.io</strong></p>
       </div>
     </div>
@@ -78,5 +78,4 @@ permalink: /card/
     </p>
   </div>
 </div>
-
 

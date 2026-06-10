@@ -10,10 +10,12 @@ feature_image: "/assets/images/featured_projects.png"
 
 <div class="container">
   <div class="section hero blog-hero">
+    <span class="section-kicker">Selected Work</span>
     <h2>Featured Projects & Experience</h2>
     <p class="lead">
       Real results from current and past professional engagements across AI/ML, digital marketing, and business transformation.
     </p>
+    <p class="section-copy section-copy--centered">A mix of production outcomes, hackathon builds, technical experiments, and leadership experience that demonstrates how strategy becomes shipped work.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">🤖</span>
@@ -36,7 +38,7 @@ feature_image: "/assets/images/featured_projects.png"
   <div class="card-grid">
     <div class="feature-card">
       <h3>🤖 NLP Product Development - AllianceNews Ltd</h3>
-      <p><strong>AI Solution Architect | March 2024 - December 2025</strong></p>
+      <p class="feature-card__meta">AI Solution Architect | March 2024 - December 2025</p>
       <p>Led AI/ML solution architecture for a financial information services company, successfully launching 5 AI products using advanced NLP techniques. Achieved 75% productivity increase and 50% employee engagement improvement through effective stakeholder communication and high-impact service development.</p>
       <p><strong>Key Achievements:</strong></p>
       <ul>
@@ -52,7 +54,7 @@ feature_image: "/assets/images/featured_projects.png"
 
     <div class="feature-card">
       <h3>🔗 AI-Powered Algorand Smart Contract Creator</h3>
-      <p><strong>Group Project | EasyA x Algorand Blockchain Hackathon (36 hours) | 2025</strong></p>
+      <p class="feature-card__meta">Group Project | EasyA x Algorand Blockchain Hackathon (36 hours) | 2025</p>
       <p>Production-grade platform for generating, validating, and deploying Algorand PyTeal smart contracts using natural language and GPT-4. Developed collaboratively with 3 other developers and data science/AI students at University of East London. Features multi-layer validation, auto-correction, and TestNet deployment capabilities.</p>
       <p><strong>Key Features:</strong></p>
       <ul>
@@ -63,12 +65,12 @@ feature_image: "/assets/images/featured_projects.png"
         <li>Complete audit trail and explainability features</li>
       </ul>
       <p><strong>Technologies:</strong> Python, Algorand, PyTeal, OpenAI/GPT-4, Streamlit, Smart Contracts</p>
-      <a class="cta-btn" href="https://github.com/GIL794/algorand-ai-contract-creator" target="_blank">View on GitHub</a>
+      <a class="cta-btn" href="https://github.com/GIL794/algorand-ai-contract-creator" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
 
     <div class="feature-card">
       <h3>🎯 Math Problems & Code Solutions</h3>
-      <p><strong>Personal Project | 2025</strong></p>
+      <p class="feature-card__meta">Personal Project | 2025</p>
       <p>Comprehensive collection of 14 mathematical problems spanning from classic puzzles to million-dollar Millennium Prize Problems. Demonstrates algorithm design, cryptography, and computational mathematics with clean, educational Python implementations.</p>
       <p><strong>Notable Implementations:</strong></p>
       <ul>
@@ -79,12 +81,12 @@ feature_image: "/assets/images/featured_projects.png"
         <li>Prime number sieves, Fibonacci analyzers, and number theory</li>
       </ul>
       <p><strong>Technologies:</strong> Python, Cryptography, Algorithms, Mathematics, ECC, RSA</p>
-      <a class="cta-btn" href="https://github.com/GIL794/Math-Problems-Code-Solutions" target="_blank">View on GitHub</a>
+      <a class="cta-btn" href="https://github.com/GIL794/Math-Problems-Code-Solutions" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
 
     <div class="feature-card">
       <h3>💰 ArcCredit - Decentralised Lending Platform</h3>
-      <p><strong>Group Project | EncodeClub x Arc Blockchain Hackathon (3 days) | 2025</strong></p>
+      <p class="feature-card__meta">Group Project | EncodeClub x Arc Blockchain Hackathon (3 days) | 2025</p>
       <p>Blockchain-based decentralised lending platform that removes intermediaries, credit scores, and lengthy processes. Developed collaboratively with another developer and data science/AI student at University of East London. Built with Hardhat 3 Beta featuring TypeScript, Solidity smart contracts, and native testing support.</p>
       <p><strong>Key Features:</strong></p>
       <ul>
@@ -94,12 +96,12 @@ feature_image: "/assets/images/featured_projects.png"
         <li>Comprehensive Solidity smart contract implementation</li>
       </ul>
       <p><strong>Technologies:</strong> JavaScript, TypeScript, Hardhat 3, Solidity, Smart Contracts, Blockchain</p>
-      <a class="cta-btn" href="https://github.com/GIL794/ArcCredit" target="_blank">View on GitHub</a>
+      <a class="cta-btn" href="https://github.com/GIL794/ArcCredit" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
 
     <div class="feature-card">
       <h3>⛓️ Polkadot Blockchain Academy Graduate</h3>
-      <p><strong>Professional Certification | May 2025</strong></p>
+      <p class="feature-card__meta">Professional Certification | May 2025</p>
       <p>Successfully completed the intensive 4-week online campus program at Polkadot Blockchain Academy, gaining comprehensive expertise in the Polkadot ecosystem and Substrate framework. Mastered advanced blockchain concepts, consensus mechanisms, runtime development, and Web3 architecture.</p>
       <p><strong>Key Learning Areas:</strong></p>
       <ul>
@@ -115,7 +117,7 @@ feature_image: "/assets/images/featured_projects.png"
 
     <div class="feature-card">
       <h3>🎮 Aenigma Numerorum Caesaris</h3>
-      <p><strong>Personal Project | 2025</strong></p>
+      <p class="feature-card__meta">Personal Project | 2025</p>
       <p>Roman Numeral Sudoku game with Pygame featuring play, pause/resume, hints, and on-screen rules. A unique twist on the classic puzzle game combining ancient Roman numerals with modern gaming mechanics.</p>
       <p><strong>Features:</strong></p>
       <ul>
@@ -125,12 +127,12 @@ feature_image: "/assets/images/featured_projects.png"
         <li>Local gameplay with intuitive controls</li>
       </ul>
       <p><strong>Technologies:</strong> Python 3.11, Pygame, Game Development</p>
-      <a class="cta-btn" href="https://github.com/GIL794/Aenigma-Numerorum-Caesaris" target="_blank">View on GitHub</a>
+      <a class="cta-btn" href="https://github.com/GIL794/Aenigma-Numerorum-Caesaris" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
 
     <div class="feature-card">
       <h3>🌐 AI Hub Project</h3>
-      <p><strong>Personal Project | 2025</strong></p>
+      <p class="feature-card__meta">Personal Project | 2025</p>
       <p>Modern web application built with Next.js showcasing AI capabilities and services. Features responsive design with TailwindCSS and React components for an optimal user experience.</p>
       <p><strong>Technical Stack:</strong></p>
       <ul>
@@ -140,12 +142,12 @@ feature_image: "/assets/images/featured_projects.png"
         <li>Optimised for performance and user experience</li>
       </ul>
       <p><strong>Technologies:</strong> Next.js, React, JavaScript, TailwindCSS</p>
-      <a class="cta-btn" href="https://github.com/GIL794/AI-Hub-Project" target="_blank">View on GitHub</a>
+      <a class="cta-btn" href="https://github.com/GIL794/AI-Hub-Project" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
 
     <div class="feature-card">
       <h3>📊 Digital Marketing & Business Growth - GIL LETTINGS</h3>
-      <p><em>Letting & Marketing Manager | Oct 2019 - Oct 2021</em></p>
+      <p class="feature-card__meta">Letting & Marketing Manager | Oct 2019 - Oct 2021</p>
       <p>Led comprehensive digital transformation and marketing operations for real estate company, achieving 100% growth across all key metrics through strategic innovation and effective team management.</p>
       <p><strong>Impact Delivered:</strong></p>
       <ul>
@@ -161,7 +163,7 @@ feature_image: "/assets/images/featured_projects.png"
 
     <div class="feature-card">
       <h3>🌐 Digital Marketing Excellence - DREAMPOWER Ltd</h3>
-      <p><em>Digital Marketing Manager | Jan 2014 - Sep 2018</em></p>
+      <p class="feature-card__meta">Digital Marketing Manager | Jan 2014 - Sep 2018</p>
       <p>Directed comprehensive digital marketing strategy for 4+ years, driving business expansion through web, social media, and mobile communication optimisation. Successfully managed B2B/B2C relationships and represented the company in international events.</p>
       <p><strong>Business Results:</strong></p>
       <ul>
@@ -177,7 +179,7 @@ feature_image: "/assets/images/featured_projects.png"
 
     <div class="feature-card">
       <h3>🎓 Academic & Teaching Projects</h3>
-      <p><em>HP Lecturer & BSc Student</em></p>
+      <p class="feature-card__meta">HP Lecturer & BSc Student</p>
       <p>Combining formal education in Data Science and AI (University of East London) with teaching responsibilities as HP Lecturer. Developing cutting-edge knowledge in AI, machine learning, and data science while sharing expertise with the tech community.</p>
       <p><strong>Current Focus:</strong></p>
       <ul>

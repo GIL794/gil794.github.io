@@ -93,7 +93,7 @@ feature_image: "/assets/images/featured_about.png"
 
   <div class="section">
     <h2>My Journey: Education & Professional Growth</h2>
-    <p class="lead" style="text-align: center; max-width: 800px; margin: 0 auto 3rem;">From digital marketing to AI solution architecture, my path blends business acumen with cutting-edge technology expertise.</p>
+    <p class="lead centered-lead">From digital marketing to AI solution architecture, my path blends business acumen with cutting-edge technology expertise.</p>
     
     <div class="roadmap-container">
       <div class="roadmap-timeline">

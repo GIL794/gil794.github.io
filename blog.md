@@ -34,7 +34,7 @@ feature_image: "/assets/images/featured_blog.png"
 
 <div class="blog-container">
   <noscript>
-    <div style="background-color: rgba(249, 115, 22, 0.1); border-left: 4px solid var(--primary-color); padding: 1rem; margin-bottom: 2rem; border-radius: 8px; font-size: 0.95rem; color: var(--text-primary);">
+    <div class="page-note page-note--warning">
       ⚠️ <strong>JavaScript is disabled:</strong> All blog posts, including future scheduled articles, are displayed below. Enable JavaScript to filter posts dynamically by schedule.
     </div>
   </noscript>
@@ -43,11 +43,9 @@ feature_image: "/assets/images/featured_blog.png"
     {% for post in sorted_posts %}
       <article class="post-card" data-post-date="{{ post.date | date: '%Y-%m-%d' }}" data-post-time="{{ post.time | default: '09:00' }}">
         <div class="card-content">
-          {% assign latest_array = "Latest" | split: "," %}
-          {% assign all_categories = post.categories | concat: latest_array | uniq %}
-          {% if all_categories.size > 0 %}
+          {% if post.categories and post.categories.size > 0 %}
             <div class="post-categories">
-              {% for category in all_categories limit:4 %}
+              {% for category in post.categories limit:4 %}
                 <a href="/categories/#{{ category | slugify }}" class="category-badge">{{ category }}</a>
               {% endfor %}
             </div>
