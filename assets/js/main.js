@@ -240,6 +240,7 @@
             return;
         const hoverQuery = window.matchMedia('(hover: hover) and (pointer: fine)');
         const motionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+        const colourSchemeQuery = window.matchMedia('(prefers-color-scheme: dark)');
         if (!hoverQuery.matches || motionQuery.matches)
             return;
         const canvas = document.createElement('canvas');
@@ -259,18 +260,29 @@
             lastX: window.innerWidth / 2,
             lastY: window.innerHeight / 2,
             active: false,
-            intensity: 0
+            intensity: 0,
+            contextBoost: 0,
+            velocity: 0
         };
         const trailNodes = [];
         const sparks = [];
-        const maxTrailNodes = 18;
-        const maxSparks = 40;
+        const contextTargets = Array.from(document.querySelectorAll('.hero, .blog-hero, .cta-btn, .cta-buttons, .section-actions, .card-cta, .card-cta-button'));
+        const maxTrailNodes = 24;
+        const maxSparks = 72;
+        const pixelStep = 4;
         let width = window.innerWidth;
         let height = window.innerHeight;
         let dpr = Math.min(window.devicePixelRatio || 1, 2);
         let rafId = 0;
         let lastFrame = performance.now();
         let isRunning = false;
+        let targetRects = [];
+        function clamp(value, min, max) {
+            return Math.min(max, Math.max(min, value));
+        }
+        function snap(value, step = pixelStep) {
+            return Math.round(value / step) * step;
+        }
         function hexToRgb(hex) {
             const normalized = hex.trim().replace('#', '');
             const expanded = normalized.length === 3
@@ -287,15 +299,77 @@
             };
         }
         function rgba(rgb, alpha) {
-            return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${Math.max(0, Math.min(1, alpha))})`;
+            return `rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${clamp(alpha, 0, 1)})`;
+        }
+        function mixRgb(base, target, amount) {
+            const blend = clamp(amount, 0, 1);
+            return {
+                r: Math.round(base.r + (target.r - base.r) * blend),
+                g: Math.round(base.g + (target.g - base.g) * blend),
+                b: Math.round(base.b + (target.b - base.b) * blend)
+            };
+        }
+        function isDarkTheme() {
+            const explicitTheme = document.documentElement.getAttribute('data-theme');
+            if (explicitTheme === 'dark')
+                return true;
+            if (explicitTheme === 'light')
+                return false;
+            return colourSchemeQuery.matches;
         }
         function resolveAuraColours() {
             const styles = getComputedStyle(document.documentElement);
+            const darkMode = isDarkTheme();
             const primary = hexToRgb(styles.getPropertyValue('--primary-color') || '#f97316');
             const secondary = hexToRgb(styles.getPropertyValue('--primary-dark') || '#ea580c');
-            return { primary, secondary };
+            const background = hexToRgb(styles.getPropertyValue('--bg-primary') || (darkMode ? '#0b0f19' : '#ffffff'));
+            return {
+                primary: darkMode ? mixRgb(primary, { r: 255, g: 207, b: 138 }, 0.14) : primary,
+                secondary: darkMode
+                    ? mixRgb(secondary, { r: 251, g: 191, b: 36 }, 0.22)
+                    : mixRgb(secondary, primary, 0.12),
+                background,
+                glowStrength: darkMode ? 0.36 : 0.22,
+                trailStrength: darkMode ? 0.24 : 0.16,
+                sparkStrength: darkMode ? 0.78 : 0.58,
+                haloStrength: darkMode ? 0.22 : 0.12,
+                darkMode
+            };
         }
         let colours = resolveAuraColours();
+        function getTargetWeight(element) {
+            const classList = element.classList;
+            if (classList.contains('cta-btn') || classList.contains('card-cta-button'))
+                return 1.25;
+            if (classList.contains('cta-buttons') || classList.contains('section-actions') || classList.contains('card-cta'))
+                return 1.05;
+            if (classList.contains('hero') || classList.contains('blog-hero'))
+                return 0.82;
+            return 0.72;
+        }
+        function measureTargets() {
+            targetRects = contextTargets
+                .map(element => ({
+                rect: element.getBoundingClientRect(),
+                weight: getTargetWeight(element)
+            }))
+                .filter(({ rect }) => rect.width > 0 && rect.height > 0 && rect.bottom > -160 && rect.top < height + 160);
+        }
+        function getDistanceToRect(x, y, rect) {
+            const dx = x < rect.left ? rect.left - x : x > rect.right ? x - rect.right : 0;
+            const dy = y < rect.top ? rect.top - y : y > rect.bottom ? y - rect.bottom : 0;
+            return Math.hypot(dx, dy);
+        }
+        function resolveContextBoost(x, y) {
+            let strongest = 0;
+            targetRects.forEach(({ rect, weight }) => {
+                const influenceRadius = Math.max(120, Math.min(360, Math.max(rect.width, rect.height) * 0.45 + 120));
+                const distance = getDistanceToRect(x, y, rect);
+                const proximity = clamp(1 - distance / influenceRadius, 0, 1);
+                strongest = Math.max(strongest, proximity * weight);
+            });
+            return clamp(strongest, 0, 1.35);
+        }
         function resizeCanvas() {
             width = window.innerWidth;
             height = window.innerHeight;
@@ -306,6 +380,7 @@
             canvas.style.height = `${height}px`;
             ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
             colours = resolveAuraColours();
+            measureTargets();
         }
         function startLoop() {
             if (isRunning)
@@ -324,95 +399,134 @@
         }
         function addTrailNode(x, y, velocity) {
             trailNodes.push({
-                x,
-                y,
-                size: Math.min(18, 8 + velocity * 0.15),
-                life: 1
+                x: snap(x),
+                y: snap(y),
+                size: snap(Math.max(6, Math.min(24, 6 + velocity * 0.16 + pointer.contextBoost * 5)), 2),
+                life: 1,
+                alpha: 0.55 + pointer.contextBoost * 0.2,
+                accent: Math.random() > 0.38
             });
             while (trailNodes.length > maxTrailNodes) {
                 trailNodes.shift();
             }
         }
         function spawnSparks(x, y, force, burst = false) {
+            const boost = pointer.contextBoost;
             const sparkCount = burst
-                ? 14
-                : Math.max(2, Math.min(6, Math.round(force / 6)));
+                ? 18 + Math.round(boost * 6)
+                : Math.max(3, Math.min(10, Math.round(force / 5 + boost * 4)));
             for (let i = 0; i < sparkCount; i++) {
                 const angle = (Math.PI * 2 * i) / sparkCount + (Math.random() - 0.5) * 0.7;
-                const speed = (burst ? 1.8 : 0.8) + Math.random() * (burst ? 2.2 : 1.4) + force * 0.015;
+                const speed = (burst ? 1.8 : 0.9) + Math.random() * (burst ? 2.1 : 1.1) + force * 0.016 + boost * 0.4;
+                const pixelSize = burst ? (Math.random() > 0.55 ? 4 : 3) : (Math.random() > 0.5 ? 3 : 2);
                 sparks.push({
-                    x,
-                    y,
-                    vx: Math.cos(angle) * speed,
-                    vy: Math.sin(angle) * speed,
-                    size: burst ? 3 + Math.random() * 3 : 2 + Math.random() * 2,
-                    rotation: Math.random() * Math.PI * 2,
-                    spin: (Math.random() - 0.5) * 0.18,
-                    life: 1
+                    x: snap(x),
+                    y: snap(y),
+                    vx: snap(Math.cos(angle) * speed, 0.25),
+                    vy: snap(Math.sin(angle) * speed, 0.25),
+                    size: pixelSize * (burst ? 1.8 + Math.random() * 0.8 : 1.2 + Math.random() * 0.6 + boost * 0.35),
+                    life: burst ? 1 : 0.92 + Math.random() * 0.12,
+                    pixelSize,
+                    accent: Math.random() > 0.32
                 });
             }
             while (sparks.length > maxSparks) {
                 sparks.shift();
             }
         }
+        function drawPixelHalo() {
+            if (pointer.intensity <= 0.06)
+                return;
+            const centerX = snap(pointer.x);
+            const centerY = snap(pointer.y);
+            const shell = Math.round(3 + pointer.intensity * 3 + pointer.contextBoost * 2);
+            for (let gridY = -shell; gridY <= shell; gridY++) {
+                for (let gridX = -shell; gridX <= shell; gridX++) {
+                    const distance = Math.abs(gridX) + Math.abs(gridY);
+                    if (distance < shell - 1 || distance > shell)
+                        continue;
+                    const alpha = colours.haloStrength
+                        * pointer.intensity
+                        * (distance === shell ? 1 : 0.58)
+                        * (0.72 + pointer.contextBoost * 0.2);
+                    ctx.fillStyle = rgba((gridX + gridY) % 2 === 0 ? colours.primary : colours.secondary, alpha);
+                    ctx.fillRect(centerX + gridX * pixelStep, centerY + gridY * pixelStep, pixelStep, pixelStep);
+                }
+            }
+        }
         function drawAura() {
             if (pointer.intensity <= 0.02)
                 return;
-            const outerRadius = 90 + pointer.intensity * 36;
-            const innerRadius = 12 + pointer.intensity * 8;
-            const gradient = ctx.createRadialGradient(pointer.x, pointer.y, innerRadius, pointer.x, pointer.y, outerRadius);
-            gradient.addColorStop(0, rgba(colours.primary, 0.22 * pointer.intensity));
-            gradient.addColorStop(0.35, rgba(colours.primary, 0.12 * pointer.intensity));
-            gradient.addColorStop(0.7, rgba(colours.secondary, 0.05 * pointer.intensity));
+            const outerRadius = 76 + pointer.intensity * 34 + pointer.contextBoost * 20;
+            const innerRadius = 10 + pointer.intensity * 10;
+            const gradient = ctx.createRadialGradient(snap(pointer.x, 2), snap(pointer.y, 2), innerRadius, snap(pointer.x, 2), snap(pointer.y, 2), outerRadius);
+            gradient.addColorStop(0, rgba(colours.primary, colours.glowStrength * pointer.intensity));
+            gradient.addColorStop(0.28, rgba(colours.primary, colours.glowStrength * 0.52 * pointer.intensity));
+            gradient.addColorStop(0.62, rgba(colours.secondary, colours.glowStrength * 0.2 * pointer.intensity));
             gradient.addColorStop(1, rgba(colours.primary, 0));
             ctx.fillStyle = gradient;
             ctx.beginPath();
             ctx.arc(pointer.x, pointer.y, outerRadius, 0, Math.PI * 2);
             ctx.fill();
+            drawPixelHalo();
         }
         function drawTrail() {
             trailNodes.forEach((node, index) => {
-                const alpha = node.life * (0.08 + index / (trailNodes.length * 18));
-                const size = Math.max(2, node.size * node.life);
-                const x = Math.round(node.x - size / 2);
-                const y = Math.round(node.y - size / 2);
-                ctx.fillStyle = rgba(index % 2 === 0 ? colours.primary : colours.secondary, alpha);
+                const alpha = node.life * node.alpha * (colours.trailStrength + index / Math.max(18, trailNodes.length * 20));
+                const size = Math.max(4, snap(node.size * node.life, 2));
+                const x = snap(node.x - size / 2, 2);
+                const y = snap(node.y - size / 2, 2);
+                const coreSize = Math.max(2, size - pixelStep);
+                ctx.fillStyle = rgba(node.accent ? colours.secondary : colours.primary, alpha);
                 ctx.fillRect(x, y, size, size);
+                ctx.fillStyle = rgba(node.accent ? colours.primary : mixRgb(colours.primary, colours.background, 0.16), alpha * 0.76);
+                ctx.fillRect(x + (size - coreSize) / 2, y + (size - coreSize) / 2, coreSize, coreSize);
             });
         }
         function drawSparks() {
-            sparks.forEach((spark, index) => {
-                const alpha = spark.life * (0.3 + (index % 4) * 0.04);
-                const size = spark.size * spark.life;
-                ctx.save();
-                ctx.translate(spark.x, spark.y);
-                ctx.rotate(spark.rotation);
-                ctx.fillStyle = rgba(index % 3 === 0 ? colours.secondary : colours.primary, alpha);
-                ctx.fillRect(-size / 2, -size / 2, size, size);
-                ctx.restore();
+            sparks.forEach(spark => {
+                const alpha = spark.life * colours.sparkStrength * (spark.accent ? 0.74 : 0.58);
+                const size = Math.max(spark.pixelSize, snap(spark.size * spark.life, spark.pixelSize));
+                const x = snap(spark.x - size / 2, spark.pixelSize);
+                const y = snap(spark.y - size / 2, spark.pixelSize);
+                const tailX = x - Math.sign(spark.vx || 1) * spark.pixelSize;
+                const tailY = y - Math.sign(spark.vy || 1) * spark.pixelSize;
+                ctx.fillStyle = rgba(spark.accent ? colours.primary : colours.secondary, alpha);
+                ctx.fillRect(x, y, size, size);
+                if (size >= spark.pixelSize * 2) {
+                    ctx.fillStyle = rgba(spark.accent ? colours.secondary : colours.primary, alpha * 0.6);
+                    ctx.fillRect(x + spark.pixelSize / 2, y + spark.pixelSize / 2, spark.pixelSize, spark.pixelSize);
+                }
+                ctx.fillStyle = rgba(colours.primary, alpha * 0.34);
+                ctx.fillRect(tailX, tailY, spark.pixelSize, spark.pixelSize);
             });
         }
         function render(timestamp) {
             const frameDelta = Math.min(2.2, (timestamp - lastFrame) / 16.67);
             lastFrame = timestamp;
             ctx.clearRect(0, 0, width, height);
+            const targetBoost = resolveContextBoost(pointer.targetX, pointer.targetY);
             pointer.x += (pointer.targetX - pointer.x) * (0.16 * frameDelta);
             pointer.y += (pointer.targetY - pointer.y) * (0.16 * frameDelta);
-            pointer.intensity += ((pointer.active ? 1 : 0) - pointer.intensity) * (0.12 * frameDelta);
+            pointer.contextBoost += (targetBoost - pointer.contextBoost) * (0.16 * frameDelta);
+            pointer.velocity *= 0.88;
+            const activeIntensityTarget = pointer.active
+                ? 0.72 + pointer.contextBoost * 0.3 + Math.min(0.24, pointer.velocity / 42)
+                : 0;
+            pointer.intensity += (activeIntensityTarget - pointer.intensity) * (0.11 * frameDelta);
             for (let i = trailNodes.length - 1; i >= 0; i--) {
-                trailNodes[i].life -= 0.08 * frameDelta;
+                trailNodes[i].life -= (0.072 - pointer.contextBoost * 0.01) * frameDelta;
                 if (trailNodes[i].life <= 0) {
                     trailNodes.splice(i, 1);
                 }
             }
             for (let i = sparks.length - 1; i >= 0; i--) {
                 const spark = sparks[i];
-                spark.x += spark.vx * frameDelta;
-                spark.y += spark.vy * frameDelta;
+                spark.x = snap(spark.x + spark.vx * frameDelta, 0.5);
+                spark.y = snap(spark.y + spark.vy * frameDelta, 0.5);
                 spark.vx *= 0.985;
                 spark.vy *= 0.985;
-                spark.rotation += spark.spin * frameDelta;
-                spark.life -= 0.05 * frameDelta;
+                spark.life -= 0.048 * frameDelta;
                 if (spark.life <= 0) {
                     sparks.splice(i, 1);
                 }
@@ -439,12 +553,13 @@
             const dy = event.clientY - pointer.lastY;
             const velocity = Math.min(48, Math.hypot(dx, dy));
             pointer.active = true;
+            pointer.velocity = velocity;
             pointer.targetX = event.clientX;
             pointer.targetY = event.clientY;
             pointer.lastX = event.clientX;
             pointer.lastY = event.clientY;
             addTrailNode(event.clientX, event.clientY, velocity);
-            if (velocity > 3) {
+            if (velocity > 2 || pointer.contextBoost > 0.45) {
                 spawnSparks(event.clientX, event.clientY, velocity);
             }
             startLoop();
@@ -453,6 +568,7 @@
             if (event.pointerType !== 'mouse')
                 return;
             pointer.active = true;
+            pointer.velocity = Math.max(pointer.velocity, 18 + pointer.contextBoost * 10);
             pointer.targetX = event.clientX;
             pointer.targetY = event.clientY;
             spawnSparks(event.clientX, event.clientY, 22, true);
@@ -462,6 +578,7 @@
             pointer.active = false;
         }
         resizeCanvas();
+        registerScrollListener(measureTargets);
         window.addEventListener('resize', resizeCanvas, { passive: true });
         window.addEventListener('pointermove', handlePointerMove, { passive: true });
         window.addEventListener('pointerdown', handlePointerDown, { passive: true });
@@ -472,6 +589,23 @@
             }
         });
         window.addEventListener('blur', deactivatePointer);
+        const themeObserver = new MutationObserver(() => {
+            colours = resolveAuraColours();
+            measureTargets();
+        });
+        themeObserver.observe(document.documentElement, {
+            attributes: true,
+            attributeFilter: ['data-theme']
+        });
+        const handleColourSchemeChange = () => {
+            colours = resolveAuraColours();
+        };
+        if ('addEventListener' in colourSchemeQuery) {
+            colourSchemeQuery.addEventListener('change', handleColourSchemeChange);
+        }
+        else {
+            colourSchemeQuery.addListener(handleColourSchemeChange);
+        }
     }
     // Enhanced navigation scroll behavior
     function initStickyHeader() {

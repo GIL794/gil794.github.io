@@ -1526,6 +1526,8 @@ html[data-theme="dark"] {
   transition: opacity 0.22s ease;
   will-change: opacity;
   contain: strict;
+  image-rendering: pixelated;
+  transform: translateZ(0);
 }
 
 .pointer-aura--visible {
