@@ -2121,7 +2121,6 @@ table {
     &::before {
       content: '📅';
       font-size: 1rem;
-      animation: pulse 2s ease-in-out infinite;
     }
     
     time {
@@ -2220,11 +2219,6 @@ table {
   }
 }
 
-@keyframes pulse {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-}
-
 // Post categories and tags styling
 .post-categories {
   display: flex;
@@ -2308,7 +2302,6 @@ table {
   
   .reading-icon {
     font-size: 1rem;
-    animation: pulse 2s ease-in-out infinite;
   }
 }
 
@@ -3321,15 +3314,6 @@ table {
       0 0 0 12px rgba(249, 115, 22, 0.15),
       0 0 0 20px rgba(249, 115, 22, 0.05),
       0 4px 16px rgba(0, 0, 0, 0.2);
-  }
-}
-
-@keyframes pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.2);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(249, 115, 22, 0.1);
   }
 }
 

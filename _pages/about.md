@@ -8,10 +8,10 @@ feature_text: |
 feature_image: "/assets/images/featured_about.png"
 ---
 <div class="container">
-  <div class="section hero blog-hero">
-    <h2>Who I Am</h2>
-    <p class="lead">Blending technology, strategy, and leadership to spark innovation that matters</p>
-    <p>I'm Gabriele Iacopo Langellotto, an AI Solution Architect and HP Lecturer. I previously served as the AI Solution Architect at AllianceNews Ltd until December 2025. I'm currently pursuing a BSc (Hons) in Data Science and Artificial Intelligence at the University of East London. With over a decade of experience spanning digital marketing, business management, and AI/ML solution architecture, I'm passionate about transforming complex technology challenges into strategic business advantages.</p>
+  <div class="section section--centered">
+    <span class="section-kicker">At a Glance</span>
+    <p class="lead centered-lead">I’m Gabriele Iacopo Langellotto, an AI Solution Architect and HP Lecturer. I build AI-enabled products and workflows that connect real business needs with shipping constraints, clear stakeholder communication, and measurable outcomes.</p>
+    <p class="section-copy section-copy--centered">My journey started in digital marketing and business leadership, then moved deeper into AI delivery and applied computing. I’m also pursuing a BSc (Hons) in Data Science and Artificial Intelligence at the University of East London to keep sharpening the theory behind the practice.</p>
     <div class="blog-stats">
       <div class="stat-item">
         <span class="stat-icon">🚀</span>
@@ -29,29 +29,35 @@ feature_image: "/assets/images/featured_about.png"
         <span class="stat-label">Languages</span>
       </div>
     </div>
+    <div class="section-actions">
+      <a class="cta-btn" href="/contact/">Get In Touch</a>
+      <a class="cta-btn secondary" href="/projects/">Browse Selected Work</a>
+    </div>
   </div>
+
   <div class="card-grid">
     <div class="feature-card">
-      <h3>🚀 My Journey</h3>
-      <p>Starting as a Digital Marketing Manager at DREAMPOWER Ltd (2014-2018), I progressed through various leadership roles including Letting & Marketing Manager at GIL LETTINGS (2019-2021), before transitioning into AI and data science.</p>
-      <p>Previously, as an AI Solution Architect at AllianceNews Ltd (until December 2025), I successfully launched 5 AI products using NLP technologies, achieving a 75% increase in productivity and 50% improvement in employee engagement rates. My journey combines business acumen with cutting-edge AI expertise.</p>
+      <h3>What I Build</h3>
+      <p class="feature-card__meta">AI products, prototypes, and automation</p>
+      <p>I take ideas from problem framing to delivery: translating stakeholder goals into execution-ready plans, building proofs of concept quickly, and shaping systems that can run in production.</p>
     </div>
     <div class="feature-card">
-      <h3>🎯 What I Do Today</h3>
-      <p><strong>AI Solution Architect</strong> at AllianceNews Ltd (March 2024 - December 2025), where I crafted NLP prompts, developed high-impact service products, and effectively communicated requirements and opportunities to stakeholders.</p>
-      <p><strong>HP Lecturer</strong>, sharing knowledge and elevating the tech community through education and mentorship.</p>
-      <p><strong>Student</strong> at University of East London, pursuing BSc (Hons) in Data Science and AI, continuously expanding my expertise in artificial intelligence and data-driven technologies.</p>
+      <h3>How I Work</h3>
+      <p class="feature-card__meta">Clarity, momentum, and measurable outcomes</p>
+      <p><strong>Discovery:</strong> define the decision to be made and the metrics that matter.</p>
+      <p><strong>Build:</strong> prototype the smallest slice that proves feasibility and value.</p>
+      <p><strong>Ship:</strong> harden the workflow with testing, monitoring, and documentation.</p>
     </div>
     <div class="feature-card">
-      <h3>💡 My Strengths</h3>
-      <p><strong>Multilingual Communicator:</strong> Fluent in Italian (native), English (C1), Spanish (C1), and French (B1)—enabling effective global collaboration.</p>
-      <p><strong>Proven Results:</strong> Track record of delivering measurable impact—from 75% productivity gains to successful product launches and team leadership across diverse industries.</p>
-      <p><strong>Cross-Functional Expertise:</strong> Unique blend of business strategy, digital marketing mastery, and advanced AI/ML technical capabilities.</p>
+      <h3>Where I Add Value</h3>
+      <p class="feature-card__meta">Strategy × delivery × communication</p>
+      <p>I’m strongest where technical depth and business context need to meet: aligning teams, reducing ambiguity, and keeping delivery moving without losing rigor.</p>
+      <p><strong>Multilingual:</strong> Italian (native), English (C1), Spanish (C1), French (B1).</p>
     </div>
   </div>
   <div class="section">
     <h2>Technical Expertise</h2>
-    <p>Diverse skill set spanning AI/ML, blockchain development, full-stack engineering, and mathematical computing.</p>
+    <p class="section-copy">A practical, delivery-first skill set across AI/ML, blockchain experimentation, full-stack engineering, and mathematical computing.</p>
     <div class="card-grid">
       <div class="feature-card">
         <h3>🤖 AI & Machine Learning</h3>
